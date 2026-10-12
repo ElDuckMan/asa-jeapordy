@@ -1,0 +1,125 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/craft.css"><link rel="stylesheet" href="/css/views.css">
+<title>ASA Jeopardy · Practice mode</title>
+<style>
+  body{overflow:hidden;height:100vh;height:100dvh}
+  .pv{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(340px,1fr);height:100vh;height:100dvh}
+  .pv-screen{position:relative;overflow:hidden;border-right:4px solid var(--ink)}
+  .pv-scroll{position:absolute;inset:0;overflow:auto}
+  .pv-screen .v-board{min-height:100%}
+  .pv-side{display:flex;flex-direction:column;min-height:0}
+  .pv-bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:8px 10px;border-bottom:3px solid var(--ink)}
+    .pv-panes{flex:1;min-height:0;position:relative}
+  .pv-pane{position:absolute;inset:0;overflow:auto}
+  .pv-pane .v-host .wrap{padding:10px}
+  .pv-pane .h-grid{grid-template-columns:1fr}
+  .pv-phones{display:grid;justify-content:center;grid-template-columns:minmax(0,380px);padding:12px}
+  .pv-phone{border:5px solid var(--ink);border-radius:28px;overflow:hidden;background:#e9e7e2;background-image:var(--paper-lg);background-blend-mode:multiply;box-shadow:4px 6px 0 rgba(0,0,0,.25);height:560px;overflow-y:auto}
+  .pv-phone .v-play{min-height:100%;padding:10px}
+  .pv-phone .p-buzz{width:min(62vw,210px)}
+  .pv-phone .p-team{font-size:20px}
+    @media (max-width:900px){
+    .pv{grid-template-columns:1fr;grid-template-rows:52% 48%}
+    .pv-screen{border-right:0;border-bottom:4px solid var(--ink)}
+    .pv-phones{grid-template-columns:1fr}
+    .pv-phone{height:auto;min-height:520px}
+    .pv-screen .b-title{--ts:clamp(26px,8vw,48px)}
+  }
+</style></head>
+<body>
+<div class="pv">
+  <section class="pv-screen" aria-label="Big screen"><div class="pv-scroll"><div id="board"></div></div></section>
+  <section class="pv-side darkpaper">
+    <div class="pv-bar paper">
+      <button class="btn sm on" data-pane="host">🎛 Host</button>
+      <button class="btn sm" data-pane="phones">📱 Your phone</button>
+      <button class="btn sm hi" id="cpu">＋ Add CPU team</button>
+      <button class="btn sm" id="snd">🔈 Sound</button>
+    </div>
+    <div class="pv-panes">
+      <div class="pv-pane" id="pane-host"><div id="host"></div></div>
+      <div class="pv-pane" id="pane-phones" hidden><div class="pv-phones"><div class="pv-phone"><div id="myphone"></div></div></div></div>
+    </div>
+  </section>
+</div>
+<script src="/js/engine.js"></script>
+<script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script>
+<script src="/js/sample-game.js"></script><script src="/js/editor.js"></script>
+<script src="/js/board.js"></script><script src="/js/host.js"></script><script src="/js/play.js"></script>
+<script>
+(function () {
+  const hex = n => Array.from(crypto.getRandomValues(new Uint8Array(n)), b => b.toString(16).padStart(2, '0')).join('');
+  const engine = JeopardyEngine.createEngine({
+    randomId: hex, randomInt: n => Math.floor(Math.random() * n), checkPin: pin => pin === 'practice', log: console.error
+  });
+  FX.setBinAnchor(document.querySelector('.pv-screen'));
+  const host = mountHost(document.getElementById('host'), Craft.localNet(engine, { latency: [2, 8] }), { local: true, autoPin: 'practice' });
+  const rand = (a, b) => a + Math.random() * (b - a);
+  const pick = a => a[Math.floor(Math.random() * a.length)];
+  const CPU_NAMES = ['Comets', 'Night Owls', 'Blue Jays', 'Thunder', 'Sunflowers', 'Rockets', 'Wildcats', 'Fireflies', 'Lucky Stars'];
+  const SECTIONS = ['Freshmen', 'Sophomores', 'Juniors', 'Seniors'];
+  let code = null, cpus = 0;
+
+  /* A CPU team is a headless player. It watches the game state and acts like a person would:
+   * buzzes after a human-like reaction time, wagers, and answers. It "knows" the answer
+   * with probability `skill`, so the host still has real calls to make. */
+  function addCPU() {
+    if (!code) return;
+    if (cpus >= CPU_NAMES.length) return Craft.toast('That is plenty of CPU teams!');
+    const name = CPU_NAMES[cpus++], skill = rand(0.35, 0.75), eager = rand(0.5, 0.9);
+    const net = Craft.localNet(engine, { latency: [15, 70] });
+    let me = null, done = {};
+    const truth = () => { const r = engine.rooms.get(code); return r && r.q; };
+    net.on('state', S => {
+      if (!me || !S.q) return;
+      const q = S.q, key = [q.kind, q.category, q.text, q.stage, q.openSeq].join('|');
+      if (done[key]) return;
+      if ((q.kind === 'standard' || q.kind === 'lightning') && q.stage === 'open' && !q.lockedOut.includes(me.teamId)) {
+        done[key] = 1;
+        if (Math.random() < eager) { const rt = rand(450, 2600); setTimeout(() => net.emit('player:buzz', { seq: q.openSeq, reaction: rt }), rt); }
+      } else if (q.stage === 'wager' && (q.kind === 'final' || q.ddTeam === me.teamId)) {
+        done[key] = 1;
+        setTimeout(() => net.emit('player:wager', { amount: Math.round((q.maxWager || 0) * rand(0.2, 1) / 50) * 50 }), rand(900, 2200));
+      } else if (['mc', 'bonus', 'final'].includes(q.kind) && q.stage === 'open' && !q.answers[me.teamId]) {
+        done[key] = 1;
+        setTimeout(() => {
+          const t = truth(), knows = Math.random() < skill;
+          if (q.options && q.options.length) {
+            const right = t && t.correct != null ? t.correct : 0;
+            net.emit('player:answer', { choice: knows ? right : Math.floor(Math.random() * q.options.length) });
+          } else {
+            const ans = t && t.answer ? t.answer.replace(/^\s*(what|who|where|when)\s+(is|are|was|were)\s+/i, '').replace(/\?$/, '') : '';
+            net.emit('player:answer', { text: knows && ans ? ans : pick(['Not sure!', 'Pass', 'Good guess?', 'Hmm…']) });
+          }
+        }, rand(1500, 4500));
+      }
+    });
+    net.onConnect(() => net.emit('player:join', { code, name: 'CPU', newTeam: name, section: pick(SECTIONS) })
+      .then(r => { if (r.ok) me = r; else Craft.toast(r.error || 'Could not add CPU'); }));
+  }
+
+  const wait = setInterval(() => {
+    const s = host.state;
+    if (!s) return;
+    clearInterval(wait);
+    code = s.code;
+    mountBoard(document.getElementById('board'), Craft.localNet(engine, { latency: [2, 8] }),
+      { code, local: true, overlayHost: document.querySelector('.pv-screen') });
+    mountPlay(document.getElementById('myphone'), Craft.localNet(engine, { latency: [15, 40] }), { code, local: true });
+    setTimeout(addCPU, 500); setTimeout(addCPU, 1000);
+  }, 50);
+
+  document.getElementById('cpu').addEventListener('click', addCPU);
+  document.querySelectorAll('[data-pane]').forEach(b => b.addEventListener('click', () => {
+    document.querySelectorAll('[data-pane]').forEach(x => x.classList.toggle('on', x === b));
+    document.getElementById('pane-host').hidden = b.dataset.pane !== 'host';
+    document.getElementById('pane-phones').hidden = b.dataset.pane !== 'phones';
+  }));
+  document.getElementById('snd').addEventListener('click', e => { if (Craft.Sound.enable()) { e.currentTarget.classList.add('on'); e.currentTarget.textContent = '🔊 Sound on'; Craft.Sound.play('pop'); } });
+})();
+</script>
+</body></html>
