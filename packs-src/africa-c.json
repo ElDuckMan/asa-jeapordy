@@ -20,7 +20,7 @@
         { "value": 100, "q": "The famous painted limestone bust of this Egyptian queen, wife of Akhenaten, is displayed in Berlin.", "a": "Who is Nefertiti?" },
         { "value": 200, "q": "Ancient Egyptians wrote on sheets made from this tall reed that grew along the Nile.", "a": "What is papyrus?" },
         { "value": 300, "q": "Hero of an epic still sung by griots, this “Lion King” founded the Mali Empire in the 13th century.", "a": "Who is Sundiata Keita?" },
-        { "value": 400, "q": "Named after a village in central Nigeria, this ancient culture is famous for its terracotta sculptures of human heads.", "a": "What is the Nok culture?" },
+        { "value": 400, "q": "Named after a village in central Nigeria, this ancient civilization is famous for its terracotta sculptures of human heads.", "a": "What is Nok (the Nok culture)?" },
         { "value": 500, "q": "This 25th Dynasty Kushite pharaoh is mentioned in the Hebrew Bible and was buried in a pyramid at Nuri.", "a": "Who is Taharqa?" }
       ]},
       { "name": "Recent History", "clues": [
@@ -49,7 +49,7 @@
   {
     "type": "lightning", "group": "Lightning Round", "variant": "C", "name": "Lightning Round", "duration": 60, "points": 100, "penalty": false,
     "questions": [
-      { "q": "Capital of Tunisia?", "a": "Tunis" },
+      { "q": "Capital of Libya?", "a": "Tripoli" },
       { "q": "Capital of Zambia?", "a": "Lusaka" },
       { "q": "Capital of Algeria?", "a": "Algiers" },
       { "q": "Capital of Mali?", "a": "Bamako" },
@@ -96,7 +96,7 @@
       ]},
       { "name": "Art & Architecture", "clues": [
         { "value": 200, "q": "Completed in 1993 on Casablanca's waterfront, this mosque partly built over the Atlantic has a towering minaret.", "a": "What is the Hassan II Mosque?", "hint": "Named after a Moroccan king." },
-        { "value": 400, "q": "These brass plaques and sculptures were cast for the royal court of the Edo kingdom centered on today's Benin City, Nigeria.", "a": "What are the Benin Bronzes?", "hint": "Named after a metal alloy and the kingdom." },
+        { "value": 400, "q": "These brass plaques and sculptures were cast for the royal court of an Edo kingdom in what is now southern Nigeria.", "a": "What are the Benin Bronzes?", "hint": "Named after a metal alloy and the kingdom." },
         { "value": 600, "q": "A royal capital from the 1630s, this Ethiopian city is known for the castles of the Fasil Ghebbi enclosure.", "a": "What is Gondar?", "hint": "Lies north of Lake Tana." },
         { "value": 800, "q": "This Ghanaian sculptor, long based in Nigeria, makes shimmering tapestry-like works from thousands of flattened bottle caps.", "a": "Who is El Anatsui?", "hint": "His name begins with a Spanish article." },
         { "value": 1000, "q": "In 1991, this South African artist painted a BMW 525i Art Car with bold Ndebele patterns.", "a": "Who is Esther Mahlangu?", "hint": "Her first name is shared with a biblical queen." }
@@ -105,7 +105,7 @@
         { "value": 200, "q": "This jackal-headed Egyptian god watched over embalming and guided the dead.", "a": "Who is Anubis?", "hint": "His head resembles a wild dog's." },
         { "value": 400, "q": "This clever spider is the trickster hero of countless Akan folktales from Ghana.", "a": "Who is Anansi?", "hint": "Also spelled with a K at the start." },
         { "value": 600, "q": "In Yoruba tradition, this fiery orisha, once a king of Oyo, rules thunder and lightning.", "a": "Who is Shango (Ṣàngó)?", "hint": "His symbol is a double-headed axe." },
-        { "value": 800, "q": "According to the Ethiopian epic Kebra Nagast, this son of King Solomon and the Queen of Sheba founded Ethiopia's royal line.", "a": "Who is Menelik I?", "hint": "A later emperor took the same name as the second." },
+        { "value": 800, "q": "According to the Ethiopian epic Kebra Nagast, this son of King Solomon and the Queen of Sheba founded Ethiopia's royal line.", "a": "Who is Menelik I?", "hint": "Tradition says he brought the Ark of the Covenant to Ethiopia." },
         { "value": 1000, "type": "dd", "q": "In Egyptian belief, a dead person's heart was weighed against the feather of this goddess of truth and cosmic order.", "a": "Who is Ma'at?", "hint": "A short name, often shown with an ostrich plume." }
       ]}
     ]

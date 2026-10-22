@@ -10,14 +10,14 @@
         { "value": 500, "q": "This Indian sitar virtuoso taught George Harrison and was the father of singer Norah Jones.", "a": "Who is Ravi Shankar?" }
       ]},
       { "name": "Movies & TV", "clues": [
-        { "value": 100, "q": "In this 1994 film, Tom Hanks’s title character says, “Life is like a box of chocolates.”", "a": "What is Forrest Gump?" },
+        { "value": 100, "q": "In this 1994 film, Tom Hanks’s title character recalls that his mama always said life was like a box of chocolates.", "a": "What is Forrest Gump?" },
         { "value": 200, "q": "This animated family from Springfield, including Bart and Lisa, got its own Fox series in 1989.", "a": "Who are The Simpsons?" },
         { "value": 300, "q": "In this 1999 sci-fi film, Keanu Reeves plays Neo, who takes the red pill.", "a": "What is The Matrix?" },
         { "value": 400, "q": "This 2001 French film stars Audrey Tautou as a shy, imaginative waitress in Montmartre, Paris.", "a": "What is Amélie?" },
         { "value": 500, "q": "This 2022 Telugu-language film’s song “Naatu Naatu” won the Academy Award for Best Original Song.", "a": "What is RRR?" }
       ]},
       { "name": "Ancient History", "clues": [
-        { "value": 100, "q": "By tradition first held in 776 BCE, this ancient Greek athletic festival took place every four years in the western Peloponnese.", "a": "What are the ancient Olympics?" },
+        { "value": 100, "q": "By tradition first held in 776 BCE, this ancient Greek athletic festival took place every four years in the western Peloponnese.", "a": "What are the Olympic Games (the Olympics)?" },
         { "value": 200, "q": "In 1922, Howard Carter discovered this boy pharaoh’s nearly intact tomb in the Valley of the Kings.", "a": "Who is Tutankhamun?" },
         { "value": 300, "q": "This Athenian philosopher, teacher of Plato, was sentenced to death by drinking hemlock in 399 BCE.", "a": "Who is Socrates?" },
         { "value": 400, "q": "This Mesoamerican people built the cities of Tikal and Palenque and developed a sophisticated calendar.", "a": "Who are the Maya?" },
@@ -67,11 +67,11 @@
     "type": "board", "group": "Double Round", "variant": "C", "name": "Double Round", "timer": 0,
     "categories": [
       { "name": "Music", "clues": [
-        { "value": 200, "q": "This Minneapolis musician released the album and film “Purple Rain” in 1984.", "a": "Who is Prince?", "hint": "His stage name is a royal title." },
+        { "value": 200, "q": "This Minneapolis musician released the album and film “Purple Rain” in 1984.", "a": "Who is Prince?", "hint": "His name, given at birth, is also a royal title." },
         { "value": 400, "q": "Fronted by Bono, this Irish band released “The Joshua Tree” in 1987.", "a": "Who is U2?", "hint": "Its name is one letter and one digit." },
         { "value": 600, "type": "mc", "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?", "a": "Johann Strauss II", "options": ["Johann Strauss II", "Franz Schubert", "Joseph Haydn", "Gustav Mahler"], "correct": 0, "hint": "His father, a composer too, had the same name." },
-        { "value": 800, "q": "This Nigerian bandleader and activist is celebrated as a pioneer of Afrobeat in the 1970s.", "a": "Who is Fela Kuti?", "hint": "His Lagos nightclub was called the Shrine." },
-        { "value": 1000, "q": "This French composer wrote the piano piece “Clair de lune” and the orchestral work “La Mer.”", "a": "Who is Claude Debussy?", "hint": "A leading figure of musical Impressionism." }
+        { "value": 800, "q": "This Nigerian bandleader and activist is celebrated as a pioneer of Afrobeat in the 1970s.", "a": "Who is Fela Kuti?", "hint": "His Lagos nightclub was called the Afrika Shrine." },
+        { "value": 1000, "q": "This French composer wrote the piano piece “Clair de lune” and the orchestral work “La Mer.”", "a": "Who is Claude Debussy?", "hint": "Often called a leading figure of musical Impressionism." }
       ]},
       { "name": "Movies & TV", "clues": [
         { "value": 200, "q": "Steven Spielberg’s 1975 thriller follows a great white shark menacing the beaches of Amity Island.", "a": "What is Jaws?", "hint": "Its two-note theme was composed by John Williams." },
@@ -85,12 +85,12 @@
         { "value": 400, "q": "This Greek writer from Halicarnassus is often called the “Father of History.”", "a": "Who is Herodotus?", "hint": "His “Histories” describe the wars between Greeks and Persians." },
         { "value": 600, "q": "This female pharaoh of Egypt’s 18th Dynasty built a grand mortuary temple at Deir el-Bahari.", "a": "Who is Hatshepsut?", "hint": "She was often shown wearing a ceremonial false beard." },
         { "value": 800, "q": "Carved into rose-red cliffs by the Nabataeans, this ancient city lies in southern Jordan.", "a": "What is Petra?", "hint": "Its Treasury facade appears in “Indiana Jones and the Last Crusade.”" },
-        { "value": 1000, "type": "dd", "q": "This ancient kingdom in what is now Ethiopia and Eritrea is famous for its towering carved stone stelae.", "a": "What is Aksum (Axum)?", "hint": "Its capital city, in today’s Tigray region, shares its name." }
+        { "value": 1000, "type": "dd", "q": "This ancient kingdom in what is now Ethiopia and Eritrea is famous for its towering carved stone stelae.", "a": "What is Aksum (Axum)?", "hint": "Its capital, a city in northern Ethiopia, shares its name." }
       ]},
       { "name": "Recent History", "clues": [
         { "value": 200, "q": "Larry Page and Sergey Brin founded this company in 1998.", "a": "What is Google?", "hint": "Its name plays on a 1 followed by 100 zeros." },
-        { "value": 400, "q": "In 1986, this famous comet returned to the inner solar system, as it does roughly every 75 to 76 years.", "a": "What is Halley’s Comet?", "hint": "Named for an English astronomer, Edmond, who predicted its return." },
-        { "value": 600, "q": "In 1999, Portugal handed over this territory on China’s southern coast to Chinese sovereignty.", "a": "What is Macau?", "hint": "Famous for casinos and the Ruins of St. Paul’s." },
+        { "value": 400, "q": "In 1986, this famous comet returned to the inner solar system, as it does roughly every 76 years.", "a": "What is Halley’s Comet?", "hint": "Named for an English astronomer, Edmond, who predicted its return." },
+        { "value": 600, "q": "In 1999, Portugal handed over this territory on China’s southern coast to Chinese sovereignty.", "a": "What is Macau (Macao)?", "hint": "Famous for casinos and the Ruins of St. Paul’s." },
         { "value": 800, "q": "Launched by NASA in 1977, these twin space probes each carry a gold-plated record of sounds and images from Earth.", "a": "What are the Voyager probes (Voyager 1 and 2)?", "hint": "Both flew past Jupiter and Saturn." },
         { "value": 1000, "q": "In 1960, this politician of Ceylon, now Sri Lanka, became the world’s first female prime minister.", "a": "Who is Sirimavo Bandaranaike?", "hint": "She succeeded her late husband as party leader." }
       ]},
@@ -123,7 +123,7 @@
   {
     "type": "final", "group": "Final Round", "variant": "C", "name": "Final Round",
     "category": "Inventions",
-    "q": "Around 1440 in Mainz, this German goldsmith developed a movable-type printing press that transformed the spread of books in Europe.",
+    "q": "In the mid-1400s, this goldsmith from Mainz, Germany, developed a movable-type printing press that transformed the spread of books in Europe.",
     "a": "Who is Johannes Gutenberg?",
     "hint": "A famous printed Bible bears his name.",
     "timer": 30
