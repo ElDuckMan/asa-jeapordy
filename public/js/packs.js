@@ -4,8 +4,8 @@
 (function () {
   'use strict';
   const list = window.ASA_PACKS = window.ASA_PACKS || [];
-  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍' };
-  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green' };
+  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍', church: '⛪' };
+  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green', church: '--purple' };
   const clone = o => JSON.parse(JSON.stringify(o));
 
   /* Group consecutive-or-not rounds by `group` (falling back to name), keeping first-appearance order. */
@@ -29,7 +29,7 @@
         <span class="pk-icon" aria-hidden="true">${ICON[p.id] || '🎲'}</span>
         <span class="pk-name block stroke">${esc(p.name)}</span>
         <span class="pk-blurb">${esc(p.blurb || '')}</span>
-        <span class="pk-meta">${g.length} rounds · ${count(p.game)} questions${opts.current === p.id ? ' · <b>current</b>' : ''}</span></button>`;
+        <span class="pk-meta">${g.length} rounds · ${Math.max(...g.map(x => x.items.length))} boards each · ${count(p.game)} questions${opts.current === p.id ? ' · <b>current</b>' : ''}</span></button>`;
     });
     if (opts.mine) {
       cards.push(`<button class="pk-card yarn" type="button" data-pack="__mine" style="--c:var(--rust)">

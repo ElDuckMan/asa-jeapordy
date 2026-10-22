@@ -43,7 +43,7 @@
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script>
 <script src="/js/sample-game.js"></script><script src="/js/packs.js"></script>
-<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script>
+<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script><script src="/js/packs/church.js"></script>
 <script src="/js/play.js"></script>
 <script>
 (function () {
@@ -80,7 +80,7 @@
   function drawPicker() {
     const mine = read('asa-mine');
     hostEl.innerHTML = `<div class="card paper pop pk-wrap"><h2 class="hand">Pick the questions</h2>
-      <p class="small muted">Every pack has two boards per round (A and B), with Music, Movies &amp; TV, Ancient History and Recent History.</p>
+      <p class="small muted">Every round comes with several different boards to pick from, each with music, movies &amp; TV, and ancient and recent history.</p>
       ${AsaPacks.pickerHTML(esc, { mine, current: read('asa-pack') })}
       <div class="err" id="perr"></div><button class="btn sm" id="back">← Back</button></div>`;
     document.getElementById('back').onclick = () => drawHost();

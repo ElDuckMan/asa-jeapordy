@@ -88,7 +88,7 @@
     function draw(prev) {
       const s = S;
       if (s.title !== lastTitle) { title(titleEl, s.title); lastTitle = s.title; }
-      tape.textContent = s.phase === 'lobby' ? 'Asian Student Association presents' + (s.edition ? ` · ${s.edition}` : '') : s.phase === 'ended' ? 'Final scores' : (s.round ? s.round.name : '');
+      tape.textContent = s.phase === 'lobby' ? (s.presenter || 'Asian Student Association presents') + (s.edition ? ` · ${s.edition}` : '') : s.phase === 'ended' ? 'Final scores' : (s.round ? s.round.name : '');
       root.classList.toggle('is-lobby', s.phase === 'lobby');
 
       if (s.phase === 'lobby') {

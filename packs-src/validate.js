@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-/* Validates a question-pack JSON file.  Usage: node validate.js <pack.json> [--classic]
+/* Validates a question-pack JSON file.
+ * Usage: node validate.js <pack.json> [--classic]            full pack, or Classic Board B file
+ *        node validate.js <extra.json> --extra --base <f> [--base <f> …]
+ *           extra = {"rounds":[…]} holding ONE new variant (e.g. "C") of every round; answers must not repeat the base files.
  * Pack shape:
  * { id, name, blurb, game: { title, edition, rounds: [ round, ... ] } }
  * Every round has: type ('board'|'lightning'|'bonus'|'final'), name, group, variant ('A'|'B').
@@ -7,7 +10,10 @@
 'use strict';
 const fs = require('fs');
 const file = process.argv[2];
-const classic = process.argv.includes('--classic');
+const argv = process.argv.slice(3);
+const classic = argv.includes('--classic') || argv.includes('--extra');
+const extra = argv.includes('--extra');
+const bases = argv.reduce((a, x, i) => (x === '--base' && argv[i + 1] ? a.concat(argv[i + 1]) : a), []);
 const errors = [], warns = [];
 let pack;
 try { pack = JSON.parse(fs.readFileSync(file, 'utf8')); } catch (e) { console.error('Cannot parse JSON:', e.message); process.exit(1); }
@@ -24,7 +30,16 @@ const rounds = classic ? pack.rounds : (pack.game ? pack.game.rounds : []);
 if (!Array.isArray(rounds)) { console.error('no rounds array'); process.exit(1); }
 
 const answers = new Map();
-const addAns = (a, where) => { const k = norm(a); if (!k) return; if (answers.has(k)) W(`repeated answer "${a}" at ${where} (also ${answers.get(k)})`); else answers.set(k, where); };
+const baseAnswers = new Map();
+for (const f of bases) {
+  const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+  const rs = j.rounds || (j.game && j.game.rounds) || [];
+  for (const r of rs) {
+    const items = (r.categories || []).flatMap(c => c.clues).concat(r.questions || []).concat(r.type === 'final' ? [r] : []);
+    for (const x of items) baseAnswers.set(norm(x.a), `${f.split('/').pop()} / ${r.name} ${r.variant || ''}`);
+  }
+}
+const addAns = (a, where) => { const k = norm(a); if (!k) return; if (baseAnswers.has(k)) W(`answer "${a}" at ${where} already used in ${baseAnswers.get(k)}`); if (answers.has(k)) W(`repeated answer "${a}" at ${where} (also ${answers.get(k)})`); else answers.set(k, where); };
 const leak = (q, a, where) => {
   const k = norm(a); if (k.length < 4) return;
   const words = k.split(' ').filter(w => w.length >= 5);
@@ -37,7 +52,7 @@ rounds.forEach((r, i) => {
   if (!['board', 'lightning', 'bonus', 'final'].includes(r.type)) E(`${at}: bad type`);
   if (!r.name) E(`${at}: missing name`);
   if (!r.group) E(`${at}: missing group`);
-  if (!['A', 'B'].includes(r.variant)) E(`${at}: variant must be "A" or "B"`);
+  if (!/^[A-F]$/.test(r.variant || '')) E(`${at}: variant must be a single letter A–F`);
   (groups[r.group] = groups[r.group] || []).push(r.variant);
   if (r.type === 'board') {
     if (!Array.isArray(r.categories) || r.categories.length < 6) E(`${at}: needs 6 categories`);
@@ -82,7 +97,13 @@ rounds.forEach((r, i) => {
     addAns(r.a, at); leak(r.q, r.a, at);
   }
 });
-for (const [g, v] of Object.entries(groups)) if (!classic && (v.length !== 2 || !v.includes('A') || !v.includes('B'))) E(`group "${g}" must have exactly one A and one B variant (has ${v.join(',')})`);
+for (const [g, v] of Object.entries(groups)) {
+  if (new Set(v).size !== v.length) E(`group "${g}" repeats a variant letter (${v.join(',')})`);
+  if (!classic && v.length < 2) E(`group "${g}" needs at least two variants (has ${v.join(',')})`);
+  if (extra && v.length !== 1) E(`extra file: group "${g}" should have exactly one variant (has ${v.join(',')})`);
+}
+const lens = Object.values(groups).map(v => v.length);
+if (!classic && new Set(lens).size > 1) E(`every round should have the same number of boards (${JSON.stringify(groups)})`);
 const total = rounds.reduce((n, r) => n + (r.categories ? r.categories.reduce((m, c) => m + (c.clues || []).length, 0) : r.questions ? r.questions.length : 1), 0);
 console.log(`${file}: ${rounds.length} rounds, ${total} questions, ${errors.length} errors, ${warns.length} warnings`);
 errors.forEach(e => console.log('ERROR', e));
