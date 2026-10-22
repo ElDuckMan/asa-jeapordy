@@ -166,6 +166,36 @@ window.SAMPLE_GAME = {
               "a": "What is kintsugi?"
             }
           ]
+        },
+        {
+          "name": "Pop Culture",
+          "clues": [
+            {
+              "value": 100,
+              "q": "This South Korean boy band sang “Dynamite” and “Butter.”",
+              "a": "Who is BTS?"
+            },
+            {
+              "value": 200,
+              "q": "Pikachu is this type of Pokémon.",
+              "a": "What is Electric?"
+            },
+            {
+              "value": 300,
+              "q": "This 2019 South Korean film was the first non-English-language movie to win Best Picture at the Oscars.",
+              "a": "What is Parasite?"
+            },
+            {
+              "value": 400,
+              "q": "Hello Kitty was created by this Japanese company.",
+              "a": "What is Sanrio?"
+            },
+            {
+              "value": 500,
+              "q": "Michelle Yeoh won the Best Actress Oscar for this 2022 film.",
+              "a": "What is Everything Everywhere All at Once?"
+            }
+          ]
         }
       ]
     },
@@ -223,6 +253,42 @@ window.SAMPLE_GAME = {
         {
           "q": "Japanese art of miniature trees?",
           "a": "Bonsai"
+        },
+        {
+          "q": "Capital of Thailand?",
+          "a": "Bangkok"
+        },
+        {
+          "q": "Japanese word for “goodbye”?",
+          "a": "Sayonara"
+        },
+        {
+          "q": "Japanese dish of sliced raw fish, served without rice?",
+          "a": "Sashimi"
+        },
+        {
+          "q": "Korean liquor often sold in green bottles?",
+          "a": "Soju"
+        },
+        {
+          "q": "Indian festival of colors?",
+          "a": "Holi"
+        },
+        {
+          "q": "What are Japanese comic books called?",
+          "a": "Manga"
+        },
+        {
+          "q": "Japanese art of flower arranging?",
+          "a": "Ikebana"
+        },
+        {
+          "q": "What are Japanese animated shows and films called?",
+          "a": "Anime"
+        },
+        {
+          "q": "Nepali name for Mount Everest?",
+          "a": "Sagarmatha"
         }
       ]
     },
@@ -397,6 +463,36 @@ window.SAMPLE_GAME = {
               "a": "What is Mumbai?"
             }
           ]
+        },
+        {
+          "name": "Music & Film",
+          "clues": [
+            {
+              "value": 200,
+              "q": "Jisoo, Jennie, Rosé, and Lisa make up this K-pop girl group.",
+              "a": "Who is Blackpink?"
+            },
+            {
+              "value": 400,
+              "q": "Studio Ghibli made this 2001 film about a girl named Chihiro.",
+              "a": "What is Spirited Away?"
+            },
+            {
+              "value": 600,
+              "q": "Most Bollywood films are made in this language.",
+              "a": "What is Hindi?"
+            },
+            {
+              "value": 800,
+              "q": "PSY's 2012 hit was the first YouTube video to reach one billion views.",
+              "a": "What is “Gangnam Style”?"
+            },
+            {
+              "value": 1000,
+              "q": "This Taiwan-born director made “Crouching Tiger, Hidden Dragon” and “Life of Pi.”",
+              "a": "Who is Ang Lee?"
+            }
+          ]
         }
       ]
     },
@@ -435,6 +531,32 @@ window.SAMPLE_GAME = {
         {
           "q": "Which spice gives many curries their yellow color?",
           "a": "Turmeric"
+        },
+        {
+          "q": "Which of these is a Japanese dish?",
+          "a": "Sushi",
+          "options": [
+            "Bibimbap",
+            "Sushi",
+            "Phở",
+            "Pad Thai"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "What is the Korean word for grandmother, also used for older women?",
+          "a": "Halmeoni"
+        },
+        {
+          "q": "What is India's national animal?",
+          "a": "Tiger",
+          "options": [
+            "Lion",
+            "Tiger",
+            "Elephant",
+            "Peacock"
+          ],
+          "correct": 1
         }
       ]
     },
@@ -641,6 +763,42 @@ window.SAMPLE_GAME = {
               "hint": "His company's most famous product is Cup Noodles."
             }
           ]
+        },
+        {
+          "name": "Religion & Philosophy",
+          "clues": [
+            {
+              "value": 400,
+              "q": "Founded by Siddhartha Gautama, this religion began in present-day India and Nepal.",
+              "a": "What is Buddhism?",
+              "hint": "Its followers seek enlightenment, or nirvana."
+            },
+            {
+              "value": 800,
+              "q": "This Chinese philosopher's sayings were collected in the Analects.",
+              "a": "Who is Confucius?",
+              "hint": "He lived around 500 BCE and taught respect for elders."
+            },
+            {
+              "value": 1200,
+              "q": "Shinto, Japan's native religion, honors spirits called these.",
+              "a": "What are kami?",
+              "hint": "The same word appears in “kamikaze,” meaning “divine wind.”"
+            },
+            {
+              "value": 1600,
+              "q": "The Golden Temple in Amritsar is the holiest site of this religion.",
+              "a": "What is Sikhism?",
+              "hint": "It was founded by Guru Nanak."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "This 9th-century temple in Central Java is the largest Buddhist temple in the world.",
+              "a": "What is Borobudur?",
+              "hint": "It's near the city of Yogyakarta, Indonesia."
+            }
+          ]
         }
       ]
     },
@@ -715,6 +873,46 @@ window.SAMPLE_GAME = {
           "q": "Japanese poem of 31 syllables?",
           "a": "Tanka",
           "hint": "Older than the haiku."
+        },
+        {
+          "q": "Capital of Cambodia?",
+          "a": "Phnom Penh",
+          "hint": "It sits where the Mekong meets the Tonlé Sap River."
+        },
+        {
+          "q": "Capital of Nepal?",
+          "a": "Kathmandu",
+          "hint": "Starts with “Kath…”"
+        },
+        {
+          "q": "Currency of China?",
+          "a": "Yuan (renminbi)",
+          "hint": "Its symbol is ¥, like Japan's."
+        },
+        {
+          "q": "Currency of Vietnam?",
+          "a": "Dong",
+          "hint": "Rhymes with “song.”"
+        },
+        {
+          "q": "Japanese martial art whose name means “empty hand”?",
+          "a": "Karate",
+          "hint": "Ranked by belt colors, practiced in a gi."
+        },
+        {
+          "q": "How do you say “hello” politely in Korean?",
+          "a": "Annyeonghaseyo",
+          "hint": "Starts with “Annyeong…”"
+        },
+        {
+          "q": "Island country formerly called Ceylon?",
+          "a": "Sri Lanka",
+          "hint": "Famous for its tea."
+        },
+        {
+          "q": "National language of Pakistan?",
+          "a": "Urdu",
+          "hint": "A close cousin of Hindi."
         }
       ]
     },
@@ -764,6 +962,35 @@ window.SAMPLE_GAME = {
           ],
           "correct": 1,
           "hint": "He was a descendant of Timur and Genghis Khan."
+        },
+        {
+          "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+          "a": "Ashoka",
+          "options": [
+            "Ashoka",
+            "Chandragupta",
+            "Akbar",
+            "Shah Jahan"
+          ],
+          "correct": 0,
+          "hint": "His lion capital is India's national emblem."
+        },
+        {
+          "q": "Name the powdered green tea used in the Japanese tea ceremony.",
+          "a": "Matcha",
+          "hint": "Also popular in lattes and ice cream."
+        },
+        {
+          "q": "The Silk Road's eastern end was the Chinese capital then called:",
+          "a": "Chang'an",
+          "options": [
+            "Beijing",
+            "Chang'an",
+            "Nanjing",
+            "Shanghai"
+          ],
+          "correct": 1,
+          "hint": "Today it's called Xi'an, home of the Terracotta Army."
         }
       ]
     },
