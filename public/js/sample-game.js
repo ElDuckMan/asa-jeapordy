@@ -401,6 +401,204 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "board",
+   "group": "Round 1",
+   "variant": "C",
+   "name": "Round 1",
+   "timer": 0,
+   "categories": [
+    {
+     "name": "Music",
+     "clues": [
+      {
+       "value": 100,
+       "q": "Playback singers record the songs that actors lip-sync on screen in this Mumbai-based Hindi film industry.",
+       "a": "What is Bollywood?"
+      },
+      {
+       "value": 200,
+       "q": "This nine-member K-pop girl group had hits with “What Is Love?” in 2018 and “Fancy” in 2019.",
+       "a": "Who is TWICE?"
+      },
+      {
+       "value": 300,
+       "q": "This Filipino singer won a 1991 Tony Award as Kim in “Miss Saigon” and later sang for Disney’s Princess Jasmine.",
+       "a": "Who is Lea Salonga?"
+      },
+      {
+       "value": 400,
+       "q": "This Indonesian instrument of tuned bamboo tubes, sounded by shaking it, is on UNESCO’s intangible heritage list.",
+       "a": "What is the angklung?"
+      },
+      {
+       "value": 500,
+       "type": "mc",
+       "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+       "a": "Short-necked lute",
+       "options": [
+        "Bowed fiddle",
+        "Reed flute",
+        "Short-necked lute",
+        "Frame drum"
+       ],
+       "correct": 2
+      }
+     ]
+    },
+    {
+     "name": "Movies & TV",
+     "clues": [
+      {
+       "value": 100,
+       "q": "This 1998 Disney animated film follows a young woman who takes her father’s place in the Chinese army.",
+       "a": "What is Mulan?"
+      },
+      {
+       "value": 200,
+       "q": "In Pixar’s 2022 film “Turning Red,” 13-year-old Mei Lee transforms into this fluffy animal when she gets excited.",
+       "a": "What is a red panda?"
+      },
+      {
+       "value": 300,
+       "q": "Dev Patel plays Saroo, an Indian-born man raised in Australia who uses Google Earth to find his birth family, in this 2016 film.",
+       "a": "What is Lion?"
+      },
+      {
+       "value": 400,
+       "q": "This 2017 Thai thriller follows a brilliant student who runs an elaborate exam-cheating scheme for classmates.",
+       "a": "What is Bad Genius?"
+      },
+      {
+       "value": 500,
+       "q": "Stephen Chow directed and starred in this 2004 Hong Kong action comedy set in a run-down housing complex called Pigsty Alley.",
+       "a": "What is Kung Fu Hustle?"
+      }
+     ]
+    },
+    {
+     "name": "Ancient History",
+     "clues": [
+      {
+       "value": 100,
+       "q": "Ancient Mesopotamia, the land between the Tigris and Euphrates, lies mostly within this modern country.",
+       "a": "What is Iraq?"
+      },
+      {
+       "value": 200,
+       "q": "The sage Laozi is traditionally credited as the founder of this Chinese philosophy and religion.",
+       "a": "What is Taoism (Daoism)?"
+      },
+      {
+       "value": 300,
+       "q": "The ruins of ancient Troy, made famous by Homer’s “Iliad,” lie in this modern country.",
+       "a": "What is Turkey (Türkiye)?"
+      },
+      {
+       "value": 400,
+       "type": "dd",
+       "q": "These seafaring people of the ancient Levant, based in cities like Tyre and Sidon, created an alphabet that inspired the Greek one.",
+       "a": "Who are the Phoenicians?"
+      },
+      {
+       "value": 500,
+       "q": "Named for a village in northern Vietnam, this Bronze Age people are famous for their large, intricately decorated bronze drums.",
+       "a": "What is the Đông Sơn culture?"
+      }
+     ]
+    },
+    {
+     "name": "Recent History",
+     "clues": [
+      {
+       "value": 100,
+       "q": "In 2018, the Winter Olympics were held in PyeongChang in this country.",
+       "a": "What is South Korea?"
+      },
+      {
+       "value": 200,
+       "q": "In 1984, this small oil-rich sultanate on the island of Borneo became fully independent from Britain.",
+       "a": "What is Brunei?"
+      },
+      {
+       "value": 300,
+       "q": "This federation that includes Abu Dhabi and Dubai was formed in 1971.",
+       "a": "What is the United Arab Emirates?"
+      },
+      {
+       "value": 400,
+       "q": "In 1953, this Sherpa and Edmund Hillary became the first confirmed climbers to reach the summit of Everest.",
+       "a": "Who is Tenzing Norgay?"
+      },
+      {
+       "value": 500,
+       "q": "In 1997, Kazakhstan moved its capital north from this city, its largest, in the country’s southeast.",
+       "a": "What is Almaty?"
+      }
+     ]
+    },
+    {
+     "name": "Southeast Asia",
+     "clues": [
+      {
+       "value": 100,
+       "q": "This country’s flag is red with a single yellow five-pointed star in the center.",
+       "a": "What is Vietnam?"
+      },
+      {
+       "value": 200,
+       "q": "The gold-covered Shwedagon Pagoda towers over the city of Yangon in this country.",
+       "a": "What is Myanmar?"
+      },
+      {
+       "value": 300,
+       "q": "Home to Jakarta and Yogyakarta, this Indonesian island is the most populous island in the world.",
+       "a": "What is Java?"
+      },
+      {
+       "value": 400,
+       "q": "This Malaysian state on northern Borneo is home to Mount Kinabalu.",
+       "a": "What is Sabah?"
+      },
+      {
+       "value": 500,
+       "q": "Seat of the Nguyễn dynasty, this former imperial capital of Vietnam sits on the Perfume River.",
+       "a": "What is Huế?"
+      }
+     ]
+    },
+    {
+     "name": "Sweets & Treats",
+     "clues": [
+      {
+       "value": 100,
+       "q": "These chewy Japanese rice cakes are often filled with sweet red bean paste.",
+       "a": "What is mochi?"
+      },
+      {
+       "value": 200,
+       "q": "This Indian dessert of deep-fried milk-dough balls is soaked in sugar syrup often scented with rosewater or cardamom.",
+       "a": "What is gulab jamun?"
+      },
+      {
+       "value": 300,
+       "q": "Known in its homeland as lokum, this soft gel candy is often flavored with rosewater and dusted with powdered sugar.",
+       "a": "What is Turkish delight?"
+      },
+      {
+       "value": 400,
+       "q": "Ube, which gives many Filipino desserts their vivid purple color, is a kind of this starchy root vegetable.",
+       "a": "What is a yam (purple yam)?"
+      },
+      {
+       "value": 500,
+       "q": "This Thai street dessert, a springtime favorite, pairs slices of ripe yellow fruit with glutinous grains soaked in sweet coconut cream.",
+       "a": "What is mango sticky rice?"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "type": "lightning",
    "name": "Lightning Round",
    "duration": 60,
@@ -563,6 +761,77 @@ window.SAMPLE_GAME = {
     {
      "q": "Hindu festival of lights?",
      "a": "Diwali"
+    }
+   ]
+  },
+  {
+   "type": "lightning",
+   "group": "Lightning Round",
+   "variant": "C",
+   "name": "Lightning Round",
+   "duration": 60,
+   "points": 100,
+   "penalty": false,
+   "questions": [
+    {
+     "q": "Capital of Iran?",
+     "a": "Tehran"
+    },
+    {
+     "q": "Capital of Turkey?",
+     "a": "Ankara"
+    },
+    {
+     "q": "Capital of Saudi Arabia?",
+     "a": "Riyadh"
+    },
+    {
+     "q": "Capital of Uzbekistan?",
+     "a": "Tashkent"
+    },
+    {
+     "q": "Capital of Qatar?",
+     "a": "Doha"
+    },
+    {
+     "q": "Turkey’s largest city, formerly Constantinople?",
+     "a": "Istanbul"
+    },
+    {
+     "q": "Filipino whole spit-roasted pig?",
+     "a": "Lechon"
+    },
+    {
+     "q": "Grilled meat skewers served with peanut sauce in Malaysia and Indonesia?",
+     "a": "Satay"
+    },
+    {
+     "q": "Spicy coconut-curry noodle soup popular in Singapore and Malaysia?",
+     "a": "Laksa"
+    },
+    {
+     "q": "Vietnamese baguette sandwich?",
+     "a": "Bánh mì"
+    },
+    {
+     "q": "Thick Japanese wheat noodles?",
+     "a": "Udon"
+    },
+    {
+     "q": "Middle Eastern dip of chickpeas and tahini?",
+     "a": "Hummus"
+    },
+    {
+     "q": "Hindi greeting said with palms pressed together?",
+     "a": "Namaste"
+    },
+    {
+     "q": "Thai greeting gesture with palms pressed together and a slight bow?",
+     "a": "Wai"
+    },
+    {
+     "q": "Spicy green paste served with sushi?",
+     "a": "Wasabi"
     }
    ]
   },
@@ -1002,6 +1271,235 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "board",
+   "group": "Double Round",
+   "variant": "C",
+   "name": "Double Round",
+   "timer": 0,
+   "categories": [
+    {
+     "name": "Music",
+     "clues": [
+      {
+       "value": 200,
+       "q": "Often called Korea’s unofficial national anthem, this beloved folk song exists in thousands of regional versions.",
+       "a": "What is “Arirang”?",
+       "hint": "Its refrain names a mountain pass."
+      },
+      {
+       "value": 400,
+       "q": "This style of Japanese ensemble drumming features huge drums struck with sticks called bachi.",
+       "a": "What is taiko?",
+       "hint": "Often performed at festivals with dramatic, athletic movements."
+      },
+      {
+       "value": 600,
+       "q": "In this Korean musical storytelling tradition, a single singer performs for hours accompanied by one drummer.",
+       "a": "What is pansori?",
+       "hint": "The singer often holds a folding fan as a prop."
+      },
+      {
+       "value": 800,
+       "q": "The son of Alla Rakha, this Indian percussionist became a world-renowned tabla virtuoso.",
+       "a": "Who is Zakir Hussain?",
+       "hint": "He co-founded the fusion band Shakti with John McLaughlin."
+      },
+      {
+       "value": 1000,
+       "q": "This Mongolian band went viral in 2018 and 2019 by blending heavy rock with throat singing and the horsehead fiddle.",
+       "a": "Who is The HU?",
+       "hint": "Songs include “Wolf Totem” and “Yuve Yuve Yu.”"
+      }
+     ]
+    },
+    {
+     "name": "Movies & TV",
+     "clues": [
+      {
+       "value": 200,
+       "q": "Jackie Chan plays Mr. Han, a maintenance man who teaches kung fu to Jaden Smith, in this 2010 remake.",
+       "a": "What is The Karate Kid?",
+       "hint": "The 1984 original starred Ralph Macchio."
+      },
+      {
+       "value": 400,
+       "q": "This anime follows Tanjiro Kamado, who joins a corps of swordsmen hoping to cure his sister Nezuko.",
+       "a": "What is Demon Slayer?",
+       "hint": "Its 2020 big-screen sequel is subtitled “Mugen Train.”"
+      },
+      {
+       "value": 600,
+       "q": "Aamir Khan plays Rancho, a free-spirited engineering student, in this 2009 Bollywood comedy.",
+       "a": "What is 3 Idiots?",
+       "hint": "Its catchphrase is “All is well.”"
+      },
+      {
+       "value": 800,
+       "q": "Hirokazu Kore-eda’s 2018 film about a makeshift family that steals to get by won the Palme d’Or.",
+       "a": "What is Shoplifters?",
+       "hint": "The boy Shota learns to pocket goods from his “father” Osamu."
+      },
+      {
+       "value": 1000,
+       "type": "dd",
+       "q": "Apichatpong Weerasethakul won the 2010 Palme d’Or for this Thai film about a dying man visited by ghosts.",
+       "a": "What is Uncle Boonmee Who Can Recall His Past Lives?",
+       "hint": "The title character remembers earlier incarnations."
+      }
+     ]
+    },
+    {
+     "name": "Ancient History",
+     "clues": [
+      {
+       "value": 200,
+       "q": "Han dynasty official Cai Lun is traditionally credited with inventing this writing material.",
+       "a": "What is paper?",
+       "hint": "Before it, people wrote on bamboo strips and silk."
+      },
+      {
+       "value": 400,
+       "q": "Queen Zenobia ruled from this wealthy caravan city in the Syrian desert.",
+       "a": "What is Palmyra?",
+       "hint": "Its Aramaic name was Tadmor."
+      },
+      {
+       "value": 600,
+       "q": "Named for its giant keyhole-shaped burial mounds, this period of early Japanese history lasted roughly from the 3rd to the 6th century CE.",
+       "a": "What is the Kofun period?",
+       "hint": "It followed the Yayoi period."
+      },
+      {
+       "value": 800,
+       "type": "dd",
+       "q": "The library of King Ashurbanipal, which preserved tablets of the Epic of Gilgamesh, stood in this Assyrian capital.",
+       "a": "What is Nineveh?",
+       "hint": "Its ruins lie on the Tigris, within today’s Mosul."
+      },
+      {
+       "value": 1000,
+       "q": "This 12th-century Khmer king commissioned Angkor Wat.",
+       "a": "Who is Suryavarman II?",
+       "hint": "He reigned in the early 1100s and was devoted to Vishnu."
+      }
+     ]
+    },
+    {
+     "name": "Recent History",
+     "clues": [
+      {
+       "value": 200,
+       "q": "In 1960, Sirimavo Bandaranaike of Ceylon became the world’s first woman to hold this office.",
+       "a": "What is prime minister?",
+       "hint": "The same office Nehru held in India."
+      },
+      {
+       "value": 400,
+       "q": "In 2018, twelve boys from a youth soccer team and their coach were rescued from this flooded cave in northern Thailand.",
+       "a": "What is Tham Luang?",
+       "hint": "The team was called the Wild Boars."
+      },
+      {
+       "value": 600,
+       "type": "mc",
+       "q": "In what year did Dubai’s Burj Khalifa officially open?",
+       "a": "2010",
+       "options": [
+        "2004",
+        "2007",
+        "2010",
+        "2013"
+       ],
+       "correct": 2,
+       "hint": "The same year Shanghai hosted the World Expo."
+      },
+      {
+       "value": 800,
+       "q": "This Indian space agency was founded on August 15, 1969.",
+       "a": "What is ISRO?",
+       "hint": "Its Chandrayaan-3 landed near the Moon’s south pole in 2023."
+      },
+      {
+       "value": 1000,
+       "q": "In 1998, Hong Kong’s new international airport opened on this island.",
+       "a": "What is Chek Lap Kok?",
+       "hint": "It replaced Kai Tak, known for its hair-raising landings."
+      }
+     ]
+    },
+    {
+     "name": "The Silk Road",
+     "clues": [
+      {
+       "value": 200,
+       "q": "This Venetian merchant described the court of Kublai Khan in a famous travel book.",
+       "a": "Who is Marco Polo?",
+       "hint": "A swimming-pool game is named after him."
+      },
+      {
+       "value": 400,
+       "q": "Its larvae feed on mulberry leaves and spin the cocoons used for China’s most famous fabric.",
+       "a": "What is the silkworm (silk moth)?",
+       "hint": "Its scientific name is Bombyx mori."
+      },
+      {
+       "value": 600,
+       "q": "This Moroccan traveler of the 1300s journeyed through Central Asia, India, and China.",
+       "a": "Who is Ibn Battuta?",
+       "hint": "He dictated his adventures in a book called the Rihla."
+      },
+      {
+       "value": 800,
+       "q": "This Uzbek city, home to the Ark fortress and the Kalyan Minaret, was a great Silk Road center.",
+       "a": "What is Bukhara?",
+       "hint": "A style of red patterned rug shares its name."
+      },
+      {
+       "value": 1000,
+       "q": "These walled roadside inns gave Silk Road traders and their camels shelter for the night.",
+       "a": "What are caravanserais?",
+       "hint": "Persia’s Shah Abbas I built many of them."
+      }
+     ]
+    },
+    {
+     "name": "Island Life",
+     "clues": [
+      {
+       "value": 200,
+       "q": "This island in the Andaman Sea is Thailand’s largest.",
+       "a": "What is Phuket?",
+       "hint": "Patong Beach is its nightlife hub."
+      },
+      {
+       "value": 400,
+       "q": "The Chocolate Hills are the top attraction on this Philippine island province.",
+       "a": "What is Bohol?",
+       "hint": "Also known for tiny, big-eyed tarsiers."
+      },
+      {
+       "value": 600,
+       "q": "This Malaysian island in the Strait of Malacca has George Town as its capital.",
+       "a": "What is Penang?",
+       "hint": "Famous for char kway teow and other hawker food."
+      },
+      {
+       "value": 800,
+       "q": "This southern Japanese island prefecture was once the Ryukyu Kingdom.",
+       "a": "What is Okinawa?",
+       "hint": "Its capital is Naha."
+      },
+      {
+       "value": 1000,
+       "q": "This oddly shaped Indonesian island, with four long peninsulas, is home to the port city of Makassar.",
+       "a": "What is Sulawesi?",
+       "hint": "Europeans once called it Celebes."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "type": "bonus",
    "name": "Bonus Round",
    "points": 200,
@@ -1123,6 +1621,61 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "bonus",
+   "group": "Bonus Round",
+   "variant": "C",
+   "name": "Bonus Round",
+   "points": 200,
+   "timer": 20,
+   "questions": [
+    {
+     "q": "Which of these countries has a coastline?",
+     "a": "Cambodia",
+     "options": [
+      "Mongolia",
+      "Bhutan",
+      "Laos",
+      "Cambodia"
+     ],
+     "correct": 3
+    },
+    {
+     "q": "Name the long draped garment worn by many women in India.",
+     "a": "Sari"
+    },
+    {
+     "q": "Southeast Asia’s durian fruit is famous for its strong…",
+     "a": "Smell",
+     "options": [
+      "Color",
+      "Smell",
+      "Sourness",
+      "Size"
+     ],
+     "correct": 1
+    },
+    {
+     "q": "Name the traditional Japanese robe worn with a wide obi sash.",
+     "a": "Kimono"
+    },
+    {
+     "q": "The Kathakali dance-drama comes from which Indian state?",
+     "a": "Kerala",
+     "options": [
+      "Punjab",
+      "Gujarat",
+      "Kerala",
+      "Assam"
+     ],
+     "correct": 2
+    },
+    {
+     "q": "Name the woven straw mats used as flooring in traditional Japanese rooms.",
+     "a": "Tatami"
+    }
+   ]
+  },
+  {
    "type": "final",
    "name": "Final Round",
    "category": "World Landmarks",
@@ -1142,6 +1695,17 @@ window.SAMPLE_GAME = {
    "q": "Carved into rose-red sandstone cliffs by the Nabataeans, this ancient city in southern Jordan is famous for its Treasury.",
    "a": "What is Petra?",
    "hint": "Its Treasury appears in “Indiana Jones and the Last Crusade.”",
+   "timer": 30
+  },
+  {
+   "type": "final",
+   "group": "Final Round",
+   "variant": "C",
+   "name": "Final Round",
+   "category": "World Heritage",
+   "q": "This UNESCO-listed bay in Quảng Ninh province, northern Vietnam, is dotted with some 1,600 limestone islands and islets.",
+   "a": "What is Ha Long Bay?",
+   "hint": "Junk-boat cruises depart from nearby Bãi Cháy.",
    "timer": 30
   },
   {
@@ -1615,6 +2179,241 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "board",
+   "group": "Hard Round",
+   "variant": "C",
+   "name": "Hard Round",
+   "timer": 0,
+   "categories": [
+    {
+     "name": "Music",
+     "clues": [
+      {
+       "value": 400,
+       "q": "This end-blown Japanese bamboo flute was once played by wandering Zen monks.",
+       "a": "What is the shakuhachi?",
+       "hint": "Monks of the Fuke sect played it wearing basket-like hats."
+      },
+      {
+       "value": 800,
+       "q": "This Vietnamese instrument has just one string and is played using harmonics.",
+       "a": "What is the đàn bầu?",
+       "hint": "The pitch is bent with a flexible rod at one end."
+      },
+      {
+       "value": 1200,
+       "q": "This classical music tradition of South India is closely associated with the composer Tyagaraja.",
+       "a": "What is Carnatic music?",
+       "hint": "Its northern counterpart is Hindustani music."
+      },
+      {
+       "value": 1600,
+       "q": "This two-stringed, long-necked lute is Kazakhstan’s national instrument.",
+       "a": "What is the dombra?",
+       "hint": "Kurmangazy composed famous pieces for it."
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "Played on a row of small gongs laid on a wooden frame, this ensemble music is a tradition of Mindanao in the Philippines.",
+       "a": "What is kulintang?",
+       "hint": "The Maguindanao and Maranao peoples are known for it."
+      }
+     ]
+    },
+    {
+     "name": "Movies & TV",
+     "clues": [
+      {
+       "value": 400,
+       "q": "In this 2016 Makoto Shinkai anime hit, a Tokyo boy and a country girl mysteriously swap bodies.",
+       "a": "What is Your Name (Kimi no Na wa)?",
+       "hint": "A comet plays a crucial role."
+      },
+      {
+       "value": 800,
+       "q": "Bong Joon Ho’s 2013 English-language film is set on a train endlessly circling a frozen Earth.",
+       "a": "What is Snowpiercer?",
+       "hint": "Chris Evans leads a revolt from the tail section."
+      },
+      {
+       "value": 1200,
+       "type": "dd",
+       "q": "This Iranian director won the 1997 Palme d’Or for “Taste of Cherry.”",
+       "a": "Who is Abbas Kiarostami?",
+       "hint": "He also made “Close-Up” and the Koker trilogy."
+      },
+      {
+       "value": 1600,
+       "q": "Wong Kar-wai’s 1994 film tells two stories of lovelorn Hong Kong policemen.",
+       "a": "What is Chungking Express?",
+       "hint": "Faye Wong’s character plays “California Dreamin’” on repeat."
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "Lino Brocka’s 1975 classic follows a young provincial fisherman who comes to the big city searching for his lost love.",
+       "a": "What is Manila in the Claws of Light (Maynila: Sa mga Kuko ng Liwanag)?",
+       "hint": "Bembol Roco stars as the fisherman, Julio Madiaga."
+      }
+     ]
+    },
+    {
+     "name": "Ancient History",
+     "clues": [
+      {
+       "value": 400,
+       "q": "This Bronze Age empire of Anatolia, with its capital at Hattusa, rivaled Egypt.",
+       "a": "Who are the Hittites?",
+       "hint": "They fought Ramesses II at the Battle of Kadesh."
+      },
+      {
+       "value": 800,
+       "q": "Founded by Liu Bang after the fall of the Qin, this ruling house gave its name to China’s largest ethnic group.",
+       "a": "What is the Han dynasty?",
+       "hint": "It ruled for about four centuries, split into Western and Eastern halves."
+      },
+      {
+       "value": 1200,
+       "q": "This Tamil dynasty’s king Rajaraja I built the great Brihadeeswarar Temple in Thanjavur.",
+       "a": "What is the Chola dynasty?",
+       "hint": "Its navy raided Srivijaya in the 11th century."
+      },
+      {
+       "value": 1600,
+       "type": "dd",
+       "q": "This early kingdom of the lower Mekong, described by Chinese chroniclers, had a major trading port at Óc Eo.",
+       "a": "What is Funan?",
+       "hint": "It was later overtaken by Chenla."
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "Founded around 1046 BCE, this Chinese ruling house developed the idea of the Mandate of Heaven.",
+       "a": "What is the Zhou dynasty?",
+       "hint": "It overthrew the Shang."
+      }
+     ]
+    },
+    {
+     "name": "Recent History",
+     "clues": [
+      {
+       "value": 400,
+       "q": "With Mohammad Hatta, this man proclaimed Indonesia’s independence in 1945 and became its first president.",
+       "a": "Who is Sukarno?",
+       "hint": "His daughter Megawati later held the same office."
+      },
+      {
+       "value": 800,
+       "q": "In 1983, this Kyoto-based company released the Family Computer, or Famicom.",
+       "a": "What is Nintendo?",
+       "hint": "Western gamers knew the console as the NES."
+      },
+      {
+       "value": 1200,
+       "q": "In 1971, this Persian Gulf island nation became independent from Britain.",
+       "a": "What is Bahrain?",
+       "hint": "The King Fahd Causeway links it to Saudi Arabia."
+      },
+      {
+       "value": 1600,
+       "type": "mc",
+       "q": "Which city hosted the 1998 Winter Olympics?",
+       "a": "Nagano",
+       "options": [
+        "Sapporo",
+        "Nagano",
+        "PyeongChang",
+        "Harbin"
+       ],
+       "correct": 1,
+       "hint": "A Japanese city known for Zenkō-ji temple."
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "When North and South Yemen unified in 1990, this city became the capital.",
+       "a": "What is Sana’a?",
+       "hint": "Its old city is famous for decorated multistory tower houses."
+      }
+     ]
+    },
+    {
+     "name": "Central Asia",
+     "clues": [
+      {
+       "value": 400,
+       "q": "Yuri Gagarin’s 1961 flight, the first by a human in space, launched from this cosmodrome on the steppe of Kazakhstan.",
+       "a": "What is Baikonur?",
+       "hint": "Sputnik 1 also launched from here in 1957."
+      },
+      {
+       "value": 800,
+       "q": "Nicknamed the “Roof of the World,” this mountain range lies mostly in Tajikistan.",
+       "a": "What are the Pamirs?",
+       "hint": "The M41 highway across them is famous with adventure cyclists."
+      },
+      {
+       "value": 1200,
+       "q": "This large Kyrgyz lake in the Tian Shan rarely freezes despite sitting about 1,600 meters above sea level.",
+       "a": "What is Issyk-Kul?",
+       "hint": "Cholpon-Ata is the main resort on its north shore."
+      },
+      {
+       "value": 1600,
+       "q": "This burning gas crater in Turkmenistan’s Karakum Desert is nicknamed the “Door to Hell.”",
+       "a": "What is the Darvaza crater?",
+       "hint": "It is roughly a four-hour drive north of Ashgabat."
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "This 15th-century Timurid ruler and astronomer built a great observatory and compiled a famous star catalogue.",
+       "a": "Who is Ulugh Beg?",
+       "hint": "He was Timur’s grandson."
+      }
+     ]
+    },
+    {
+     "name": "Literature",
+     "clues": [
+      {
+       "value": 400,
+       "q": "This Japanese author wrote “Norwegian Wood” and “Kafka on the Shore.”",
+       "a": "Who is Haruki Murakami?",
+       "hint": "He also wrote “1Q84.”"
+      },
+      {
+       "value": 800,
+       "q": "This 13th-century Persian poet, who lived in Konya, inspired the Mevlevi order of whirling dervishes.",
+       "a": "Who is Rumi?",
+       "hint": "His masterpiece is the Masnavi."
+      },
+      {
+       "value": 1200,
+       "q": "In 1913, this Bengali poet became the first Asian to win the Nobel Prize in Literature.",
+       "a": "Who is Rabindranath Tagore?",
+       "hint": "He won for the poetry collection “Gitanjali.”"
+      },
+      {
+       "value": 1600,
+       "q": "José Rizal’s 1887 novel portrays Filipino society under Spanish colonial rule.",
+       "a": "What is Noli Me Tángere?",
+       "hint": "Its sequel is “El Filibusterismo.”"
+      },
+      {
+       "value": 2000,
+       "timer": 20,
+       "q": "Traditionally attributed to Luo Guanzhong, this classic Chinese novel follows the rival warlords Liu Bei, Cao Cao, and Sun Quan.",
+       "a": "What is Romance of the Three Kingdoms?",
+       "hint": "Zhuge Liang is its master strategist."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "type": "lightning",
    "name": "Hard Lightning",
    "duration": 60,
@@ -1817,6 +2616,92 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "lightning",
+   "group": "Hard Lightning",
+   "variant": "C",
+   "name": "Hard Lightning",
+   "duration": 60,
+   "points": 200,
+   "penalty": true,
+   "questions": [
+    {
+     "q": "Capital of Oman?",
+     "a": "Muscat",
+     "hint": "A port city on the Gulf of Oman."
+    },
+    {
+     "q": "Capital of Lebanon?",
+     "a": "Beirut",
+     "hint": "A Mediterranean port once called the “Paris of the Middle East.”"
+    },
+    {
+     "q": "Capital of Azerbaijan?",
+     "a": "Baku",
+     "hint": "On the Caspian Sea, famous for its Flame Towers."
+    },
+    {
+     "q": "Capital of Timor-Leste?",
+     "a": "Dili",
+     "hint": "Four letters, starts with D."
+    },
+    {
+     "q": "Largest city of Sri Lanka?",
+     "a": "Colombo",
+     "hint": "Its Galle Face Green promenade faces the Indian Ocean."
+    },
+    {
+     "q": "Capital of the Maldives?",
+     "a": "Malé",
+     "hint": "Four letters, starts with M."
+    },
+    {
+     "q": "Currency of Laos?",
+     "a": "Kip",
+     "hint": "Three letters, starts with K."
+    },
+    {
+     "q": "Currency of Myanmar?",
+     "a": "Kyat",
+     "hint": "Four letters, starts with K."
+    },
+    {
+     "q": "Currency of Kazakhstan?",
+     "a": "Tenge",
+     "hint": "Five letters, starts with T."
+    },
+    {
+     "q": "Indonesian or Malay for “thank you”?",
+     "a": "Terima kasih",
+     "hint": "Two words; the first begins with T."
+    },
+    {
+     "q": "Malay word for “person,” found in the name of a great ape?",
+     "a": "Orang",
+     "hint": "The ape lives on Borneo and Sumatra."
+    },
+    {
+     "q": "Poet who wrote Iran’s national epic, the Shahnameh?",
+     "a": "Ferdowsi",
+     "hint": "He lived around 1000 CE in Tus, near Mashhad."
+    },
+    {
+     "q": "Strait that divides Istanbul between Europe and Asia?",
+     "a": "Bosphorus",
+     "hint": "It links the Black Sea to the Sea of Marmara."
+    },
+    {
+     "q": "Vietnamese Lunar New Year?",
+     "a": "Tết",
+     "hint": "Children receive lucky money called lì xì."
+    },
+    {
+     "q": "Persian New Year, celebrated at the spring equinox?",
+     "a": "Nowruz",
+     "hint": "Families set a haft-sin table of seven symbolic items."
+    }
+   ]
+  },
+  {
    "type": "bonus",
    "name": "Hard Bonus",
    "points": 300,
@@ -1958,6 +2843,67 @@ window.SAMPLE_GAME = {
    ]
   },
   {
+   "type": "bonus",
+   "group": "Hard Bonus",
+   "variant": "C",
+   "name": "Hard Bonus",
+   "points": 300,
+   "timer": 25,
+   "questions": [
+    {
+     "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+     "a": "Ottoman",
+     "options": [
+      "Safavid",
+      "Ottoman",
+      "Mughal",
+      "Seljuk"
+     ],
+     "correct": 1,
+     "hint": "Founded by Osman I around 1300."
+    },
+    {
+     "q": "Name the Mughal emperor, Babur’s grandson, who built the city of Fatehpur Sikri.",
+     "a": "Akbar",
+     "hint": "His son and successor was Jahangir."
+    },
+    {
+     "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+     "a": "Lanka",
+     "options": [
+      "Ayodhya",
+      "Mithila",
+      "Kishkindha",
+      "Lanka"
+     ],
+     "correct": 3,
+     "hint": "It was ruled by the ten-headed Ravana."
+    },
+    {
+     "q": "Name the Thai national epic, a version of the Ramayana.",
+     "a": "Ramakien",
+     "hint": "Its murals line the galleries of Bangkok’s Wat Phra Kaew."
+    },
+    {
+     "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+     "a": "Samarkand",
+     "options": [
+      "Bukhara",
+      "Khiva",
+      "Samarkand",
+      "Tashkent"
+     ],
+     "correct": 2,
+     "hint": "It was Timur’s capital."
+    },
+    {
+     "q": "Name the 17th-century Japanese haiku master who wrote “The Narrow Road to the Deep North.”",
+     "a": "Matsuo Bashō",
+     "hint": "He spent his later years traveling on foot across Japan."
+    }
+   ]
+  },
+  {
    "type": "final",
    "name": "Hard Final",
    "category": "Explorers",
@@ -1977,6 +2923,17 @@ window.SAMPLE_GAME = {
    "q": "This 7th-century Chinese Buddhist monk’s long pilgrimage to India inspired the classic novel “Journey to the West.”",
    "a": "Who is Xuanzang?",
    "hint": "He brought hundreds of Buddhist texts back to Chang’an.",
+   "timer": 30
+  },
+  {
+   "type": "final",
+   "group": "Hard Final",
+   "variant": "C",
+   "name": "Hard Final",
+   "category": "Scholars",
+   "q": "Born near Bukhara around 980, this Persian polymath wrote “The Canon of Medicine,” a standard medical text in Europe for centuries.",
+   "a": "Who is Avicenna (Ibn Sina)?",
+   "hint": "He also wrote “The Book of Healing,” a vast work of philosophy and science.",
    "timer": 30
   }
  ]
