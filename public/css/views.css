@@ -187,3 +187,6 @@ button.chip{cursor:pointer;font:inherit}
 .h-hint{flex:1;min-width:180px;font-size:18px}
 .h-hintdone{color:var(--green)}
 .p-hint-note{margin-top:8px;padding:6px 10px;background:var(--tape);font-size:18px;transform:rotate(-1deg)}
+
+/* narrow host boards (phones, 6+ categories): shrink names instead of splitting words */
+.h-board .cat{word-break:normal;overflow-wrap:normal;hyphens:auto;padding:4px 2px;font-size:clamp(8px,2.2vw,16px);--sw:1px}
