@@ -115,24 +115,38 @@
       return `<ol class="h-stand">${ts.map(t => `<li><span class="sw" style="background:${t.color}"></span><b>${esc(t.name)}</b> ${t.section ? `<span class="small muted">${esc(t.section)}</span>` : ''} — ${t.score}</li>`).join('')}</ol>`;
     }
 
+    let roomOpen = null, lastQKey = '';
     function drawLive() {
       if (!S) return;
       const s = S;
-      const join = o.joinBase ? `${o.joinBase}/?room=${s.code}` : '';
-      let h = `<div class="card paper h-roombar">
-        <div><div class="small muted">Room code</div><div class="h-code block stroke crayon">${s.code}</div></div>
-        <div class="h-links">${join ? `<div>Phones join at <a href="${join}" target="_blank" rel="noopener">${esc(join.replace(/^https?:\/\//, ''))}</a></div>
-          <div><a href="${o.joinBase}/board?room=${s.code}" target="_blank" rel="noopener">Open the big screen ↗</a> <span class="small muted">(put it on the projector)</span></div>
+      const site = o.joinBase ? o.joinBase.replace(/^https?:\/\//, '') : '';
+      if (roomOpen === null) roomOpen = !s.teams.length && innerWidth >= 900;
+      let h = `<details class="card paper h-roombar" ${roomOpen ? 'open' : ''}>
+        <summary class="h-roomsum"><span class="small muted">Room</span> <span class="h-code block stroke crayon">${s.code}</span>
+          <span class="h-pc small">📺 On the PC: open <b>${esc(site || 'this site')}</b> → <b>Big screen</b> → <b>${s.code}</b></span>
+          <span class="h-more small">▾ more</span></summary>
+        <div class="h-links">${o.joinBase ? `<div>Players: scan the QR on the big screen, or open <b>${esc(site)}</b> and enter <b>${s.code}</b>.</div>
+          <div><a href="${o.joinBase}/board?room=${s.code}" target="_blank" rel="noopener">Open the big screen on this device ↗</a></div>
           <div class="small"><a href="${o.joinBase}/preview" target="_blank" rel="noopener">Practice mode ↗</a> <span class="muted">(try the game with CPU teams)</span></div>`
-          : '<div class="small muted">Preview: the big screen and team phones are on this page.</div>'}</div>
-        <div class="row">${btn('push', '⟳ Apply editor changes', 'sm')}${btn('reset', 'New game', 'sm')}${btn('closeRoom', 'Close room', 'sm no')}</div></div>`;
+          : '<div class="small muted">Practice: the big screen and your phone are on this page.</div>'}</div>
+        <div class="row">${btn('push', '⟳ Apply editor changes', 'sm')}${btn('reset', 'New game', 'sm')}${btn('closeRoom', 'Close room', 'sm no')}</div></details>`;
       h += `<div class="row h-rounds">${btn('lobby', 'Lobby', 'sm ' + (s.phase === 'lobby' ? 'on' : ''))}
         ${s.rounds.map((r, i) => btn('round', `${i + 1}. ${esc(r.name)} <span class="small muted">${TYPE[r.type]}</span>`, 'sm ' + (s.roundIndex === i && !['lobby', 'ended'].includes(s.phase) ? 'on' : ''), { i })).join('')}
         ${btn('endGame', '🏆 End game', 'sm ' + (s.phase === 'ended' ? 'on' : ''))}</div>`;
       h += `<div class="h-grid"><div class="h-main">${mainHTML(s)}</div><aside class="h-side">${teamsHTML(s)}</aside></div>`;
       render($('.h-live'), h);
+      const det = $('.h-roombar');
+      if (det) det.addEventListener('toggle', () => { roomOpen = det.open; });
       const hb = $('.h-board');
       if (hb) Views.boardGrid(hb, s.round, { host: true, onPick: (c, j) => emit('host:openClue', { c, j }) });
+      /* Phones: when a new clue opens or the board comes back, bring the controls into view. */
+      const qKey = s.q ? [s.q.kind, s.q.category, s.q.text].join('|') : 'board' + s.phase + s.roundIndex;
+      if (qKey !== lastQKey) {
+        const first = !lastQKey;
+        lastQKey = qKey;
+        const m = $('.h-main');
+        if (!first && m && innerWidth < 900 && !o.local) m.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
 
     function mainHTML(s) {
