@@ -40,7 +40,7 @@
       { "name": "Animals & Nature", "clues": [
         { "value": 100, "q": "Native to the mountains of central China, especially Sichuan, this black-and-white bear eats mostly bamboo.", "a": "What is the giant panda?" },
         { "value": 200, "q": "Folding a thousand origami versions of this long-legged bird, a symbol of longevity, is said to grant a wish.", "a": "What is the crane?" },
-        { "value": 300, "q": "This two-humped camel, named for an ancient Central Asian region, is native to the Gobi.", "a": "What is the Bactrian camel?" },
+        { "value": 300, "q": "This two-humped camel, named for an ancient Central Asian region, is widely herded in Mongolia’s Gobi Desert.", "a": "What is the Bactrian camel?" },
         { "value": 400, "q": "At Jigokudani in Nagano, these red-faced primates famously soak in hot springs during snowy winters.", "a": "What are Japanese macaques (snow monkeys)?" },
         { "value": 500, "q": "Called takhi in Mongolia, this endangered wild horse was reintroduced there in the 1990s and is named for a Russian explorer.", "a": "What is Przewalski’s horse?" }
       ]}
@@ -89,7 +89,7 @@
       ]},
       { "name": "Recent History", "clues": [
         { "value": 200, "q": "In 1983, this Kyoto company released the Family Computer, or Famicom, in Japan.", "a": "What is Nintendo?", "hint": "It began as a playing-card maker." },
-        { "value": 400, "q": "Founded in 1938 as a small trading company in Daegu, this firm grew into South Korea’s largest business group.", "a": "What is Samsung?", "hint": "Its name means “three stars.”" },
+        { "value": 400, "q": "Founded in 1938 as a small trading company in Daegu, this firm grew into a global electronics giant.", "a": "What is Samsung?", "hint": "Its name means “three stars.”" },
         { "value": 600, "type": "mc", "q": "In which year did Nagano, Japan, host the Winter Olympics?", "a": "1998", "options": ["1992", "1994", "1998", "2002"], "correct": 2 },
         { "value": 800, "q": "In 2012, this novelist, whose “Red Sorghum” became Zhang Yimou’s first film, won the Nobel Prize in Literature.", "a": "Who is Mo Yan?", "hint": "His pen name means “don’t speak.”" },
         { "value": 1000, "q": "Opened in 1994, this Osaka-area airport was built on an artificial island in the bay.", "a": "What is Kansai International Airport?", "hint": "Its three-letter code is KIX." }
