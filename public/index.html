@@ -11,7 +11,8 @@
   .si-head .title{flex-wrap:nowrap;--ts:min(104px,15cqi)}
   .si-head.small .title{--ts:min(44px,9cqi)}
   .si-switch{display:flex;justify-content:center;gap:10px;margin:14px 0 0}
-  .si-switch .btn{min-width:140px;font-size:21px}
+  .si-switch{flex-wrap:wrap}
+  .si-switch .btn{min-width:120px;font-size:20px}
   .si-host{max-width:460px;margin:12px auto;padding:0 14px}
   .si-host .card{text-align:left}
   .si-player .p-joincard{margin-top:12px}
@@ -23,11 +24,19 @@
   <div class="si-switch" id="switch" role="tablist" aria-label="Sign in as">
     <button class="btn on" data-as="player" role="tab">🙋 Player</button>
     <button class="btn" data-as="host" role="tab">🎛 Host</button>
+    <button class="btn" data-as="screen" role="tab">📺 Big screen</button>
   </div>
 </header>
 <main>
   <div class="si-player" id="player"></div>
   <div class="si-host" id="host" hidden></div>
+  <div class="si-host" id="screen" hidden><div class="card paper pop"><h2 class="hand">Big screen</h2>
+    <p>Use this on the computer hooked up to the projector or TV. Type the room code from the host's phone.</p>
+    <label class="lbl" for="scode">Room code</label>
+    <input id="scode" class="field" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="ABCD">
+    <div class="err" id="serr"></div>
+    <button class="btn big hi" id="sgo">Show the game</button>
+    <p class="small muted">Tip: press F11 for full screen.</p></div></div>
 </main>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script>
@@ -69,14 +78,27 @@
     document.getElementById('go').onclick = go;
     pin.onkeydown = e => { if (e.key === 'Enter') go(); };
   }
+  const screenEl = document.getElementById('screen'), scode = document.getElementById('scode');
+  const showScreen = () => {
+    const c = scode.value.trim().toUpperCase();
+    if (c.length < 4) { document.getElementById('serr').textContent = 'Enter the 4-letter room code.'; return; }
+    net.emit('room:info', { code: c }).then(r => {
+      if (r.error) document.getElementById('serr').textContent = r.error;
+      else location.href = '/board?room=' + c;
+    });
+  };
+  document.getElementById('sgo').onclick = showScreen;
+  scode.onkeydown = e => { if (e.key === 'Enter') showScreen(); };
   function choose(as) {
     sw.querySelectorAll('[data-as]').forEach(b => b.classList.toggle('on', b.dataset.as === as));
     playerEl.hidden = as !== 'player';
     hostEl.hidden = as !== 'host';
+    screenEl.hidden = as !== 'screen';
+    if (as === 'screen') setTimeout(() => scode.focus(), 50);
     if (as === 'host') { drawHost(Craft.qs('err')); setTimeout(() => { const p = document.getElementById('pin'); if (p) p.focus(); }, 50); }
   }
   sw.addEventListener('click', e => { const b = e.target.closest('[data-as]'); if (b) choose(b.dataset.as); });
-  choose(Craft.qs('as') === 'host' ? 'host' : 'player');
+  choose(['host', 'screen'].includes(Craft.qs('as')) ? Craft.qs('as') : 'player');
 })();
 </script>
 </body></html>
