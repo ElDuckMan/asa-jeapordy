@@ -102,7 +102,7 @@
   }
   function sanitizeGame(g) {
     g = g || {};
-    return { title: str(g.title, 60) || 'Jeopardy', edition: str(g.edition, 60), rounds: arr(g.rounds, 40).map(sanitizeRound) };
+    return { title: str(g.title, 60) || 'Jeopardy', edition: str(g.edition, 60), presenter: str(g.presenter, 80), rounds: arr(g.rounds, 40).map(sanitizeRound) };
   }
   function sanitizeSettings(s) {
     s = s || {};
@@ -395,7 +395,7 @@
     function view(room, role, teamId) {
       return {
         serverNow: now(), code: room.code, role, you: teamId || null,
-        title: room.game.title, edition: room.game.edition, phase: room.phase, roundIndex: room.roundIndex,
+        title: room.game.title, edition: room.game.edition, presenter: room.game.presenter, phase: room.phase, roundIndex: room.roundIndex,
         rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type, group: r.group, variant: r.variant })),
         round: roundView(room, role === 'host'), q: qView(room, role, teamId),
         teams: teamList(room), sections: room.settings.sections, control: room.control,

@@ -166,7 +166,7 @@
       if (s.phase === 'lobby') {
         return card(`<h2 class="hand">Lobby</h2><p>${s.teams.length} team(s) have joined with code <b>${s.code}</b>. You can start whenever you're ready; late teams can still join.</p>
           ${s.rounds.length ? `<div class="row">${startBtns(AsaPacks.groups(s.rounds)[0], 'big hi')}</div>` : '<p>Add rounds in the Game editor first.</p>'}
-          ${AsaPacks.groups(s.rounds).some(g => g.items.length > 1) ? '<p class="small muted">Each round has two different boards. Pick A or B; play the other one another day.</p>' : ''}`)
+          ${(n => n > 1 ? `<p class="small muted">Each round has ${n} different boards (${AsaPacks.groups(s.rounds)[0].items.map(it => it.variant).join(', ')}). Pick one; save the others for another game.</p>` : '')(Math.max(...AsaPacks.groups(s.rounds).map(g => g.items.length)))}`)
           + card(`<h2 class="hand">Question pack</h2><p><b>${esc(s.edition || s.title)}</b> · ${AsaPacks.groups(s.rounds).length} rounds</p>
           ${pickingPack ? AsaPacks.pickerHTML(esc, { current: packId, mine: packId === '__mine' ? null : get('asa-mine', null) }) + `<div class="row" style="margin-top:10px">${btn('cancelPack', 'Cancel', 'sm')}</div>`
             : btn('changePack', '🔁 Change pack', 'sm')}`);
