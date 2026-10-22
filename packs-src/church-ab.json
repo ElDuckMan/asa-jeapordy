@@ -1,0 +1,194 @@
+{"rounds":[
+{"type":"board","group":"Round 1","variant":"A","name":"Round 1","timer":0,"categories":[
+ {"name":"Old Testament","clues":[
+  {"value":100,"q":"In Exodus, God first called Moses from this, which was on fire but was not consumed.","a":"What is a burning bush?"},
+  {"value":200,"q":"In 1 Samuel, this young shepherd defeated the giant Goliath with a sling and a stone.","a":"Who is David?"},
+  {"value":300,"q":"In Genesis, this favorite son of Jacob was sold by his jealous brothers and later rose to power in Egypt.","a":"Who is Joseph?"},
+  {"value":400,"q":"In the book of Daniel, Daniel spent a night here after praying to God, and was found unharmed in the morning.","a":"What is the lions’ den?"},
+  {"value":500,"type":"dd","q":"In Genesis 11, people built a city with a tower reaching toward the heavens, and God confused their language at this place.","a":"What is Babel?"}]},
+ {"name":"Bible Animals","clues":[
+  {"value":100,"q":"In the book of Jonah, God sent this to swallow the runaway prophet, who spent three days and three nights inside it.","a":"What is a great fish (whale)?"},
+  {"value":200,"q":"In Genesis 3, this crafty creature tempted Eve in the garden.","a":"What is the serpent?"},
+  {"value":300,"q":"In Genesis 8, this bird returned to Noah’s ark carrying a freshly plucked olive leaf.","a":"What is a dove?"},
+  {"value":400,"type":"mc","q":"In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?","a":"Donkey","options":["Camel","Donkey","Ox","Horse"],"correct":1},
+  {"value":500,"q":"In 1 Kings 17, God sent these black birds to bring bread and meat to a prophet hiding by the brook Kerith.","a":"What are ravens?"}]},
+ {"name":"Worship Music","clues":[
+  {"value":100,"q":"This beloved hymn begins: “…how sweet the sound, that saved a wretch like me.”","a":"What is “Amazing Grace”?"},
+  {"value":200,"q":"“Silent Night” was first performed on Christmas Eve 1818 in Oberndorf, a village in what is now this country.","a":"What is Austria?"},
+  {"value":300,"q":"The famous “Hallelujah” chorus comes from this oratorio by George Frideric Handel.","a":"What is “Messiah”?"},
+  {"value":400,"q":"Blind from infancy, this American hymn writer wrote “Blessed Assurance” and thousands of other hymns.","a":"Who is Fanny Crosby?"},
+  {"value":500,"q":"Isaac Watts based this Christmas favorite on Psalm 98, though it never mentions a manger.","a":"What is “Joy to the World”?"}]},
+ {"name":"Movies & TV","clues":[
+  {"value":100,"q":"This 1998 DreamWorks animated film tells the story of Moses, from the bulrushes to the Exodus.","a":"What is “The Prince of Egypt”?"},
+  {"value":200,"q":"Cecil B. DeMille’s 1956 epic in which Moses parts the Red Sea and receives the law on Mount Sinai.","a":"What is “The Ten Commandments”?"},
+  {"value":300,"q":"In this 1992 comedy, Whoopi Goldberg hides out in a convent disguised as a nun named Mary Clarence and transforms the choir.","a":"What is “Sister Act”?"},
+  {"value":400,"q":"This 1959 epic, famous for its chariot race, won 11 Academy Awards including Best Picture.","a":"What is “Ben-Hur”?"},
+  {"value":500,"q":"Liam Neeson voices this great lion in the 2005 film “The Chronicles of Narnia: The Lion, the Witch and the Wardrobe.”","a":"Who is Aslan?"}]},
+ {"name":"Ancient Church History","clues":[
+  {"value":100,"q":"In Acts 2, the Holy Spirit came upon the disciples with tongues of fire during this Jewish festival.","a":"What is Pentecost?"},
+  {"value":200,"q":"This Roman emperor called the bishops together for the Council of Nicaea in 325.","a":"Who is Constantine?"},
+  {"value":300,"q":"Taken to Ireland as a captive in his youth, this 5th-century bishop later returned as a missionary and became its patron saint.","a":"Who is Saint Patrick?"},
+  {"value":400,"q":"In Acts 9, the future apostle Paul was struck blind by a light from heaven on the road to this city.","a":"What is Damascus?"},
+  {"value":500,"q":"This North African bishop of Hippo wrote “Confessions” and “The City of God.”","a":"Who is Augustine?"}]},
+ {"name":"Recent Church History","clues":[
+  {"value":100,"q":"Beginning in the late 1940s, these ancient manuscripts were found in caves near Qumran.","a":"What are the Dead Sea Scrolls?"},
+  {"value":200,"q":"This Albanian-born nun, famous for serving the poor of Calcutta, received the 1979 Nobel Peace Prize.","a":"Who is Mother Teresa?"},
+  {"value":300,"q":"This North Carolina-born evangelist became nationally famous after his 1949 tent revival in Los Angeles.","a":"Who is Billy Graham?"},
+  {"value":400,"q":"Pope John XXIII opened this gathering of the world’s Catholic bishops in Rome in 1962.","a":"What is the Second Vatican Council (Vatican II)?"},
+  {"value":500,"q":"In 1965, Pope Paul VI and Ecumenical Patriarch Athenagoras lifted the mutual excommunications issued in this year.","a":"What is 1054?"}]}
+]},
+{"type":"board","group":"Round 1","variant":"B","name":"Round 1","timer":0,"categories":[
+ {"name":"New Testament","clues":[
+  {"value":100,"q":"In the Gospels, this camel-hair-wearing prophet baptized Jesus in the Jordan River.","a":"Who is John the Baptist?"},
+  {"value":200,"q":"This fisherman disciple denied knowing Jesus three times before the rooster crowed.","a":"Who is Peter?"},
+  {"value":300,"q":"In Luke 19, this short tax collector climbed a sycamore tree to see Jesus pass by.","a":"Who is Zacchaeus?"},
+  {"value":400,"q":"In John 2, Jesus turned water into wine at a wedding in this Galilean village.","a":"What is Cana?"},
+  {"value":500,"type":"dd","q":"This Roman governor of Judea presided over the trial of Jesus and washed his hands before the crowd.","a":"Who is Pontius Pilate?"}]},
+ {"name":"Books of the Bible","clues":[
+  {"value":100,"q":"This is the very last book of the Bible, full of visions given to John on the island of Patmos.","a":"What is Revelation?"},
+  {"value":200,"q":"This Old Testament book contains 150 songs and prayers, including “The Lord is my shepherd.”","a":"What is Psalms?"},
+  {"value":300,"q":"This New Testament book follows the four Gospels and tells how the early church spread from Jerusalem.","a":"What is Acts?"},
+  {"value":400,"q":"The second book of the Bible, its name means “going out,” for Israel’s departure from Egypt.","a":"What is Exodus?"},
+  {"value":500,"type":"mc","q":"Which of the four Gospels is the shortest?","a":"Mark","options":["Matthew","Mark","Luke","John"],"correct":1}]},
+ {"name":"Worship Music","clues":[
+  {"value":100,"q":"“Swing Low, Sweet Chariot” and “Go Down, Moses” are famous examples of these African American religious folk songs.","a":"What are spirituals?"},
+  {"value":200,"q":"Martin Luther’s best-known hymn declares that “A Mighty” one of these “Is Our God.”","a":"What is a fortress?"},
+  {"value":300,"q":"This co-founder of Methodism, brother of John, wrote “Hark! The Herald Angels Sing” and thousands of other hymns.","a":"Who is Charles Wesley?"},
+  {"value":400,"q":"Often called the “father of English hymnody,” he wrote “When I Survey the Wondrous Cross” and “O God, Our Help in Ages Past.”","a":"Who is Isaac Watts?"},
+  {"value":500,"q":"George Bennard wrote this hymn that begins, “On a hill far away…”","a":"What is “The Old Rugged Cross”?"}]},
+ {"name":"Movies & TV","clues":[
+  {"value":100,"q":"Mel Gibson directed this 2004 film about the last twelve hours of Jesus’s life, with dialogue in Aramaic, Hebrew and Latin.","a":"What is “The Passion of the Christ”?"},
+  {"value":200,"q":"This 2006 film follows Mary and Joseph on their journey from Nazareth to Bethlehem.","a":"What is “The Nativity Story”?"},
+  {"value":300,"q":"Kelsey Grammer plays pastor Chuck Smith in this 2023 film about a hippie-era revival in Southern California.","a":"What is “Jesus Revolution”?"},
+  {"value":400,"q":"In this 1965 film, Julie Andrews plays Maria, a lively postulant at Nonnberg Abbey who becomes a governess.","a":"What is “The Sound of Music”?"},
+  {"value":500,"q":"This 1981 Best Picture winner features Eric Liddell, a Scottish runner who would not race on a Sunday.","a":"What is “Chariots of Fire”?"}]},
+ {"name":"Ancient Church History","clues":[
+  {"value":100,"q":"This apostle traveled the Mediterranean on missionary journeys and wrote letters to the Romans and the Corinthians.","a":"Who is Paul?"},
+  {"value":200,"q":"In Acts 13, this companion, whose name means “son of encouragement,” set out with Paul from Antioch on their first missionary journey.","a":"Who is Barnabas?"},
+  {"value":300,"q":"In Acts 7, this deacon became the first Christian martyr.","a":"Who is Stephen?"},
+  {"value":400,"q":"Issued in 313, this agreement between Constantine and Licinius granted Christians freedom of worship in the Roman Empire.","a":"What is the Edict of Milan?"},
+  {"value":500,"q":"This 4th-century scholar translated the Bible into Latin in the version known as the Vulgate.","a":"Who is Jerome?"}]},
+ {"name":"Recent Church History","clues":[
+  {"value":100,"q":"In 1978, Polish cardinal Karol Wojtyła was elected pope and took this name.","a":"Who is Pope John Paul II?"},
+  {"value":200,"q":"Like his father, Martin Luther King Jr. was ordained a minister in this Protestant tradition.","a":"What is Baptist?"},
+  {"value":300,"q":"Its young members were nicknamed “Jesus freaks” in this late-1960s and 1970s revival among hippies on the U.S. West Coast.","a":"What is the Jesus movement?"},
+  {"value":400,"q":"In 1957, Billy Graham held a crusade lasting about four months at this famous New York City arena.","a":"What is Madison Square Garden?"},
+  {"value":500,"q":"This fellowship of churches was founded at an assembly in Amsterdam in 1948.","a":"What is the World Council of Churches?"}]}
+]},
+{"type":"lightning","group":"Lightning Round","variant":"A","name":"Lightning Round","duration":60,"points":100,"penalty":false,"questions":[
+ {"q":"First book of the Bible?","a":"Genesis"},
+ {"q":"How many disciples did Jesus choose?","a":"Twelve"},
+ {"q":"Town where Jesus was born?","a":"Bethlehem"},
+ {"q":"First man created in Genesis?","a":"Adam"},
+ {"q":"Garden where Adam and Eve lived?","a":"Eden"},
+ {"q":"On which day did God rest after creation?","a":"Seventh"},
+ {"q":"Who led the Israelites out of Egypt?","a":"Moses"},
+ {"q":"River where Jesus was baptized?","a":"Jordan"},
+ {"q":"Disciple who betrayed Jesus for thirty pieces of silver?","a":"Judas"},
+ {"q":"Town where Jesus grew up?","a":"Nazareth"},
+ {"q":"Judge whose great strength was tied to his uncut hair?","a":"Samson"},
+ {"q":"Mother of Jesus?","a":"Mary"}]},
+{"type":"lightning","group":"Lightning Round","variant":"B","name":"Lightning Round","duration":60,"points":100,"penalty":false,"questions":[
+ {"q":"How many Gospels are in the New Testament?","a":"Four"},
+ {"q":"Adam and Eve’s son killed by his brother Cain?","a":"Abel"},
+ {"q":"Abraham’s wife, who laughed when told she would have a son?","a":"Sarah"},
+ {"q":"Son of David known for his wisdom?","a":"Solomon"},
+ {"q":"How many days and nights did it rain in Noah’s flood?","a":"Forty"},
+ {"q":"Finish the short verse in John 11: “Jesus ___”?","a":"Wept"},
+ {"q":"Peter and Andrew fished on the Sea of what?","a":"Galilee"},
+ {"q":"Jesus taught these words, which begin “Our Father, who art in heaven”?","a":"The Lord’s Prayer"},
+ {"q":"Main original language of the Old Testament?","a":"Hebrew"},
+ {"q":"Original language of the New Testament?","a":"Greek"},
+ {"q":"Son of Abraham taken up Mount Moriah?","a":"Isaac"},
+ {"q":"Mountain where Moses received the law?","a":"Sinai"}]},
+{"type":"board","group":"Double Round","variant":"A","name":"Double Round","timer":0,"categories":[
+ {"name":"Kings & Prophets","clues":[
+  {"value":200,"q":"Anointed by the prophet Samuel, this tall Benjaminite became the first king of Israel.","a":"Who is Saul?","hint":"Young David played music to soothe him."},
+  {"value":400,"q":"In 2 Kings 2, this prophet was carried up to heaven in a whirlwind, as a chariot of fire appeared.","a":"Who is Elijah?","hint":"His cloak passed to his successor, Elisha."},
+  {"value":600,"q":"In chapter 6 of his book, this prophet saw seraphim in the temple crying “Holy, holy, holy.”","a":"Who is Isaiah?","hint":"His book is the first of the major prophets."},
+  {"value":800,"q":"In the book of Daniel, this king of Babylon threw Shadrach, Meshach and Abednego into a fiery furnace.","a":"Who is Nebuchadnezzar?","hint":"He also dreamed of a statue with feet of iron and clay."},
+  {"value":1000,"type":"dd","q":"In 1 Kings 21, this king of Israel, husband of Jezebel, coveted Naboth’s vineyard.","a":"Who is Ahab?","hint":"His name is a palindrome."}]},
+ {"name":"Parables","clues":[
+  {"value":200,"q":"In Luke 15, this younger son wastes his inheritance in a far country, then comes home to a father who runs to meet him.","a":"Who is the prodigal son?","hint":"His father throws a feast with a fattened calf."},
+  {"value":400,"q":"In Luke 10, this traveler stops to help a beaten man after a priest and a Levite pass by.","a":"Who is the Good Samaritan?","hint":"He came from a region north of Judea."},
+  {"value":600,"type":"mc","q":"In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?","a":"Ninety-nine","options":["Ten","Forty","Seventy","Ninety-nine"],"correct":3,"hint":"He started with one hundred."},
+  {"value":800,"q":"Jesus compared the kingdom of heaven to this tiny seed that grows into a large plant where birds can perch.","a":"What is a mustard seed?","hint":"It is also a yellow hot-dog topping."},
+  {"value":1000,"q":"In Matthew 25, five foolish young women waiting for the bridegroom ran out of this for their lamps.","a":"What is oil?","hint":"The wise ones brought extra in jars."}]},
+ {"name":"Worship Music","clues":[
+  {"value":200,"q":"This Christmas carol tells of a good duke of Bohemia who looked out “on the Feast of Stephen.”","a":"What is “Good King Wenceslas”?","hint":"He and his page bring food to a poor man."},
+  {"value":400,"q":"Often sung to the tune “Old Hundredth,” this short hymn of praise begins “Praise God, from whom all blessings flow.”","a":"What is the Doxology?","hint":"Its name comes from the Greek for “words of glory.”"},
+  {"value":600,"q":"Missionary Stuart K. Hine wrote the English version of this hymn, which began as a Swedish poem by Carl Boberg.","a":"What is “How Great Thou Art”?","hint":"“Then sings my soul, my Savior God, to Thee…”"},
+  {"value":800,"q":"This German Baroque composer wrote the “St. Matthew Passion” and the “Mass in B minor.”","a":"Who is Johann Sebastian Bach?","hint":"He served as a church musician in Leipzig."},
+  {"value":1000,"q":"A former sailor who became an Anglican clergyman, he wrote the words of “Amazing Grace.”","a":"Who is John Newton?","hint":"He was a curate in the English village of Olney."}]},
+ {"name":"Movies & TV","clues":[
+  {"value":200,"q":"Russell Crowe builds an enormous ark in this 2014 Darren Aronofsky film.","a":"What is “Noah”?","hint":"The title is the builder’s name."},
+  {"value":400,"q":"Norman Jewison directed this 1973 rock-opera film based on the Andrew Lloyd Webber and Tim Rice musical.","a":"What is “Jesus Christ Superstar”?","hint":"Its title song asks “Who are you? What have you sacrificed?”"},
+  {"value":600,"q":"In “The Ten Commandments” (1956), Yul Brynner plays this pharaoh who refuses to let the Hebrews go.","a":"Who is Rameses?","hint":"Egyptian name meaning “born of Ra.”"},
+  {"value":800,"q":"This Best Picture winner for 1966 dramatizes Sir Thomas More’s refusal to approve Henry VIII’s remarriage.","a":"What is “A Man for All Seasons”?","hint":"Paul Scofield won Best Actor for the lead role."},
+  {"value":1000,"q":"Robert De Niro and Jeremy Irons play Jesuits in South America in this 1986 Palme d’Or winner.","a":"What is “The Mission”?","hint":"Ennio Morricone wrote its famous oboe theme."}]},
+ {"name":"Ancient Church History","clues":[
+  {"value":200,"q":"In Acts 28, after a shipwreck, Paul spent three months on this Mediterranean island.","a":"What is Malta?","hint":"Its capital today is Valletta."},
+  {"value":400,"q":"According to Acts 11, the disciples were first called “Christians” in this city.","a":"What is Antioch?","hint":"It was a great city of Roman Syria."},
+  {"value":600,"q":"In 380, this emperor’s Edict of Thessalonica made Nicene Christianity the official faith of the Roman Empire.","a":"Who is Theodosius I?","hint":"He was the last emperor to rule both East and West."},
+  {"value":800,"type":"dd","q":"The fourth ecumenical council met in 451 at this city across the Bosporus from Constantinople.","a":"What is Chalcedon?","hint":"Its name begins like a mineral called chalcedony."},
+  {"value":1000,"q":"In his Easter letter of 367, this bishop of Alexandria listed the 27 books now in the New Testament.","a":"Who is Athanasius?","hint":"He had attended Nicaea as a young deacon."}]},
+ {"name":"Recent Church History","clues":[
+  {"value":200,"q":"This Oxford author’s 1952 book “Mere Christianity” grew out of radio talks he gave on the BBC.","a":"Who is C. S. Lewis?","hint":"He also wrote the Narnia books."},
+  {"value":400,"q":"Vatican II opened the door to celebrating Mass in local languages instead of only this ancient one.","a":"What is Latin?","hint":"The language of ancient Rome."},
+  {"value":600,"q":"Known by three letters, this widely used English Bible translation was first published as a complete Bible in 1978.","a":"What is the New International Version (NIV)?","hint":"Its initials sit between NIRV and NKJV alphabetically."},
+  {"value":800,"q":"This South African Anglican bishop, later archbishop of Cape Town, won the 1984 Nobel Peace Prize.","a":"Who is Desmond Tutu?","hint":"He was affectionately known as “the Arch.”"},
+  {"value":1000,"q":"In 1974, an evangelical Congress on World Evangelization met in this Swiss city and issued a covenant named after it.","a":"What is Lausanne?","hint":"It sits on Lake Geneva and hosts the Olympic Museum."}]}
+]},
+{"type":"board","group":"Double Round","variant":"B","name":"Double Round","timer":0,"categories":[
+ {"name":"Women of the Bible","clues":[
+  {"value":200,"q":"In Judges 4, this prophetess and judge led Israel and sent Barak into battle.","a":"Who is Deborah?","hint":"She held court under a palm tree."},
+  {"value":400,"type":"mc","q":"Which woman told Naomi, “Where you go I will go, and your people shall be my people”?","a":"Ruth","options":["Rahab","Hannah","Ruth","Leah"],"correct":2,"hint":"She was a Moabite who married Boaz."},
+  {"value":600,"q":"This Jewish queen of Persia risked her life to save her people, “for such a time as this.”","a":"Who is Esther?","hint":"Her cousin Mordecai raised her."},
+  {"value":800,"q":"In John 20, she was the first to see the risen Jesus, at first mistaking him for the gardener.","a":"Who is Mary Magdalene?","hint":"Her name points to a town on the Sea of Galilee."},
+  {"value":1000,"q":"In Acts 16, this seller of purple cloth from Thyatira was baptized by Paul in Philippi.","a":"Who is Lydia?","hint":"She opened her home to Paul and Silas."}]},
+ {"name":"Miracles","clues":[
+  {"value":200,"q":"With five loaves and two fish, Jesus fed a crowd of about this many men, plus women and children.","a":"What is 5,000?","hint":"Twelve baskets of leftovers were collected."},
+  {"value":400,"q":"In John 11, Jesus called this man out of his tomb after he had been dead four days.","a":"Who is Lazarus?","hint":"His sisters were Mary and Martha."},
+  {"value":600,"q":"In Joshua 6, the walls of this city fell after the Israelites marched around it and blew trumpets.","a":"What is Jericho?","hint":"They circled it seven times on the seventh day."},
+  {"value":800,"q":"In Exodus 16, God fed the Israelites in the wilderness with this bread from heaven.","a":"What is manna?","hint":"Its name means “What is it?”"},
+  {"value":1000,"type":"dd","q":"In 2 Kings 5, this army commander from Aram was healed of leprosy after washing seven times in the Jordan.","a":"Who is Naaman?","hint":"The prophet Elisha told him what to do."}]},
+ {"name":"Worship Music","clues":[
+  {"value":200,"q":"Phillips Brooks wrote this carol after visiting the Holy Land; it says “in thy dark streets shineth the everlasting Light.”","a":"What is “O Little Town of Bethlehem”?","hint":"It addresses the birthplace of Jesus."},
+  {"value":400,"q":"In the spiritual “Go Down, Moses,” the singer tells old Pharaoh this.","a":"What is “Let my people go”?","hint":"Moses repeats this demand in Exodus."},
+  {"value":600,"q":"Based on Lamentations 3, this 1923 hymn by Thomas Chisholm sings that God’s “mercies… new every morning.”","a":"What is “Great Is Thy Faithfulness”?","hint":"Its title praises God’s loyalty."},
+  {"value":800,"q":"Handel’s “Messiah” had its first performance in 1742 in this capital city.","a":"What is Dublin?","hint":"It is the capital of Ireland."},
+  {"value":1000,"q":"The hymn “Joyful, Joyful, We Adore Thee” is sung to the “Ode to Joy” melody from this composer’s Ninth Symphony.","a":"Who is Ludwig van Beethoven?","hint":"He grew deaf yet kept composing."}]},
+ {"name":"Movies & TV","clues":[
+  {"value":200,"q":"This 2008 Narnia sequel is named for a young Telmarine prince who calls the Pevensie children back for help.","a":"What is “Prince Caspian”?","hint":"His name sounds like a large inland sea."},
+  {"value":400,"q":"This actor played both Moses in “The Ten Commandments” and Judah in “Ben-Hur.”","a":"Who is Charlton Heston?","hint":"He won the Best Actor Oscar for the chariot epic."},
+  {"value":600,"q":"Sung by Whitney Houston and Mariah Carey, this song from “The Prince of Egypt” won the Oscar for Best Original Song.","a":"What is “When You Believe”?","hint":"“There can be miracles…”"},
+  {"value":800,"q":"Max von Sydow plays Jesus in this 1965 George Stevens film whose title calls it the best tale ever.","a":"What is “The Greatest Story Ever Told”?","hint":"Its title is a superlative about a story."},
+  {"value":1000,"q":"After the Olympics shown in “Chariots of Fire,” Eric Liddell went to serve as a missionary in this country, where he was born.","a":"What is China?","hint":"He had been born in Tianjin."}]},
+ {"name":"Ancient Church History","clues":[
+  {"value":200,"q":"According to Acts 2, about this many people were baptized on the day of Pentecost.","a":"What is 3,000?","hint":"Three followed by three zeros."},
+  {"value":400,"q":"In Acts 17, Paul preached at the Areopagus in this city, mentioning an altar “to an unknown god.”","a":"What is Athens?","hint":"Home of the Parthenon."},
+  {"value":600,"q":"The book of Acts is addressed to Theophilus, just like this Gospel.","a":"What is Luke?","hint":"Its traditional author was called “the beloved physician.”"},
+  {"value":800,"q":"Athanasius wrote a famous biography of this Egyptian hermit, often called the father of monasticism.","a":"Who is Anthony of Egypt (Antony the Great)?","hint":"He shares a name with Cleopatra’s Roman partner."},
+  {"value":1000,"q":"Around 110, this bishop of Antioch wrote seven letters to churches while being taken under guard to Rome.","a":"Who is Ignatius?","hint":"A Spanish saint of the 1500s later took the same name."}]},
+ {"name":"Recent Church History","clues":[
+  {"value":200,"q":"Bill and Vonette Bright founded this ministry at UCLA in 1951; it is known today as Cru.","a":"What is Campus Crusade for Christ?","hint":"Its original four-word name was dropped in 2011."},
+  {"value":400,"q":"Elected in 1958, Cardinal Angelo Roncalli took this papal name and soon called the Second Vatican Council.","a":"Who is Pope John XXIII?","hint":"Remembered as “Good Pope John.”"},
+  {"value":600,"q":"Martin Luther King Jr. was pastor of this Montgomery, Alabama, church during the 1955–56 bus boycott.","a":"What is Dexter Avenue Baptist Church?","hint":"It is named for the street it sits on."},
+  {"value":800,"type":"dd","q":"Pastor Chuck Smith’s church in Costa Mesa, California, welcomed thousands of young hippies in the late 1960s and became this movement of churches.","a":"What is Calvary Chapel?","hint":"Its name recalls the hill where Jesus was crucified."},
+  {"value":1000,"q":"In 1956, Billy Graham helped found this evangelical magazine.","a":"What is “Christianity Today”?","hint":"Its title names the faith and the present day."}]}
+]},
+{"type":"bonus","group":"Bonus Round","variant":"A","name":"Bonus Round","points":200,"timer":20,"questions":[
+ {"q":"Which apostle was a tax collector before following Jesus?","a":"Matthew","options":["Andrew","Thomas","Matthew","James"],"correct":2},
+ {"q":"How many books are in the New Testament?","a":"27","options":["24","27","39","66"],"correct":1},
+ {"q":"In which city did the first ecumenical council meet in 325?","a":"Nicaea","options":["Ephesus","Carthage","Nicaea","Chalcedon"],"correct":2},
+ {"q":"Which disciple would not believe Jesus had risen until he saw the wounds?","a":"Thomas"},
+ {"q":"In Genesis, what sign did God set in the clouds as a promise after the flood?","a":"Rainbow"}]},
+{"type":"bonus","group":"Bonus Round","variant":"B","name":"Bonus Round","points":200,"timer":20,"questions":[
+ {"q":"Which Gospel begins, “In the beginning was the Word”?","a":"John","options":["Matthew","Mark","Luke","John"],"correct":3},
+ {"q":"In which city was Jesus crucified?","a":"Jerusalem","options":["Nazareth","Jerusalem","Capernaum","Bethany"],"correct":1},
+ {"q":"Whose twelve sons gave their names to the tribes of Israel?","a":"Jacob","options":["Abraham","Isaac","Jacob","Joseph"],"correct":2},
+ {"q":"Which New Testament letter contains the chapter “Love is patient, love is kind”?","a":"1 Corinthians"},
+ {"q":"In Mark 6, people in his hometown call Jesus by what trade?","a":"Carpenter"}]},
+{"type":"final","group":"Final Round","variant":"A","name":"Final Round","category":"Apostles","q":"This fisherman apostle brought his brother Simon Peter to Jesus, and he is the patron saint of Scotland.","a":"Who is Andrew?","hint":"His X-shaped cross appears on Scotland’s flag.","timer":30},
+{"type":"final","group":"Final Round","variant":"B","name":"Final Round","category":"Christmas Carols","q":"This carol is the English version of the Latin hymn “Adeste Fideles.”","a":"What is “O Come, All Ye Faithful”?","hint":"Its refrain ends “Christ the Lord.”","timer":30}
+]}
