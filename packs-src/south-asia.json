@@ -17,7 +17,7 @@
             { "value": 500, "q": "This legendary playback singer, who sang “Ae Mere Watan Ke Logon,” received the Bharat Ratna in 2001 and died in 2022.", "a": "Who is Lata Mangeshkar?" }
           ]},
           { "name": "Movies & TV", "clues": [
-            { "value": 100, "q": "In this 2001 Aamir Khan film, villagers challenge British officers to a cricket match to escape a heavy tax.", "a": "What is Lagaan?" },
+            { "value": 100, "q": "In this 2001 Aamir Khan film, villagers take on British officers in a cricket match to escape a heavy tax.", "a": "What is Lagaan?" },
             { "value": 200, "q": "This 1995 Shah Rukh Khan–Kajol romance, known by the initials “DDLJ,” ran for decades at Mumbai’s Maratha Mandir theater.", "a": "What is Dilwale Dulhania Le Jayenge?" },
             { "value": 300, "q": "This Bengali filmmaker directed “Pather Panchali” (1955) and received an honorary Academy Award in 1992.", "a": "Who is Satyajit Ray?" },
             { "value": 400, "q": "This 2022 Telugu film by S. S. Rajamouli won the Academy Award for Best Original Song for “Naatu Naatu.”", "a": "What is RRR?" },
@@ -25,9 +25,9 @@
           ]},
           { "name": "Ancient History", "clues": [
             { "value": 100, "q": "This Bronze Age civilization included the planned cities of Harappa and Lothal.", "a": "What is the Indus Valley Civilization?" },
-            { "value": 200, "q": "This Mauryan emperor embraced Buddhism after the bloody Kalinga War.", "a": "Who is Ashoka?" },
+            { "value": 200, "q": "This Mauryan emperor embraced Buddhism after the devastating Kalinga War.", "a": "Who is Ashoka?" },
             { "value": 300, "q": "Siddhartha Gautama, the founder of Buddhism, was born at this site in present-day Nepal.", "a": "What is Lumbini?" },
-            { "value": 400, "type": "dd", "q": "The oldest of the four Vedas, this collection of hymns was composed in an early form of Sanskrit.", "a": "What is the Rigveda?" },
+            { "value": 400, "type": "dd", "q": "The oldest of the four Vedas, this collection of more than 1,000 hymns honors deities such as Agni and Indra.", "a": "What is the Rigveda?" },
             { "value": 500, "q": "Ruled by Chandragupta I and Samudragupta, this dynasty presided over what is often called a classical “Golden Age” of India.", "a": "What is the Gupta Empire?" }
           ]},
           { "name": "Recent History", "clues": [
@@ -67,7 +67,7 @@
             { "value": 100, "q": "The nickname of Mumbai’s Hindi film industry blends the city’s old name with “Hollywood.”", "a": "What is Bollywood?" },
             { "value": 200, "q": "This 2009 Aamir Khan comedy about three engineering students popularized the catchphrase “All is well.”", "a": "What is 3 Idiots?" },
             { "value": 300, "type": "mc", "q": "Who directed the 1957 classic “Mother India”?", "a": "Mehboob Khan", "options": ["Raj Kapoor", "Mehboob Khan", "Bimal Roy", "Guru Dutt"], "correct": 1 },
-            { "value": 400, "q": "This 2011 Hum TV drama serial starring Fawad Khan and Mahira Khan became a hit on both sides of the border.", "a": "What is Humsafar?" },
+            { "value": 400, "q": "Adapted from Farhat Ishtiaq’s novel, this 2011 Hum TV drama serial starred Fawad Khan and Mahira Khan as Ashar and Khirad.", "a": "What is Humsafar?" },
             { "value": 500, "q": "Known to fans as “Thalaivar,” this Tamil superstar played both scientist and robot in “Enthiran” (2010).", "a": "Who is Rajinikanth?" }
           ]},
           { "name": "Ancient History", "clues": [
@@ -82,12 +82,12 @@
             { "value": 200, "q": "In 1947, this statesman became India’s first prime minister.", "a": "Who is Jawaharlal Nehru?" },
             { "value": 300, "q": "In 1953, Tenzing Norgay and this New Zealander became the first climbers confirmed to reach the summit of Everest.", "a": "Who is Edmund Hillary?" },
             { "value": 400, "q": "This Bangladeshi economist and the Grameen Bank he founded shared the 2006 Nobel Peace Prize.", "a": "Who is Muhammad Yunus?" },
-            { "value": 500, "q": "In 2008, this Himalayan kingdom held its first parliamentary elections and adopted its first written constitution.", "a": "What is Bhutan?" }
+            { "value": 500, "q": "In 2008, this Himalayan kingdom adopted its first written constitution and became a constitutional monarchy with an elected National Assembly.", "a": "What is Bhutan?" }
           ]},
           { "name": "Festivals", "clues": [
             { "value": 100, "q": "This “festival of lights” celebrates the victory of light over darkness with lamps called diyas.", "a": "What is Diwali?" },
             { "value": 200, "q": "This spring festival is celebrated by throwing colored powder and water.", "a": "What is Holi?" },
-            { "value": 300, "q": "Celebrated in Bangladesh on April 14, this Bengali New Year festival features the colorful Mangal Shobhajatra procession.", "a": "What is Pohela Boishakh?" },
+            { "value": 300, "q": "Celebrated in Bangladesh on April 14 with greetings of “Shubho Noboborsho,” this festival marks the first day of the Bengali calendar year.", "a": "What is Pohela Boishakh?" },
             { "value": 400, "q": "Marking the end of Ramadan, this Muslim festival is often called “Meethi Eid” for sweets like sheer khurma.", "a": "What is Eid al-Fitr?" },
             { "value": 500, "q": "Held each year in Kandy, Sri Lanka, this grand procession of decorated elephants honors the Sacred Tooth Relic of the Buddha.", "a": "What is the Esala Perahera?" }
           ]},
@@ -95,8 +95,8 @@
             { "value": 100, "q": "Nicknamed the “Little Master,” this Indian batsman became the first cricketer to score 100 international centuries, in 2012.", "a": "Who is Sachin Tendulkar?" },
             { "value": 200, "q": "In this South Asian contact sport, a “raider” must tag opponents and return to their half while holding their breath.", "a": "What is kabaddi?" },
             { "value": 300, "q": "This Sri Lankan off-spinner retired from Test cricket in 2010 with exactly 800 wickets.", "a": "Who is Muttiah Muralitharan?" },
-            { "value": 400, "q": "Pakistan won its first Cricket World Cup in this year, beating England in the final in Melbourne.", "a": "What is 1992?" },
-            { "value": 500, "q": "This Indian javelin thrower won Olympic gold at the Tokyo Games, held in 2021.", "a": "Who is Neeraj Chopra?" }
+            { "value": 400, "q": "This Indian javelin thrower won Olympic gold at the Tokyo Games, held in 2021.", "a": "Who is Neeraj Chopra?" },
+            { "value": 500, "q": "Pakistan won its first Cricket World Cup in this year, beating England in the final in Melbourne.", "a": "What is 1992?" }
           ]}
         ]
       },
@@ -107,8 +107,8 @@
           { "q": "Capital of Pakistan?", "a": "Islamabad" },
           { "q": "Currency of India?", "a": "Rupee" },
           { "q": "Capital of Bangladesh?", "a": "Dhaka" },
-          { "q": "National flower of India?", "a": "Lotus" },
-          { "q": "Pakistan’s highest mountain?", "a": "K2" },
+          { "q": "Currency of Bhutan?", "a": "Ngultrum" },
+          { "q": "Flatbread baked in a tandoor?", "a": "Naan" },
           { "q": "Sri Lanka’s name until 1972?", "a": "Ceylon" },
           { "q": "Ocean surrounding the Maldives?", "a": "Indian Ocean" },
           { "q": "National language of Pakistan?", "a": "Urdu" },
@@ -141,7 +141,7 @@
             { "value": 200, "q": "This Pakistani singer, nephew of Nusrat Fateh Ali Khan, sang “Teri Meri” for the 2011 film “Bodyguard.”", "a": "Who is Rahat Fateh Ali Khan?", "hint": "He shares much of his famous uncle’s name." },
             { "value": 400, "q": "Ustad Bismillah Khan was the great master of this oboe-like wind instrument, often heard at weddings.", "a": "What is the shehnai?", "hint": "A double-reed instrument with a flared bell." },
             { "value": 600, "q": "Indian classical music has two main traditions: Hindustani in the north and this one in the south.", "a": "What is Carnatic music?", "hint": "Its name is linked to the region of Karnataka." },
-            { "value": 800, "type": "mc", "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?", "a": "Baila", "options": ["Bhangra", "Baila", "Lavani", "Garba"], "correct": 1, "hint": "Its name comes from a Portuguese word for “dance.”" },
+            { "value": 800, "type": "mc", "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?", "a": "Baila", "options": ["Bhangra", "Baila", "Lavani", "Garba"], "correct": 1, "hint": "Its name comes from the Portuguese verb “bailar,” to dance." },
             { "value": 1000, "q": "This Bengali song tradition comprises more than 2,000 songs written and composed by Rabindranath Tagore.", "a": "What is Rabindra Sangeet?", "hint": "It is named after its creator; the second word means “music.”" }
           ]},
           { "name": "Movies & TV", "clues": [
@@ -149,7 +149,7 @@
             { "value": 400, "q": "Pakistan’s film industry is nicknamed “Lollywood” after this city.", "a": "What is Lahore?", "hint": "Capital of Punjab province." },
             { "value": 600, "q": "This 2015 S. S. Rajamouli epic ended on a cliffhanger about why Kattappa killed its title hero.", "a": "What is Baahubali: The Beginning?", "hint": "Its sequel was subtitled “The Conclusion.”" },
             { "value": 800, "q": "This 2001 Mira Nair film about a chaotic Punjabi family wedding in Delhi won the Golden Lion at Venice.", "a": "What is Monsoon Wedding?", "hint": "The title pairs a rainy season with a celebration." },
-            { "value": 1000, "q": "Sharmeen Obaid-Chinoy won her first Academy Award for this 2012 documentary short about acid-attack survivors in Pakistan.", "a": "What is Saving Face?", "hint": "The title hints at plastic surgery and dignity." }
+            { "value": 1000, "q": "Directed by Tareque Masud, this 2002 film became Bangladesh’s first-ever submission for the Academy Award for Best Foreign Language Film.", "a": "What is Matir Moina?", "hint": "Its English title is “The Clay Bird.”" }
           ]},
           { "name": "Ancient History", "clues": [
             { "value": 200, "q": "Attributed to the sage Valmiki, this Sanskrit epic tells of Prince Rama’s exile and the rescue of Sita.", "a": "What is the Ramayana?", "hint": "Its name means “Rama’s journey.”" },
@@ -173,10 +173,10 @@
             { "value": 1000, "q": "Under Afghanistan’s 2004 constitution, the two official languages were Pashto and this variety of Persian.", "a": "What is Dari?", "hint": "A four-letter name." }
           ]},
           { "name": "Landmarks", "clues": [
-            { "value": 200, "q": "This white-marble mausoleum in Agra was commissioned by Mughal emperor Shah Jahan in memory of his wife.", "a": "What is the Taj Mahal?", "hint": "One of the most photographed buildings on Earth." },
+            { "value": 200, "q": "This white-marble mausoleum in Agra was commissioned by Mughal emperor Shah Jahan in memory of his wife.", "a": "What is the Taj Mahal?", "hint": "It stands on the bank of the Yamuna River." },
             { "value": 400, "q": "Completed under Aurangzeb in 1673, this red-sandstone mosque faces Lahore Fort.", "a": "What is the Badshahi Mosque?", "hint": "Its name means “the emperor’s” mosque." },
             { "value": 600, "q": "This 5th-century rock fortress in Sri Lanka is famed for its frescoes and its Lion Gate.", "a": "What is Sigiriya?", "hint": "Often called “Lion Rock.”" },
-            { "value": 800, "q": "Also called Paro Taktsang, this Buddhist monastery clings to a cliff in Bhutan.", "a": "What is the Tiger’s Nest?", "hint": "Named after a big cat’s home." },
+            { "value": 800, "q": "Built around a cave where Guru Rinpoche is said to have meditated, this Buddhist monastery clings to a cliff above Bhutan’s Paro Valley.", "a": "What is the Tiger’s Nest (Paro Taktsang)?", "hint": "Named after a big cat’s home." },
             { "value": 1000, "q": "Nicknamed the “Monkey Temple,” this hilltop stupa in Kathmandu has the Buddha’s eyes painted on its tower.", "a": "What is Swayambhunath?", "hint": "Its name means “self-existent” or “self-arisen.”" }
           ]}
         ]
@@ -188,8 +188,8 @@
             { "value": 200, "q": "Driven by the dhol drum, this energetic Punjabi folk music and dance style is now a staple at parties worldwide.", "a": "What is bhangra?", "hint": "Think harvest celebrations in Punjab." },
             { "value": 400, "q": "This tabla maestro, son of Alla Rakha, won multiple Grammy Awards and played with the fusion band Shakti.", "a": "Who is Zakir Hussain?", "hint": "Often addressed with the title “Ustad.”" },
             { "value": 600, "q": "Honored with the title “Malika-e-Tarannum” (Queen of Melody), this singer-actress moved to Pakistan after 1947.", "a": "Who is Noor Jehan?", "hint": "Her name means “light of the world.”" },
-            { "value": 800, "type": "mc", "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?", "a": "Pakistan", "options": ["India", "Bangladesh", "Pakistan", "Afghanistan"], "correct": 2, "hint": "The shrine is in Sehwan, in Sindh." },
-            { "value": 1000, "q": "The most widely performed form of Hindustani classical vocal music takes its name from a word meaning “imagination.”", "a": "What is khayal?", "hint": "Not dhrupad, its older and more austere cousin." }
+            { "value": 800, "type": "mc", "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?", "a": "Pakistan", "options": ["India", "Bangladesh", "Pakistan", "Afghanistan"], "correct": 2, "hint": "The shrine stands in the town of Sehwan Sharif." },
+            { "value": 1000, "q": "Today the predominant genre of Hindustani classical vocal music, this form takes its name from an Arabic-Persian word often translated as “imagination.”", "a": "What is khayal?", "hint": "Not dhrupad, its older and more austere cousin." }
           ]},
           { "name": "Movies & TV", "clues": [
             { "value": 200, "q": "In this 2023 action film, Shah Rukh Khan plays a spy known by a single codename that gives the film its title.", "a": "What is Pathaan?", "hint": "Part of the YRF Spy Universe." },
@@ -206,7 +206,7 @@
             { "value": 1000, "q": "This Neolithic site in Balochistan, Pakistan, is one of the earliest known farming settlements in South Asia.", "a": "What is Mehrgarh?", "hint": "It predates the Indus Valley cities by millennia." }
           ]},
           { "name": "Recent History", "clues": [
-            { "value": 200, "q": "In 1948, this island, then called Ceylon, gained independence from Britain.", "a": "What is Sri Lanka?", "hint": "Its current name means “resplendent island.”" },
+            { "value": 200, "q": "In 1948, this island, then called Ceylon, gained independence from Britain.", "a": "What is Sri Lanka?", "hint": "Its largest city is Colombo." },
             { "value": 400, "q": "Nicknamed the “Missile Man,” this aerospace scientist served as India’s president from 2002 to 2007.", "a": "Who is A. P. J. Abdul Kalam?", "hint": "Known as “the People’s President.”" },
             { "value": 600, "q": "India’s national space agency was founded in 1969 and is known by this four-letter acronym.", "a": "What is ISRO?", "hint": "The R stands for “Research.”" },
             { "value": 800, "q": "In 1979, this Pakistani physicist shared the Nobel Prize in Physics for work on electroweak unification.", "a": "Who is Abdus Salam?", "hint": "He shared it with Glashow and Weinberg." },
@@ -216,14 +216,14 @@
             { "value": 200, "q": "In 1913, this Bengali poet of “Gitanjali” became the first non-European to win the Nobel Prize in Literature.", "a": "Who is Rabindranath Tagore?", "hint": "Often called “Gurudev.”" },
             { "value": 400, "q": "Born Mirza Asadullah Baig Khan, this 19th-century Delhi poet is among the most celebrated writers of Urdu ghazals.", "a": "Who is Mirza Ghalib?", "hint": "Known by his pen name." },
             { "value": 600, "q": "Called the “Poet of the East,” this poet-philosopher wrote the verses of “Saare Jahan Se Achha.”", "a": "Who is Allama Iqbal?", "hint": "Pakistan’s national poet." },
-            { "value": 800, "q": "Set in Kerala, this debut novel by Arundhati Roy won the 1997 Booker Prize.", "a": "What is The God of Small Things?", "hint": "The title mentions a deity of little things." },
+            { "value": 800, "q": "Set in Kerala, this debut novel by Arundhati Roy won the 1997 Booker Prize.", "a": "What is The God of Small Things?", "hint": "Its central characters are the twins Estha and Rahel." },
             { "value": 1000, "q": "This Colombo-born Canadian author won the 1992 Booker Prize for “The English Patient.”", "a": "Who is Michael Ondaatje?", "hint": "His memoir is “Running in the Family.”" }
           ]},
           { "name": "Nature & Wildlife", "clues": [
             { "value": 200, "q": "This big cat is the national animal of both India and Bangladesh.", "a": "What is the Bengal tiger?", "hint": "Named after a region of the subcontinent." },
             { "value": 400, "q": "Nepal’s Chitwan National Park and India’s Kaziranga are strongholds of this armored, single-horned mammal.", "a": "What is the Indian rhinoceros?", "hint": "Also called the greater one-horned species." },
-            { "value": 600, "q": "Pakistan’s national animal is this wild goat with spectacular corkscrew horns.", "a": "What is the markhor?", "hint": "Its name is often said to mean “snake-eater.”" },
-            { "value": 800, "q": "Known locally as the danphe, this iridescent pheasant is Nepal’s national bird.", "a": "What is the Himalayan monal?", "hint": "Named after the mountain range it lives in." },
+            { "value": 600, "q": "Pakistan’s national animal is this wild goat with spectacular corkscrew horns.", "a": "What is the markhor?", "hint": "Its Persian name is usually translated “snake-eater,” from a folk belief that it kills snakes." },
+            { "value": 800, "q": "Known locally as the danphe, this iridescent pheasant is Nepal’s national bird.", "a": "What is the Himalayan monal?", "hint": "It is also the state bird of Uttarakhand." },
             { "value": 1000, "q": "Bhutan’s national animal is this sturdy goat-antelope of the eastern Himalayas.", "a": "What is the takin?", "hint": "Five letters; it looks like a cross between a moose and a goat." }
           ]}
         ]
