@@ -23,7 +23,7 @@
     'host:kickTeam', 'host:kickPlayer', 'host:openClue', 'host:cancelClue', 'host:closeClue', 'host:open',
     'host:lock', 'host:judge', 'host:reveal', 'host:override', 'host:setDDTeam', 'host:setWager',
     'host:showClue', 'host:finalReveal', 'host:finalAnswer', 'host:lightningStart', 'host:lightningNext',
-    'host:lightningStop', 'host:bonusNext',
+    'host:lightningStop', 'host:bonusNext', 'host:hint',
     'board:join', 'room:info', 'player:join', 'player:leave', 'player:buzz', 'player:wager', 'player:answer'
   ];
 
@@ -52,14 +52,14 @@
     return {
       value: int(c.value, defVal, 0, 100000), q: str(c.q, 1000), a: str(c.a, 500), type, options,
       correct: options.length ? int(c.correct, 0, 0, options.length - 1) : null,
-      media: sanitizeMedia(c.media), timer: int(c.timer, 0, 0, 600)
+      media: sanitizeMedia(c.media), timer: int(c.timer, 0, 0, 600), hint: str(c.hint, 300)
     };
   }
   function sanitizeQuestion(x, allowOptions) {
     x = x || {};
     const options = allowOptions ? sanitizeOptions(x.options) : [];
     return {
-      q: str(x.q, 1000), a: str(x.a, 500), media: sanitizeMedia(x.media), options,
+      q: str(x.q, 1000), a: str(x.a, 500), hint: str(x.hint, 300), media: sanitizeMedia(x.media), options,
       correct: options.length ? int(x.correct, 0, 0, options.length - 1) : null
     };
   }
@@ -89,7 +89,7 @@
       };
     }
     return {
-      type: 'final', name, category: str(r.category, 100), q: str(r.q, 1000), a: str(r.a, 500),
+      type: 'final', name, category: str(r.category, 100), q: str(r.q, 1000), a: str(r.a, 500), hint: str(r.hint, 300),
       media: sanitizeMedia(r.media), timer: int(r.timer, 30, 0, 600)
     };
   }
@@ -178,7 +178,7 @@
         stage: 'reading', openSeq: 0, openedAt: 0, lockedOut: [], buzzedTeam: null, buzzedPlayer: null,
         wagers: {}, answers: {}, judged: {}, applied: {}, suggest: {}, revealed: false, revealedTeams: {},
         timerEnd: null, timerRemain: null, timerSec: 0, early: {}, window: null,
-        options: [], correct: null, media: null, value: 0, ddTeam: null, category: '', key: null, c: null, j: null
+        options: [], correct: null, media: null, value: 0, hint: '', hintShown: false, ddTeam: null, category: '', key: null, c: null, j: null
       }, base);
     }
 
@@ -283,7 +283,7 @@
       if (L.index >= r.questions.length) return lightningEnd(room);
       const x = r.questions[L.index];
       room.q = newQ({ kind: 'lightning', category: `${r.name} · ${L.index + 1}/${r.questions.length}`,
-        text: x.q, answer: x.a, media: x.media, value: r.points });
+        text: x.q, answer: x.a, hint: x.hint, media: x.media, value: r.points });
       openQ(room);
     }
     function lightningEnd(room) {
@@ -308,7 +308,7 @@
       if (r.type === 'lightning') room.light = { index: -1, running: false, done: false, endsAt: null };
       if (r.type === 'bonus') room.bonus = { index: -1, done: false };
       if (r.type === 'final') {
-        room.q = newQ({ kind: 'final', category: r.category, text: r.q, answer: r.a, media: r.media, timerSec: r.timer, stage: 'wager' });
+        room.q = newQ({ kind: 'final', category: r.category, text: r.q, answer: r.a, hint: r.hint, media: r.media, timerSec: r.timer, stage: 'wager' });
       }
     }
 
@@ -354,6 +354,7 @@
         lockedOut: q.lockedOut, buzzedTeam: q.buzzedTeam, buzzedPlayer: bp ? bp.name : null,
         ddTeam: q.ddTeam, revealed: q.revealed,
         text: hide ? null : q.text, media: hide ? null : q.media, options: hide ? [] : q.options,
+        hasHint: !!q.hint, hintShown: q.hintShown, hint: (host || (q.hintShown && !hide)) ? q.hint : null,
         answeredTeams: Object.keys(q.answers), wageredTeams: Object.keys(q.wagers),
         answers: {}, wagers: {}, judged: {}, revealedTeams: {}
       };
@@ -499,7 +500,7 @@
       const key = `${room.roundIndex}:${c}:${j}`;
       if (room.used[key]) return { error: 'Already played.' };
       room.used[key] = true;
-      room.q = newQ({ kind: clue.type, key, c, j, category: cat.name, value: clue.value, text: clue.q, answer: clue.a,
+      room.q = newQ({ kind: clue.type, key, c, j, category: cat.name, value: clue.value, text: clue.q, answer: clue.a, hint: clue.hint,
         media: clue.media, options: clue.options, correct: clue.correct, timerSec: clue.timer || r.timer || 0 });
       if (clue.type === 'dd') {
         room.q.stage = 'wager';
@@ -616,6 +617,13 @@
       const q = room.q;
       if (q && q.kind === 'final' && room.teams[d.teamId]) { q.revealedTeams[d.teamId] = true; fx(room, 'flip', { team: d.teamId }); }
     };
+    /* Hint: the host reveals it to the big screen and the phones. */
+    H['host:hint'] = room => {
+      const q = room.q;
+      if (!q || !q.hint) return { error: 'This clue has no hint.' };
+      if (q.stage === 'wager') return { error: 'Show the clue first.' };
+      if (!q.hintShown) { q.hintShown = true; fx(room, 'hint'); }
+    };
     H['host:finalAnswer'] = room => { const q = room.q; if (q && q.kind === 'final') { q.revealed = true; fx(room, 'reveal'); } };
 
     H['host:lightningStart'] = room => {
@@ -637,7 +645,7 @@
       B.index++;
       if (B.index >= r.questions.length) { B.done = true; room.q = null; return; }
       const x = r.questions[B.index];
-      room.q = newQ({ kind: 'bonus', category: `${r.name} · ${B.index + 1}/${r.questions.length}`, text: x.q, answer: x.a,
+      room.q = newQ({ kind: 'bonus', category: `${r.name} · ${B.index + 1}/${r.questions.length}`, text: x.q, answer: x.a, hint: x.hint,
         media: x.media, options: x.options, correct: x.correct, value: r.points, timerSec: r.timer });
     };
 

@@ -113,6 +113,7 @@
     }
     if (q.kind === 'dd') h += `<div class="kind-tag tape">Daily Double</div>`;
     if (q.text) h += `<div class="q-text">${esc(q.text)}</div>`;
+    if (q.hint && q.hintShown) h += `<div><span class="hint-note tape ${fresh.hintNew ? 'pop' : ''}">💡 ${esc(q.hint)}</span></div>`;
     if (q.media) h += `<div class="q-media media-slot" data-type="${esc(q.media.type)}" data-url="${esc(q.media.url)}"></div>`;
     if (q.options && q.options.length) {
       h += '<div class="opts">' + q.options.map((o, i) => {
@@ -175,7 +176,8 @@
       const fresh = {
         answerNew: q.revealed && !(p && p.revealed),
         bannerNew: (q.buzzedTeam && (!p || p.buzzedTeam !== q.buzzedTeam)) || (q.kind === 'dd' && q.stage === 'answering' && (!p || p.stage !== 'answering')),
-        stageNew: !p || p.stage !== q.stage
+        stageNew: !p || p.stage !== q.stage,
+        hintNew: q.hintShown && !(p && p.hintShown)
       };
       const sig = JSON.stringify([q, s.teams.map(t => [t.id, t.name, t.color])]);
       if (sig !== this.sig) { render(this.body, qCard(s, fresh)); this.sig = sig; }

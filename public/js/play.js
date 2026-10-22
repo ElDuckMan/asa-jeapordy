@@ -118,7 +118,7 @@
         const picker = s.control && s.teams.find(x => x.id === s.control);
         return `<div class="card paper p-msg"><h2 class="hand">Eyes on the big screen</h2><p>${picker ? (picker.id === me.teamId ? '<b>Your team picks the next clue!</b>' : `${esc(picker.name)} picks next.`) : 'The host is picking the next clue.'}</p></div>`;
       }
-      let h = `<div class="p-clue card paper"><div class="small muted">${esc(q.category || '')}${q.value && !['dd', 'final'].includes(q.kind) ? ` · ${q.value}` : ''}</div>${q.text ? `<div class="p-qtext">${esc(q.text)}</div>` : ''}
+      let h = `<div class="p-clue card paper"><div class="small muted">${esc(q.category || '')}${q.value && !['dd', 'final'].includes(q.kind) ? ` · ${q.value}` : ''}</div>${q.text ? `<div class="p-qtext">${esc(q.text)}</div>` : ''}${q.hint && q.hintShown ? `<div class="p-hint-note">💡 ${esc(q.hint)}</div>` : ''}
         ${q.timerEnd ? `<div class="timerbar" data-end="${q.timerEnd}" data-total="${(q.timerSec || 1) * 1000}"><i></i></div>` : ''}</div>`;
       if (q.kind === 'standard' || q.kind === 'lightning') {
         const [cls, label] = buzzState(q);
