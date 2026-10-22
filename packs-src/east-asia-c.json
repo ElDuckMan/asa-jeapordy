@@ -1,0 +1,130 @@
+{"rounds":[
+  {
+    "type": "board", "group": "Round 1", "variant": "C", "name": "Round 1", "timer": 0,
+    "categories": [
+      { "name": "Music", "clues": [
+        { "value": 100, "q": "These large Japanese drums are often performed in thunderous ensembles at festivals and concerts.", "a": "What are taiko?" },
+        { "value": 200, "q": "This Japanese idol group, named for Tokyo’s Akihabara district, released the hit “Heavy Rotation” in 2010.", "a": "Who is AKB48?" },
+        { "value": 300, "q": "Formed through the 2015 survival show “Sixteen,” this JYP Entertainment girl group includes Nayeon, Jihyo and Tzuyu.", "a": "Who is TWICE?" },
+        { "value": 400, "q": "This three-stringed Japanese lute, plucked with a large plectrum, accompanies kabuki and bunraku puppet theater.", "a": "What is the shamisen?" },
+        { "value": 500, "q": "Ancestor of the Japanese koto, this Chinese plucked zither usually has 21 strings and movable bridges.", "a": "What is the guzheng?" }
+      ]},
+      { "name": "Movies & TV", "clues": [
+        { "value": 100, "q": "Founded in 1985, this Japanese animation studio made “Kiki’s Delivery Service” and “Howl’s Moving Castle.”", "a": "What is Studio Ghibli?" },
+        { "value": 200, "q": "In this 2021 Marvel film, Simu Liu plays a martial artist and Tony Leung plays his father, Wenwu.", "a": "What is Shang-Chi and the Legend of the Ten Rings?" },
+        { "value": 300, "q": "This Hong Kong action star, famous for performing his own stunts, teamed with Chris Tucker in 1998’s “Rush Hour.”", "a": "Who is Jackie Chan?" },
+        { "value": 400, "q": "Starring Bae Yong-joon, this 2002 KBS romance drama became a huge hit in Japan and helped spark the Korean Wave there.", "a": "What is Winter Sonata?" },
+        { "value": 500, "q": "Hirokazu Kore-eda’s 2018 film about a makeshift Tokyo family who steal to get by won the Palme d’Or at Cannes.", "a": "What is Shoplifters?" }
+      ]},
+      { "name": "Ancient History", "clues": [
+        { "value": 100, "q": "Members of this Japanese warrior class served feudal lords, and their code of conduct was later called bushido.", "a": "Who are the samurai?" },
+        { "value": 200, "q": "Begun in sections as early as the 5th century BCE, this artificial waterway links Beijing and Hangzhou.", "a": "What is the Grand Canal?" },
+        { "value": 300, "q": "Established by Minamoto no Yoritomo in the late 12th century, this first Japanese shogunate was named for its seaside headquarters town.", "a": "What is the Kamakura shogunate?" },
+        { "value": 400, "type": "dd", "q": "This short-lived Chinese ruling house reunified the country in 589 and was succeeded by the Tang in 618.", "a": "What is the Sui dynasty?" },
+        { "value": 500, "q": "According to legend, Dangun founded this first Korean kingdom in 2333 BCE.", "a": "What is Gojoseon?" }
+      ]},
+      { "name": "Recent History", "clues": [
+        { "value": 100, "q": "In 2018, this South Korean county hosted the Winter Olympics.", "a": "What is Pyeongchang?" },
+        { "value": 200, "q": "This Japanese era name began on May 1, 2019, when Emperor Naruhito took the throne.", "a": "What is Reiwa?" },
+        { "value": 300, "q": "In 1970, this Japanese city hosted Expo ’70, the first world’s fair held in Asia.", "a": "What is Osaka?" },
+        { "value": 400, "q": "Opened in 2018, this roughly 55-kilometer bridge-and-tunnel crossing spans the Pearl River estuary to link three cities.", "a": "What is the Hong Kong–Zhuhai–Macao Bridge?" },
+        { "value": 500, "q": "In 2003, this astronaut became the first person China sent into space, aboard Shenzhou 5.", "a": "Who is Yang Liwei?" }
+      ]},
+      { "name": "Anime & Manga", "clues": [
+        { "value": 100, "q": "This blue robotic cat from the 22nd century pulls futuristic gadgets out of his four-dimensional pocket.", "a": "Who is Doraemon?" },
+        { "value": 200, "q": "Akira Toriyama’s manga follows Son Goku and friends on quests for seven magical wish-granting orbs.", "a": "What is Dragon Ball?" },
+        { "value": 300, "q": "In Hajime Isayama’s manga, Eren Yeager and the rest of humanity hide behind enormous walls from giant man-eaters.", "a": "What is Attack on Titan?" },
+        { "value": 400, "type": "mc", "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?", "a": "Osamu Tezuka", "options": ["Rumiko Takahashi", "Eiichiro Oda", "Osamu Tezuka", "Naoko Takeuchi"], "correct": 2 },
+        { "value": 500, "q": "This Japanese term names manga aimed at young girls, the category that includes “Sailor Moon.”", "a": "What is shōjo?" }
+      ]},
+      { "name": "Animals & Nature", "clues": [
+        { "value": 100, "q": "Native to the mountains of central China, especially Sichuan, this black-and-white bear eats mostly bamboo.", "a": "What is the giant panda?" },
+        { "value": 200, "q": "Folding a thousand origami versions of this long-legged bird, a symbol of longevity, is said to grant a wish.", "a": "What is the crane?" },
+        { "value": 300, "q": "This two-humped camel, named for an ancient Central Asian region, is native to the Gobi.", "a": "What is the Bactrian camel?" },
+        { "value": 400, "q": "At Jigokudani in Nagano, these red-faced primates famously soak in hot springs during snowy winters.", "a": "What are Japanese macaques (snow monkeys)?" },
+        { "value": 500, "q": "Called takhi in Mongolia, this endangered wild horse was reintroduced there in the 1990s and is named for a Russian explorer.", "a": "What is Przewalski’s horse?" }
+      ]}
+    ]
+  },
+  {
+    "type": "lightning", "group": "Lightning Round", "variant": "C", "name": "Lightning Round", "duration": 60, "points": 100, "penalty": false,
+    "questions": [
+      { "q": "Currency of Mongolia?", "a": "Tögrög (tugrik)" },
+      { "q": "Chinese zodiac animal for 2023?", "a": "Rabbit" },
+      { "q": "Japanese buckwheat noodles?", "a": "Soba" },
+      { "q": "Korean dish of thin marinated grilled beef?", "a": "Bulgogi" },
+      { "q": "Traditional Japanese robe tied with an obi?", "a": "Kimono" },
+      { "q": "Board game called weiqi in Chinese and baduk in Korean?", "a": "Go" },
+      { "q": "Capital of North Korea?", "a": "Pyongyang" },
+      { "q": "Japanese word for a hot spring?", "a": "Onsen" },
+      { "q": "In Chinese philosophy, the partner of yin?", "a": "Yang" },
+      { "q": "Japanese dish of battered, deep-fried seafood and vegetables?", "a": "Tempura" },
+      { "q": "Chinese practice of arranging spaces for harmonious energy?", "a": "Feng shui" },
+      { "q": "Japanese island prefecture whose capital is Naha?", "a": "Okinawa" }
+    ]
+  },
+  {
+    "type": "board", "group": "Double Round", "variant": "C", "name": "Double Round", "timer": 0,
+    "categories": [
+      { "name": "Music", "clues": [
+        { "value": 200, "q": "BTS’s management company, renamed HYBE in 2021, was originally known by this name.", "a": "What is Big Hit Entertainment?", "hint": "Its old name suggests a chart-topping song." },
+        { "value": 400, "q": "Led by drummer-pianist Yoshiki and singer Toshi, this Japanese band pioneered the flamboyant “visual kei” rock style.", "a": "What is X Japan?", "hint": "A single letter plus a country’s name." },
+        { "value": 600, "q": "One of Cantopop’s “Four Heavenly Kings,” this singer is often hailed as the “God of Songs.”", "a": "Who is Jacky Cheung?", "hint": "His 1993 Mandarin album “The Goodbye Kiss” sold millions." },
+        { "value": 800, "q": "Born in Shenyang in 1982, this classical pianist performed at the opening ceremony of the 2008 Beijing Olympics.", "a": "Who is Lang Lang?", "hint": "His given name repeats his surname." },
+        { "value": 1000, "q": "Brought from the Asian mainland more than a thousand years ago, this is the ancient court music of Japan’s imperial household.", "a": "What is gagaku?", "hint": "Its name means “elegant music.”" }
+      ]},
+      { "name": "Movies & TV", "clues": [
+        { "value": 200, "q": "In this 1997 Miyazaki film, the young prince Ashitaka is caught between an ironworks town and ancient forest gods.", "a": "What is Princess Mononoke?", "hint": "Its heroine, San, was raised by wolves." },
+        { "value": 400, "q": "This 2002 Hong Kong police thriller starring Andy Lau and Tony Leung was remade by Martin Scorsese as “The Departed.”", "a": "What is Infernal Affairs?", "hint": "Both leads are undercover moles." },
+        { "value": 600, "q": "Bong Joon-ho’s 2013 English-language film is set aboard a train that endlessly circles a frozen Earth.", "a": "What is Snowpiercer?", "hint": "Based on a French graphic novel." },
+        { "value": 800, "q": "Park Chan-wook’s 2016 film set in 1930s Korea follows a pickpocket hired as a maid to an heiress.", "a": "What is The Handmaiden?", "hint": "Adapted from Sarah Waters’s novel “Fingersmith.”" },
+        { "value": 1000, "q": "This Taiwanese director won Best Director at Cannes in 2000 for “Yi Yi,” a portrait of a Taipei family.", "a": "Who is Edward Yang?", "hint": "He also directed “A Brighter Summer Day.”" }
+      ]},
+      { "name": "Ancient History", "clues": [
+        { "value": 200, "q": "Ruling China from 960 to 1279, this imperial house saw movable type invented and paper money widely used.", "a": "What is the Song dynasty?", "hint": "Its capitals were Kaifeng and later Hangzhou." },
+        { "value": 400, "q": "This 15th-century Joseon king commissioned the Korean alphabet and is honored with the title “the Great.”", "a": "Who is Sejong?", "hint": "He appears on South Korea’s 10,000-won note." },
+        { "value": 600, "q": "Chinese chronicles of the 3rd century describe this shaman queen who ruled the Japanese land of Yamatai.", "a": "Who is Himiko?", "hint": "She sent envoys to the Chinese kingdom of Wei." },
+        { "value": 800, "type": "dd", "q": "This Ming admiral led seven great “treasure fleet” voyages across the Indian Ocean between 1405 and 1433.", "a": "Who is Zheng He?", "hint": "He was a Muslim court eunuch from Yunnan." },
+        { "value": 1000, "q": "This 7th-century Buddhist monk traveled from Tang China to India, and his journey inspired a famous classic novel.", "a": "Who is Xuanzang?", "hint": "He brought hundreds of scriptures back to Chang’an." }
+      ]},
+      { "name": "Recent History", "clues": [
+        { "value": 200, "q": "In 1983, this Kyoto company released the Family Computer, or Famicom, in Japan.", "a": "What is Nintendo?", "hint": "It began as a playing-card maker." },
+        { "value": 400, "q": "Founded in 1938 as a small trading company in Daegu, this firm grew into South Korea’s largest business group.", "a": "What is Samsung?", "hint": "Its name means “three stars.”" },
+        { "value": 600, "type": "mc", "q": "In which year did Nagano, Japan, host the Winter Olympics?", "a": "1998", "options": ["1992", "1994", "1998", "2002"], "correct": 2 },
+        { "value": 800, "q": "In 2012, this novelist, whose “Red Sorghum” became Zhang Yimou’s first film, won the Nobel Prize in Literature.", "a": "Who is Mo Yan?", "hint": "His pen name means “don’t speak.”" },
+        { "value": 1000, "q": "Opened in 1994, this Osaka-area airport was built on an artificial island in the bay.", "a": "What is Kansai International Airport?", "hint": "Its three-letter code is KIX." }
+      ]},
+      { "name": "Mythology & Folklore", "clues": [
+        { "value": 200, "q": "In Japanese folklore, these clever shape-shifting animals grow extra tails as they age.", "a": "What are kitsune (foxes)?", "hint": "Statues of them guard Inari shrines." },
+        { "value": 400, "q": "Born from a stone, this Monkey King wreaked havoc in Heaven before escorting a monk on a pilgrimage.", "a": "Who is Sun Wukong?", "hint": "His magic staff can shrink or grow." },
+        { "value": 600, "q": "This Shinto sun goddess is enshrined at Ise and is the mythical ancestor of Japan’s imperial family.", "a": "Who is Amaterasu?", "hint": "She once hid in a cave, darkening the world." },
+        { "value": 800, "type": "dd", "q": "In the Chinese legend behind the Qixi Festival, a flock of these birds forms a bridge so the weaver girl and cowherd can meet once a year.", "a": "What are magpies?", "hint": "Black-and-white members of the crow family." },
+        { "value": 1000, "q": "In Chinese mythology, this goddess molded the first humans from yellow clay and patched the broken sky.", "a": "Who is Nüwa?", "hint": "Often shown with a serpent’s tail." }
+      ]},
+      { "name": "Tea & Cuisine", "clues": [
+        { "value": 200, "q": "This Cantonese dining tradition serves small plates like har gow and siu mai alongside pots of tea.", "a": "What is dim sum?", "hint": "Often wheeled around on carts." },
+        { "value": 400, "q": "This thick, chewy Japanese wheat noodle is often served in a dashi-based broth.", "a": "What is udon?", "hint": "Much thicker than soba." },
+        { "value": 600, "q": "Partly oxidized, this tea style falls between green and black tea and is a specialty of Fujian and Taiwan.", "a": "What is oolong?", "hint": "Tieguanyin is a famous variety." },
+        { "value": 800, "q": "This Sichuan dish of bean curd in fiery chili-bean sauce is traditionally said to be named for a pockmarked old woman.", "a": "What is mapo tofu?", "hint": "Sichuan peppercorns give it a numbing tingle." },
+        { "value": 1000, "q": "This aged, fermented dark tea from Yunnan is named for a historic tea-trading town and is often pressed into cakes.", "a": "What is pu’er?", "hint": "It can be aged for decades, like wine." }
+      ]}
+    ]
+  },
+  {
+    "type": "bonus", "group": "Bonus Round", "variant": "C", "name": "Bonus Round", "points": 200, "timer": 20,
+    "questions": [
+      { "q": "Which Chinese dynasty built the Forbidden City in Beijing?", "a": "Ming", "options": ["Tang", "Ming", "Han", "Jin"], "correct": 1 },
+      { "q": "Which South Korean city was the capital of the Silla kingdom?", "a": "Gyeongju", "options": ["Busan", "Gwangju", "Daejeon", "Gyeongju"], "correct": 3 },
+      { "q": "Which Chinese city is famous for the karst peaks along the Li River?", "a": "Guilin", "options": ["Guilin", "Harbin", "Qingdao", "Lhasa"], "correct": 0 },
+      { "q": "What is the Korean dish of chewy rice cakes simmered in spicy red sauce?", "a": "Tteokbokki" },
+      { "q": "What is the Japanese art of growing miniature trees in containers?", "a": "Bonsai" }
+    ]
+  },
+  {
+    "type": "final", "group": "Final Round", "variant": "C", "name": "Final Round", "category": "Ancient Engineering",
+    "q": "Built around 256 BCE under the Qin governor Li Bing, this UNESCO-listed irrigation system in Sichuan still waters the Chengdu Plain without a dam.",
+    "a": "What is Dujiangyan?",
+    "hint": "A “fish mouth” levee splits the Min River.",
+    "timer": 30
+  }
+]}
