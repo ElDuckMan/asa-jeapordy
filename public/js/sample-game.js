@@ -444,7 +444,8 @@ window.SAMPLE_GAME = {
       "category": "World Landmarks",
       "timer": 30,
       "q": "Built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal, this white marble mausoleum stands in Agra.",
-      "a": "What is the Taj Mahal?"
+      "a": "What is the Taj Mahal?",
+      "hint": "It's the most famous building in India."
     },
     {
       "type": "board",
@@ -457,29 +458,34 @@ window.SAMPLE_GAME = {
             {
               "value": 400,
               "q": "This fourth king of Korea's Joseon dynasty introduced the Hangul alphabet in 1446.",
-              "a": "Who is King Sejong (the Great)?"
+              "a": "Who is King Sejong (the Great)?",
+              "hint": "His face is on South Korea's 10,000-won note."
             },
             {
               "value": 800,
               "q": "The 1868 restoration that returned power to Japan's emperor bears this emperor's name.",
-              "a": "Who is Meiji?"
+              "a": "Who is Meiji?",
+              "hint": "It means \"enlightened rule.\""
             },
             {
               "value": 1200,
               "q": "Formerly East Pakistan, this country won its independence in 1971.",
-              "a": "What is Bangladesh?"
+              "a": "What is Bangladesh?",
+              "hint": "Its capital is Dhaka."
             },
             {
               "value": 1600,
               "type": "dd",
               "q": "The Khmer Rouge seized power in Cambodia in this year.",
-              "a": "What is 1975?"
+              "a": "What is 1975?",
+              "hint": "The same year the Vietnam War ended."
             },
             {
               "value": 2000,
               "timer": 20,
               "q": "The 1842 Treaty of Nanking, ending the First Opium War, ceded this island to Britain.",
-              "a": "What is Hong Kong (Island)?"
+              "a": "What is Hong Kong (Island)?",
+              "hint": "Today it's a Special Administrative Region of China."
             }
           ]
         },
@@ -489,28 +495,33 @@ window.SAMPLE_GAME = {
             {
               "value": 400,
               "q": "Asia's longest river.",
-              "a": "What is the Yangtze?"
+              "a": "What is the Yangtze?",
+              "hint": "It flows through Shanghai."
             },
             {
               "value": 800,
               "q": "Lake Baikal, the world's deepest lake, is in this country.",
-              "a": "What is Russia?"
+              "a": "What is Russia?",
+              "hint": "It's in Siberia."
             },
             {
               "value": 1200,
               "q": "It is the only Southeast Asian country never colonized by a European power.",
-              "a": "What is Thailand?"
+              "a": "What is Thailand?",
+              "hint": "Its old name was Siam."
             },
             {
               "value": 1600,
               "q": "The capital of Kazakhstan.",
-              "a": "What is Astana?"
+              "a": "What is Astana?",
+              "hint": "It was called Nur-Sultan from 2019 to 2022."
             },
             {
               "value": 2000,
               "timer": 20,
               "q": "This strait separates Sri Lanka from India.",
-              "a": "What is the Palk Strait?"
+              "a": "What is the Palk Strait?",
+              "hint": "It shares a name with a British colonial governor of Madras."
             }
           ]
         },
@@ -520,28 +531,33 @@ window.SAMPLE_GAME = {
             {
               "value": 400,
               "q": "Japanese dashi is usually made from kombu and flakes of this dried, smoked fish.",
-              "a": "What is bonito (katsuobushi)?"
+              "a": "What is bonito (katsuobushi)?",
+              "hint": "The same fish as skipjack tuna."
             },
             {
               "value": 800,
               "q": "This costly spice comes from the dried stigmas of a crocus flower.",
-              "a": "What is saffron?"
+              "a": "What is saffron?",
+              "hint": "It turns biryani and paella golden."
             },
             {
               "value": 1200,
               "q": "This fermented Korean chili paste gives tteokbokki its sauce.",
-              "a": "What is gochujang?"
+              "a": "What is gochujang?",
+              "hint": "Its name starts with \"gochu,\" the Korean word for chili pepper."
             },
             {
               "value": 1600,
               "q": "The bread in a Vietnamese bánh mì comes from this colonial power's baguette.",
-              "a": "What is France?"
+              "a": "What is France?",
+              "hint": "Its capital is Paris."
             },
             {
               "value": 2000,
               "timer": 20,
               "q": "Named after a Chinese island, Hainanese chicken rice is a national dish of this city-state.",
-              "a": "What is Singapore?"
+              "a": "What is Singapore?",
+              "hint": "It's also called the Lion City."
             }
           ]
         },
@@ -551,12 +567,14 @@ window.SAMPLE_GAME = {
             {
               "value": 400,
               "q": "Japanese writing uses hiragana, katakana, and these Chinese-derived characters.",
-              "a": "What is kanji?"
+              "a": "What is kanji?",
+              "hint": "The same characters are called hanzi in China."
             },
             {
               "value": 800,
               "q": "This script is used to write Hindi, Marathi, and Sanskrit.",
-              "a": "What is Devanagari?"
+              "a": "What is Devanagari?",
+              "hint": "Its name means \"city of the gods.\""
             },
             {
               "value": 1200,
@@ -569,18 +587,21 @@ window.SAMPLE_GAME = {
                 "Mandarin Chinese",
                 "Hindi"
               ],
-              "correct": 2
+              "correct": 2,
+              "hint": "Over 900 million native speakers."
             },
             {
               "value": 1600,
               "q": "Vietnamese is written in this Latin-based alphabet, whose name means “national language script.”",
-              "a": "What is chữ Quốc ngữ?"
+              "a": "What is chữ Quốc ngữ?",
+              "hint": "Created by missionaries in the 1600s."
             },
             {
               "value": 2000,
               "timer": 20,
               "q": "In Tagalog, “salamat” means this.",
-              "a": "What is thank you?"
+              "a": "What is thank you?",
+              "hint": "Said after someone does you a favor."
             }
           ]
         },
@@ -590,29 +611,34 @@ window.SAMPLE_GAME = {
             {
               "value": 400,
               "q": "China's Four Great Inventions are paper, printing, the compass, and this.",
-              "a": "What is gunpowder?"
+              "a": "What is gunpowder?",
+              "hint": "It was first developed by alchemists searching for an elixir of life."
             },
             {
               "value": 800,
               "q": "In 628 CE, this Indian mathematician wrote the first rules for using zero as a number.",
-              "a": "Who is Brahmagupta?"
+              "a": "Who is Brahmagupta?",
+              "hint": "His book's title means \"The Correctly Established Doctrine of Brahma.\""
             },
             {
               "value": 1200,
               "type": "dd",
               "q": "In February 1970, this became the first Asian country to put its own satellite into orbit.",
-              "a": "What is Japan?"
+              "a": "What is Japan?",
+              "hint": "Its satellite was named Ōsumi."
             },
             {
               "value": 1600,
               "q": "This Indian physicist won the 1930 Nobel Prize in Physics for his work on the scattering of light.",
-              "a": "Who is C. V. Raman?"
+              "a": "Who is C. V. Raman?",
+              "hint": "Bangalore's Raman Research Institute is named after him."
             },
             {
               "value": 2000,
               "timer": 20,
               "q": "Instant ramen was invented in 1958 by this founder of Nissin.",
-              "a": "Who is Momofuku Ando?"
+              "a": "Who is Momofuku Ando?",
+              "hint": "His company's most famous product is Cup Noodles."
             }
           ]
         }
@@ -627,55 +653,68 @@ window.SAMPLE_GAME = {
       "questions": [
         {
           "q": "Capital of Laos?",
-          "a": "Vientiane"
+          "a": "Vientiane",
+          "hint": "It sits on the Mekong River."
         },
         {
           "q": "Capital of Myanmar?",
-          "a": "Naypyidaw"
+          "a": "Naypyidaw",
+          "hint": "It replaced Yangon as the capital in the mid-2000s."
         },
         {
           "q": "Capital of Bhutan?",
-          "a": "Thimphu"
+          "a": "Thimphu",
+          "hint": "Starts with \"Thim…\""
         },
         {
           "q": "Capital of Pakistan?",
-          "a": "Islamabad"
+          "a": "Islamabad",
+          "hint": "Near the city of Rawalpindi."
         },
         {
           "q": "Capital of Taiwan?",
-          "a": "Taipei"
+          "a": "Taipei",
+          "hint": "Home of the Taipei 101 skyscraper."
         },
         {
           "q": "Currency of South Korea?",
-          "a": "Won"
+          "a": "Won",
+          "hint": "Also the name of North Korea's currency."
         },
         {
           "q": "Currency of India?",
-          "a": "Rupee"
+          "a": "Rupee",
+          "hint": "Also used in Pakistan and Nepal."
         },
         {
           "q": "Japanese word for “cheers”?",
-          "a": "Kanpai"
+          "a": "Kanpai",
+          "hint": "Literally \"dry cup.\""
         },
         {
           "q": "Hindi word for “tea”?",
-          "a": "Chai"
+          "a": "Chai",
+          "hint": "Rhymes with \"high.\""
         },
         {
           "q": "How many main islands make up Japan?",
-          "a": "Four"
+          "a": "Four",
+          "hint": "Honshu is the biggest."
         },
         {
           "q": "Country home to the Silk Road city of Samarkand?",
-          "a": "Uzbekistan"
+          "a": "Uzbekistan",
+          "hint": "Its capital is Tashkent."
         },
         {
           "q": "Strait between the Malay Peninsula and Sumatra?",
-          "a": "Strait of Malacca"
+          "a": "Strait of Malacca",
+          "hint": "Named for a Malaysian port city."
         },
         {
           "q": "Japanese poem of 31 syllables?",
-          "a": "Tanka"
+          "a": "Tanka",
+          "hint": "Older than the haiku."
         }
       ]
     },
@@ -694,7 +733,8 @@ window.SAMPLE_GAME = {
             "Brahma",
             "Ganesha"
           ],
-          "correct": 1
+          "correct": 1,
+          "hint": "He's the preserver god in the Hindu trinity."
         },
         {
           "q": "Which of these is NOT an official language of Singapore?",
@@ -705,11 +745,13 @@ window.SAMPLE_GAME = {
             "Tamil",
             "Hokkien"
           ],
-          "correct": 3
+          "correct": 3,
+          "hint": "Mandarin is official; this other Chinese language is not."
         },
         {
           "q": "Name the Korean harvest holiday often called “Korean Thanksgiving.”",
-          "a": "Chuseok"
+          "a": "Chuseok",
+          "hint": "Celebrated on the 15th day of the 8th lunar month."
         },
         {
           "q": "Who founded the Mughal Empire in 1526?",
@@ -720,7 +762,8 @@ window.SAMPLE_GAME = {
             "Humayun",
             "Aurangzeb"
           ],
-          "correct": 1
+          "correct": 1,
+          "hint": "He was a descendant of Timur and Genghis Khan."
         }
       ]
     },
@@ -730,7 +773,8 @@ window.SAMPLE_GAME = {
       "category": "Explorers",
       "timer": 30,
       "q": "Between 1405 and 1433, this Ming dynasty admiral led seven treasure voyages that reached as far as East Africa.",
-      "a": "Who is Zheng He?"
+      "a": "Who is Zheng He?",
+      "hint": "He sailed generations before Columbus, with ships far larger."
     }
   ]
 };

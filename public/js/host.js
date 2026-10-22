@@ -185,6 +185,7 @@
       if (q.media) h += `<div class="small">Media: <a href="${esc(q.media.url)}" target="_blank" rel="noopener">${esc(q.media.type)}</a> (plays on the big screen)</div>`;
       if (q.options && q.options.length) h += `<ol class="h-opts" type="A">${q.options.map((op, i) => `<li class="${i === q.correct ? 'right' : ''}">${esc(op)}${i === q.correct ? ' ✓' : ''}</li>`).join('')}</ol>`;
       h += `<div class="h-answer"><span class="small muted">Answer${q.revealed ? '' : ' (only you can see it)'}:</span> <b>${esc(q.answer || '—')}</b></div>`;
+      if (q.hint) h += `<div class="row h-hintrow"><span class="h-hint">💡 <span class="small muted">Hint:</span> ${esc(q.hint)}</span>${q.hintShown ? '<span class="small h-hintdone">✓ shown on screen</span>' : (q.stage === 'wager' ? '' : btn('hint', '💡 Show hint', 'sm hi'))}</div>`;
       h += `<div class="h-actions">${actions(s)}</div>${rulings(s)}${footer(s)}</div>`;
       return h;
     }
@@ -317,7 +318,7 @@
           return emit('host:startRound', { index: +b.dataset.i });
         case 'endGame': if (S && S.phase !== 'final' && !confirm('End the game and show final scores?')) return; return emit('host:endGame');
         case 'open': case 'reveal': case 'lock': case 'lightningStart': case 'lightningNext': case 'lightningStop':
-        case 'bonusNext': case 'showClue': case 'finalAnswer': case 'cancelClue': case 'closeClue':
+        case 'bonusNext': case 'showClue': case 'hint': case 'finalAnswer': case 'cancelClue': case 'closeClue':
           return emit('host:' + a);
         case 'judge': return emit('host:judge', { correct: b.dataset.correct === '1' });
         case 'rule': return emit('host:override', b.dataset.v === 'x' ? { teamId: team, clear: true } : { teamId: team, correct: b.dataset.v === '1' });

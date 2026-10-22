@@ -55,6 +55,7 @@
         <button class="btn sm no" data-ed="delClue" data-i="${i}" data-c="${c}" data-j="${j}" title="Delete clue">✕</button></div>
       <textarea class="field" rows="2" data-path="${b}.q" placeholder="Clue">${val(cl.q)}</textarea>
       <input class="field" data-path="${b}.a" value="${val(cl.a)}" placeholder="Correct answer (What is …?)">
+      <input class="field" data-path="${b}.hint" value="${val(cl.hint)}" placeholder="💡 Hint (optional)">
       ${cl.type === 'mc' ? optionsBlock(b, cl, false) : ''}${mediaRow(b, cl.media)}</div>`;
   }
   function questionHTML(i, k, x, withOptions) {
@@ -62,6 +63,7 @@
     return `<div class="ed-clue paper"><div class="row"><b>#${k + 1}</b><span style="flex:1"></span><button class="btn sm no" data-ed="delQ" data-i="${i}" data-k="${k}">✕</button></div>
       <textarea class="field" rows="2" data-path="${b}.q" placeholder="Question">${val(x.q)}</textarea>
       <input class="field" data-path="${b}.a" value="${val(x.a)}" placeholder="Correct answer">
+      <input class="field" data-path="${b}.hint" value="${val(x.hint)}" placeholder="💡 Hint (optional)">
       ${withOptions ? optionsBlock(b, x, true) : ''}${mediaRow(b, x.media)}</div>`;
   }
   function roundBody(r, i) {
@@ -89,6 +91,7 @@
     return `<label class="lbl">Category</label><input class="field" data-path="${b}.category" value="${val(r.category)}">
       <label class="lbl">Final clue</label><textarea class="field" rows="3" data-path="${b}.q">${val(r.q)}</textarea>
       <label class="lbl">Correct answer</label><input class="field" data-path="${b}.a" value="${val(r.a)}">
+      <label class="lbl">💡 Hint (optional)</label><input class="field" data-path="${b}.hint" value="${val(r.hint)}">
       <div class="row small"><label>Seconds to answer <input class="field num" type="number" min="0" data-kind="num" data-path="${b}.timer" value="${r.timer}"></label></div>
       ${mediaRow(b, r.media)}`;
   }

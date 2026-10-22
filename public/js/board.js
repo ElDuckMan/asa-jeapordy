@@ -153,6 +153,7 @@
         case 'lightning': FX.lightning(); break;
         case 'reveal': case 'joined': case 'flip': Sound.play('pop'); break;
         case 'open': Sound.play('open'); break;
+        case 'hint': Sound.play('pop'); setTimeout(() => { const n = document.querySelector('.hint-note'); if (n) { const c = FX.centerOf(n); FX.sparkles(c.x, c.y, { count: 16, colors: ['#ffd84d', '#fff', '#e6a92b'], power: 0.7 }); } }, 120); break;
         case 'end': setTimeout(() => FX.celebrate(), 400); break;
       }
     }
