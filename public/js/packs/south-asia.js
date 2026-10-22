@@ -57,7 +57,7 @@ AsaPacks.add({
       "clues": [
        {
         "value": 100,
-        "q": "In this 2001 Aamir Khan film, villagers challenge British officers to a cricket match to escape a heavy tax.",
+        "q": "In this 2001 Aamir Khan film, villagers take on British officers in a cricket match to escape a heavy tax.",
         "a": "What is Lagaan?"
        },
        {
@@ -92,7 +92,7 @@ AsaPacks.add({
        },
        {
         "value": 200,
-        "q": "This Mauryan emperor embraced Buddhism after the bloody Kalinga War.",
+        "q": "This Mauryan emperor embraced Buddhism after the devastating Kalinga War.",
         "a": "Who is Ashoka?"
        },
        {
@@ -103,7 +103,7 @@ AsaPacks.add({
        {
         "value": 400,
         "type": "dd",
-        "q": "The oldest of the four Vedas, this collection of hymns was composed in an early form of Sanskrit.",
+        "q": "The oldest of the four Vedas, this collection of more than 1,000 hymns honors deities such as Agni and Indra.",
         "a": "What is the Rigveda?"
        },
        {
@@ -270,7 +270,7 @@ AsaPacks.add({
        },
        {
         "value": 400,
-        "q": "This 2011 Hum TV drama serial starring Fawad Khan and Mahira Khan became a hit on both sides of the border.",
+        "q": "Adapted from Farhat Ishtiaq’s novel, this 2011 Hum TV drama serial starred Fawad Khan and Mahira Khan as Ashar and Khirad.",
         "a": "What is Humsafar?"
        },
        {
@@ -336,7 +336,7 @@ AsaPacks.add({
        },
        {
         "value": 500,
-        "q": "In 2008, this Himalayan kingdom held its first parliamentary elections and adopted its first written constitution.",
+        "q": "In 2008, this Himalayan kingdom adopted its first written constitution and became a constitutional monarchy with an elected National Assembly.",
         "a": "What is Bhutan?"
        }
       ]
@@ -356,7 +356,7 @@ AsaPacks.add({
        },
        {
         "value": 300,
-        "q": "Celebrated in Bangladesh on April 14, this Bengali New Year festival features the colorful Mangal Shobhajatra procession.",
+        "q": "Celebrated in Bangladesh on April 14 with greetings of “Shubho Noboborsho,” this festival marks the first day of the Bengali calendar year.",
         "a": "What is Pohela Boishakh?"
        },
        {
@@ -391,13 +391,13 @@ AsaPacks.add({
        },
        {
         "value": 400,
-        "q": "Pakistan won its first Cricket World Cup in this year, beating England in the final in Melbourne.",
-        "a": "What is 1992?"
+        "q": "This Indian javelin thrower won Olympic gold at the Tokyo Games, held in 2021.",
+        "a": "Who is Neeraj Chopra?"
        },
        {
         "value": 500,
-        "q": "This Indian javelin thrower won Olympic gold at the Tokyo Games, held in 2021.",
-        "a": "Who is Neeraj Chopra?"
+        "q": "Pakistan won its first Cricket World Cup in this year, beating England in the final in Melbourne.",
+        "a": "What is 1992?"
        }
       ]
      }
@@ -429,12 +429,12 @@ AsaPacks.add({
       "a": "Dhaka"
      },
      {
-      "q": "National flower of India?",
-      "a": "Lotus"
+      "q": "Currency of Bhutan?",
+      "a": "Ngultrum"
      },
      {
-      "q": "Pakistan’s highest mountain?",
-      "a": "K2"
+      "q": "Flatbread baked in a tandoor?",
+      "a": "Naan"
      },
      {
       "q": "Sri Lanka’s name until 1972?",
@@ -561,7 +561,7 @@ AsaPacks.add({
          "Garba"
         ],
         "correct": 1,
-        "hint": "Its name comes from a Portuguese word for “dance.”"
+        "hint": "Its name comes from the Portuguese verb “bailar,” to dance."
        },
        {
         "value": 1000,
@@ -600,9 +600,9 @@ AsaPacks.add({
        },
        {
         "value": 1000,
-        "q": "Sharmeen Obaid-Chinoy won her first Academy Award for this 2012 documentary short about acid-attack survivors in Pakistan.",
-        "a": "What is Saving Face?",
-        "hint": "The title hints at plastic surgery and dignity."
+        "q": "Directed by Tareque Masud, this 2002 film became Bangladesh’s first-ever submission for the Academy Award for Best Foreign Language Film.",
+        "a": "What is Matir Moina?",
+        "hint": "Its English title is “The Clay Bird.”"
        }
       ]
      },
@@ -720,7 +720,7 @@ AsaPacks.add({
         "value": 200,
         "q": "This white-marble mausoleum in Agra was commissioned by Mughal emperor Shah Jahan in memory of his wife.",
         "a": "What is the Taj Mahal?",
-        "hint": "One of the most photographed buildings on Earth."
+        "hint": "It stands on the bank of the Yamuna River."
        },
        {
         "value": 400,
@@ -736,8 +736,8 @@ AsaPacks.add({
        },
        {
         "value": 800,
-        "q": "Also called Paro Taktsang, this Buddhist monastery clings to a cliff in Bhutan.",
-        "a": "What is the Tiger’s Nest?",
+        "q": "Built around a cave where Guru Rinpoche is said to have meditated, this Buddhist monastery clings to a cliff above Bhutan’s Paro Valley.",
+        "a": "What is the Tiger’s Nest (Paro Taktsang)?",
         "hint": "Named after a big cat’s home."
        },
        {
@@ -790,11 +790,11 @@ AsaPacks.add({
          "Afghanistan"
         ],
         "correct": 2,
-        "hint": "The shrine is in Sehwan, in Sindh."
+        "hint": "The shrine stands in the town of Sehwan Sharif."
        },
        {
         "value": 1000,
-        "q": "The most widely performed form of Hindustani classical vocal music takes its name from a word meaning “imagination.”",
+        "q": "Today the predominant genre of Hindustani classical vocal music, this form takes its name from an Arabic-Persian word often translated as “imagination.”",
         "a": "What is khayal?",
         "hint": "Not dhrupad, its older and more austere cousin."
        }
@@ -878,7 +878,7 @@ AsaPacks.add({
         "value": 200,
         "q": "In 1948, this island, then called Ceylon, gained independence from Britain.",
         "a": "What is Sri Lanka?",
-        "hint": "Its current name means “resplendent island.”"
+        "hint": "Its largest city is Colombo."
        },
        {
         "value": 400,
@@ -932,7 +932,7 @@ AsaPacks.add({
         "value": 800,
         "q": "Set in Kerala, this debut novel by Arundhati Roy won the 1997 Booker Prize.",
         "a": "What is The God of Small Things?",
-        "hint": "The title mentions a deity of little things."
+        "hint": "Its central characters are the twins Estha and Rahel."
        },
        {
         "value": 1000,
@@ -961,13 +961,13 @@ AsaPacks.add({
         "value": 600,
         "q": "Pakistan’s national animal is this wild goat with spectacular corkscrew horns.",
         "a": "What is the markhor?",
-        "hint": "Its name is often said to mean “snake-eater.”"
+        "hint": "Its Persian name is usually translated “snake-eater,” from a folk belief that it kills snakes."
        },
        {
         "value": 800,
         "q": "Known locally as the danphe, this iridescent pheasant is Nepal’s national bird.",
         "a": "What is the Himalayan monal?",
-        "hint": "Named after the mountain range it lives in."
+        "hint": "It is also the state bird of Uttarakhand."
        },
        {
         "value": 1000,
