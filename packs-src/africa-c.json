@@ -4,7 +4,7 @@
     "categories": [
       { "name": "Music", "clues": [
         { "value": 100, "q": "This South African DJ's 2019 gospel-house hit “Jerusalema,” featuring Nomcebo Zikode, sparked a worldwide dance challenge in 2020.", "a": "Who is Master KG?" },
-        { "value": 200, "q": "This Nigerian singer had a breakout Afropop hit in 2014 with “Johnny,” about a boyfriend with too many girlfriends.", "a": "Who is Yemi Alade?" },
+        { "value": 200, "q": "This Nigerian singer released her breakout Afropop hit “Johnny” in 2013, a song about a boyfriend with too many girlfriends.", "a": "Who is Yemi Alade?" },
         { "value": 300, "q": "Growing out of Congolese rumba, this fast, guitar-driven dance music takes its name from a French verb meaning “to shake.”", "a": "What is soukous?" },
         { "value": 400, "q": "This band of Tuareg guitarists from northern Mali won the 2012 Grammy for Best World Music Album for “Tassili.”", "a": "Who is Tinariwen?" },
         { "value": 500, "q": "This Ethiopian vibraphonist and bandleader is known as the father of Ethio-jazz.", "a": "Who is Mulatu Astatke?" }
@@ -13,7 +13,7 @@
         { "value": 100, "q": "Viola Davis leads the all-female Agojie warriors of the Kingdom of Dahomey in this 2022 film.", "a": "What is The Woman King?" },
         { "value": 200, "q": "This 2016 Disney film starring Lupita Nyong'o tells the true story of Phiona Mutesi, a chess prodigy from Kampala, Uganda.", "a": "What is Queen of Katwe?" },
         { "value": 300, "q": "This South African comedian, author of the memoir “Born a Crime,” hosted “The Daily Show” from 2015 to 2022.", "a": "Who is Trevor Noah?" },
-        { "value": 400, "q": "Directed by and starring Genevieve Nnaji, this 2018 film was Nigeria's 2019 Oscar submission but was disqualified for having mostly English dialogue.", "a": "What is Lionheart?" },
+        { "value": 400, "q": "Directed by and starring Genevieve Nnaji, this 2018 film was Nigeria's first-ever Oscar submission but was disqualified in 2019 for having mostly English dialogue.", "a": "What is Lionheart?" },
         { "value": 500, "q": "Souleymane Cissé's 1987 Malian film about a young man with magical powers won the Jury Prize at Cannes.", "a": "What is Yeelen?" }
       ]},
       { "name": "Ancient History", "clues": [
@@ -35,7 +35,7 @@
         { "value": 200, "q": "This long, loose hooded robe with full sleeves is traditional dress for men and women in Morocco.", "a": "What is the djellaba?" },
         { "value": 300, "type": "mc", "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?", "a": "Red", "options": ["Green", "Yellow", "Red", "Purple"], "correct": 2 },
         { "value": 400, "q": "Often worn with a conical mokorotlo hat, this woolen wrap is a proud symbol of Lesotho.", "a": "What is the Basotho blanket?" },
-        { "value": 500, "q": "This printed cotton cloth from the Swahili coast, sold in pairs, usually carries a proverb or saying along its border.", "a": "What is the kanga (khanga)?" }
+        { "value": 500, "q": "This printed cotton cloth from the Swahili coast, often sold in pairs, usually carries a Swahili proverb or saying printed on it.", "a": "What is the kanga (khanga)?" }
       ]},
       { "name": "Cities", "clues": [
         { "value": 100, "q": "Nicknamed “the Mother City,” this South African city sits at the foot of Table Mountain.", "a": "What is Cape Town?" },
@@ -68,7 +68,7 @@
     "categories": [
       { "name": "Music", "clues": [
         { "value": 200, "q": "His 2004 love song “African Queen” made this Nigerian singer, born Innocent Idibia, a star across the continent.", "a": "Who is 2Baba (2Face Idibia)?", "hint": "His stage name starts with a number." },
-        { "value": 400, "q": "This Tanzanian bongo flava superstar founded the record label WCB Wasafi.", "a": "Who is Diamond Platnumz?", "hint": "His stage name pairs a gem with a precious metal." },
+        { "value": 400, "q": "This Tanzanian bongo flava superstar founded the record label WCB Wasafi.", "a": "Who is Diamond Platnumz?", "hint": "Born Naseeb Abdul Juma in Dar es Salaam." },
         { "value": 600, "q": "Nicknamed “the Lion of Zimbabwe,” this musician pioneered chimurenga music built on mbira patterns.", "a": "Who is Thomas Mapfumo?", "hint": "His first name is also a biblical apostle's." },
         { "value": 800, "q": "Leader of the band TPOK Jazz, this Congolese rumba giant was nicknamed “the Sorcerer of the Guitar.”", "a": "Who is Franco (Luambo Makiadi)?", "hint": "Known by a single name that sounds Spanish." },
         { "value": 1000, "q": "Rooted in spiritual healing ceremonies, this Moroccan music is played with a three-string guembri and metal castanets called qraqeb.", "a": "What is Gnawa?", "hint": "Celebrated each year at a festival in Essaouira." }
@@ -83,8 +83,8 @@
       { "name": "Ancient History", "clues": [
         { "value": 200, "q": "Ancient Egyptians preserved the dead through this process, removing organs, drying the body with natron and wrapping it in linen.", "a": "What is mummification?", "hint": "The result might later appear in a museum case." },
         { "value": 400, "q": "Often called the first named architect in history, he designed the Step Pyramid of Djoser at Saqqara.", "a": "Who is Imhotep?", "hint": "Later revered as a god of medicine." },
-        { "value": 600, "q": "This bishop of Hippo, in what is now Algeria, wrote “Confessions” and “The City of God” around 400 CE.", "a": "Who is Augustine of Hippo?", "hint": "A Florida city is named after him." },
-        { "value": 800, "type": "dd", "q": "Famous for a small golden rhinoceros found in a royal grave, this hilltop kingdom near the Limpopo River flourished around 1200 CE.", "a": "What is Mapungubwe?", "hint": "Its site lies where South Africa meets Botswana and Zimbabwe." },
+        { "value": 600, "q": "This bishop in Roman North Africa, at what is now Annaba, Algeria, wrote “Confessions” and “The City of God.”", "a": "Who is Augustine of Hippo?", "hint": "A Florida city is named after him." },
+        { "value": 800, "type": "dd", "q": "Famous for a small golden rhinoceros found in a royal grave, this hilltop kingdom near the Limpopo River flourished in the 13th century CE.", "a": "What is Mapungubwe?", "hint": "Its site lies in South Africa, near the Botswana and Zimbabwe borders." },
         { "value": 1000, "q": "Hatshepsut sent a celebrated trading expedition to this land, source of incense, myrrh and ebony, recorded on her temple walls.", "a": "What is the Land of Punt?", "hint": "A four-letter name, probably on the Red Sea coast." }
       ]},
       { "name": "Recent History", "clues": [
@@ -98,12 +98,12 @@
         { "value": 200, "q": "Completed in 1993 on Casablanca's waterfront, this mosque partly built over the Atlantic has a towering minaret.", "a": "What is the Hassan II Mosque?", "hint": "Named after a Moroccan king." },
         { "value": 400, "q": "These brass plaques and sculptures were cast for the royal court of an Edo kingdom in what is now southern Nigeria.", "a": "What are the Benin Bronzes?", "hint": "Named after a metal alloy and the kingdom." },
         { "value": 600, "q": "A royal capital from the 1630s, this Ethiopian city is known for the castles of the Fasil Ghebbi enclosure.", "a": "What is Gondar?", "hint": "Lies north of Lake Tana." },
-        { "value": 800, "q": "This Ghanaian sculptor, long based in Nigeria, makes shimmering tapestry-like works from thousands of flattened bottle caps.", "a": "Who is El Anatsui?", "hint": "His name begins with a Spanish article." },
+        { "value": 800, "q": "This Ghanaian sculptor, long based in Nigeria, makes shimmering tapestry-like works from thousands of flattened bottle caps.", "a": "Who is El Anatsui?", "hint": "Won the Venice Biennale's Golden Lion for Lifetime Achievement in 2015." },
         { "value": 1000, "q": "In 1991, this South African artist painted a BMW 525i Art Car with bold Ndebele patterns.", "a": "Who is Esther Mahlangu?", "hint": "Her first name is shared with a biblical queen." }
       ]},
       { "name": "Mythology & Folklore", "clues": [
         { "value": 200, "q": "This jackal-headed Egyptian god watched over embalming and guided the dead.", "a": "Who is Anubis?", "hint": "His head resembles a wild dog's." },
-        { "value": 400, "q": "This clever spider is the trickster hero of countless Akan folktales from Ghana.", "a": "Who is Anansi?", "hint": "Also spelled with a K at the start." },
+        { "value": 400, "q": "This clever spider is the trickster hero of countless Akan folktales from Ghana.", "a": "Who is Anansi?", "hint": "Legend says he won all the world's stories from the sky god." },
         { "value": 600, "q": "In Yoruba tradition, this fiery orisha, once a king of Oyo, rules thunder and lightning.", "a": "Who is Shango (Ṣàngó)?", "hint": "His symbol is a double-headed axe." },
         { "value": 800, "q": "According to the Ethiopian epic Kebra Nagast, this son of King Solomon and the Queen of Sheba founded Ethiopia's royal line.", "a": "Who is Menelik I?", "hint": "Tradition says he brought the Ark of the Covenant to Ethiopia." },
         { "value": 1000, "type": "dd", "q": "In Egyptian belief, a dead person's heart was weighed against the feather of this goddess of truth and cosmic order.", "a": "Who is Ma'at?", "hint": "A short name, often shown with an ostrich plume." }
