@@ -14,6 +14,7 @@
   const TEAM_COLORS = ['#de3a2e', '#3b4db3', '#e6a92b', '#2a8a96', '#4e9a3f', '#c8612c',
     '#8a4fb3', '#d24f8a', '#1f7a5a', '#8b5a2b', '#2b6cb0', '#b8860b'];
   const MAX_TEAMS = 12;
+  const DEFAULT_SECTIONS = ['Freshmen', 'Sophomores', 'Juniors', 'Seniors', 'Grad / Other'];
 
   /* Every event a client may send. The server registers exactly these. */
   const EVENTS = [
@@ -99,7 +100,8 @@
   function sanitizeSettings(s) {
     s = s || {};
     return {
-      sections: arr(s.sections, 30).map(x => str(x, 40)).filter(Boolean),
+      /* No saved list yet → default sections; an explicitly saved list (even empty) is kept. */
+      sections: Array.isArray(s.sections) ? arr(s.sections, 30).map(x => str(x, 40)).filter(Boolean) : DEFAULT_SECTIONS.slice(),
       wrongPenalty: s.wrongPenalty !== false,
       mcPenalty: !!s.mcPenalty,
       buzzWindowMs: int(s.buzzWindowMs, 300, 0, 2000),
