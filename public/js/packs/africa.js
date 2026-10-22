@@ -404,6 +404,204 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "board",
+    "group": "Round 1",
+    "variant": "C",
+    "name": "Round 1",
+    "timer": 0,
+    "categories": [
+     {
+      "name": "Music",
+      "clues": [
+       {
+        "value": 100,
+        "q": "This South African DJ's 2019 gospel-house hit “Jerusalema,” featuring Nomcebo Zikode, sparked a worldwide dance challenge in 2020.",
+        "a": "Who is Master KG?"
+       },
+       {
+        "value": 200,
+        "q": "This Nigerian singer released her breakout Afropop hit “Johnny” in 2013, a song about a boyfriend with too many girlfriends.",
+        "a": "Who is Yemi Alade?"
+       },
+       {
+        "value": 300,
+        "q": "Growing out of Congolese rumba, this fast, guitar-driven dance music takes its name from a French verb meaning “to shake.”",
+        "a": "What is soukous?"
+       },
+       {
+        "value": 400,
+        "q": "This band of Tuareg guitarists from northern Mali won the 2012 Grammy for Best World Music Album for “Tassili.”",
+        "a": "Who is Tinariwen?"
+       },
+       {
+        "value": 500,
+        "q": "This Ethiopian vibraphonist and bandleader is known as the father of Ethio-jazz.",
+        "a": "Who is Mulatu Astatke?"
+       }
+      ]
+     },
+     {
+      "name": "Movies & TV",
+      "clues": [
+       {
+        "value": 100,
+        "q": "Viola Davis leads the all-female Agojie warriors of the Kingdom of Dahomey in this 2022 film.",
+        "a": "What is The Woman King?"
+       },
+       {
+        "value": 200,
+        "q": "This 2016 Disney film starring Lupita Nyong'o tells the true story of Phiona Mutesi, a chess prodigy from Kampala, Uganda.",
+        "a": "What is Queen of Katwe?"
+       },
+       {
+        "value": 300,
+        "q": "This South African comedian, author of the memoir “Born a Crime,” hosted “The Daily Show” from 2015 to 2022.",
+        "a": "Who is Trevor Noah?"
+       },
+       {
+        "value": 400,
+        "q": "Directed by and starring Genevieve Nnaji, this 2018 film was Nigeria's first-ever Oscar submission but was disqualified in 2019 for having mostly English dialogue.",
+        "a": "What is Lionheart?"
+       },
+       {
+        "value": 500,
+        "q": "Souleymane Cissé's 1987 Malian film about a young man with magical powers won the Jury Prize at Cannes.",
+        "a": "What is Yeelen?"
+       }
+      ]
+     },
+     {
+      "name": "Ancient History",
+      "clues": [
+       {
+        "value": 100,
+        "q": "The famous painted limestone bust of this Egyptian queen, wife of Akhenaten, is displayed in Berlin.",
+        "a": "Who is Nefertiti?"
+       },
+       {
+        "value": 200,
+        "q": "Ancient Egyptians wrote on sheets made from this tall reed that grew along the Nile.",
+        "a": "What is papyrus?"
+       },
+       {
+        "value": 300,
+        "q": "Hero of an epic still sung by griots, this “Lion King” founded the Mali Empire in the 13th century.",
+        "a": "Who is Sundiata Keita?"
+       },
+       {
+        "value": 400,
+        "q": "Named after a village in central Nigeria, this ancient civilization is famous for its terracotta sculptures of human heads.",
+        "a": "What is Nok (the Nok culture)?"
+       },
+       {
+        "value": 500,
+        "q": "This 25th Dynasty Kushite pharaoh is mentioned in the Hebrew Bible and was buried in a pyramid at Nuri.",
+        "a": "Who is Taharqa?"
+       }
+      ]
+     },
+     {
+      "name": "Recent History",
+      "clues": [
+       {
+        "value": 100,
+        "q": "Crowned in 1930, this Ethiopian emperor was born Tafari Makonnen.",
+        "a": "Who is Haile Selassie?"
+       },
+       {
+        "value": 200,
+        "q": "In 2018, the Kingdom of Swaziland officially changed its name to this.",
+        "a": "What is Eswatini?"
+       },
+       {
+        "value": 300,
+        "q": "In 1990, this leader of the independence movement SWAPO became Namibia's first president.",
+        "a": "Who is Sam Nujoma?"
+       },
+       {
+        "value": 400,
+        "type": "dd",
+        "q": "In 1960, this charismatic independence leader became the first prime minister of the Democratic Republic of the Congo.",
+        "a": "Who is Patrice Lumumba?"
+       },
+       {
+        "value": 500,
+        "q": "Botswana's first president, his marriage to Englishwoman Ruth Williams inspired the 2016 film “A United Kingdom.”",
+        "a": "Who is Seretse Khama?"
+       }
+      ]
+     },
+     {
+      "name": "Fashion & Textiles",
+      "clues": [
+       {
+        "value": 100,
+        "q": "Woven in narrow strips by Ghana's Asante and Ewe weavers, this brightly patterned cloth is worn for celebrations and graduations.",
+        "a": "What is kente?"
+       },
+       {
+        "value": 200,
+        "q": "This long, loose hooded robe with full sleeves is traditional dress for men and women in Morocco.",
+        "a": "What is the djellaba?"
+       },
+       {
+        "value": 300,
+        "type": "mc",
+        "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+        "a": "Red",
+        "options": [
+         "Green",
+         "Yellow",
+         "Red",
+         "Purple"
+        ],
+        "correct": 2
+       },
+       {
+        "value": 400,
+        "q": "Often worn with a conical mokorotlo hat, this woolen wrap is a proud symbol of Lesotho.",
+        "a": "What is the Basotho blanket?"
+       },
+       {
+        "value": 500,
+        "q": "This printed cotton cloth from the Swahili coast, often sold in pairs, usually carries a Swahili proverb or saying printed on it.",
+        "a": "What is the kanga (khanga)?"
+       }
+      ]
+     },
+     {
+      "name": "Cities",
+      "clues": [
+       {
+        "value": 100,
+        "q": "Nicknamed “the Mother City,” this South African city sits at the foot of Table Mountain.",
+        "a": "What is Cape Town?"
+       },
+       {
+        "value": 200,
+        "q": "Famous for its ancient medina and leather tanneries, this Moroccan city gave its name to a brimless red felt hat.",
+        "a": "What is Fez?"
+       },
+       {
+        "value": 300,
+        "q": "Tanzania's largest city, its Arabic name means “haven of peace.”",
+        "a": "What is Dar es Salaam?"
+       },
+       {
+        "value": 400,
+        "q": "Facing Brazzaville across the Congo River, this city is the capital of the Democratic Republic of the Congo.",
+        "a": "What is Kinshasa?"
+       },
+       {
+        "value": 500,
+        "q": "This Eritrean capital became a UNESCO World Heritage Site in 2017 for its early 20th-century modernist architecture.",
+        "a": "What is Asmara?"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "type": "lightning",
     "group": "Lightning Round",
     "variant": "A",
@@ -518,6 +716,65 @@ AsaPacks.add({
      {
       "q": "World's largest bird, native to Africa?",
       "a": "Ostrich"
+     }
+    ]
+   },
+   {
+    "type": "lightning",
+    "group": "Lightning Round",
+    "variant": "C",
+    "name": "Lightning Round",
+    "duration": 60,
+    "points": 100,
+    "penalty": false,
+    "questions": [
+     {
+      "q": "Capital of Libya?",
+      "a": "Tripoli"
+     },
+     {
+      "q": "Capital of Zambia?",
+      "a": "Lusaka"
+     },
+     {
+      "q": "Capital of Algeria?",
+      "a": "Algiers"
+     },
+     {
+      "q": "Capital of Mali?",
+      "a": "Bamako"
+     },
+     {
+      "q": "Capital of Madagascar?",
+      "a": "Antananarivo"
+     },
+     {
+      "q": "Currency of Morocco?",
+      "a": "Dirham"
+     },
+     {
+      "q": "Currency of Kenya?",
+      "a": "Shilling"
+     },
+     {
+      "q": "Sea between Egypt and Saudi Arabia?",
+      "a": "Red Sea"
+     },
+     {
+      "q": "Desert covering much of Botswana?",
+      "a": "Kalahari"
+     },
+     {
+      "q": "Cape at Africa's southernmost tip?",
+      "a": "Cape Agulhas"
+     },
+     {
+      "q": "Striped black-and-white African horse?",
+      "a": "Zebra"
+     },
+     {
+      "q": "Animal called the “ship of the desert”?",
+      "a": "Camel"
      }
     ]
    },
@@ -980,6 +1237,235 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "board",
+    "group": "Double Round",
+    "variant": "C",
+    "name": "Double Round",
+    "timer": 0,
+    "categories": [
+     {
+      "name": "Music",
+      "clues": [
+       {
+        "value": 200,
+        "q": "His 2004 love song “African Queen” made this Nigerian singer, born Innocent Idibia, a star across the continent.",
+        "a": "Who is 2Baba (2Face Idibia)?",
+        "hint": "His stage name starts with a number."
+       },
+       {
+        "value": 400,
+        "q": "This Tanzanian bongo flava superstar founded the record label WCB Wasafi.",
+        "a": "Who is Diamond Platnumz?",
+        "hint": "Born Naseeb Abdul Juma in Dar es Salaam."
+       },
+       {
+        "value": 600,
+        "q": "Nicknamed “the Lion of Zimbabwe,” this musician pioneered chimurenga music built on mbira patterns.",
+        "a": "Who is Thomas Mapfumo?",
+        "hint": "His first name is also a biblical apostle's."
+       },
+       {
+        "value": 800,
+        "q": "Leader of the band TPOK Jazz, this Congolese rumba giant was nicknamed “the Sorcerer of the Guitar.”",
+        "a": "Who is Franco (Luambo Makiadi)?",
+        "hint": "Known by a single name that sounds Spanish."
+       },
+       {
+        "value": 1000,
+        "q": "Rooted in spiritual healing ceremonies, this Moroccan music is played with a three-string guembri and metal castanets called qraqeb.",
+        "a": "What is Gnawa?",
+        "hint": "Celebrated each year at a festival in Essaouira."
+       }
+      ]
+     },
+     {
+      "name": "Movies & TV",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Lupita Nyong'o played both a mother and her sinister double in this 2019 Jordan Peele horror film.",
+        "a": "What is Us?",
+        "hint": "A two-letter title."
+       },
+       {
+        "value": 400,
+        "q": "Pearl Thusi starred as a South African secret agent in this 2020 Netflix action series.",
+        "a": "What is Queen Sono?",
+        "hint": "Named after the heroine."
+       },
+       {
+        "value": 600,
+        "q": "Michel Ocelot's 1998 animated film, drawn from West African folktales, follows a tiny, brave newborn who outwits the witch Karaba.",
+        "a": "What is Kirikou and the Sorceress?",
+        "hint": "Named after the little boy hero."
+       },
+       {
+        "value": 800,
+        "q": "Ousmane Sembène's 1966 debut feature follows a young Senegalese woman who moves to France to work for a family.",
+        "a": "What is Black Girl (La Noire de…)?",
+        "hint": "Its English title has two words."
+       },
+       {
+        "value": 1000,
+        "q": "Held in Ouagadougou since 1969, this pan-African film festival awards the Golden Stallion of Yennenga.",
+        "a": "What is FESPACO?",
+        "hint": "Known by a seven-letter French acronym."
+       }
+      ]
+     },
+     {
+      "name": "Ancient History",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Ancient Egyptians preserved the dead through this process, removing organs, drying the body with natron and wrapping it in linen.",
+        "a": "What is mummification?",
+        "hint": "The result might later appear in a museum case."
+       },
+       {
+        "value": 400,
+        "q": "Often called the first named architect in history, he designed the Step Pyramid of Djoser at Saqqara.",
+        "a": "Who is Imhotep?",
+        "hint": "Later revered as a god of medicine."
+       },
+       {
+        "value": 600,
+        "q": "This bishop in Roman North Africa, at what is now Annaba, Algeria, wrote “Confessions” and “The City of God.”",
+        "a": "Who is Augustine of Hippo?",
+        "hint": "A Florida city is named after him."
+       },
+       {
+        "value": 800,
+        "type": "dd",
+        "q": "Famous for a small golden rhinoceros found in a royal grave, this hilltop kingdom near the Limpopo River flourished in the 13th century CE.",
+        "a": "What is Mapungubwe?",
+        "hint": "Its site lies in South Africa, near the Botswana and Zimbabwe borders."
+       },
+       {
+        "value": 1000,
+        "q": "Hatshepsut sent a celebrated trading expedition to this land, source of incense, myrrh and ebony, recorded on her temple walls.",
+        "a": "What is the Land of Punt?",
+        "hint": "A four-letter name, probably on the Red Sea coast."
+       }
+      ]
+     },
+     {
+      "name": "Recent History",
+      "clues": [
+       {
+        "value": 200,
+        "q": "The droning buzz of this long plastic horn filled stadiums during the 2010 FIFA World Cup in South Africa.",
+        "a": "What is the vuvuzela?",
+        "hint": "Fans blow into it like a trumpet."
+       },
+       {
+        "value": 400,
+        "q": "In 1957, this lawyer and independence leader became the first president of the Republic of Tunisia.",
+        "a": "Who is Habib Bourguiba?",
+        "hint": "His first name means “beloved” in Arabic."
+       },
+       {
+        "value": 600,
+        "q": "Known for waving a white handkerchief, he served as Zambia's first president from 1964 to 1991.",
+        "a": "Who is Kenneth Kaunda?",
+        "hint": "Often called “KK.”"
+       },
+       {
+        "value": 800,
+        "type": "mc",
+        "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+        "a": "Zaire",
+        "options": [
+         "Dahomey",
+         "Zaire",
+         "Upper Volta",
+         "Rhodesia"
+        ],
+        "correct": 1,
+        "hint": "Derived from an old local name for the Congo River."
+       },
+       {
+        "value": 1000,
+        "q": "A celebrated poet and co-founder of the Négritude movement, he served as Senegal's first president from 1960 to 1980.",
+        "a": "Who is Léopold Sédar Senghor?",
+        "hint": "The first African elected to the Académie française."
+       }
+      ]
+     },
+     {
+      "name": "Art & Architecture",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Completed in 1993 on Casablanca's waterfront, this mosque partly built over the Atlantic has a towering minaret.",
+        "a": "What is the Hassan II Mosque?",
+        "hint": "Named after a Moroccan king."
+       },
+       {
+        "value": 400,
+        "q": "These brass plaques and sculptures were cast for the royal court of an Edo kingdom in what is now southern Nigeria.",
+        "a": "What are the Benin Bronzes?",
+        "hint": "Named after a metal alloy and the kingdom."
+       },
+       {
+        "value": 600,
+        "q": "A royal capital from the 1630s, this Ethiopian city is known for the castles of the Fasil Ghebbi enclosure.",
+        "a": "What is Gondar?",
+        "hint": "Lies north of Lake Tana."
+       },
+       {
+        "value": 800,
+        "q": "This Ghanaian sculptor, long based in Nigeria, makes shimmering tapestry-like works from thousands of flattened bottle caps.",
+        "a": "Who is El Anatsui?",
+        "hint": "Won the Venice Biennale's Golden Lion for Lifetime Achievement in 2015."
+       },
+       {
+        "value": 1000,
+        "q": "In 1991, this South African artist painted a BMW 525i Art Car with bold Ndebele patterns.",
+        "a": "Who is Esther Mahlangu?",
+        "hint": "Her first name is shared with a biblical queen."
+       }
+      ]
+     },
+     {
+      "name": "Mythology & Folklore",
+      "clues": [
+       {
+        "value": 200,
+        "q": "This jackal-headed Egyptian god watched over embalming and guided the dead.",
+        "a": "Who is Anubis?",
+        "hint": "His head resembles a wild dog's."
+       },
+       {
+        "value": 400,
+        "q": "This clever spider is the trickster hero of countless Akan folktales from Ghana.",
+        "a": "Who is Anansi?",
+        "hint": "Legend says he won all the world's stories from the sky god."
+       },
+       {
+        "value": 600,
+        "q": "In Yoruba tradition, this fiery orisha, once a king of Oyo, rules thunder and lightning.",
+        "a": "Who is Shango (Ṣàngó)?",
+        "hint": "His symbol is a double-headed axe."
+       },
+       {
+        "value": 800,
+        "q": "According to the Ethiopian epic Kebra Nagast, this son of King Solomon and the Queen of Sheba founded Ethiopia's royal line.",
+        "a": "Who is Menelik I?",
+        "hint": "Tradition says he brought the Ark of the Covenant to Ethiopia."
+       },
+       {
+        "value": 1000,
+        "type": "dd",
+        "q": "In Egyptian belief, a dead person's heart was weighed against the feather of this goddess of truth and cosmic order.",
+        "a": "Who is Ma'at?",
+        "hint": "A short name, often shown with an ostrich plume."
+       }
+      ]
+     }
+    ]
+   },
+   {
     "type": "bonus",
     "group": "Bonus Round",
     "variant": "A",
@@ -1082,6 +1568,57 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "bonus",
+    "group": "Bonus Round",
+    "variant": "C",
+    "name": "Bonus Round",
+    "points": 200,
+    "timer": 20,
+    "questions": [
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "a": "The Zambezi",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "a": "Comoros",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "a": "Pound",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Blue Nile joins which other branch of the river at Khartoum? (Name its color.)",
+      "a": "White"
+     },
+     {
+      "q": "Mount Toubkal, North Africa's highest peak, rises in which mountain range?",
+      "a": "Atlas Mountains"
+     }
+    ]
+   },
+   {
     "type": "final",
     "group": "Final Round",
     "variant": "A",
@@ -1101,6 +1638,17 @@ AsaPacks.add({
     "q": "This mighty Central African river crosses the equator twice and is the world's deepest recorded river, with depths of over 200 meters.",
     "a": "What is the Congo River?",
     "hint": "It shares its name with two countries.",
+    "timer": 30
+   },
+   {
+    "type": "final",
+    "group": "Final Round",
+    "variant": "C",
+    "name": "Final Round",
+    "category": "Lost Wonders",
+    "q": "Founded under Egypt's Ptolemaic dynasty, this legendary center of learning sought copies of every book it could obtain; a grand modern successor opened in the same city in 2002.",
+    "a": "What is the Library of Alexandria?",
+    "hint": "Located in a port city on the Mediterranean.",
     "timer": 30
    }
   ]

@@ -404,6 +404,204 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "board",
+    "group": "Round 1",
+    "variant": "C",
+    "name": "Round 1",
+    "timer": 0,
+    "categories": [
+     {
+      "name": "Music",
+      "clues": [
+       {
+        "value": 100,
+        "q": "This Barbadian singer topped charts in 2007 with “Umbrella.”",
+        "a": "Who is Rihanna?"
+       },
+       {
+        "value": 200,
+        "q": "This British singer of “Rolling in the Deep” and “Hello” named albums after her age, such as “21” and “25.”",
+        "a": "Who is Adele?"
+       },
+       {
+        "value": 300,
+        "type": "mc",
+        "q": "Which instrument is Yo-Yo Ma famous for playing?",
+        "a": "Cello",
+        "options": [
+         "Violin",
+         "Cello",
+         "Piano",
+         "Flute"
+        ],
+        "correct": 1
+       },
+       {
+        "value": 400,
+        "q": "This Cuban-born singer, called the “Queen of Salsa,” was famous for her catchphrase “¡Azúcar!”",
+        "a": "Who is Celia Cruz?"
+       },
+       {
+        "value": 500,
+        "q": "This Indian sitar virtuoso taught George Harrison and was the father of singer Norah Jones.",
+        "a": "Who is Ravi Shankar?"
+       }
+      ]
+     },
+     {
+      "name": "Movies & TV",
+      "clues": [
+       {
+        "value": 100,
+        "q": "In this 1994 film, Tom Hanks’s title character recalls that his mama always said life was like a box of chocolates.",
+        "a": "What is Forrest Gump?"
+       },
+       {
+        "value": 200,
+        "q": "This animated family from Springfield, including Bart and Lisa, got its own Fox series in 1989.",
+        "a": "Who are The Simpsons?"
+       },
+       {
+        "value": 300,
+        "q": "In this 1999 sci-fi film, Keanu Reeves plays Neo, who takes the red pill.",
+        "a": "What is The Matrix?"
+       },
+       {
+        "value": 400,
+        "q": "This 2001 French film stars Audrey Tautou as a shy, imaginative waitress in Montmartre, Paris.",
+        "a": "What is Amélie?"
+       },
+       {
+        "value": 500,
+        "q": "This 2022 Telugu-language film’s song “Naatu Naatu” won the Academy Award for Best Original Song.",
+        "a": "What is RRR?"
+       }
+      ]
+     },
+     {
+      "name": "Ancient History",
+      "clues": [
+       {
+        "value": 100,
+        "q": "By tradition first held in 776 BCE, this ancient Greek athletic festival took place every four years in the western Peloponnese.",
+        "a": "What are the Olympic Games (the Olympics)?"
+       },
+       {
+        "value": 200,
+        "q": "In 1922, Howard Carter discovered this boy pharaoh’s nearly intact tomb in the Valley of the Kings.",
+        "a": "Who is Tutankhamun?"
+       },
+       {
+        "value": 300,
+        "q": "This Athenian philosopher, teacher of Plato, was sentenced to death by drinking hemlock in 399 BCE.",
+        "a": "Who is Socrates?"
+       },
+       {
+        "value": 400,
+        "q": "This Mesoamerican people built the cities of Tikal and Palenque and developed a sophisticated calendar.",
+        "a": "Who are the Maya?"
+       },
+       {
+        "value": 500,
+        "q": "In 49 BCE, Julius Caesar led his army across this small river, starting a civil war; crossing it now means passing a point of no return.",
+        "a": "What is the Rubicon?"
+       }
+      ]
+     },
+     {
+      "name": "Recent History",
+      "clues": [
+       {
+        "value": 100,
+        "q": "In 2004, Mark Zuckerberg launched this social network from his Harvard dorm room.",
+        "a": "What is Facebook?"
+       },
+       {
+        "value": 200,
+        "q": "This August 1969 music festival on a farm in Bethel, New York, featured Jimi Hendrix and Janis Joplin.",
+        "a": "What is Woodstock?"
+       },
+       {
+        "value": 300,
+        "q": "Opened in 1994, this undersea rail link connects Folkestone, England, with Coquelles, near Calais.",
+        "a": "What is the Channel Tunnel?"
+       },
+       {
+        "value": 400,
+        "q": "On October 3, 1990, the eastern and western parts of this European country were reunified.",
+        "a": "What is Germany?"
+       },
+       {
+        "value": 500,
+        "q": "First launched in 1981, this NASA program of reusable orbiters flew 135 missions before retiring in 2011.",
+        "a": "What is the Space Shuttle?"
+       }
+      ]
+     },
+     {
+      "name": "Literature",
+      "clues": [
+       {
+        "value": 100,
+        "q": "This boy who refuses to grow up leads the Lost Boys in Neverland.",
+        "a": "Who is Peter Pan?"
+       },
+       {
+        "value": 200,
+        "q": "This Russian author wrote the epic novels “War and Peace” and “Anna Karenina.”",
+        "a": "Who is Leo Tolstoy?"
+       },
+       {
+        "value": 300,
+        "q": "George Orwell’s 1949 dystopian novel warns that “Big Brother is watching you.”",
+        "a": "What is Nineteen Eighty-Four (1984)?"
+       },
+       {
+        "value": 400,
+        "type": "dd",
+        "q": "Gabriel García Márquez’s 1967 novel chronicles generations of the Buendía family in the town of Macondo.",
+        "a": "What is One Hundred Years of Solitude?"
+       },
+       {
+        "value": 500,
+        "q": "Murasaki Shikibu, a lady-in-waiting at the Japanese imperial court, wrote this classic early-11th-century story of a shining prince.",
+        "a": "What is The Tale of Genji?"
+       }
+      ]
+     },
+     {
+      "name": "Mythology",
+      "clues": [
+       {
+        "value": 100,
+        "q": "In Greek myth, this king of the gods ruled from Mount Olympus and hurled thunderbolts.",
+        "a": "Who is Zeus?"
+       },
+       {
+        "value": 200,
+        "q": "This Norse god of thunder wields the hammer Mjölnir.",
+        "a": "Who is Thor?"
+       },
+       {
+        "value": 300,
+        "q": "Dipped in the River Styx as a baby, this Greek hero was vulnerable only at his heel.",
+        "a": "Who is Achilles?"
+       },
+       {
+        "value": 400,
+        "q": "This jackal-headed Egyptian god was associated with mummification and the afterlife.",
+        "a": "Who is Anubis?"
+       },
+       {
+        "value": 500,
+        "q": "In Norse myth, this immense ash tree links the nine worlds.",
+        "a": "What is Yggdrasil?"
+       }
+      ]
+     }
+    ]
+   },
+   {
     "type": "lightning",
     "group": "Lightning Round",
     "variant": "A",
@@ -518,6 +716,65 @@ AsaPacks.add({
      {
       "q": "Strings on a standard guitar?",
       "a": "Six"
+     }
+    ]
+   },
+   {
+    "type": "lightning",
+    "group": "Lightning Round",
+    "variant": "C",
+    "name": "Lightning Round",
+    "duration": 60,
+    "points": 100,
+    "penalty": false,
+    "questions": [
+     {
+      "q": "Capital of Kenya?",
+      "a": "Nairobi"
+     },
+     {
+      "q": "Chemical symbol for silver?",
+      "a": "Ag"
+     },
+     {
+      "q": "Degrees in a right angle?",
+      "a": "90"
+     },
+     {
+      "q": "Who wrote “Don Quixote”?",
+      "a": "Miguel de Cervantes"
+     },
+     {
+      "q": "Currency of Mexico?",
+      "a": "Peso"
+     },
+     {
+      "q": "Huge desert covering much of North Africa?",
+      "a": "Sahara"
+     },
+     {
+      "q": "Capital of Argentina?",
+      "a": "Buenos Aires"
+     },
+     {
+      "q": "Who painted the Sistine Chapel ceiling?",
+      "a": "Michelangelo"
+     },
+     {
+      "q": "Chemical symbol for potassium?",
+      "a": "K"
+     },
+     {
+      "q": "Days in a leap year?",
+      "a": "366"
+     },
+     {
+      "q": "Capital of Turkey?",
+      "a": "Ankara"
+     },
+     {
+      "q": "Tallest living land animal?",
+      "a": "Giraffe"
      }
     ]
    },
@@ -980,6 +1237,235 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "board",
+    "group": "Double Round",
+    "variant": "C",
+    "name": "Double Round",
+    "timer": 0,
+    "categories": [
+     {
+      "name": "Music",
+      "clues": [
+       {
+        "value": 200,
+        "q": "This Minneapolis musician released the album and film “Purple Rain” in 1984.",
+        "a": "Who is Prince?",
+        "hint": "His name, given at birth, is also a royal title."
+       },
+       {
+        "value": 400,
+        "q": "Fronted by Bono, this Irish band released “The Joshua Tree” in 1987.",
+        "a": "Who is U2?",
+        "hint": "Its name is one letter and one digit."
+       },
+       {
+        "value": 600,
+        "type": "mc",
+        "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+        "a": "Johann Strauss II",
+        "options": [
+         "Johann Strauss II",
+         "Franz Schubert",
+         "Joseph Haydn",
+         "Gustav Mahler"
+        ],
+        "correct": 0,
+        "hint": "His father, a composer too, had the same name."
+       },
+       {
+        "value": 800,
+        "q": "This Nigerian bandleader and activist is celebrated as a pioneer of Afrobeat in the 1970s.",
+        "a": "Who is Fela Kuti?",
+        "hint": "His Lagos nightclub was called the Afrika Shrine."
+       },
+       {
+        "value": 1000,
+        "q": "This French composer wrote the piano piece “Clair de lune” and the orchestral work “La Mer.”",
+        "a": "Who is Claude Debussy?",
+        "hint": "Often called a leading figure of musical Impressionism."
+       }
+      ]
+     },
+     {
+      "name": "Movies & TV",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Steven Spielberg’s 1975 thriller follows a great white shark menacing the beaches of Amity Island.",
+        "a": "What is Jaws?",
+        "hint": "Its two-note theme was composed by John Williams."
+       },
+       {
+        "value": 400,
+        "q": "In this 2003 Pixar film, a clownfish named Marlin crosses the ocean to find his missing son.",
+        "a": "What is Finding Nemo?",
+        "hint": "Dory, a forgetful blue tang, helps out."
+       },
+       {
+        "value": 600,
+        "q": "This NBC sitcom about six pals in Manhattan who hang out at the Central Perk coffeehouse ran from 1994 to 2004.",
+        "a": "What is Friends?",
+        "hint": "Rachel, Ross, Monica, Chandler, Joey and Phoebe."
+       },
+       {
+        "value": 800,
+        "type": "dd",
+        "q": "In Federico Fellini’s 1960 film, Anita Ekberg wades into Rome’s Trevi Fountain.",
+        "a": "What is La Dolce Vita?",
+        "hint": "A photographer character gave us the word “paparazzi.”"
+       },
+       {
+        "value": 1000,
+        "q": "This 2016 Barry Jenkins film won Best Picture after a famous envelope mix-up in which “La La Land” was first announced.",
+        "a": "What is Moonlight?",
+        "hint": "Its three chapters follow a character named Chiron."
+       }
+      ]
+     },
+     {
+      "name": "Ancient History",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Romans built these structures, often carried on tall arches, to bring water into their cities.",
+        "a": "What are aqueducts?",
+        "hint": "France’s Pont du Gard is a famous example."
+       },
+       {
+        "value": 400,
+        "q": "This Greek writer from Halicarnassus is often called the “Father of History.”",
+        "a": "Who is Herodotus?",
+        "hint": "His “Histories” describe the wars between Greeks and Persians."
+       },
+       {
+        "value": 600,
+        "q": "This female pharaoh of Egypt’s 18th Dynasty built a grand mortuary temple at Deir el-Bahari.",
+        "a": "Who is Hatshepsut?",
+        "hint": "She was often shown wearing a ceremonial false beard."
+       },
+       {
+        "value": 800,
+        "q": "Carved into rose-red cliffs by the Nabataeans, this ancient city lies in southern Jordan.",
+        "a": "What is Petra?",
+        "hint": "Its Treasury facade appears in “Indiana Jones and the Last Crusade.”"
+       },
+       {
+        "value": 1000,
+        "type": "dd",
+        "q": "This ancient kingdom in what is now Ethiopia and Eritrea is famous for its towering carved stone stelae.",
+        "a": "What is Aksum (Axum)?",
+        "hint": "Its capital, a city in northern Ethiopia, shares its name."
+       }
+      ]
+     },
+     {
+      "name": "Recent History",
+      "clues": [
+       {
+        "value": 200,
+        "q": "Larry Page and Sergey Brin founded this company in 1998.",
+        "a": "What is Google?",
+        "hint": "Its name plays on a 1 followed by 100 zeros."
+       },
+       {
+        "value": 400,
+        "q": "In 1986, this famous comet returned to the inner solar system, as it does roughly every 76 years.",
+        "a": "What is Halley’s Comet?",
+        "hint": "Named for an English astronomer, Edmond, who predicted its return."
+       },
+       {
+        "value": 600,
+        "q": "In 1999, Portugal handed over this territory on China’s southern coast to Chinese sovereignty.",
+        "a": "What is Macau (Macao)?",
+        "hint": "Famous for casinos and the Ruins of St. Paul’s."
+       },
+       {
+        "value": 800,
+        "q": "Launched by NASA in 1977, these twin space probes each carry a gold-plated record of sounds and images from Earth.",
+        "a": "What are the Voyager probes (Voyager 1 and 2)?",
+        "hint": "Both flew past Jupiter and Saturn."
+       },
+       {
+        "value": 1000,
+        "q": "In 1960, this politician of Ceylon, now Sri Lanka, became the world’s first female prime minister.",
+        "a": "Who is Sirimavo Bandaranaike?",
+        "hint": "She succeeded her late husband as party leader."
+       }
+      ]
+     },
+     {
+      "name": "World Capitals",
+      "clues": [
+       {
+        "value": 200,
+        "q": "This capital on the Seine is home to the Louvre museum.",
+        "a": "What is Paris?",
+        "hint": "Nicknamed the “City of Light.”"
+       },
+       {
+        "value": 400,
+        "q": "In 1960, Brazil moved its capital to Brasília from this coastal city.",
+        "a": "What is Rio de Janeiro?",
+        "hint": "Home of Copacabana beach."
+       },
+       {
+        "value": 600,
+        "q": "Home to Hoàn Kiếm Lake, this city on the Red River is Vietnam’s capital.",
+        "a": "What is Hanoi?",
+        "hint": "It is not Ho Chi Minh City."
+       },
+       {
+        "value": 800,
+        "q": "This capital of Ecuador sits high in the Andes, just south of the equator.",
+        "a": "What is Quito?",
+        "hint": "Its old town was among the first UNESCO World Heritage Sites."
+       },
+       {
+        "value": 1000,
+        "q": "Kazakhstan’s capital, this city was officially called Nur-Sultan from 2019 to 2022.",
+        "a": "What is Astana?",
+        "hint": "Home to the Bayterek observation tower."
+       }
+      ]
+     },
+     {
+      "name": "Famous Scientists",
+      "clues": [
+       {
+        "value": 200,
+        "q": "This German-born physicist developed the special and general theories of relativity.",
+        "a": "Who is Albert Einstein?",
+        "hint": "Famous for E = mc²."
+       },
+       {
+        "value": 400,
+        "q": "This Polish-born scientist was the first person to win Nobel Prizes in two different sciences.",
+        "a": "Who is Marie Curie?",
+        "hint": "She discovered polonium and radium with her husband."
+       },
+       {
+        "value": 600,
+        "q": "This English naturalist sailed on HMS Beagle and published “On the Origin of Species” in 1859.",
+        "a": "Who is Charles Darwin?",
+        "hint": "Think Galápagos finches."
+       },
+       {
+        "value": 800,
+        "q": "This 19th-century friar’s experiments with pea plants laid the foundations of genetics.",
+        "a": "Who is Gregor Mendel?",
+        "hint": "He worked at an abbey in Brno."
+       },
+       {
+        "value": 1000,
+        "q": "Working in Cairo, this Arab scholar wrote the influential 11th-century “Book of Optics.”",
+        "a": "Who is Ibn al-Haytham?",
+        "hint": "He was born in Basra around 965."
+       }
+      ]
+     }
+    ]
+   },
+   {
     "type": "bonus",
     "group": "Bonus Round",
     "variant": "A",
@@ -1082,6 +1568,57 @@ AsaPacks.add({
     ]
    },
    {
+    "type": "bonus",
+    "group": "Bonus Round",
+    "variant": "C",
+    "name": "Bonus Round",
+    "points": 200,
+    "timer": 20,
+    "questions": [
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "a": "206",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "a": "Uranus",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "a": "Mali",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What color do you get by mixing blue and yellow paint?",
+      "a": "Green"
+     },
+     {
+      "q": "What is the capital of Spain?",
+      "a": "Madrid"
+     }
+    ]
+   },
+   {
     "type": "final",
     "group": "Final Round",
     "variant": "A",
@@ -1101,6 +1638,17 @@ AsaPacks.add({
     "q": "In 1877, German geographer Ferdinand von Richthofen popularized the name for this ancient network of trade routes linking China with the Mediterranean world, named after a prized fabric.",
     "a": "What is the Silk Road?",
     "hint": "The fabric comes from the cocoons of a certain caterpillar.",
+    "timer": 30
+   },
+   {
+    "type": "final",
+    "group": "Final Round",
+    "variant": "C",
+    "name": "Final Round",
+    "category": "Inventions",
+    "q": "In the mid-1400s, this goldsmith from Mainz, Germany, developed a movable-type printing press that transformed the spread of books in Europe.",
+    "a": "Who is Johannes Gutenberg?",
+    "hint": "A famous printed Bible bears his name.",
     "timer": 30
    }
   ]
