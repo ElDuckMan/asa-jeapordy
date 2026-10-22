@@ -63,7 +63,14 @@
       correct: options.length ? int(x.correct, 0, 0, options.length - 1) : null
     };
   }
+  /* Rounds may come in alternate versions: same `group`, different `variant` (A, B…). */
   function sanitizeRound(r, i) {
+    const out = sanitizeRoundBody(r || {}, i);
+    out.group = str(r && r.group, 60) || out.name;
+    out.variant = str(r && r.variant, 8);
+    return out;
+  }
+  function sanitizeRoundBody(r, i) {
     r = r || {};
     const type = ['board', 'lightning', 'bonus', 'final'].includes(r.type) ? r.type : 'board';
     const name = str(r.name, 60) || `Round ${i + 1}`;
@@ -95,7 +102,7 @@
   }
   function sanitizeGame(g) {
     g = g || {};
-    return { title: str(g.title, 60) || 'Jeopardy', rounds: arr(g.rounds, 20).map(sanitizeRound) };
+    return { title: str(g.title, 60) || 'Jeopardy', edition: str(g.edition, 60), rounds: arr(g.rounds, 40).map(sanitizeRound) };
   }
   function sanitizeSettings(s) {
     s = s || {};
@@ -388,8 +395,8 @@
     function view(room, role, teamId) {
       return {
         serverNow: now(), code: room.code, role, you: teamId || null,
-        title: room.game.title, phase: room.phase, roundIndex: room.roundIndex,
-        rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type })),
+        title: room.game.title, edition: room.game.edition, phase: room.phase, roundIndex: room.roundIndex,
+        rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type, group: r.group, variant: r.variant })),
         round: roundView(room, role === 'host'), q: qView(room, role, teamId),
         teams: teamList(room), sections: room.settings.sections, control: room.control,
         settings: role === 'host' ? room.settings : undefined

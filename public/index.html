@@ -14,6 +14,8 @@
   .si-switch{flex-wrap:wrap}
   .si-switch .btn{min-width:120px;font-size:20px}
   .si-host{max-width:460px;margin:12px auto;padding:0 14px}
+  .si-host .pk-wrap{max-width:none}
+  #host:has(.pk-wrap){max-width:920px}
   .si-host .card{text-align:left}
   .si-player .p-joincard{margin-top:12px}
 </style></head>
@@ -40,7 +42,9 @@
 </main>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script>
-<script src="/js/sample-game.js"></script><script src="/js/play.js"></script>
+<script src="/js/sample-game.js"></script><script src="/js/packs.js"></script>
+<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script>
+<script src="/js/play.js"></script>
 <script>
 (function () {
   const { esc } = Craft;
@@ -57,26 +61,42 @@
     onLeave: () => { sw.hidden = false; head.classList.remove('small'); }
   });
 
-  /* Host: PIN only. A correct PIN opens a room and goes to the host panel. */
+  /* Host: PIN, then pick a question pack, then the room opens and the host panel loads. */
+  let pin = '';
   function drawHost(err) {
     const saved = read('asa-host');
     hostEl.innerHTML = `<div class="card paper pop"><h2 class="hand">Host sign-in</h2>
-      ${saved ? `<p>You're already hosting room <b>${esc(saved.code)}</b>.</p><a class="btn hi" href="/host">Go to the host panel</a><p class="small muted">Or enter the PIN to open a brand-new room.</p>` : '<p>Enter the host PIN to open a game room.</p>'}
+      ${saved ? `<p>You're already hosting room <b>${esc(saved.code)}</b>.</p><a class="btn hi" href="/host">Go to the host panel</a><p class="small muted">Or enter the PIN to open a brand-new room.</p>` : '<p>Enter the host PIN, then choose which questions to play.</p>'}
       <label class="lbl" for="pin">Host PIN</label>
       <input id="pin" class="field" type="password" inputmode="numeric" autocomplete="current-password">
       <div class="err">${esc(err || '')}</div>
-      <button class="btn big hi" id="go">Open game room</button></div>`;
-    const pin = document.getElementById('pin');
-    const go = () => {
-      const settings = read('asa-settings') || undefined;
-      net.emit('host:create', { pin: pin.value, game: read('asa-game') || window.SAMPLE_GAME, settings }).then(r => {
+      <button class="btn big hi" id="go">Next: pick questions</button></div>`;
+    const pinEl = document.getElementById('pin');
+    const go = () => { pin = pinEl.value; if (!pin) return drawHost('Enter the host PIN.'); drawPicker(); };
+    document.getElementById('go').onclick = go;
+    pinEl.onkeydown = e => { if (e.key === 'Enter') go(); };
+    setTimeout(() => pinEl.focus(), 30);
+  }
+  function drawPicker() {
+    const mine = read('asa-mine');
+    hostEl.innerHTML = `<div class="card paper pop pk-wrap"><h2 class="hand">Pick the questions</h2>
+      <p class="small muted">Every pack has two boards per round (A and B), with Music, Movies &amp; TV, Ancient History and Recent History.</p>
+      ${AsaPacks.pickerHTML(esc, { mine, current: read('asa-pack') })}
+      <div class="err" id="perr"></div><button class="btn sm" id="back">← Back</button></div>`;
+    document.getElementById('back').onclick = () => drawHost();
+    hostEl.querySelectorAll('[data-pack]').forEach(b => b.onclick = () => {
+      const id = b.dataset.pack;
+      const game = id === '__mine' ? mine : AsaPacks.gameFor(id);
+      hostEl.querySelectorAll('[data-pack]').forEach(x => { x.disabled = true; });
+      b.classList.add('chosen');
+      net.emit('host:create', { pin, game, settings: read('asa-settings') || undefined }).then(r => {
         if (r.error) return drawHost(r.error);
         localStorage.setItem('asa-host', JSON.stringify({ code: r.code, token: r.token }));
+        localStorage.setItem('asa-game', JSON.stringify(game));
+        localStorage.setItem('asa-pack', JSON.stringify(id));
         location.href = '/host';
       });
-    };
-    document.getElementById('go').onclick = go;
-    pin.onkeydown = e => { if (e.key === 'Enter') go(); };
+    });
   }
   const screenEl = document.getElementById('screen'), scode = document.getElementById('scode');
   const showScreen = () => {

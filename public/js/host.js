@@ -14,6 +14,7 @@
     const del = k => { try { if (store) store.removeItem(k); } catch (_) { /* */ } };
 
     let game = get('asa-game', null) || JSON.parse(JSON.stringify(window.SAMPLE_GAME));
+    let packId = get('asa-pack', null), pickingPack = false;
     let settings = Object.assign({}, DEFAULT_SETTINGS, get('asa-settings', {}));
     let S = null, tab = 'live', amount = 100, editor = null, inRoom = false;
 
@@ -67,7 +68,7 @@
       $('.h-editor').hidden = t !== 'editor';
       $('.h-settings').hidden = t !== 'settings';
       if (t === 'live' && inRoom && S) drawLive();
-      if (t === 'editor' && !editor) editor = Editor.mount($('.h-editor'), game, g => { game = g; put('asa-game', g); }, { onPush: () => pushGame() });
+      if (t === 'editor' && !editor) editor = Editor.mount($('.h-editor'), game, g => { game = g; put('asa-game', g); put('asa-mine', g); packId = '__mine'; put('asa-pack', packId); }, { onPush: () => pushGame() });
       if (t === 'settings') drawSettings();
     }
     root.querySelectorAll('[data-tab]').forEach(b => b.addEventListener('click', () => setTab(b.dataset.tab)));
@@ -106,9 +107,16 @@
     const btn = (act, label, cls = '', data = {}) => `<button class="btn ${cls}" data-act="${act}" ${Object.entries(data).map(([k, v]) => `data-${k}="${esc(v)}"`).join(' ')}>${label}</button>`;
     const Tm = id => (S.teams.find(t => t.id === id) || { name: '?', color: '#888', score: 0 });
     const allUsed = r => r.categories.every(c => c.clues.every(x => x.used));
+    /* Buttons to start a round group: one per board version (A / B). */
+    function startBtns(g, cls = 'hi') {
+      if (g.items.length === 1) return btn('round', `▶ Start ${esc(g.group)}`, cls, { i: g.items[0].i });
+      return `<span class="h-startvar">▶ Start ${esc(g.group)}:</span> ${g.items.map(it => btn('round', `${g.type === 'board' ? 'Board' : 'Set'} ${esc(it.variant)}`, cls, { i: it.i })).join(' ')}`;
+    }
     function nextRoundBtn(s) {
-      const n = s.roundIndex + 1;
-      return n < s.rounds.length ? btn('round', `▶ Start ${esc(s.rounds[n].name)}`, 'hi', { i: n }) : btn('endGame', '🏆 Finish game', 'hi');
+      const gs = AsaPacks.groups(s.rounds);
+      const cur = gs.findIndex(g => g.items.some(it => it.i === s.roundIndex));
+      const next = gs[cur + 1];
+      return next ? `<span class="row">${startBtns(next)}</span>` : btn('endGame', '🏆 Finish game', 'hi');
     }
     function standings(s) {
       const ts = [...s.teams].sort((a, b) => b.score - a.score);
@@ -130,8 +138,12 @@
           <div class="small"><a href="${o.joinBase}/preview" target="_blank" rel="noopener">Practice mode ↗</a> <span class="muted">(try the game with CPU teams)</span></div>`
           : '<div class="small muted">Practice: the big screen and your phone are on this page.</div>'}</div>
         <div class="row">${btn('push', '⟳ Apply editor changes', 'sm')}${btn('reset', 'New game', 'sm')}${btn('closeRoom', 'Close room', 'sm no')}</div></details>`;
+      const live = i => s.roundIndex === i && !['lobby', 'ended'].includes(s.phase);
       h += `<div class="row h-rounds">${btn('lobby', 'Lobby', 'sm ' + (s.phase === 'lobby' ? 'on' : ''))}
-        ${s.rounds.map((r, i) => btn('round', `${i + 1}. ${esc(r.name)} <span class="small muted">${TYPE[r.type]}</span>`, 'sm ' + (s.roundIndex === i && !['lobby', 'ended'].includes(s.phase) ? 'on' : ''), { i })).join('')}
+        ${AsaPacks.groups(s.rounds).map((g, gi) => g.items.length === 1
+          ? btn('round', `${gi + 1}. ${esc(g.group)} <span class="small muted">${TYPE[g.type]}</span>`, 'sm ' + (live(g.items[0].i) ? 'on' : ''), { i: g.items[0].i })
+          : `<span class="h-rgroup ${g.items.some(it => live(it.i)) ? 'on' : ''}"><span class="h-rgname">${gi + 1}. ${esc(g.group)}</span>${g.items.map(it =>
+              btn('round', esc(it.variant || '?'), 'sm h-var ' + (live(it.i) ? 'on' : ''), { i: it.i })).join('')}</span>`).join('')}
         ${btn('endGame', '🏆 End game', 'sm ' + (s.phase === 'ended' ? 'on' : ''))}</div>`;
       h += `<div class="h-grid"><div class="h-main">${mainHTML(s)}</div><aside class="h-side">${teamsHTML(s)}</aside></div>`;
       render($('.h-live'), h);
@@ -153,7 +165,11 @@
       const q = s.q, r = s.round;
       if (s.phase === 'lobby') {
         return card(`<h2 class="hand">Lobby</h2><p>${s.teams.length} team(s) have joined with code <b>${s.code}</b>. You can start whenever you're ready; late teams can still join.</p>
-          ${s.rounds.length ? btn('round', `▶ Start ${esc(s.rounds[0].name)}`, 'big hi', { i: 0 }) : '<p>Add rounds in the Game editor first.</p>'}`);
+          ${s.rounds.length ? `<div class="row">${startBtns(AsaPacks.groups(s.rounds)[0], 'big hi')}</div>` : '<p>Add rounds in the Game editor first.</p>'}
+          ${AsaPacks.groups(s.rounds).some(g => g.items.length > 1) ? '<p class="small muted">Each round has two different boards. Pick A or B; play the other one another day.</p>' : ''}`)
+          + card(`<h2 class="hand">Question pack</h2><p><b>${esc(s.edition || s.title)}</b> · ${AsaPacks.groups(s.rounds).length} rounds</p>
+          ${pickingPack ? AsaPacks.pickerHTML(esc, { current: packId, mine: packId === '__mine' ? null : get('asa-mine', null) }) + `<div class="row" style="margin-top:10px">${btn('cancelPack', 'Cancel', 'sm')}</div>`
+            : btn('changePack', '🔁 Change pack', 'sm')}`);
       }
       if (s.phase === 'ended') return card(`<h2 class="hand">Game over</h2>${standings(s)}<div class="row">${btn('lobby', 'Back to lobby')}${btn('reset', 'New game (reset scores)')}</div>`);
       let h = '';
@@ -300,6 +316,22 @@
 
     /* ---------- actions ---------- */
     root.addEventListener('input', e => { if (e.target.dataset.role === 'amount') amount = Math.abs(parseInt(e.target.value, 10) || 0); });
+    /* Pick a question pack (lobby). Edited games are kept as "My saved game". */
+    root.addEventListener('click', e => {
+      const c = e.target.closest('[data-pack]');
+      if (!c || !inRoom) return;
+      const id = c.dataset.pack;
+      const g = id === '__mine' ? get('asa-mine', null) : AsaPacks.gameFor(id);
+      if (!g) return toast('That pack is missing.');
+      emit('host:setGame', { game: g }).then(r => {
+        if (!r.ok) return;
+        game = g; packId = id; pickingPack = false;
+        put('asa-game', game); put('asa-pack', packId);
+        if (editor) editor.set(game);
+        toast(`Loaded ${id === '__mine' ? 'your saved game' : AsaPacks.get(id).name}.`);
+        drawLive();
+      });
+    });
     root.addEventListener('click', e => {
       const b = e.target.closest('[data-act]');
       if (!b || b.disabled) return;
@@ -313,6 +345,8 @@
           if (!confirm('Close this room? Everyone will be disconnected.')) return;
           return emit('host:closeRoom').then(() => { del('asa-host'); S = null; showSignin(); });
         case 'lobby': return emit('host:lobby');
+        case 'changePack': pickingPack = true; return drawLive();
+        case 'cancelPack': pickingPack = false; return drawLive();
         case 'round':
           if (S && S.q && !confirm('A clue is still open. Switch rounds anyway?')) return;
           return emit('host:startRound', { index: +b.dataset.i });

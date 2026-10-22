@@ -1,0 +1,931 @@
+{
+  "rounds": [
+    {
+      "type": "board",
+      "group": "Round 1",
+      "variant": "B",
+      "name": "Round 1",
+      "timer": 0,
+      "categories": [
+        {
+          "name": "Music",
+          "clues": [
+            {
+              "value": 100,
+              "q": "This South Korean rapper performed the 2012 viral hit “Gangnam Style.”",
+              "a": "Who is PSY?"
+            },
+            {
+              "value": 200,
+              "q": "Ravi Shankar was a world-famous master of this long-necked Indian string instrument.",
+              "a": "What is the sitar?"
+            },
+            {
+              "value": 300,
+              "q": "This Japanese word, meaning “empty orchestra,” names singing along to recorded backing tracks.",
+              "a": "What is karaoke?"
+            },
+            {
+              "value": 400,
+              "q": "Gamelan, a percussion ensemble of gongs and metallophones, is traditional music of Java and this neighboring, mostly Hindu Indonesian island.",
+              "a": "What is Bali?"
+            },
+            {
+              "value": 500,
+              "type": "mc",
+              "q": "The Japanese koto belongs to which family of instruments?",
+              "a": "Zither",
+              "options": [
+                "Drum",
+                "Flute",
+                "Zither",
+                "Gong"
+              ],
+              "correct": 2
+            }
+          ]
+        },
+        {
+          "name": "Movies & TV",
+          "clues": [
+            {
+              "value": 100,
+              "q": "This 2021 South Korean Netflix series pits indebted players against each other in deadly children’s games.",
+              "a": "What is Squid Game?"
+            },
+            {
+              "value": 200,
+              "q": "Hayao Miyazaki co-founded this Japanese animation company in 1985.",
+              "a": "What is Studio Ghibli?"
+            },
+            {
+              "value": 300,
+              "q": "This 1954 Japanese film introduced a giant radioactive monster that rises from the sea.",
+              "a": "What is Godzilla?"
+            },
+            {
+              "value": 400,
+              "q": "Bruce Lee starred in this 1973 martial arts film, released shortly after his death.",
+              "a": "What is Enter the Dragon?"
+            },
+            {
+              "value": 500,
+              "q": "This 2018 romantic comedy, based on Kevin Kwan’s novel, is set largely in Singapore.",
+              "a": "What is Crazy Rich Asians?"
+            }
+          ]
+        },
+        {
+          "name": "Ancient History",
+          "clues": [
+            {
+              "value": 100,
+              "q": "This ancient network of trade routes linking China to the Mediterranean is named for a luxury fabric.",
+              "a": "What is the Silk Road?"
+            },
+            {
+              "value": 200,
+              "q": "Thousands of life-size terracotta soldiers guard the tomb of this first emperor of a unified China.",
+              "a": "Who is Qin Shi Huang?"
+            },
+            {
+              "value": 300,
+              "q": "King Hammurabi issued his famous law code in this Mesopotamian city.",
+              "a": "What is Babylon?"
+            },
+            {
+              "value": 400,
+              "type": "dd",
+              "q": "Mohenjo-daro and Harappa were major cities of this Bronze Age culture of South Asia.",
+              "a": "What is the Indus Valley Civilization?"
+            },
+            {
+              "value": 500,
+              "q": "Cyrus the Great founded this ancient Persian empire.",
+              "a": "What is the Achaemenid Empire?"
+            }
+          ]
+        },
+        {
+          "name": "Recent History",
+          "clues": [
+            {
+              "value": 100,
+              "q": "On July 4, 1946, this archipelago nation gained independence from the United States.",
+              "a": "What is the Philippines?"
+            },
+            {
+              "value": 200,
+              "q": "In 1999, Portugal handed this territory over to China.",
+              "a": "What is Macau?"
+            },
+            {
+              "value": 300,
+              "q": "In 1947, he became India’s first prime minister.",
+              "a": "Who is Jawaharlal Nehru?"
+            },
+            {
+              "value": 400,
+              "q": "Five Southeast Asian countries founded this regional organization in Bangkok in 1967.",
+              "a": "What is ASEAN?"
+            },
+            {
+              "value": 500,
+              "q": "He served as Singapore’s first prime minister, from 1959 to 1990.",
+              "a": "Who is Lee Kuan Yew?"
+            }
+          ]
+        },
+        {
+          "name": "Food & Drink",
+          "clues": [
+            {
+              "value": 100,
+              "q": "This stir-fried rice noodle dish from Thailand is often topped with crushed peanuts and lime.",
+              "a": "What is pad thai?"
+            },
+            {
+              "value": 200,
+              "q": "This Korean dish, whose name means “mixed rice,” is topped with vegetables, egg, and chili paste.",
+              "a": "What is bibimbap?"
+            },
+            {
+              "value": 300,
+              "q": "This Indian yogurt drink is popular in a mango flavor.",
+              "a": "What is lassi?"
+            },
+            {
+              "value": 400,
+              "q": "This Japanese soup is made from dashi and fermented soybean paste.",
+              "a": "What is miso soup?"
+            },
+            {
+              "value": 500,
+              "q": "This layered pastry of phyllo dough, chopped nuts, and syrup or honey is popular from Turkey to Iran.",
+              "a": "What is baklava?"
+            }
+          ]
+        },
+        {
+          "name": "Animals",
+          "clues": [
+            {
+              "value": 100,
+              "q": "Wild orangutans live only on Borneo and this large Indonesian island.",
+              "a": "What is Sumatra?"
+            },
+            {
+              "value": 200,
+              "q": "The Bactrian camel of Central Asia has this many humps.",
+              "a": "What is two?"
+            },
+            {
+              "value": 300,
+              "q": "Japanese macaques, famous for soaking in hot springs, are often called these.",
+              "a": "What are snow monkeys?"
+            },
+            {
+              "value": 400,
+              "q": "The Asian species of this animal is smaller than its African cousin and has smaller ears.",
+              "a": "What is the elephant?"
+            },
+            {
+              "value": 500,
+              "q": "Found in the mountains of Central Asia, this pale big cat is nicknamed the “ghost of the mountains.”",
+              "a": "What is the snow leopard?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "lightning",
+      "group": "Lightning Round",
+      "variant": "B",
+      "name": "Lightning Round",
+      "duration": 60,
+      "points": 100,
+      "penalty": false,
+      "questions": [
+        {
+          "q": "Capital of China?",
+          "a": "Beijing"
+        },
+        {
+          "q": "Capital of India?",
+          "a": "New Delhi"
+        },
+        {
+          "q": "Currency of Thailand?",
+          "a": "Baht"
+        },
+        {
+          "q": "Currency of the Philippines?",
+          "a": "Peso"
+        },
+        {
+          "q": "Japanese breaded, deep-fried pork cutlet?",
+          "a": "Tonkatsu"
+        },
+        {
+          "q": "Korean rice cakes in spicy red sauce?",
+          "a": "Tteokbokki"
+        },
+        {
+          "q": "South Asian rice dish layered with spiced meat?",
+          "a": "Biryani"
+        },
+        {
+          "q": "Capital of Bangladesh?",
+          "a": "Dhaka"
+        },
+        {
+          "q": "Mountain range that contains Mount Everest?",
+          "a": "Himalayas"
+        },
+        {
+          "q": "Japanese word for “delicious”?",
+          "a": "Oishii"
+        },
+        {
+          "q": "Slow-moving Chinese martial art often practiced in parks?",
+          "a": "Tai chi"
+        },
+        {
+          "q": "Filipino shaved-ice dessert whose name means “mix-mix”?",
+          "a": "Halo-halo"
+        },
+        {
+          "q": "Japanese poem with a 5-7-5 syllable pattern?",
+          "a": "Haiku"
+        },
+        {
+          "q": "Indonesian fried rice?",
+          "a": "Nasi goreng"
+        },
+        {
+          "q": "Hindu festival of lights?",
+          "a": "Diwali"
+        }
+      ]
+    },
+    {
+      "type": "board",
+      "group": "Double Round",
+      "variant": "B",
+      "name": "Double Round",
+      "timer": 0,
+      "categories": [
+        {
+          "name": "Music",
+          "clues": [
+            {
+              "value": 200,
+              "q": "A. R. Rahman won two Oscars for his music for this 2008 film about a Mumbai game-show contestant.",
+              "a": "What is Slumdog Millionaire?"
+            },
+            {
+              "value": 400,
+              "q": "The tabla, central to Hindustani classical music, is a pair of these.",
+              "a": "What are drums?"
+            },
+            {
+              "value": 600,
+              "q": "The Chinese erhu is a two-stringed instrument played with this.",
+              "a": "What is a bow?"
+            },
+            {
+              "value": 800,
+              "q": "Qawwali, the devotional music made world-famous by Nusrat Fateh Ali Khan, comes from this mystical Islamic tradition.",
+              "a": "What is Sufism?"
+            },
+            {
+              "value": 1000,
+              "q": "This Yellow Magic Orchestra member shared the Oscar for the score of “The Last Emperor.”",
+              "a": "Who is Ryuichi Sakamoto?"
+            }
+          ]
+        },
+        {
+          "name": "Movies & TV",
+          "clues": [
+            {
+              "value": 200,
+              "q": "In this 2016 South Korean zombie thriller, passengers fight to survive aboard a high-speed train.",
+              "a": "What is Train to Busan?"
+            },
+            {
+              "value": 400,
+              "q": "This Japanese director made “Rashomon” and “Seven Samurai.”",
+              "a": "Who is Akira Kurosawa?"
+            },
+            {
+              "value": 600,
+              "q": "The song “Naatu Naatu” from this 2022 Telugu blockbuster won the Oscar for Best Original Song.",
+              "a": "What is RRR?"
+            },
+            {
+              "value": 800,
+              "q": "Wong Kar-wai directed this 2000 Hong Kong romance starring Tony Leung and Maggie Cheung.",
+              "a": "What is In the Mood for Love?"
+            },
+            {
+              "value": 1000,
+              "type": "dd",
+              "q": "Satyajit Ray’s 1955 debut feature, this film was the first of his Apu Trilogy.",
+              "a": "What is Pather Panchali?"
+            }
+          ]
+        },
+        {
+          "name": "Ancient History",
+          "clues": [
+            {
+              "value": 200,
+              "q": "This ancient Chinese general is traditionally credited with writing “The Art of War.”",
+              "a": "Who is Sun Tzu?"
+            },
+            {
+              "value": 400,
+              "q": "Cuneiform, one of the world’s earliest writing systems, developed in this land between the Tigris and Euphrates.",
+              "a": "What is Mesopotamia?"
+            },
+            {
+              "value": 600,
+              "q": "Japan’s capital from 710 to 784, this city is famous for its free-roaming deer.",
+              "a": "What is Nara?"
+            },
+            {
+              "value": 800,
+              "q": "This Indian empire, which ruled from about 320 to 550 CE, is often called a golden age of math and astronomy.",
+              "a": "What is the Gupta Empire?"
+            },
+            {
+              "value": 1000,
+              "q": "This Han dynasty envoy’s 2nd-century BCE journeys to Central Asia helped open the Silk Road.",
+              "a": "Who is Zhang Qian?"
+            }
+          ]
+        },
+        {
+          "name": "Recent History",
+          "clues": [
+            {
+              "value": 200,
+              "q": "This war, fought on a peninsula in East Asia, began in June 1950.",
+              "a": "What is the Korean War?"
+            },
+            {
+              "value": 400,
+              "q": "In 1966, she became India’s first female prime minister.",
+              "a": "Who is Indira Gandhi?"
+            },
+            {
+              "value": 600,
+              "q": "In 1957, the Federation of Malaya gained independence from this country.",
+              "a": "What is the United Kingdom (Britain)?"
+            },
+            {
+              "value": 800,
+              "q": "Leaders of 29 Asian and African nations met at this 1955 gathering in Indonesia.",
+              "a": "What is the Bandung Conference?"
+            },
+            {
+              "value": 1000,
+              "q": "In 2003, Yang Liwei became China’s first astronaut in space, flying aboard this spacecraft.",
+              "a": "What is Shenzhou 5?"
+            }
+          ]
+        },
+        {
+          "name": "Geography",
+          "clues": [
+            {
+              "value": 200,
+              "q": "This vast desert spans southern Mongolia and northern China.",
+              "a": "What is the Gobi?"
+            },
+            {
+              "value": 400,
+              "q": "This large island is shared by Indonesia, Malaysia, and Brunei.",
+              "a": "What is Borneo?"
+            },
+            {
+              "value": 600,
+              "type": "mc",
+              "q": "Which of these Southeast Asian countries is landlocked?",
+              "a": "Laos",
+              "options": [
+                "Vietnam",
+                "Laos",
+                "Cambodia",
+                "Myanmar"
+              ],
+              "correct": 1
+            },
+            {
+              "value": 800,
+              "q": "The world’s largest lake by area, it borders Kazakhstan, Turkmenistan, Iran, Azerbaijan, and Russia.",
+              "a": "What is the Caspian Sea?"
+            },
+            {
+              "value": 1000,
+              "q": "The Sundarbans mangrove forest lies where the Ganges delta meets this body of water.",
+              "a": "What is the Bay of Bengal?"
+            }
+          ]
+        },
+        {
+          "name": "Sports",
+          "clues": [
+            {
+              "value": 200,
+              "q": "This bat-and-ball sport is a national passion in India, Pakistan, and Sri Lanka.",
+              "a": "What is cricket?"
+            },
+            {
+              "value": 400,
+              "q": "This Japanese martial art, whose name means “gentle way,” joined the Olympics in 1964.",
+              "a": "What is judo?"
+            },
+            {
+              "value": 600,
+              "type": "dd",
+              "q": "The ancient Indian game chaturanga is considered the ancestor of this board game.",
+              "a": "What is chess?"
+            },
+            {
+              "value": 800,
+              "q": "Played with a shuttlecock, this racket sport is hugely popular in Indonesia and Malaysia.",
+              "a": "What is badminton?"
+            },
+            {
+              "value": 1000,
+              "q": "In 2008, Abhinav Bindra won India’s first individual Olympic gold medal in this sport.",
+              "a": "What is shooting?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "group": "Bonus Round",
+      "variant": "B",
+      "name": "Bonus Round",
+      "points": 200,
+      "timer": 20,
+      "questions": [
+        {
+          "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+          "a": "Japchae",
+          "options": [
+            "Laksa",
+            "Japchae",
+            "Ramen",
+            "Satay"
+          ],
+          "correct": 1
+        },
+        {
+          "q": "What Japanese word, meaning “harbor wave,” names a giant sea wave?",
+          "a": "Tsunami"
+        },
+        {
+          "q": "Which of these countries is NOT in Southeast Asia?",
+          "a": "Nepal",
+          "options": [
+            "Cambodia",
+            "Brunei",
+            "Nepal",
+            "Laos"
+          ],
+          "correct": 2
+        },
+        {
+          "q": "What is the Japanese word for cherry blossom?",
+          "a": "Sakura"
+        },
+        {
+          "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+          "a": "Cinnamon",
+          "options": [
+            "Cumin",
+            "Cardamom",
+            "Clove",
+            "Cinnamon"
+          ],
+          "correct": 3
+        },
+        {
+          "q": "Name the Vietnamese long tunic traditionally worn over trousers.",
+          "a": "Áo dài"
+        }
+      ]
+    },
+    {
+      "type": "final",
+      "group": "Final Round",
+      "variant": "B",
+      "name": "Final Round",
+      "category": "Ancient Wonders",
+      "q": "Carved into rose-red sandstone cliffs by the Nabataeans, this ancient city in southern Jordan is famous for its Treasury.",
+      "a": "What is Petra?",
+      "hint": "Its Treasury appears in “Indiana Jones and the Last Crusade.”",
+      "timer": 30
+    },
+    {
+      "type": "board",
+      "group": "Hard Round",
+      "variant": "B",
+      "name": "Hard Round",
+      "timer": 0,
+      "categories": [
+        {
+          "name": "Music",
+          "clues": [
+            {
+              "value": 400,
+              "q": "In Indian classical music, this is a melodic framework for improvisation, often tied to a time of day.",
+              "a": "What is a raga?",
+              "hint": "Its rhythmic counterpart is the tala."
+            },
+            {
+              "value": 800,
+              "q": "This three-stringed Japanese lute is plucked with a large plectrum called a bachi.",
+              "a": "What is the shamisen?",
+              "hint": "Often heard in kabuki and bunraku theater."
+            },
+            {
+              "value": 1200,
+              "q": "Awarded the Bharat Ratna in 2001, this legendary playback singer recorded thousands of Hindi film songs.",
+              "a": "Who is Lata Mangeshkar?",
+              "hint": "Her younger sister is the singer Asha Bhosle."
+            },
+            {
+              "value": 1600,
+              "q": "Born Nouhad Haddad, this Lebanese singer is one of the most celebrated voices in the Arab world.",
+              "a": "Who is Fairuz?",
+              "hint": "Her stage name means “turquoise.”"
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "Mongolian khöömei is a form of this vocal technique, in which one singer produces two pitches at once.",
+              "a": "What is throat singing?",
+              "hint": "Also famous in the Russian republic of Tuva."
+            }
+          ]
+        },
+        {
+          "name": "Movies & TV",
+          "clues": [
+            {
+              "value": 400,
+              "q": "Park Chan-wook’s 2003 revenge thriller won the Grand Prix at the 2004 Cannes Film Festival.",
+              "a": "What is Oldboy?",
+              "hint": "Famous for a long single-take hallway fight scene."
+            },
+            {
+              "value": 800,
+              "q": "Katsuhiro Otomo directed this 1988 anime film set in the ruined metropolis of Neo-Tokyo.",
+              "a": "What is Akira?",
+              "hint": "Its hero Kaneda rides a famous red motorcycle."
+            },
+            {
+              "value": 1200,
+              "q": "This Iranian director’s “A Separation” won the Oscar for Best Foreign Language Film in 2012.",
+              "a": "Who is Asghar Farhadi?",
+              "hint": "He won the same award again for “The Salesman.”"
+            },
+            {
+              "value": 1600,
+              "q": "Jet Li plays a nameless assassin in this 2002 Zhang Yimou wuxia epic.",
+              "a": "What is Hero?",
+              "hint": "Tony Leung, Maggie Cheung, and Zhang Ziyi co-star."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "This Filipino filmmaker won the Golden Lion at Venice in 2016 for “The Woman Who Left.”",
+              "a": "Who is Lav Diaz?",
+              "hint": "Known for extremely long films, some running eight hours or more."
+            }
+          ]
+        },
+        {
+          "name": "Ancient History",
+          "clues": [
+            {
+              "value": 400,
+              "q": "Advised by the strategist Chanakya, he founded India’s Mauryan Empire.",
+              "a": "Who is Chandragupta Maurya?",
+              "hint": "His grandson was the emperor Ashoka."
+            },
+            {
+              "value": 800,
+              "q": "Ruling China from 618 to 907 with its capital at Chang’an, this imperial house presided over a golden age of poetry.",
+              "a": "What is the Tang dynasty?",
+              "hint": "Li Bai and Du Fu wrote during it."
+            },
+            {
+              "value": 1200,
+              "type": "dd",
+              "q": "Based on Sumatra, this maritime kingdom dominated Southeast Asian sea trade from about the 7th century.",
+              "a": "What is Srivijaya?",
+              "hint": "Its capital was near today’s Palembang."
+            },
+            {
+              "value": 1600,
+              "q": "This Persian king’s Behistun Inscription helped scholars decipher cuneiform.",
+              "a": "Who is Darius the Great?",
+              "hint": "His son Xerxes later invaded Greece."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "Traditionally founded in 57 BCE, this kingdom unified most of the Korean Peninsula in the late 7th century CE.",
+              "a": "What is Silla?",
+              "hint": "Its capital was Gyeongju."
+            }
+          ]
+        },
+        {
+          "name": "Recent History",
+          "clues": [
+            {
+              "value": 400,
+              "q": "In 1970, this Japanese city hosted Expo ’70, the first world’s fair held in Asia.",
+              "a": "What is Osaka?",
+              "hint": "Takoyaki and okonomiyaki are among its signature street foods."
+            },
+            {
+              "value": 800,
+              "q": "After a period of UN administration, this Southeast Asian nation became independent in 2002.",
+              "a": "What is Timor-Leste (East Timor)?",
+              "hint": "It shares an island with part of Indonesia."
+            },
+            {
+              "value": 1200,
+              "q": "Signed in 1951 and in force in 1952, this treaty ended the Allied occupation of Japan.",
+              "a": "What is the Treaty of San Francisco?",
+              "hint": "It was signed in the same U.S. city where the UN Charter was signed in 1945."
+            },
+            {
+              "value": 1600,
+              "type": "dd",
+              "q": "Kazakhstan, Uzbekistan, Kyrgyzstan, Tajikistan, and Turkmenistan all became independent in 1991 when this state dissolved.",
+              "a": "What is the Soviet Union?",
+              "hint": "Its capital was Moscow."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "This federation was formed in 1963 from Malaya, Singapore, North Borneo, and Sarawak.",
+              "a": "What is Malaysia?",
+              "hint": "Singapore left it in 1965."
+            }
+          ]
+        },
+        {
+          "name": "Landmarks",
+          "clues": [
+            {
+              "value": 400,
+              "q": "This Shinto shrine’s giant “floating” torii gate stands in the sea off the island of Miyajima.",
+              "a": "What is Itsukushima Shrine?",
+              "hint": "It’s in Hiroshima Prefecture."
+            },
+            {
+              "value": 800,
+              "q": "Built in 1395, this Seoul palace was the main royal palace of the Joseon dynasty.",
+              "a": "What is Gyeongbokgung?",
+              "hint": "Its name ends in “-gung,” meaning palace."
+            },
+            {
+              "value": 1200,
+              "q": "More than 2,000 Buddhist temples and pagodas survive on the plains of this ancient city in Myanmar.",
+              "a": "What is Bagan?",
+              "hint": "Sunrise hot-air balloon rides over it are famous."
+            },
+            {
+              "value": 1600,
+              "type": "mc",
+              "q": "In which modern country are the ruins of Persepolis?",
+              "a": "Iran",
+              "options": [
+                "Iraq",
+                "Turkey",
+                "Iran",
+                "Syria"
+              ],
+              "correct": 2,
+              "hint": "The ruins are near the city of Shiraz."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "Topped by a 5th-century royal palace, this Sri Lankan rock fortress is entered through giant carved lion paws.",
+              "a": "What is Sigiriya?",
+              "hint": "Its name means “Lion Rock.”"
+            }
+          ]
+        },
+        {
+          "name": "Language",
+          "clues": [
+            {
+              "value": 400,
+              "q": "In Korean, “saranghae” means this.",
+              "a": "What is “I love you”?",
+              "hint": "A classic K-drama confession."
+            },
+            {
+              "value": 800,
+              "q": "Written right to left in an Arabic-based script, this is the official language of Iran.",
+              "a": "What is Persian (Farsi)?",
+              "hint": "Rumi and Hafez wrote poetry in it."
+            },
+            {
+              "value": 1200,
+              "q": "This Japanese syllabary is mainly used to write foreign loanwords.",
+              "a": "What is katakana?",
+              "hint": "Its partner syllabary is hiragana."
+            },
+            {
+              "value": 1600,
+              "q": "This classical language of ancient India is the liturgical language of Hinduism.",
+              "a": "What is Sanskrit?",
+              "hint": "The Rigveda was composed in it."
+            },
+            {
+              "value": 2000,
+              "timer": 20,
+              "q": "In 1928, Turkey replaced the Arabic script with this alphabet for writing Turkish.",
+              "a": "What is the Latin alphabet?",
+              "hint": "Mustafa Kemal Atatürk championed the switch."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "lightning",
+      "group": "Hard Lightning",
+      "variant": "B",
+      "name": "Hard Lightning",
+      "duration": 60,
+      "points": 200,
+      "penalty": true,
+      "questions": [
+        {
+          "q": "Capital of Kyrgyzstan?",
+          "a": "Bishkek",
+          "hint": "Formerly called Frunze."
+        },
+        {
+          "q": "Capital of Turkmenistan?",
+          "a": "Ashgabat",
+          "hint": "Famous for its white marble buildings."
+        },
+        {
+          "q": "Capital of Tajikistan?",
+          "a": "Dushanbe",
+          "hint": "Its name means “Monday.”"
+        },
+        {
+          "q": "Capital of Brunei?",
+          "a": "Bandar Seri Begawan",
+          "hint": "Starts with “Bandar…”"
+        },
+        {
+          "q": "Capital of Jordan?",
+          "a": "Amman",
+          "hint": "In Roman times it was called Philadelphia."
+        },
+        {
+          "q": "Currency of Indonesia?",
+          "a": "Rupiah",
+          "hint": "Sounds like India’s currency."
+        },
+        {
+          "q": "Currency of Malaysia?",
+          "a": "Ringgit",
+          "hint": "Abbreviated RM."
+        },
+        {
+          "q": "Currency of Bangladesh?",
+          "a": "Taka",
+          "hint": "Four letters, starts with T."
+        },
+        {
+          "q": "Currency of Cambodia?",
+          "a": "Riel",
+          "hint": "Four letters, starts with R."
+        },
+        {
+          "q": "Japanese stage drama known for bold makeup and dramatic poses?",
+          "a": "Kabuki",
+          "hint": "Traditionally performed by all-male casts."
+        },
+        {
+          "q": "Korean word a woman uses for an older brother or older male friend?",
+          "a": "Oppa",
+          "hint": "Heard constantly in K-dramas."
+        },
+        {
+          "q": "Javanese shadow-puppet theater?",
+          "a": "Wayang kulit",
+          "hint": "The puppets are cut from buffalo hide."
+        },
+        {
+          "q": "River that flows through Baghdad?",
+          "a": "Tigris",
+          "hint": "Paired with the Euphrates."
+        },
+        {
+          "q": "Thai combat sport called “the art of eight limbs”?",
+          "a": "Muay Thai",
+          "hint": "Uses fists, elbows, knees, and shins."
+        },
+        {
+          "q": "Japanese sport of fencing with bamboo swords?",
+          "a": "Kendo",
+          "hint": "Fighters wear armor called bogu."
+        }
+      ]
+    },
+    {
+      "type": "bonus",
+      "group": "Hard Bonus",
+      "variant": "B",
+      "name": "Hard Bonus",
+      "points": 300,
+      "timer": 25,
+      "questions": [
+        {
+          "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+          "a": "Ming",
+          "options": [
+            "Han",
+            "Tang",
+            "Ming",
+            "Qin"
+          ],
+          "correct": 2,
+          "hint": "It ruled from 1368 to 1644."
+        },
+        {
+          "q": "What Japanese word names the samurai code of conduct?",
+          "a": "Bushido",
+          "hint": "Literally “the way of the warrior.”"
+        },
+        {
+          "q": "“The Tale of Genji” was written during which era of Japanese history?",
+          "a": "Heian period",
+          "options": [
+            "Edo period",
+            "Kamakura period",
+            "Heian period",
+            "Meiji period"
+          ],
+          "correct": 2,
+          "hint": "Named after the old name for Kyoto."
+        },
+        {
+          "q": "Name the Thai kingdom (1351–1767) whose ruined capital is a UNESCO site north of Bangkok.",
+          "a": "Ayutthaya",
+          "hint": "Starts with “Ayu…”"
+        },
+        {
+          "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+          "a": "Aryabhata",
+          "options": [
+            "Bhaskara",
+            "Panini",
+            "Ramanujan",
+            "Aryabhata"
+          ],
+          "correct": 3,
+          "hint": "India’s first satellite, launched in 1975, was named after him."
+        },
+        {
+          "q": "Name the masked Japanese theater form that dates to the 14th century.",
+          "a": "Noh",
+          "hint": "Zeami was its great early playwright."
+        }
+      ]
+    },
+    {
+      "type": "final",
+      "group": "Hard Final",
+      "variant": "B",
+      "name": "Hard Final",
+      "category": "Travelers",
+      "q": "This 7th-century Chinese Buddhist monk’s long pilgrimage to India inspired the classic novel “Journey to the West.”",
+      "a": "Who is Xuanzang?",
+      "hint": "He brought hundreds of Buddhist texts back to Chang’an.",
+      "timer": 30
+    }
+  ]
+}

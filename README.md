@@ -31,6 +31,22 @@ npm install
 HOST_PIN=2468 npm start      # then visit http://localhost:3000
 ```
 
+## Question packs
+
+After the host enters the PIN they pick a pack; the room opens with it. The pack can be changed from the lobby.
+
+| Pack | What's in it |
+|---|---|
+| ASA Classic | The original pan-Asian set + a hard tier with hints |
+| Standard | General world trivia |
+| East Asia | China, Japan, Korea, Taiwan, Mongolia, Hong Kong, Macau |
+| South Asia | India, Pakistan, Bangladesh, Sri Lanka, Nepal, Bhutan, Maldives, Afghanistan |
+| Africa | The whole continent |
+
+Every round comes in two versions, **A** and **B**; the host picks one when starting the round.
+Every board has **Music**, **Movies & TV**, **Ancient History**, and **Recent History**.
+Pack sources live outside the site; `public/js/packs/*.js` and `public/js/sample-game.js` are generated files.
+
 ## Game features
 
 - **Rounds:** board (Jeopardy grid), lightning (shared clock, rapid buzz-ins), bonus (every team answers on phones), final (wagers).

@@ -104,11 +104,11 @@
         <label class="lbl">Game title</label><input class="field" data-path="title" value="${val(game.title)}">
         <div class="row" style="margin-top:12px"><button class="btn sm" data-ed="export">⬇ Export JSON</button>
           <label class="btn sm">⬆ Import JSON<input type="file" accept="application/json,.json" data-ed-file hidden></label>
-          <button class="btn sm" data-ed="sample">Load sample game</button><button class="btn sm" data-ed="blank">Start blank</button>
+          ${(window.ASA_PACKS || []).length ? `<label class="btn sm">📦 Load pack <select class="ed-packsel" data-ed-pack><option value="">choose…</option>${window.ASA_PACKS.map(p => `<option value="${val(p.id)}">${val(p.name)}</option>`).join('')}</select></label>` : '<button class="btn sm" data-ed="sample">Load sample game</button>'}<button class="btn sm" data-ed="blank">Start blank</button>
           <button class="btn sm hi" data-ed="push">⟳ Apply to live game</button></div>
         <p class="small muted">Saved automatically on this device. Export a copy so you can load it on another computer.</p></div>
         ${game.rounds.map((r, i) => `<details class="card paper ed-round" data-i="${i}" ${open.has(i) ? 'open' : ''}>
-          <summary><b>${i + 1}. ${val(r.name)}</b> <span class="ed-type">${TYPES[r.type]}</span>
+          <summary><b>${i + 1}. ${val(r.name)}${r.variant ? ` · ${r.type === 'board' ? 'Board' : 'Set'} ${val(r.variant)}` : ''}</b> <span class="ed-type">${TYPES[r.type]}</span>
             <span class="ed-tools"><button class="btn sm" data-ed="up" data-i="${i}" title="Move up">↑</button><button class="btn sm" data-ed="down" data-i="${i}" title="Move down">↓</button><button class="btn sm no" data-ed="delRound" data-i="${i}" title="Delete round">🗑</button></span></summary>
           <label class="lbl">Round name</label><input class="field" data-path="rounds.${i}.name" value="${val(r.name)}">
           ${roundBody(r, i)}</details>`).join('')}
@@ -131,6 +131,13 @@
     });
     el.addEventListener('change', e => { if (e.target.dataset.rerender || e.target.type === 'checkbox') { if (e.target.dataset.path) setPath(game, e.target.dataset.path, e.target.dataset.kind === 'bool' ? e.target.checked : e.target.value); save(); draw(); } });
     el.addEventListener('toggle', e => { const d = e.target.closest && e.target.closest('details.ed-round'); if (d) { const i = +d.dataset.i; if (d.open) open.add(i); else open.delete(i); } }, true);
+    el.addEventListener('change', e => {
+      if (!e.target.matches('[data-ed-pack]') || !e.target.value) return;
+      const p = (window.ASA_PACKS || []).find(x => x.id === e.target.value);
+      if (!p || !confirm(`Replace this game with the ${p.name} pack?`)) { e.target.value = ''; return; }
+      game = JSON.parse(JSON.stringify(p.game)); open.clear(); open.add(0); save(); draw();
+      toast(`${p.name} loaded. Tap “Apply to live game” to use it now.`);
+    });
     el.addEventListener('change', e => {
       if (!e.target.matches('[data-ed-file]')) return;
       const f = e.target.files[0];
