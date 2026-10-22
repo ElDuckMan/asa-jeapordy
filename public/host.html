@@ -7,6 +7,7 @@
 <title>ASA Jeopardy · Host</title></head>
 <body><div id="root"></div>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script><script src="/js/sample-game.js"></script><script src="/js/editor.js"></script><script src="/js/host.js"></script>
+<script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script><script src="/js/sample-game.js"></script><script src="/js/packs.js"></script>
+<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script><script src="/js/editor.js"></script><script src="/js/host.js"></script>
 <script>mountHost(document.getElementById('root'), Craft.socketNet(), { joinBase: location.origin, signinUrl: '/?as=host' });</script>
 </body></html>

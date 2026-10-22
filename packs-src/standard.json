@@ -1,0 +1,269 @@
+{
+  "id": "standard",
+  "name": "Standard",
+  "blurb": "General world trivia: music, movies, history, science, places and more.",
+  "game": {
+    "title": "ASA Jeopardy",
+    "edition": "Standard Edition",
+    "rounds": [
+      {
+        "type": "board", "group": "Round 1", "variant": "A", "name": "Round 1", "timer": 0,
+        "categories": [
+          { "name": "Music", "clues": [
+            { "value": 100, "q": "This band from Liverpool featured John, Paul, George and Ringo.", "a": "Who are The Beatles?" },
+            { "value": 200, "q": "Michael Jackson’s 1982 album featuring “Billie Jean” and “Beat It” shares its name with its title track.", "a": "What is Thriller?" },
+            { "value": 300, "type": "mc", "q": "Which composer wrote the “Moonlight Sonata”?", "a": "Ludwig van Beethoven", "options": ["Wolfgang Amadeus Mozart", "Ludwig van Beethoven", "Johann Sebastian Bach", "Frédéric Chopin"], "correct": 1 },
+            { "value": 400, "q": "This K-pop group’s 2020 single “Dynamite” was its first song recorded entirely in English.", "a": "Who is BTS?" },
+            { "value": 500, "q": "This Puerto Rican artist released the 2022 album “Un Verano Sin Ti.”", "a": "Who is Bad Bunny?" }
+          ]},
+          { "name": "Movies & TV", "clues": [
+            { "value": 100, "q": "This 1997 James Cameron film about a doomed ocean liner starred Leonardo DiCaprio and Kate Winslet.", "a": "What is Titanic?" },
+            { "value": 200, "q": "In this 2013 Disney animated film, Queen Elsa sings “Let It Go.”", "a": "What is Frozen?" },
+            { "value": 300, "q": "This 2019 Bong Joon-ho film became the first non-English-language film to win the Academy Award for Best Picture.", "a": "What is Parasite?" },
+            { "value": 400, "type": "dd", "q": "This Hayao Miyazaki film, about a girl named Chihiro trapped in a world of spirits, won the Oscar for Best Animated Feature at the 2003 ceremony.", "a": "What is Spirited Away?" },
+            { "value": 500, "q": "This 2021 South Korean Netflix drama follows cash-strapped contestants competing in children’s games for a huge cash prize.", "a": "What is Squid Game?" }
+          ]},
+          { "name": "Ancient History", "clues": [
+            { "value": 100, "q": "This ancient civilization along the Nile built the great pyramids at Giza.", "a": "What is ancient Egypt?" },
+            { "value": 200, "q": "Julius Caesar was assassinated on the 15th day of the third month in 44 BCE, a date known by this Roman name.", "a": "What are the Ides of March?" },
+            { "value": 300, "q": "This Greek city-state, home of the Parthenon, is often called the birthplace of democracy.", "a": "What is Athens?" },
+            { "value": 400, "q": "This Chinese philosopher, who lived around 551–479 BCE, had his sayings collected in the Analects.", "a": "Who is Confucius?" },
+            { "value": 500, "q": "This king of Macedon conquered the Persian Empire and founded a famous Egyptian port city named after himself.", "a": "Who is Alexander the Great?" }
+          ]},
+          { "name": "Recent History", "clues": [
+            { "value": 100, "q": "In 1969, this American astronaut became the first person to walk on the Moon.", "a": "Who is Neil Armstrong?" },
+            { "value": 200, "q": "This barrier dividing a German city fell in November 1989.", "a": "What is the Berlin Wall?" },
+            { "value": 300, "q": "Nelson Mandela became president of this country in 1994.", "a": "What is South Africa?" },
+            { "value": 400, "q": "This international organization was founded in 1945 and has its headquarters in New York City.", "a": "What is the United Nations?" },
+            { "value": 500, "q": "In 1997, the United Kingdom transferred sovereignty over this territory to China.", "a": "What is Hong Kong?" }
+          ]},
+          { "name": "Geography", "clues": [
+            { "value": 100, "q": "This is the largest ocean on Earth.", "a": "What is the Pacific Ocean?" },
+            { "value": 200, "q": "Canberra is the capital city of this country.", "a": "What is Australia?" },
+            { "value": 300, "q": "Mount Everest is part of this Asian mountain range.", "a": "What are the Himalayas?" },
+            { "value": 400, "q": "Africa’s most populous country, it has Abuja as its capital.", "a": "What is Nigeria?" },
+            { "value": 500, "q": "This narrow strait runs through Istanbul, dividing the city between Europe and Asia.", "a": "What is the Bosphorus?" }
+          ]},
+          { "name": "Science", "clues": [
+            { "value": 100, "q": "H₂O is the chemical formula for this substance.", "a": "What is water?" },
+            { "value": 200, "q": "Because of its rusty color, this planet is nicknamed the Red Planet.", "a": "What is Mars?" },
+            { "value": 300, "q": "Often called the “powerhouse of the cell,” these organelles produce most of a cell’s energy.", "a": "What are mitochondria?" },
+            { "value": 400, "q": "This metallic element has the chemical symbol Fe.", "a": "What is iron?" },
+            { "value": 500, "q": "This English scientist set out his three laws of motion in the 1687 book “Principia.”", "a": "Who is Isaac Newton?" }
+          ]}
+        ]
+      },
+      {
+        "type": "board", "group": "Round 1", "variant": "B", "name": "Round 1", "timer": 0,
+        "categories": [
+          { "name": "Music", "clues": [
+            { "value": 100, "q": "Known as the “Queen of Pop,” this singer released “Like a Virgin” in 1984.", "a": "Who is Madonna?" },
+            { "value": 200, "q": "This singer-songwriter named her 2014 album “1989” after her birth year.", "a": "Who is Taylor Swift?" },
+            { "value": 300, "q": "This Jamaican reggae legend fronted the Wailers and sang “No Woman, No Cry.”", "a": "Who is Bob Marley?" },
+            { "value": 400, "q": "This K-pop girl group’s members are Jisoo, Jennie, Rosé and Lisa.", "a": "Who is BLACKPINK?" },
+            { "value": 500, "q": "This Italian Baroque composer wrote “The Four Seasons,” a set of four violin concertos.", "a": "Who is Antonio Vivaldi?" }
+          ]},
+          { "name": "Movies & TV", "clues": [
+            { "value": 100, "q": "This boy wizard with a lightning-bolt scar is the title character of a film series that began in 2001.", "a": "Who is Harry Potter?" },
+            { "value": 200, "q": "In Disney’s 1994 film “The Lion King,” this young lion is the son of Mufasa.", "a": "Who is Simba?" },
+            { "value": 300, "type": "mc", "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?", "a": "Steven Spielberg", "options": ["George Lucas", "James Cameron", "Steven Spielberg", "Robert Zemeckis"], "correct": 2 },
+            { "value": 400, "q": "This 2018 romantic comedy set in Singapore was based on a Kevin Kwan novel.", "a": "What is Crazy Rich Asians?" },
+            { "value": 500, "q": "In this 1954 Akira Kurosawa film, a village hires a group of warriors to defend it from bandits.", "a": "What is Seven Samurai?" }
+          ]},
+          { "name": "Ancient History", "clues": [
+            { "value": 100, "q": "Gladiators fought in this huge amphitheater in Rome, completed around 80 CE.", "a": "What is the Colosseum?" },
+            { "value": 200, "q": "Stretching across northern China, this enormous line of fortifications was built and rebuilt over many centuries.", "a": "What is the Great Wall of China?" },
+            { "value": 300, "q": "This last active ruler of Ptolemaic Egypt was allied with the Roman general Mark Antony.", "a": "Who is Cleopatra?" },
+            { "value": 400, "q": "This Greek mathematician’s name is attached to the theorem a² + b² = c².", "a": "Who is Pythagoras?" },
+            { "value": 500, "q": "This Babylonian king is known for a law code carved on a stone stele around 1750 BCE.", "a": "Who is Hammurabi?" }
+          ]},
+          { "name": "Recent History", "clues": [
+            { "value": 100, "q": "This civil rights leader delivered the “I Have a Dream” speech in Washington, D.C., in 1963.", "a": "Who is Martin Luther King Jr.?" },
+            { "value": 200, "q": "In 1991, this country dissolved into 15 independent states.", "a": "What is the Soviet Union?" },
+            { "value": 300, "q": "First released by Apple in 2007, this device combined a phone, a music player and an internet communicator.", "a": "What is the iPhone?" },
+            { "value": 400, "q": "This country gained independence from Britain in 1947, with Jawaharlal Nehru as its first prime minister.", "a": "What is India?" },
+            { "value": 500, "type": "dd", "q": "Launched by the Soviet Union in 1957, this was the first artificial satellite to orbit Earth.", "a": "What is Sputnik 1?" }
+          ]},
+          { "name": "Food & Drink", "clues": [
+            { "value": 100, "q": "The Margherita, topped with tomato, mozzarella and basil, is a classic version of this Italian dish.", "a": "What is pizza?" },
+            { "value": 200, "q": "This Japanese dish pairs vinegared rice with ingredients such as raw fish.", "a": "What is sushi?" },
+            { "value": 300, "q": "Guacamole is made mainly from this green-fleshed fruit.", "a": "What is avocado?" },
+            { "value": 400, "q": "This Korean side dish of fermented vegetables is most often made with napa cabbage.", "a": "What is kimchi?" },
+            { "value": 500, "q": "This spice, harvested by hand from the stigmas of a crocus flower, is among the most expensive by weight.", "a": "What is saffron?" }
+          ]},
+          { "name": "Animals", "clues": [
+            { "value": 100, "q": "This ocean giant is the largest animal living on Earth today.", "a": "What is the blue whale?" },
+            { "value": 200, "q": "This black-and-white bear native to China eats mostly bamboo.", "a": "What is the giant panda?" },
+            { "value": 300, "q": "This spotted big cat is the fastest land animal.", "a": "What is the cheetah?" },
+            { "value": 400, "q": "This Australian marsupial sleeps much of the day and feeds almost entirely on eucalyptus leaves.", "a": "What is the koala?" },
+            { "value": 500, "q": "This is the only group of mammals capable of true powered flight.", "a": "What are bats?" }
+          ]}
+        ]
+      },
+      {
+        "type": "lightning", "group": "Lightning Round", "variant": "A", "name": "Lightning Round", "duration": 60, "points": 100, "penalty": false,
+        "questions": [
+          { "q": "Capital of Peru?", "a": "Lima" },
+          { "q": "How many sides does an octagon have?", "a": "Eight" },
+          { "q": "Chemical symbol for gold?", "a": "Au" },
+          { "q": "Capital of Canada?", "a": "Ottawa" },
+          { "q": "Who wrote “Romeo and Juliet”?", "a": "William Shakespeare" },
+          { "q": "Boiling point of water at sea level, in °C?", "a": "100" },
+          { "q": "Currency of Japan?", "a": "Yen" },
+          { "q": "Capital of Egypt?", "a": "Cairo" },
+          { "q": "Who painted the “Mona Lisa”?", "a": "Leonardo da Vinci" },
+          { "q": "Longest river in Africa?", "a": "Nile" },
+          { "q": "Capital of South Korea?", "a": "Seoul" },
+          { "q": "Freezing point of water, in °F?", "a": "32" }
+        ]
+      },
+      {
+        "type": "lightning", "group": "Lightning Round", "variant": "B", "name": "Lightning Round", "duration": 60, "points": 100, "penalty": false,
+        "questions": [
+          { "q": "Capital of Italy?", "a": "Rome" },
+          { "q": "Chemical symbol for sodium?", "a": "Na" },
+          { "q": "Players per side on the field in soccer?", "a": "11" },
+          { "q": "Capital of Thailand?", "a": "Bangkok" },
+          { "q": "Who wrote “Pride and Prejudice”?", "a": "Jane Austen" },
+          { "q": "Smallest planet in our solar system?", "a": "Mercury" },
+          { "q": "Currency of the United Kingdom?", "a": "Pound sterling" },
+          { "q": "Square root of 144?", "a": "12" },
+          { "q": "Who painted “The Starry Night”?", "a": "Vincent van Gogh" },
+          { "q": "Mineral rated 10, the top of the Mohs hardness scale?", "a": "Diamond" },
+          { "q": "Capital of the Philippines?", "a": "Manila" },
+          { "q": "Strings on a standard guitar?", "a": "Six" }
+        ]
+      },
+      {
+        "type": "board", "group": "Double Round", "variant": "A", "name": "Double Round", "timer": 0,
+        "categories": [
+          { "name": "Music", "clues": [
+            { "value": 200, "q": "This Austrian composer of “The Magic Flute” died in 1791 at age 35.", "a": "Who is Wolfgang Amadeus Mozart?", "hint": "A child prodigy born in Salzburg." },
+            { "value": 400, "q": "Fronted by Freddie Mercury, this British band released “Bohemian Rhapsody” in 1975.", "a": "What is Queen?", "hint": "The band’s name is a royal title." },
+            { "value": 600, "q": "This Colombian singer of “Hips Don’t Lie” co-headlined the 2020 Super Bowl halftime show with Jennifer Lopez.", "a": "Who is Shakira?", "hint": "Her name begins with “Sh.”" },
+            { "value": 800, "type": "dd", "q": "This Compton rapper won the 2018 Pulitzer Prize for Music for his album “DAMN.”", "a": "Who is Kendrick Lamar?", "hint": "His other albums include “To Pimp a Butterfly.”" },
+            { "value": 1000, "type": "mc", "q": "Which Russian composer wrote the ballet “Swan Lake”?", "a": "Pyotr Ilyich Tchaikovsky", "options": ["Sergei Rachmaninoff", "Igor Stravinsky", "Pyotr Ilyich Tchaikovsky", "Sergei Prokofiev"], "correct": 2, "hint": "He also wrote “The Nutcracker.”" }
+          ]},
+          { "name": "Movies & TV", "clues": [
+            { "value": 200, "q": "This 1977 film written and directed by George Lucas introduced Luke Skywalker and Darth Vader.", "a": "What is Star Wars?", "hint": "“A long time ago in a galaxy far, far away…”" },
+            { "value": 400, "q": "This nickname for the Hindi-language film industry based in Mumbai blends the city’s former name with a famous American one.", "a": "What is Bollywood?", "hint": "Mumbai was once called Bombay." },
+            { "value": 600, "q": "Ang Lee’s 2000 martial-arts epic starring Chow Yun-fat and Michelle Yeoh won the Oscar for Best Foreign Language Film.", "a": "What is Crouching Tiger, Hidden Dragon?", "hint": "Its title names two animals in hiding." },
+            { "value": 800, "q": "Based on George R. R. Martin’s novels, this HBO fantasy series ran from 2011 to 2019.", "a": "What is Game of Thrones?", "hint": "“Winter is coming.”" },
+            { "value": 1000, "type": "dd", "q": "This 1941 Orson Welles film centers on a newspaper tycoon’s mysterious dying word, “Rosebud.”", "a": "What is Citizen Kane?", "hint": "Title is the tycoon’s name with a civic word before it." }
+          ]},
+          { "name": "Ancient History", "clues": [
+            { "value": 200, "q": "Julius Caesar’s adopted heir Octavian became Rome’s first emperor and in 27 BCE took this honorific name meaning “venerable.”", "a": "Who is Augustus?", "hint": "A summer month is named after him." },
+            { "value": 400, "q": "This Mauryan emperor of India embraced Buddhism after the bloody Kalinga War.", "a": "Who is Ashoka?", "hint": "His lion capital is India’s national emblem." },
+            { "value": 600, "q": "This volcano’s eruption in 79 CE buried the Roman towns of Pompeii and Herculaneum.", "a": "What is Mount Vesuvius?", "hint": "It overlooks the Bay of Naples." },
+            { "value": 800, "q": "This ancient Mesopotamian writing system used wedge-shaped marks pressed into clay tablets.", "a": "What is cuneiform?", "hint": "Its name comes from the Latin for “wedge.”" },
+            { "value": 1000, "q": "During the Second Punic War, this Carthaginian general famously crossed the Alps with war elephants.", "a": "Who is Hannibal?", "hint": "He crushed a Roman army at Cannae in 216 BCE." }
+          ]},
+          { "name": "Recent History", "clues": [
+            { "value": 200, "q": "Following the Watergate scandal, this U.S. president resigned in 1974.", "a": "Who is Richard Nixon?", "hint": "He was the 37th president." },
+            { "value": 400, "q": "This tense 13-day standoff in October 1962 between the U.S. and the Soviet Union centered on nuclear weapons in the Caribbean.", "a": "What is the Cuban Missile Crisis?", "hint": "Named for the island where the weapons were placed." },
+            { "value": 600, "q": "This currency was launched for electronic payments in 1999, with banknotes and coins following in 2002.", "a": "What is the euro?", "hint": "Its symbol is €." },
+            { "value": 800, "q": "In 1989, while working at CERN, this British computer scientist proposed the World Wide Web.", "a": "Who is Tim Berners-Lee?", "hint": "He was knighted; his initials are T. B.-L." },
+            { "value": 1000, "q": "This 1955–56 protest in an Alabama city began after Rosa Parks refused to give up her seat.", "a": "What is the Montgomery bus boycott?", "hint": "Riders stayed off public transit in the state capital." }
+          ]},
+          { "name": "Sports", "clues": [
+            { "value": 200, "q": "FIFA organizes the World Cup for this sport.", "a": "What is soccer (association football)?", "hint": "Played with feet and a round ball." },
+            { "value": 400, "q": "In 2009, this Jamaican sprinter set the 100-meter world record of 9.58 seconds.", "a": "Who is Usain Bolt?", "hint": "His surname sounds like lightning." },
+            { "value": 600, "q": "The martial art of taekwondo originated in this country.", "a": "What is Korea?", "hint": "Same country as hapkido and ssireum." },
+            { "value": 800, "q": "This city hosted the 2008 Summer Olympics, opening with a ceremony on 8/8/08.", "a": "What is Beijing?", "hint": "Home of the “Bird’s Nest” stadium." },
+            { "value": 1000, "q": "This is the highest rank in professional sumo wrestling.", "a": "What is yokozuna?", "hint": "Holders wear a thick white rope in ring-entering ceremonies." }
+          ]},
+          { "name": "Language", "clues": [
+            { "value": 200, "q": "“Konnichiwa” is a common greeting in this language.", "a": "What is Japanese?", "hint": "Also says “arigatou” for thanks." },
+            { "value": 400, "q": "This Korean alphabet was created in the 15th century under King Sejong the Great.", "a": "What is Hangul?", "hint": "South Korea celebrates it with a holiday every October 9." },
+            { "value": 600, "q": "Pinyin is the official system for writing this language in the Latin alphabet.", "a": "What is Mandarin Chinese?", "hint": "The most widely spoken language in China." },
+            { "value": 800, "q": "The national language Filipino is based mainly on this language.", "a": "What is Tagalog?", "hint": "Spoken natively in and around Manila." },
+            { "value": 1000, "q": "L. L. Zamenhof published this constructed international language in 1887.", "a": "What is Esperanto?", "hint": "Its name means “one who hopes.”" }
+          ]}
+        ]
+      },
+      {
+        "type": "board", "group": "Double Round", "variant": "B", "name": "Double Round", "timer": 0,
+        "categories": [
+          { "name": "Music", "clues": [
+            { "value": 200, "q": "Nicknamed the “King of Rock and Roll,” this singer recorded “Heartbreak Hotel” and lived at Graceland.", "a": "Who is Elvis Presley?", "hint": "Born in Tupelo, Mississippi." },
+            { "value": 400, "q": "This Swedish pop group won the 1974 Eurovision Song Contest with “Waterloo.”", "a": "Who is ABBA?", "hint": "Its name is a palindrome of initials." },
+            { "value": 600, "type": "mc", "q": "The gentle, jazz-influenced style called bossa nova originated in which country?", "a": "Brazil", "options": ["Argentina", "Cuba", "Brazil", "Mexico"], "correct": 2, "hint": "Think “The Girl from Ipanema.”" },
+            { "value": 800, "q": "In 2012, this PSY hit became the first YouTube video to reach one billion views.", "a": "What is “Gangnam Style”?", "hint": "Named after an upscale Seoul district." },
+            { "value": 1000, "q": "This German Baroque composer wrote the six “Brandenburg Concertos.”", "a": "Who is Johann Sebastian Bach?", "hint": "His surname is a German word for “brook.”" }
+          ]},
+          { "name": "Movies & TV", "clues": [
+            { "value": 200, "q": "In this 1939 film, Dorothy and her dog Toto follow the yellow brick road.", "a": "What is The Wizard of Oz?", "hint": "“There’s no place like home.”" },
+            { "value": 400, "q": "This 2017 Pixar film follows a boy named Miguel during Mexico’s Día de Muertos.", "a": "What is Coco?", "hint": "Named after Miguel’s great-grandmother." },
+            { "value": 600, "q": "This long-running British sci-fi series about a time-traveling alien first aired in 1963.", "a": "What is Doctor Who?", "hint": "Travels in a blue police box called the TARDIS." },
+            { "value": 800, "type": "dd", "q": "Starring Michelle Yeoh as a laundromat owner, this multiverse film won Best Picture at the 2023 Academy Awards.", "a": "What is Everything Everywhere All at Once?", "hint": "The title covers all things, all places, all times." },
+            { "value": 1000, "q": "This 1958 Alfred Hitchcock thriller starring James Stewart topped Sight & Sound’s 2012 critics’ poll of the greatest films.", "a": "What is Vertigo?", "hint": "Its title is a word for a spinning, dizzy sensation." }
+          ]},
+          { "name": "Ancient History", "clues": [
+            { "value": 200, "q": "This ancient Greek poet is traditionally credited with the “Iliad” and the “Odyssey.”", "a": "Who is Homer?", "hint": "Shares a name with a famous cartoon dad." },
+            { "value": 400, "q": "The Rosetta Stone helped scholars decipher these ancient Egyptian picture symbols.", "a": "What are hieroglyphs?", "hint": "Name comes from Greek for “sacred carvings.”" },
+            { "value": 600, "q": "This founder of the Achaemenid Persian Empire captured Babylon in 539 BCE.", "a": "Who is Cyrus the Great?", "hint": "Shares an epithet with Alexander." },
+            { "value": 800, "q": "This ruler unified China in 221 BCE and was buried with the Terracotta Army.", "a": "Who is Qin Shi Huang?", "hint": "His dynasty’s name may be the root of “China.”" },
+            { "value": 1000, "type": "dd", "q": "This Bronze Age civilization of South Asia included the planned cities of Harappa and Mohenjo-daro.", "a": "What is the Indus Valley Civilization (Harappan Civilization)?", "hint": "Named for a great river in modern Pakistan." }
+          ]},
+          { "name": "Recent History", "clues": [
+            { "value": 200, "q": "Many feared computer systems would fail when dates rolled over to the year 2000 because of this bug.", "a": "What is Y2K?", "hint": "Three characters; “K” stands for thousand." },
+            { "value": 400, "q": "This Princess of Wales died in a car accident in Paris in 1997.", "a": "Who is Princess Diana?", "hint": "Mother of Princes William and Harry." },
+            { "value": 600, "q": "In 1953, this Sherpa mountaineer and Edmund Hillary became the first to reach the summit of Mount Everest.", "a": "Who is Tenzing Norgay?", "hint": "First name begins with T." },
+            { "value": 800, "q": "In 1964, this city hosted the first Summer Olympics held in Asia.", "a": "What is Tokyo?", "hint": "It hosted the Summer Games again decades later." },
+            { "value": 1000, "q": "In 1965, this city-state became an independent nation after separating from Malaysia.", "a": "What is Singapore?", "hint": "Its symbol is the Merlion." }
+          ]},
+          { "name": "Landmarks", "clues": [
+            { "value": 200, "q": "This wrought-iron lattice tower was built for the 1889 World’s Fair in Paris.", "a": "What is the Eiffel Tower?", "hint": "Named after the engineer whose company built it." },
+            { "value": 400, "q": "Mughal emperor Shah Jahan built this white marble mausoleum in Agra in memory of his beloved wife.", "a": "What is the Taj Mahal?", "hint": "It stands on the south bank of the Yamuna River." },
+            { "value": 600, "q": "This 15th-century Inca citadel sits high in the Andes of Peru.", "a": "What is Machu Picchu?", "hint": "Name means “old peak” in Quechua." },
+            { "value": 800, "q": "This Art Deco statue with outstretched arms overlooks Rio de Janeiro from Corcovado mountain.", "a": "What is Christ the Redeemer?", "hint": "Completed in 1931, it was voted one of the New Seven Wonders of the World in 2007." },
+            { "value": 1000, "q": "This 12th-century temple complex appears on the national flag of Cambodia.", "a": "What is Angkor Wat?", "hint": "Near the city of Siem Reap." }
+          ]},
+          { "name": "Space", "clues": [
+            { "value": 200, "q": "This is the star closest to Earth.", "a": "What is the Sun?", "hint": "You see it every day." },
+            { "value": 400, "q": "This gas giant is the largest planet in our solar system.", "a": "What is Jupiter?", "hint": "Famous for its Great Red Spot." },
+            { "value": 600, "q": "This planet is famous for its bright ring system and its large moon Titan.", "a": "What is Saturn?", "hint": "Sixth planet from the Sun." },
+            { "value": 800, "q": "Launched in 1990, this orbiting observatory is named after an American astronomer whose first name was Edwin.", "a": "What is the Hubble Space Telescope?", "hint": "Its namesake proved that galaxies exist beyond our Milky Way." },
+            { "value": 1000, "q": "In 1961, this Soviet cosmonaut became the first human to travel into space.", "a": "Who is Yuri Gagarin?", "hint": "Flew aboard Vostok 1." }
+          ]}
+        ]
+      },
+      {
+        "type": "bonus", "group": "Bonus Round", "variant": "A", "name": "Bonus Round", "points": 200, "timer": 20,
+        "questions": [
+          { "q": "Which gas do plants absorb from the air for photosynthesis?", "a": "Carbon dioxide", "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], "correct": 1 },
+          { "q": "How many interlocking rings appear on the Olympic flag?", "a": "Five", "options": ["Four", "Five", "Six", "Seven"], "correct": 1 },
+          { "q": "Which country gave the Statue of Liberty to the United States?", "a": "France", "options": ["United Kingdom", "Spain", "Netherlands", "France"], "correct": 3 },
+          { "q": "What is the smallest prime number?", "a": "Two" },
+          { "q": "In which country is the city of Marrakesh?", "a": "Morocco" }
+        ]
+      },
+      {
+        "type": "bonus", "group": "Bonus Round", "variant": "B", "name": "Bonus Round", "points": 200, "timer": 20,
+        "questions": [
+          { "q": "By weight, what is the largest organ of the human body?", "a": "Skin", "options": ["Liver", "Skin", "Brain", "Lungs"], "correct": 1 },
+          { "q": "How many keys does a standard modern piano have?", "a": "88", "options": ["76", "88", "92", "100"], "correct": 1 },
+          { "q": "Which ocean lies between Africa and Australia?", "a": "Indian Ocean", "options": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean", "Southern Ocean"], "correct": 2 },
+          { "q": "Which gas makes up most of Earth’s atmosphere?", "a": "Nitrogen" },
+          { "q": "Which Shakespeare play contains the line “To be, or not to be”?", "a": "Hamlet" }
+        ]
+      },
+      {
+        "type": "final", "group": "Final Round", "variant": "A", "name": "Final Round",
+        "category": "Famous Voyages",
+        "q": "This Portuguese-born explorer died in the Philippines in 1521, but the survivors of his Spanish expedition completed the first circumnavigation of the globe in 1522.",
+        "a": "Who is Ferdinand Magellan?",
+        "hint": "A strait near the southern tip of South America bears his name.",
+        "timer": 30
+      },
+      {
+        "type": "final", "group": "Final Round", "variant": "B", "name": "Final Round",
+        "category": "Trade Routes",
+        "q": "In 1877, German geographer Ferdinand von Richthofen popularized the name for this ancient network of trade routes linking China with the Mediterranean world, named after a prized fabric.",
+        "a": "What is the Silk Road?",
+        "hint": "The fabric comes from the cocoons of a certain caterpillar.",
+        "timer": 30
+      }
+    ]
+  }
+}

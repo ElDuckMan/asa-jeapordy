@@ -190,3 +190,20 @@ button.chip{cursor:pointer;font:inherit}
 
 /* narrow host boards (phones, 6+ categories): shrink names instead of splitting words */
 .h-board .cat{word-break:normal;overflow-wrap:normal;hyphens:auto;padding:4px 2px;font-size:clamp(8px,2.2vw,16px);--sw:1px}
+
+/* ---------- pack picker ---------- */
+.pk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:12px 0}
+.pk-card{box-sizing:border-box;border:0;font:inherit;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;display:flex;flex-direction:column;gap:4px;padding:14px;color:#fff;min-height:132px;transition:transform .3s var(--bounce)}
+.pk-card:hover,.pk-card:focus-visible{transform:translateY(-4px) rotate(-1deg) scale(1.02)}
+.pk-card:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.pk-card:disabled{opacity:.5;cursor:default;transform:none}
+.pk-card.chosen{opacity:1;transform:scale(1.04) rotate(-1deg);box-shadow:0 0 0 4px var(--ink),0 0 26px var(--c)}
+.pk-icon{font-size:30px;line-height:1}
+.pk-name{font-size:24px;--sw:2px}
+.pk-blurb{font-size:16px;line-height:1.2;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.pk-meta{margin-top:auto;font-size:14px;opacity:.95;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.h-rgroup{display:inline-flex;align-items:center;gap:4px;padding:2px 4px 2px 8px;border:2px dashed rgba(0,0,0,.25);border-radius:12px;flex:none}
+.h-rgroup.on{border-color:var(--mustard);background:rgba(255,227,154,.35)}
+.h-rgname{font-size:16px;white-space:nowrap}
+.h-var{min-width:34px}
+.h-startvar{font-size:20px;align-self:center}
