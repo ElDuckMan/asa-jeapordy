@@ -1,0 +1,130 @@
+{"rounds":[
+  {
+    "type": "board", "group": "Round 1", "variant": "C", "name": "Round 1", "timer": 0,
+    "categories": [
+      { "name": "Music", "clues": [
+        { "value": 100, "q": "Singer Norah Jones is the daughter of this sitar legend, who performed at Woodstock in 1969.", "a": "Who is Ravi Shankar?" },
+        { "value": 200, "q": "This playback singer, the younger sister of Lata Mangeshkar, recorded hits like “Dum Maro Dum” and “Piya Tu Ab To Aaja.”", "a": "Who is Asha Bhosle?" },
+        { "value": 300, "type": "mc", "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?", "a": "Junoon", "options": ["Vital Signs", "Strings", "Junoon", "Noori"], "correct": 2 },
+        { "value": 400, "q": "Pandit Shivkumar Sharma brought this trapezoid-shaped hammered dulcimer into the world of Indian classical music.", "a": "What is the santoor?" },
+        { "value": 500, "q": "Honored in Nepal as “Swar Samrat,” or emperor of voice, this singer recorded hundreds of beloved modern Nepali songs.", "a": "Who is Narayan Gopal?" }
+      ]},
+      { "name": "Movies & TV", "clues": [
+        { "value": 100, "q": "Often shortened to “K3G,” this 2001 Karan Johar family drama starred Shah Rukh Khan, Kajol, Hrithik Roshan and Kareena Kapoor.", "a": "What is Kabhi Khushi Kabhie Gham?" },
+        { "value": 200, "q": "This Pakistani filmmaker won Academy Awards for the documentary shorts “Saving Face” and “A Girl in the River.”", "a": "Who is Sharmeen Obaid-Chinoy?" },
+        { "value": 300, "q": "Crowned Miss World in 1994, this actress played Paro in the 2002 film “Devdas.”", "a": "Who is Aishwarya Rai?" },
+        { "value": 400, "q": "Sanam Saeed played Kashaf and Fawad Khan played Zaroon in this 2012–2013 Hum TV drama serial.", "a": "What is Zindagi Gulzar Hai?" },
+        { "value": 500, "q": "This Bangladeshi novelist, creator of the characters Himu and Misir Ali, also directed the 1994 film “Aguner Poroshmoni.”", "a": "Who is Humayun Ahmed?" }
+      ]},
+      { "name": "Ancient History", "clues": [
+        { "value": 100, "q": "Patanjali’s Sutras systematized this ancient practice of postures, breathing and meditation.", "a": "What is yoga?" },
+        { "value": 200, "q": "The Buddha is said to have given his first sermon at a deer park in this place near Varanasi.", "a": "What is Sarnath?" },
+        { "value": 300, "q": "Near present-day Islamabad, this UNESCO-listed ancient city was a great center of learning in the Gandhara region.", "a": "What is Taxila?" },
+        { "value": 400, "q": "Under Rajaraja I, this Tamil dynasty built the towering Brihadeeswarar Temple at Thanjavur.", "a": "What is the Chola dynasty?" },
+        { "value": 500, "q": "Written in Pali, this “Great Chronicle” of Sri Lanka recounts the island’s history beginning with the arrival of Prince Vijaya.", "a": "What is the Mahavamsa?" }
+      ]},
+      { "name": "Recent History", "clues": [
+        { "value": 100, "q": "India celebrates Republic Day on January 26 because this founding document took effect on that date in 1950.", "a": "What is the Constitution of India?" },
+        { "value": 200, "q": "In 1947, this politician became Pakistan’s first prime minister.", "a": "Who is Liaquat Ali Khan?" },
+        { "value": 300, "q": "Honoring Bangladesh’s 1952 Language Movement, UNESCO proclaimed February 21 as this international observance.", "a": "What is International Mother Language Day?" },
+        { "value": 400, "type": "dd", "q": "In 1919, Afghanistan gained full control of its foreign affairs from Britain under this reforming ruler, who later took the title of king.", "a": "Who is Amanullah Khan?" },
+        { "value": 500, "q": "In 1994, this daughter of Sirimavo Bandaranaike became Sri Lanka’s first female president.", "a": "Who is Chandrika Kumaratunga?" }
+      ]},
+      { "name": "Fashion & Textiles", "clues": [
+        { "value": 100, "q": "Brides across South Asia have intricate designs painted on their hands with a paste made from this plant.", "a": "What is henna (mehndi)?" },
+        { "value": 200, "q": "Pakistan’s national dress pairs a long tunic with loose, pleated trousers; name the outfit.", "a": "What is the shalwar kameez?" },
+        { "value": 300, "q": "Belted at the waist and worn to the knee, this robe is the national dress for men in Bhutan.", "a": "What is the gho?" },
+        { "value": 400, "q": "UNESCO recognized the traditional art of weaving this fine, patterned muslin sari of Bangladesh in 2013.", "a": "What is Jamdani?" },
+        { "value": 500, "q": "Prized for heavy silk and gold zari borders, these saris are woven in a Tamil Nadu temple town that was once the Pallava capital.", "a": "What are Kanchipuram saris?" }
+      ]},
+      { "name": "Sweets & Snacks", "clues": [
+        { "value": 100, "q": "These triangular fried pastries are usually stuffed with spiced potatoes and peas.", "a": "What are samosas?" },
+        { "value": 200, "q": "This winter dessert is made by slow-cooking grated carrots with milk, sugar and ghee.", "a": "What is gajar ka halwa?" },
+        { "value": 300, "q": "Made for Tihar and Dashain, this ring-shaped, deep-fried Nepali bread uses a sweet rice-flour batter.", "a": "What is sel roti?" },
+        { "value": 400, "q": "This Sri Lankan dish of rice cooked in coconut milk is cut into diamond shapes and traditionally eaten on New Year’s morning.", "a": "What is kiribath?" },
+        { "value": 500, "q": "The Bangladeshi town of Bogura is famous for this sweet, caramel-colored dairy dessert set in clay pots.", "a": "What is mishti doi?" }
+      ]}
+    ]
+  },
+  {
+    "type": "lightning", "group": "Lightning Round", "variant": "C", "name": "Lightning Round", "duration": 60, "points": 100, "penalty": false,
+    "questions": [
+      { "q": "World’s second-highest mountain?", "a": "K2" },
+      { "q": "National fruit of Bangladesh?", "a": "Jackfruit" },
+      { "q": "Currency of the Maldives?", "a": "Rufiyaa" },
+      { "q": "India’s national bird?", "a": "Peacock" },
+      { "q": "Sport played on horseback with mallets?", "a": "Polo" },
+      { "q": "Flute-playing Hindu god often shown with blue skin?", "a": "Krishna" },
+      { "q": "Language of Sri Lanka’s majority?", "a": "Sinhala" },
+      { "q": "South Asian stew of spiced lentils?", "a": "Dal" },
+      { "q": "City of the Golden Temple?", "a": "Amritsar" },
+      { "q": "Holy scripture of Sikhism?", "a": "Guru Granth Sahib" },
+      { "q": "Spiced milk tea sold at street stalls?", "a": "Chai" },
+      { "q": "Mountain range along Nepal’s northern border?", "a": "Himalayas" }
+    ]
+  },
+  {
+    "type": "board", "group": "Double Round", "variant": "C", "name": "Double Round", "timer": 0,
+    "categories": [
+      { "name": "Music", "clues": [
+        { "value": 200, "q": "This Pakistani singer performed the 2022 Coke Studio smash “Pasoori” with Shae Gill.", "a": "Who is Ali Sethi?", "hint": "His first name is shared with the fourth caliph." },
+        { "value": 400, "q": "Pandit Hariprasad Chaurasia is the best-known master of this side-blown bamboo flute.", "a": "What is the bansuri?", "hint": "Krishna is often pictured playing one." },
+        { "value": 600, "q": "Legend says this musician in Emperor Akbar’s court could bring rain or light lamps with his ragas.", "a": "Who is Tansen?", "hint": "One of Akbar’s “Nine Jewels.”" },
+        { "value": 800, "type": "mc", "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?", "a": "Tyagaraja", "options": ["Purandara Dasa", "Tyagaraja", "Annamacharya", "Kshetrayya"], "correct": 1, "hint": "He lived in Thiruvaiyaru, devoted to Rama." },
+        { "value": 1000, "q": "Lalon Shah is the most revered poet-singer of this mystic minstrel tradition of Bengal, recognized by UNESCO.", "a": "What are the Bauls?", "hint": "A four-letter name for wandering singers with ektaras." }
+      ]},
+      { "name": "Movies & TV", "clues": [
+        { "value": 200, "q": "Nicknamed “King Khan,” this actor starred in “Dilwale Dulhania Le Jayenge” and “Pathaan.”", "a": "Who is Shah Rukh Khan?", "hint": "Fans often call him by his initials, SRK." },
+        { "value": 400, "q": "Amitabh Bachchan became the face of this Indian version of “Who Wants to Be a Millionaire?”", "a": "What is Kaun Banega Crorepati?", "hint": "Often abbreviated KBC." },
+        { "value": 600, "q": "Starring Fawad Khan and Mahira Khan, this 2022 Pakistani action film reimagined a 1979 Punjabi classic.", "a": "What is The Legend of Maula Jatt?", "hint": "Its villain is Noori Natt." },
+        { "value": 800, "q": "This Sri Lankan actress is widely called the “Queen of Sinhala Cinema.”", "a": "Who is Malini Fonseka?", "hint": "She starred in Lester James Peries’s “Nidhanaya.”" },
+        { "value": 1000, "type": "dd", "q": "In 1983, this costume designer became the first Indian to win an Academy Award, for Richard Attenborough’s “Gandhi.”", "a": "Who is Bhanu Athaiya?", "hint": "Her first name means “sun.”" }
+      ]},
+      { "name": "Ancient History", "clues": [
+        { "value": 200, "q": "Excavated in the 1920s in Punjab, Pakistan, this site gave its name to the Indus Valley Civilization’s alternate name.", "a": "What is Harappa?", "hint": "It lies near the Ravi River, close to Sahiwal." },
+        { "value": 400, "q": "This network of ancient trade routes linked China with Central Asia, passing through Afghanistan.", "a": "What is the Silk Road?", "hint": "Named after a luxurious fabric." },
+        { "value": 600, "q": "According to tradition, this son of Emperor Ashoka brought Buddhism to Sri Lanka.", "a": "Who is Mahinda?", "hint": "His sister Sanghamitta is said to have followed him." },
+        { "value": 800, "q": "From roughly the 4th to the 9th century CE, this dynasty ruled Nepal’s Kathmandu Valley.", "a": "What is the Licchavi dynasty?", "hint": "It succeeded the Kirata rulers." },
+        { "value": 1000, "q": "Two colossal standing Buddhas were carved into the cliffs of this central Afghan valley around the 6th century.", "a": "What is Bamiyan?", "hint": "A Silk Road valley in the Hindu Kush." }
+      ]},
+      { "name": "Recent History", "clues": [
+        { "value": 200, "q": "This Albanian-born nun, who founded the Missionaries of Charity in Calcutta, won the 1979 Nobel Peace Prize.", "a": "Who is Mother Teresa?", "hint": "She was canonized in 2016." },
+        { "value": 400, "q": "This Pakistani humanitarian, who built a vast volunteer ambulance network, received a state funeral in 2016.", "a": "Who is Abdul Sattar Edhi?", "hint": "His foundation bears his surname." },
+        { "value": 600, "q": "This captain led Sri Lanka to victory over Australia in the 1996 Cricket World Cup final in Lahore.", "a": "Who is Arjuna Ranatunga?", "hint": "His first name comes from a Mahabharata archer." },
+        { "value": 800, "q": "This leader served as president of the Maldives from 1978 to 2008.", "a": "Who is Maumoon Abdul Gayoom?", "hint": "He studied at Al-Azhar University in Cairo." },
+        { "value": 1000, "q": "In 2008, this son of the Fourth King was crowned Bhutan’s fifth Dragon King.", "a": "Who is Jigme Khesar Namgyel Wangchuck?", "hint": "Educated at Oxford; married Queen Jetsun Pema." }
+      ]},
+      { "name": "Science & Space", "clues": [
+        { "value": 200, "q": "This Indian-born NASA astronaut first flew aboard Space Shuttle Columbia in 1997.", "a": "Who is Kalpana Chawla?", "hint": "She grew up in Karnal, Haryana." },
+        { "value": 400, "q": "This self-taught mathematician worked with G. H. Hardy at Cambridge and is the subject of “The Man Who Knew Infinity.”", "a": "Who is Srinivasa Ramanujan?", "hint": "The taxicab number 1729 is linked to him." },
+        { "value": 600, "q": "This physicist won the 1930 Nobel Prize for discovering how light scatters, an effect now named for him.", "a": "Who is C. V. Raman?", "hint": "India’s National Science Day honors his discovery." },
+        { "value": 800, "type": "dd", "q": "Born in Dhaka, this structural engineer designed Chicago’s Sears Tower and John Hancock Center.", "a": "Who is Fazlur Rahman Khan?", "hint": "Pioneer of the “tube” structural system." },
+        { "value": 1000, "q": "This Lahore-born astrophysicist shared the 1983 Nobel Prize in Physics and gave his name to the maximum mass of a white dwarf.", "a": "Who is Subrahmanyan Chandrasekhar?", "hint": "NASA named an X-ray observatory after him." }
+      ]},
+      { "name": "Art & Architecture", "clues": [
+        { "value": 200, "q": "This Mughal emperor built the red-sandstone city of Fatehpur Sikri.", "a": "Who is Akbar?", "hint": "Often called “the Great.”" },
+        { "value": 400, "q": "Each Independence Day, India’s prime minister raises the flag at this Mughal fortress in Delhi.", "a": "What is the Red Fort?", "hint": "Named for the color of its sandstone walls." },
+        { "value": 600, "q": "Designed by Turkish architect Vedat Dalokay, this Islamabad mosque is shaped like a desert tent.", "a": "What is the Faisal Mosque?", "hint": "Named after a Saudi king." },
+        { "value": 800, "q": "Bangladesh’s National Parliament House in Dhaka was designed by this American architect.", "a": "Who is Louis Kahn?", "hint": "He also designed the Salk Institute." },
+        { "value": 1000, "q": "This Sri Lankan architect is celebrated as a pioneer of “tropical modernism.”", "a": "Who is Geoffrey Bawa?", "hint": "His garden estate Lunuganga is near Bentota." }
+      ]}
+    ]
+  },
+  {
+    "type": "bonus", "group": "Bonus Round", "variant": "C", "name": "Bonus Round", "points": 200, "timer": 20,
+    "questions": [
+      { "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?", "a": "Tuna", "options": ["Salmon", "Cod", "Tuna", "Sardine"], "correct": 2 },
+      { "q": "The classical dance-drama Kathakali comes from which Indian state?", "a": "Kerala", "options": ["Kerala", "Punjab", "Assam", "Gujarat"], "correct": 0 },
+      { "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?", "a": "Lion", "options": ["Elephant", "Tiger", "Peacock", "Lion"], "correct": 3 },
+      { "q": "Which northern Afghan city is home to the famous Blue Mosque?", "a": "Mazar-i-Sharif" },
+      { "q": "What flowering shrub is Nepal’s national flower?", "a": "Rhododendron" }
+    ]
+  },
+  {
+    "type": "final", "group": "Final Round", "variant": "C", "name": "Final Round", "category": "World Heritage",
+    "q": "Built in the 15th century under Khan Jahan Ali, this brick mosque in the UNESCO-listed town of Bagerhat, Bangladesh, is named for a number of domes, though it actually has more.",
+    "a": "What is the Sixty Dome Mosque?",
+    "hint": "In Bengali it is called Shat Gombuj Masjid.",
+    "timer": 30
+  }
+]}
