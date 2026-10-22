@@ -493,6 +493,36 @@ window.SAMPLE_GAME = {
               "a": "Who is Ang Lee?"
             }
           ]
+        },
+        {
+          "name": "World Cup",
+          "clues": [
+            {
+              "value": 200,
+              "q": "In 2002, South Korea and this country co-hosted the first World Cup held in Asia.",
+              "a": "What is Japan?"
+            },
+            {
+              "value": 400,
+              "q": "This Middle Eastern country hosted the 2022 World Cup.",
+              "a": "What is Qatar?"
+            },
+            {
+              "value": 600,
+              "q": "At the 2022 World Cup, this country stunned eventual champion Argentina 2–1 in the group stage.",
+              "a": "What is Saudi Arabia?"
+            },
+            {
+              "value": 800,
+              "q": "South Korea reached this round at the 2002 World Cup, the best finish ever by an Asian team.",
+              "a": "What is the semifinals?"
+            },
+            {
+              "value": 1000,
+              "q": "In 1966, this Asian team shocked Italy 1–0 and reached the quarterfinals.",
+              "a": "What is North Korea?"
+            }
+          ]
         }
       ]
     },
