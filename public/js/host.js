@@ -56,7 +56,26 @@
       if (saved) net.emit('host:rejoin', saved).then(r => { if (r.ok) { inRoom = true; setTab('live'); } else { del('asa-host'); showSignin(); } });
       else showSignin();
     });
-    net.on('state', s => { Craft.sync(s.serverNow); S = s; inRoom = true; if (tab === 'live') drawLive(); });
+    net.on('state', s => { Craft.sync(s.serverNow); S = s; inRoom = true; snapshot(); if (tab === 'live') drawLive(); });
+    /* Keep teams, scores and played tiles on this phone so a new room (after a restart) can pick up where this one left off. */
+    let restoreDismissed = false;
+    function snapshot() {
+      if (!S || !S.teams.length) return;
+      const ctl = S.teams.find(t => t.id === S.control);
+      put('asa-snapshot', { code: S.code, savedAt: Date.now(), edition: S.edition || S.title, rounds: S.rounds.length, used: S.used || [], control: ctl ? ctl.name : null,
+        teams: S.teams.map(t => ({ name: t.name, section: t.section, color: t.color, score: t.score })) });
+    }
+    function restoreCard(s) {
+      const snap = get('asa-snapshot', null);
+      if (restoreDismissed || !snap || snap.code === s.code || s.teams.length || !snap.teams || !snap.teams.length) return '';
+      const when = new Date(snap.savedAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      const sameGame = snap.edition === (s.edition || s.title) && snap.rounds === s.rounds.length;
+      return card(`<h2 class="hand">↩ Pick up where you left off?</h2>
+        <p>Room <b>${esc(snap.code)}</b> (saved ${esc(when)}, ${esc(snap.edition || '')}): ${snap.teams.length} teams.</p>
+        <p class="small muted">${snap.teams.slice(0, 8).map(t => `${esc(t.name)} ${t.score}`).join(' · ')}${snap.teams.length > 8 ? ' …' : ''}</p>
+        ${sameGame ? '' : '<p class="small">That game used a different pack, so only teams and scores come back (not the played tiles).</p>'}
+        <div class="row">${btn('restore', 'Restore teams & scores', 'hi')}${btn('dismissRestore', 'Start fresh', 'sm')}</div>`);
+    }
     net.on('fx', e => { if (e.type === 'buzz' && navigator.vibrate) navigator.vibrate(60); });
 
     /* ---------- tabs ---------- */
@@ -164,7 +183,7 @@
     function mainHTML(s) {
       const q = s.q, r = s.round;
       if (s.phase === 'lobby') {
-        return card(`<h2 class="hand">Lobby</h2><p>${s.teams.length} team(s) have joined with code <b>${s.code}</b>. You can start whenever you're ready; late teams can still join.</p>
+        return restoreCard(s) + card(`<h2 class="hand">Lobby</h2><p>${s.teams.length} team(s) have joined with code <b>${s.code}</b>. You can start whenever you're ready; late teams can still join.</p>
           ${s.rounds.length ? `<div class="row">${startBtns(AsaPacks.groups(s.rounds)[0], 'big hi')}</div>` : '<p>Add rounds in the Game editor first.</p>'}
           ${(n => n > 1 ? `<p class="small muted">Each round has ${n} different boards (${AsaPacks.groups(s.rounds)[0].items.map(it => it.variant).join(', ')}). Pick one; save the others for another game.</p>` : '')(Math.max(...AsaPacks.groups(s.rounds).map(g => g.items.length)))}`)
           + card(`<h2 class="hand">Question pack</h2><p><b>${esc(s.edition || s.title)}</b> · ${AsaPacks.groups(s.rounds).length} rounds</p>
@@ -346,6 +365,13 @@
           return emit('host:closeRoom').then(() => { del('asa-host'); S = null; showSignin(); });
         case 'lobby': return emit('host:lobby');
         case 'changePack': pickingPack = true; return drawLive();
+        case 'restore': {
+          const snap = get('asa-snapshot', null);
+          if (!snap) return;
+          const sameGame = snap.edition === (S.edition || S.title) && snap.rounds === S.rounds.length;
+          return emit('host:restore', { teams: snap.teams, used: sameGame ? snap.used : [], control: snap.control }).then(r => { if (r.ok) toast(`Restored ${r.restored} teams. Players: pick your team again.`); });
+        }
+        case 'dismissRestore': restoreDismissed = true; return drawLive();
         case 'cancelPack': pickingPack = false; return drawLive();
         case 'round':
           if (S && S.q && !confirm('A clue is still open. Switch rounds anyway?')) return;
