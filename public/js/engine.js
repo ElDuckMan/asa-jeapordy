@@ -23,7 +23,7 @@
     'host:kickTeam', 'host:kickPlayer', 'host:openClue', 'host:cancelClue', 'host:closeClue', 'host:open',
     'host:lock', 'host:judge', 'host:reveal', 'host:override', 'host:setDDTeam', 'host:setWager',
     'host:showClue', 'host:finalReveal', 'host:finalAnswer', 'host:lightningStart', 'host:lightningNext',
-    'host:lightningStop', 'host:bonusNext', 'host:hint',
+    'host:lightningStop', 'host:bonusNext', 'host:hint', 'host:restore',
     'board:join', 'room:info', 'player:join', 'player:leave', 'player:buzz', 'player:wager', 'player:answer'
   ];
 
@@ -399,7 +399,8 @@
         rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type, group: r.group, variant: r.variant })),
         round: roundView(room, role === 'host'), q: qView(room, role, teamId),
         teams: teamList(room), sections: room.settings.sections, control: room.control,
-        settings: role === 'host' ? room.settings : undefined
+        settings: role === 'host' ? room.settings : undefined,
+        used: role === 'host' ? Object.keys(room.used) : undefined
       };
     }
     function broadcast(room) {
@@ -452,6 +453,29 @@
       fx(room, 'round', { name: room.game.rounds[i].name, kind: room.game.rounds[i].type });
     };
     H['host:endGame'] = room => { resetRoundState(room); room.phase = 'ended'; fx(room, 'end'); };
+    /* Restore teams, scores, played tiles and who picks next from a snapshot kept on the host's phone
+     * (after a redeploy/restart wiped the server). Players rejoin by picking their team. */
+    H['host:restore'] = (room, d) => {
+      const list = arr(d.teams, MAX_TEAMS);
+      let n = 0;
+      for (const x of list) {
+        const name = str(x && x.name, 24);
+        if (!name) continue;
+        let t = Object.values(room.teams).find(t => t.name.toLowerCase() === name.toLowerCase());
+        if (!t) {
+          if (Object.keys(room.teams).length >= MAX_TEAMS) break;
+          const usedColors = new Set(Object.values(room.teams).map(t => t.color));
+          const color = TEAM_COLORS.includes(x.color) && !usedColors.has(x.color) ? x.color : (TEAM_COLORS.find(c => !usedColors.has(c)) || TEAM_COLORS[0]);
+          t = { id: randomId(4), name, section: room.settings.sections.includes(x.section) ? x.section : str(x.section, 40), color, score: 0 };
+          room.teams[t.id] = t;
+        }
+        t.score = int(x.score, 0, -1e7, 1e7); n++;
+      }
+      for (const k of arr(d.used, 2000)) if (/^\d+:\d+:\d+$/.test(String(k))) room.used[k] = true;
+      const ctl = d.control && Object.values(room.teams).find(t => t.name.toLowerCase() === String(d.control).toLowerCase());
+      if (ctl) room.control = ctl.id;
+      return { ok: true, restored: n };
+    };
     H['host:resetGame'] = room => {
       resetRoundState(room); room.used = {}; room.control = null; room.roundIndex = -1; room.phase = 'lobby';
       for (const t of Object.values(room.teams)) t.score = 0;
