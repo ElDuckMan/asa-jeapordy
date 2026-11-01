@@ -3,8 +3,12 @@
   'use strict';
   const { esc, toast } = Craft;
   const TYPES = { board: 'Board (Jeopardy grid)', lightning: 'Lightning round', bonus: 'Bonus round', final: 'Final round' };
+  const PARTY = { speed: 'Speed Quiz', closest: 'Closest Guess', truths: 'Two Truths & a Lie', survey: 'Survey Says', fakeout: 'Fake Out', wheel: 'Wheel', draw: 'Draw & Guess' };
+  const ADD = Object.assign({}, TYPES, { tune: '🎵 Name That Tune' });
 
   function blankRound(type) {
+    if (type === 'tune') return { type: 'bonus', name: 'Name That Tune', points: 200, timer: 30,
+      questions: [1, 2, 3].map(() => ({ q: 'Name this song!', a: '', options: [], media: { type: 'youtube', url: '' } })) };
     if (type === 'board') return { type, name: 'New board round', timer: 0, categories: [1, 2, 3, 4, 5].map(n => ({ name: `Category ${n}`, clues: [1, 2, 3, 4, 5].map(v => ({ value: v * 100, q: '', a: '', type: 'standard' })) })) };
     if (type === 'lightning') return { type, name: 'Lightning Round', duration: 60, points: 100, penalty: false, questions: [{ q: '', a: '' }] };
     if (type === 'bonus') return { type, name: 'Bonus Round', points: 200, timer: 20, questions: [{ q: '', a: '', options: [] }] };
@@ -34,8 +38,9 @@
     m = m || {};
     return `<div class="row small ed-media"><span>Picture / sound:</span>
       <select class="field ed-sel" data-path="${base}.media.type" data-rerender="1">
-        ${['', 'image', 'audio', 'video'].map(t => `<option value="${t}" ${(m.type || '') === t ? 'selected' : ''}>${t || 'none'}</option>`).join('')}</select>
-      ${m.type ? `<input class="field" data-path="${base}.media.url" value="${val(m.url)}" placeholder="https://… (direct link to the file)">` : ''}</div>`;
+        ${['', 'image', 'audio', 'video', 'youtube'].map(t => `<option value="${t}" ${(m.type || '') === t ? 'selected' : ''}>${t === 'youtube' ? 'YouTube song' : t || 'none'}</option>`).join('')}</select>
+      ${m.type ? `<input class="field" data-path="${base}.media.url" value="${val(m.url)}" placeholder="${m.type === 'youtube' ? 'https://youtu.be/… (add ?t=45 to start at 0:45)' : 'https://… (direct link to the file)'}">` : ''}</div>
+      ${m.type === 'youtube' ? '<div class="small muted">Plays on the big screen behind a cover; the video shows when you reveal the answer. Tap “Turn sound on” on the big screen first.</div>' : ''}`;
   }
   function optionsBlock(base, x, optional) {
     const opts = x.options || [];
@@ -68,6 +73,7 @@
   }
   function roundBody(r, i) {
     const b = `rounds.${i}`;
+    if (PARTY[r.type]) return `<p class="small muted">Party game with ${(r.items || []).length || 'player-written'} prompts. Start it from the Live tab; its content comes from the Party Games pack.</p>`;
     if (r.type === 'board') {
       return `<div class="row small"><label>Default timer for every clue (s, 0 = none) <input class="field num" type="number" min="0" data-kind="num" data-path="${b}.timer" value="${r.timer || 0}"></label></div>
         <div class="ed-cats">${r.categories.map((cat, c) => `<div class="ed-cat">
@@ -108,11 +114,11 @@
           <button class="btn sm hi" data-ed="push">⟳ Apply to live game</button></div>
         <p class="small muted">Saved automatically on this device. Export a copy so you can load it on another computer.</p></div>
         ${game.rounds.map((r, i) => `<details class="card paper ed-round" data-i="${i}" ${open.has(i) ? 'open' : ''}>
-          <summary><b>${i + 1}. ${val(r.name)}${r.variant ? ` · ${r.type === 'board' ? 'Board' : 'Set'} ${val(r.variant)}` : ''}</b> <span class="ed-type">${TYPES[r.type]}</span>
+          <summary><b>${i + 1}. ${val(r.name)}${r.variant ? ` · ${r.type === 'board' ? 'Board' : 'Set'} ${val(r.variant)}` : ''}</b> <span class="ed-type">${TYPES[r.type] || PARTY[r.type] || ''}</span>
             <span class="ed-tools"><button class="btn sm" data-ed="up" data-i="${i}" title="Move up">↑</button><button class="btn sm" data-ed="down" data-i="${i}" title="Move down">↓</button><button class="btn sm no" data-ed="delRound" data-i="${i}" title="Delete round">🗑</button></span></summary>
           <label class="lbl">Round name</label><input class="field" data-path="rounds.${i}.name" value="${val(r.name)}">
           ${roundBody(r, i)}</details>`).join('')}
-        <div class="card paper row center"><b>Add a round:</b>${Object.keys(TYPES).map(t => `<button class="btn sm" data-ed="addRound" data-type="${t}">+ ${TYPES[t]}</button>`).join('')}</div>`;
+        <div class="card paper row center"><b>Add a round:</b>${Object.keys(ADD).map(t => `<button class="btn sm" data-ed="addRound" data-type="${t}">+ ${ADD[t]}</button>`).join('')}</div>`;
     }
     el.addEventListener('input', e => {
       const p = e.target.dataset.path;

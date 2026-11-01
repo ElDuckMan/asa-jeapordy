@@ -1,0 +1,146 @@
+/* ASA Jeopardy — party modes (big screen, host phone, player phone). Built on craft.css tokens. */
+.pt-wrap{width:100%;max-width:1200px;margin:0 auto;text-align:center}
+.pt-head{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:4px 0 10px}
+.pt-head .tape{font-size:clamp(16px,2vw,24px)}
+.pt-intro{max-width:820px;margin:20px auto;padding:28px}
+.pt-intro p{font-size:clamp(18px,2.2vw,26px)}
+.pt-big{font-size:clamp(36px,6vw,76px);color:var(--red);--sw:4px;transform:rotate(-2deg);margin:4px 0 10px}
+.pt-q{font-size:clamp(24px,3.6vw,44px);line-height:1.2;padding:22px 26px;margin:0 auto 6px;max-width:1000px}
+.pt-note{font-size:clamp(17px,2vw,24px);margin:4px 0}
+.pt-blank{display:inline-block;min-width:3em;border-bottom:4px solid var(--ink);color:var(--red)}
+.pt-dots{display:inline-flex;gap:4px;margin-left:auto}
+.pt-dots .dot{width:16px;height:16px;border-radius:50%;background:var(--c);border:2px solid var(--ink)}
+.pt-author{padding:4px 14px;color:#fff;font-size:clamp(18px,2.2vw,28px);background-color:var(--c)}
+
+/* speed */
+.pt-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+.pt-opt{display:flex;align-items:center;gap:12px;padding:16px 18px;color:#fff;font-size:clamp(20px,2.7vw,32px);text-align:left;background-color:var(--c);transition:transform .3s,opacity .3s}
+.pt-opt .sh{font-size:1.1em;flex:none;text-shadow:0 2px 0 var(--ink)}
+.pt-opt .tx{text-shadow:0 2px 0 rgba(0,0,0,.5)}
+.pt-opt.right{transform:scale(1.05) rotate(-1deg);box-shadow:0 0 0 5px #fff,0 0 30px 10px rgba(255,216,77,.8)}
+.pt-opt.dim{opacity:.35}
+
+/* closest */
+.pt-answer{font-size:clamp(44px,7vw,90px);color:var(--red);--sw:4px;margin:6px 0}
+.pt-answer small{font-size:.4em;color:var(--ink)}
+.pt-rank{display:grid;gap:8px;max-width:900px;margin:10px auto}
+.pt-rrow{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;align-items:center;gap:12px;padding:10px 18px;background-color:var(--c);color:#fff;font-size:clamp(18px,2.2vw,28px);text-align:left;
+  animation:pop .5s var(--bounce) both;animation-delay:var(--d)}
+.pt-rrow .off{font-size:.8em;opacity:.9}.pt-rrow .pts{font-family:'Luckiest Guy',cursive}
+.pt-rrow.win{transform:scale(1.04);box-shadow:0 0 0 4px #fff,0 0 30px 8px rgba(255,216,77,.8)}
+
+/* truths */
+.pt-st{display:grid;gap:14px;max-width:1000px;margin:12px auto}
+.pt-stc{display:flex;align-items:center;gap:14px;padding:18px 20px;font-size:clamp(20px,2.8vw,34px);text-align:left;position:relative}
+.pt-stc .n{flex:none;width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:#fff}
+.pt-stc .tag{position:absolute;right:16px;top:-14px;transform:rotate(6deg);font-size:.8em;padding:2px 12px;border-radius:6px;animation:stamp .5s var(--bounce)}
+.pt-stc.lie{background-color:#ffd2c9}.pt-stc.lie .tag{background:var(--red);color:#fff}
+.pt-stc.true{opacity:.75}.pt-stc.true .tag{background:var(--green);color:#fff}
+
+/* survey */
+.pt-feud{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px;border-radius:14px;max-width:1000px;margin:10px auto}
+.pt-feud .col{display:grid;gap:10px;align-content:start}
+.pt-slot{display:flex;align-items:center;justify-content:space-between;min-height:62px;padding:8px 16px;border:3px solid var(--ink);border-radius:10px;
+  background:linear-gradient(#4a5bc6,#2d3a96);color:#fff;font-size:clamp(20px,2.4vw,30px);font-family:'Luckiest Guy',cursive;letter-spacing:.5px}
+.pt-slot .num{margin:0 auto;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:#1c1a17;border:3px solid #ffd84d}
+.pt-slot.shown{background:#fffdf7;color:var(--ink);animation:flip .6s var(--bounce)}
+.pt-slot .c{background:var(--ink);color:#fff;padding:2px 12px;border-radius:8px}
+@keyframes flip{from{transform:rotateX(90deg)}to{transform:none}}
+.pt-feudbar{display:flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin:8px 0}
+.pt-strikes b{font-family:'Luckiest Guy',cursive;font-size:52px;color:#d7d0c4;margin:0 4px;-webkit-text-stroke:2px var(--ink)}
+.pt-strikes b.on{color:var(--red);animation:stamp .4s var(--bounce)}
+.pt-bank{font-size:clamp(20px,2.4vw,30px)}
+
+/* fakeout */
+.pt-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:1100px;margin:12px auto}
+.pt-choice{display:flex;align-items:center;flex-wrap:wrap;gap:10px;padding:14px 16px;font-size:clamp(19px,2.4vw,30px);text-align:left;animation:pop .45s var(--bounce) both;animation-delay:var(--d)}
+.pt-choice .l{flex:none;width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:#fff}
+.pt-choice .who{width:100%;font-size:.7em}
+.pt-choice.truth{background-color:#cdeebc;transform:scale(1.03)}
+.pt-choice.truth .tag{background:var(--green);color:#fff;padding:2px 10px;border-radius:6px}
+.pt-choice.fake{opacity:.85}
+
+/* wheel */
+.pt-wheelgrid{display:grid;grid-template-columns:minmax(260px,40%) 1fr;gap:20px;align-items:center}
+.pt-wheelbox{position:relative;max-width:470px;width:100%;margin:0 auto}
+.pt-wheel-svg{width:100%;height:auto;display:block;filter:drop-shadow(0 8px 0 rgba(0,0,0,.25))}
+.pt-wheel-rot{transform-origin:0 0}
+.pt-pointer{position:absolute;top:-6px;left:50%;transform:translateX(-50%);font-size:46px;color:var(--red);-webkit-text-stroke:2px var(--ink);line-height:1}
+.pt-wheelright{display:grid;gap:12px}
+.pt-cat{color:#fff;padding:4px 14px;background-color:var(--c);font-size:clamp(18px,2vw,26px)}
+.pt-puzzle{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;padding:16px;border-radius:12px}
+.pt-word{display:inline-flex;gap:5px}
+.pt-tile{width:clamp(30px,3.3vw,48px);height:clamp(40px,4.4vw,62px);display:grid;place-items:center;border:3px solid var(--ink);border-radius:6px;background:#fffdf7;
+  font-family:'Luckiest Guy',cursive;font-size:clamp(22px,2.8vw,40px);color:var(--ink)}
+.pt-tile.blank{background:linear-gradient(#36a3a8,#227a80)}
+.pt-tile.mark{background:#fffdf7}
+.pt-abc{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;font-family:'Luckiest Guy',cursive;font-size:clamp(16px,1.8vw,22px)}
+.pt-abc span{width:1.5em;text-align:center;border-radius:4px}
+.pt-abc span.v{color:var(--red)}
+.pt-abc span.used{opacity:.2;text-decoration:line-through}
+.pt-msg{font-size:clamp(22px,2.8vw,36px);color:var(--blue)}
+.pt-msg.win{color:var(--green)}
+.chip.pt-act{transform:scale(1.12);box-shadow:0 0 0 4px #fff,0 0 20px 6px rgba(255,216,77,.9)}
+
+/* draw */
+.pt-drawgrid{display:grid;grid-template-columns:1fr minmax(240px,30%);gap:16px;align-items:start}
+.pt-canvasbox{padding:10px}
+.pt-canvas{width:100%;height:auto;display:block;background:#fffdf7;border:3px solid var(--ink);border-radius:8px;aspect-ratio:4/3}
+.pt-shape{font-size:clamp(26px,3.4vw,46px);letter-spacing:4px;margin:10px 0;word-break:break-word}
+.pt-shape .stamp{display:inline-block;color:var(--red);animation:stamp .5s var(--bounce)}
+.pt-feed{display:grid;gap:8px;justify-items:start}
+
+/* host phone */
+.pt-pick{margin-top:10px}.pt-pick summary{cursor:pointer;font-size:15px}
+.pt-picklist{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;max-height:260px;overflow:auto}
+.pt-picklist .btn{text-align:left}
+.pt-hstatus{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.chip.pt-wait,.h-tr.pt-wait{opacity:.45}
+.pt-hguess{font-size:15px;margin:6px 0}
+.pt-review{display:grid;gap:6px;margin:8px 0;max-height:360px;overflow:auto}
+.pt-review .h-tr{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.pt-review .field{flex:1;min-width:110px}
+.pt-hboard,.pt-pboard{font-size:20px;letter-spacing:3px;word-break:break-word;margin:6px 0}
+.pt-hmsg{font-weight:bold;margin:6px 0}
+.pt-letters{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin:10px 0}
+.pt-L{all:unset;box-sizing:border-box;text-align:center;padding:9px 0;border:2px solid var(--ink);border-radius:8px;background:#fffdf7;font-family:'Luckiest Guy',cursive;font-size:20px;cursor:pointer}
+.pt-L.v{color:var(--red)}
+.pt-L:disabled{opacity:.25;cursor:default}
+.pt-L:not(:disabled):active{transform:translateY(2px)}
+.pt-hcanvas{padding:6px;margin:8px 0}
+.h-party{display:grid;gap:8px}
+.h-party .h-tr{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+
+/* player phone */
+.pt-popts{display:grid;gap:10px;margin:10px 0}
+.pt-popt{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;padding:16px;font-size:20px;cursor:pointer;border:3px solid var(--ink);border-radius:12px;
+  background-color:var(--c,#fffdf7);color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.45);box-shadow:0 5px 0 var(--ink)}
+.pt-popt.paper{color:var(--ink);text-shadow:none}
+.pt-popt .sh{flex:none;font-size:1.2em;width:1.5em;text-align:center}
+.pt-popt.chosen{background-color:#ffe39a;transform:rotate(-1deg) scale(1.02)}
+.pt-popt:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}
+.pt-popt:disabled{opacity:.4;cursor:default}
+.pt-num{font-size:22px}
+.pt-tl{display:flex;align-items:center;gap:6px;margin:10px 0 2px;font-size:15px}
+.pt-myword{font-size:34px;color:var(--red);--sw:3px;margin:4px 0}
+.pt-pad{padding:6px}
+.pt-mycanvas{width:100%;height:auto;display:block;background:#fffdf7;border:3px solid var(--ink);border-radius:8px;touch-action:none;aspect-ratio:4/3}
+.pt-pens{gap:8px;margin:8px 0}
+.pt-pen{all:unset;width:34px;height:34px;border-radius:50%;background:var(--c);border:3px solid var(--ink);cursor:pointer}
+.pt-pen.on{box-shadow:0 0 0 3px #fff,0 0 0 6px var(--ink)}
+
+/* Name That Tune: floating YouTube player on the big screen, covered until the reveal */
+.yt-box{position:fixed;right:22px;bottom:22px;width:min(420px,34vw);aspect-ratio:16/9;padding:8px;z-index:60;transform:rotate(1.5deg)}
+.yt-box iframe{width:100%;height:100%;border:0;border-radius:6px;display:block}
+.yt-cover{position:absolute;inset:8px;display:grid;place-items:center;align-content:center;gap:4px;border-radius:6px;background:#fffdf7;font-size:34px;color:var(--purple);transition:opacity .5s}
+.yt-cover .yt-note{font-size:56px;animation:yt-bob 1.2s ease-in-out infinite}
+.yt-box.revealed .yt-cover{opacity:0;pointer-events:none}
+.yt-slot{font-size:clamp(26px,3.4vw,42px);color:var(--purple);margin:12px 0}
+@keyframes yt-bob{50%{transform:translateY(-8px) rotate(-6deg)}}
+
+@media (max-width:900px){
+  .pt-wheelgrid,.pt-drawgrid{grid-template-columns:1fr}
+  .pt-opts,.pt-choices{grid-template-columns:1fr}
+  .pt-rrow{grid-template-columns:1fr 1fr}
+  .pt-feud{grid-template-columns:1fr}
+}

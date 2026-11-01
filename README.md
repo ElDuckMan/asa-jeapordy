@@ -47,6 +47,24 @@ Every round comes in two versions, **A** and **B**; the host picks one when star
 Every board has **Music**, **Movies & TV**, **Ancient History**, and **Recent History**.
 Pack sources live outside the site; `public/js/packs/*.js` and `public/js/sample-game.js` are generated files.
 
+## Party games
+
+The lobby has a **🎉 Party games** card in every pack, so you can play any of these between rounds and scores carry over. There is also a **Party Games** pack that has all of them. Each game has a General, an Asia and a Church set.
+
+| Game | How it plays |
+|---|---|
+| ⚡ Speed Quiz | Every team answers multiple choice on phones. Faster correct answers score more. |
+| 😀 Emoji Decode | Buzz-in lightning round: decode the emoji. |
+| 🎯 Closest Guess | Type a number. Closest team wins; an exact hit scores double. |
+| 🎭 Fake Out | Write a believable fake answer, then find the truth. You score for finding it and for fooling others. |
+| 📋 Survey Says | The room answers a survey on phones. The host tidies the answers and then plays a Feud board with strikes and a bank. |
+| 🤥 Two Truths & a Lie | Players write their own statements and the other teams vote on the lie. |
+| 🎡 Wheel | Spin, call consonants, buy vowels and solve. The active team plays from its phones. |
+| ✏️ Draw & Guess | One phone draws live onto the big screen and the other teams type guesses. |
+| 🎵 Name That Tune | In the Game editor, add the “Name That Tune” template and paste YouTube links (add `?t=45` to start at 0:45). The song plays on the big screen behind a cover until you reveal it. |
+
+The host can remove player-written entries, such as fakes and Two Truths, before they reach the screen. Party content lives in `packs-src/party-*.json` (format: `packs-src/PARTY.md`). Run `node packs-src/build.js` after editing it.
+
 ## Game features
 
 - **Rounds:** board (Jeopardy grid), lightning (shared clock, rapid buzz-ins), bonus (every team answers on phones), final (wagers).

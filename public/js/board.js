@@ -38,6 +38,7 @@
     net.on('state', s => { Craft.sync(s.serverNow); const prev = S; S = s; draw(prev); });
     net.on('closed', () => { S = null; sheet.hide(); stage.innerHTML = '<div class="card paper"><h2 class="hand">This room was closed.</h2></div>'; });
     net.on('fx', onFx);
+    net.on('draw', m => { if (window.PartyUI) PartyUI.onDraw(m); });
 
     function joinUrl() { return o.joinBase ? `${o.joinBase}/?room=${S.code}` : ''; }
 
@@ -106,6 +107,8 @@
           Views.boardGrid(stage.querySelector('.b-board'), s.round, { introKey: 'r' + s.roundIndex, active: s.q && s.q.c != null ? { c: s.q.c, j: s.q.j } : null });
           stageKey = key;
         }
+      } else if (s.party) {
+        PartyUI.board(stage, s); stageKey = 'party';
       } else if (s.phase === 'ended') {
         const key = 'ended' + JSON.stringify(s.teams.map(t => [t.id, t.score]));
         if (key !== stageKey) { render(stage, podiumHTML(s)); stageKey = key; }
@@ -115,6 +118,7 @@
       }
 
       sb.update(s.teams, s.q, s.control);
+      ytSync(s);
 
       if (s.q) {
         let from = null;
@@ -123,6 +127,24 @@
       } else sheet.hide();
     }
 
+    /* Name That Tune: one YouTube player that lives outside the re-rendered clue card, so updates don't restart the song.
+       A paper cover hides the video (and its title) until the host reveals the answer. */
+    let yt = null;
+    function ytSync(s) {
+      const m = s.q && s.q.media && s.q.media.type === 'youtube' ? s.q.media : null;
+      const key = m ? `${m.id}:${m.start}:${s.q.category}:${s.q.text}` : '';
+      if (!m) { if (yt) { yt.el.remove(); yt = null; } return; }
+      if (!yt || yt.key !== key) {
+        if (yt) yt.el.remove();
+        const el = document.createElement('div');
+        el.className = 'yt-box paper';
+        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(m.id)}?autoplay=1&start=${m.start | 0}&rel=0&playsinline=1&controls=0" allow="autoplay; encrypted-media" title="Name That Tune"></iframe>
+          <div class="yt-cover"><span class="yt-note">🎵</span><span class="block stroke crayon">Listen…</span></div>`;
+        document.body.appendChild(el);
+        yt = { el, key };
+      }
+      yt.el.classList.toggle('revealed', !!s.q.revealed);
+    }
     function teamColor(id) { const t = S && S.teams.find(x => x.id === id); return t ? t.color : '#ffd84d'; }
     function onFx(e) {
       switch (e.type) {
@@ -155,6 +177,9 @@
         case 'open': Sound.play('open'); break;
         case 'hint': Sound.play('pop'); setTimeout(() => { const n = document.querySelector('.hint-note'); if (n) { const c = FX.centerOf(n); FX.sparkles(c.x, c.y, { count: 16, colors: ['#ffd84d', '#fff', '#e6a92b'], power: 0.7 }); } }, 120); break;
         case 'end': setTimeout(() => FX.celebrate(), 400); break;
+        case 'spin': Sound.play('open'); PartyUI.spin(e.wedge, (S && S.party && S.party.wedges || []).length || 16); break;
+        case 'letter': Sound.play('correct'); setTimeout(() => document.querySelectorAll('.pt-tile.on').forEach((t, i) => { if (t.textContent === e.L) { FX.restart(t, 'pop', 500); const c = FX.centerOf(t); FX.sparkles(c.x, c.y, { count: 8, power: 0.5 }); } }), 120); break;
+        case 'strike': Sound.play('wrong'); FX.slap('✗'.repeat(e.n || 1), { color: '--red', hold: 900 }); break;
       }
     }
     return { get state() { return S; } };

@@ -114,7 +114,8 @@
     if (q.kind === 'dd') h += `<div class="kind-tag tape">Daily Double</div>`;
     if (q.text) h += `<div class="q-text">${esc(q.text)}</div>`;
     if (q.hint && q.hintShown) h += `<div><span class="hint-note tape ${fresh.hintNew ? 'pop' : ''}">💡 ${esc(q.hint)}</span></div>`;
-    if (q.media) h += `<div class="q-media media-slot" data-type="${esc(q.media.type)}" data-url="${esc(q.media.url)}"></div>`;
+    if (q.media && q.media.type === 'youtube') h += `<div class="q-media yt-slot block stroke">🎵 Name that tune!</div>`;
+    else if (q.media) h += `<div class="q-media media-slot" data-type="${esc(q.media.type)}" data-url="${esc(q.media.url)}"></div>`;
     if (q.options && q.options.length) {
       h += '<div class="opts">' + q.options.map((o, i) => {
         const right = q.revealed && q.correct === i, dim = q.revealed && q.correct !== i;
