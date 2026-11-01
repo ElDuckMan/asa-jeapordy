@@ -4,8 +4,8 @@
 (function () {
   'use strict';
   const list = window.ASA_PACKS = window.ASA_PACKS || [];
-  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍', church: '⛪' };
-  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green', church: '--purple' };
+  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍', church: '⛪', party: '🎉' };
+  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green', church: '--purple', party: '--rust' };
   const clone = o => JSON.parse(JSON.stringify(o));
 
   /* Group consecutive-or-not rounds by `group` (falling back to name), keeping first-appearance order. */
@@ -14,12 +14,12 @@
     (rounds || []).forEach((r, i) => {
       const key = r.group || r.name;
       if (!at.has(key)) { at.set(key, out.length); out.push({ group: key, type: r.type, items: [] }); }
-      out[at.get(key)].items.push({ i, variant: r.variant || '', name: r.name, type: r.type });
+      out[at.get(key)].items.push({ i, variant: r.variant || '', label: r.label || '', name: r.name, type: r.type });
     });
     return out;
   }
   function count(game) {
-    return (game.rounds || []).reduce((n, r) => n + (r.categories ? r.categories.reduce((m, c) => m + c.clues.length, 0) : r.questions ? r.questions.length : 1), 0);
+    return (game.rounds || []).reduce((n, r) => n + (r.categories ? r.categories.reduce((m, c) => m + c.clues.length, 0) : r.questions ? r.questions.length : r.items ? r.items.length : 1), 0);
   }
   /* Pack cards for a picker. `mine` = optional saved custom game. */
   function pickerHTML(esc, opts = {}) {
@@ -29,7 +29,7 @@
         <span class="pk-icon" aria-hidden="true">${ICON[p.id] || '🎲'}</span>
         <span class="pk-name block stroke">${esc(p.name)}</span>
         <span class="pk-blurb">${esc(p.blurb || '')}</span>
-        <span class="pk-meta">${g.length} rounds · ${Math.max(...g.map(x => x.items.length))} boards each · ${count(p.game)} questions${opts.current === p.id ? ' · <b>current</b>' : ''}</span></button>`;
+        <span class="pk-meta">${p.id === 'party' ? `${g.length} games · General, Asia & Church sets · ${count(p.game)} prompts` : `${g.length} rounds · ${Math.max(...g.map(x => x.items.length))} boards each · ${count(p.game)} questions`}${opts.current === p.id ? ' · <b>current</b>' : ''}</span></button>`;
     });
     if (opts.mine) {
       cards.push(`<button class="pk-card yarn" type="button" data-pack="__mine" style="--c:var(--rust)">

@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   const { esc, render, toast, title } = Craft;
-  const TYPE = { board: 'board', lightning: 'lightning', bonus: 'bonus', final: 'final' };
+  const TYPE = { board: 'board', lightning: 'lightning', bonus: 'bonus', final: 'final', speed: 'party', closest: 'party', truths: 'party', survey: 'party', fakeout: 'party', wheel: 'party', draw: 'party' };
   const KIND = { standard: 'Standard', dd: 'Daily Double', mc: 'Multiple choice', lightning: 'Lightning', bonus: 'Bonus', final: 'Final' };
   const STAGE = { reading: 'Reading', open: 'Open', buzzed: 'Buzzed in', timeup: "Time's up", revealed: 'Revealed', wager: 'Wagering', answering: 'Answering', locked: 'Locked' };
   const DEFAULT_SETTINGS = { sections: ['Freshmen', 'Sophomores', 'Juniors', 'Seniors', 'Grad / Other'], wrongPenalty: true, mcPenalty: false, buzzWindowMs: 300, earlyLockMs: 250 };
@@ -77,6 +77,7 @@
         <div class="row">${btn('restore', 'Restore teams & scores', 'hi')}${btn('dismissRestore', 'Start fresh', 'sm')}</div>`);
     }
     net.on('fx', e => { if (e.type === 'buzz' && navigator.vibrate) navigator.vibrate(60); });
+    net.on('draw', m => { if (window.PartyUI) PartyUI.onDraw(m); });
 
     /* ---------- tabs ---------- */
     function setTab(t) {
@@ -129,7 +130,7 @@
     /* Buttons to start a round group: one per board version (A / B). */
     function startBtns(g, cls = 'hi') {
       if (g.items.length === 1) return btn('round', `▶ Start ${esc(g.group)}`, cls, { i: g.items[0].i });
-      return `<span class="h-startvar">▶ Start ${esc(g.group)}:</span> ${g.items.map(it => btn('round', `${g.type === 'board' ? 'Board' : 'Set'} ${esc(it.variant)}`, cls, { i: it.i })).join(' ')}`;
+      return `<span class="h-startvar">▶ Start ${esc(g.group)}:</span> ${g.items.map(it => btn('round', it.label ? esc(it.label) : `${g.type === 'board' ? 'Board' : 'Set'} ${esc(it.variant)}`, cls, { i: it.i })).join(' ')}`;
     }
     function nextRoundBtn(s) {
       const gs = AsaPacks.groups(s.rounds);
@@ -162,7 +163,7 @@
         ${AsaPacks.groups(s.rounds).map((g, gi) => g.items.length === 1
           ? btn('round', `${gi + 1}. ${esc(g.group)} <span class="small muted">${TYPE[g.type]}</span>`, 'sm ' + (live(g.items[0].i) ? 'on' : ''), { i: g.items[0].i })
           : `<span class="h-rgroup ${g.items.some(it => live(it.i)) ? 'on' : ''}"><span class="h-rgname">${gi + 1}. ${esc(g.group)}</span>${g.items.map(it =>
-              btn('round', esc(it.variant || '?'), 'sm h-var ' + (live(it.i) ? 'on' : ''), { i: it.i })).join('')}</span>`).join('')}
+              btn('round', esc(it.label || it.variant || '?'), 'sm h-var ' + (live(it.i) ? 'on' : ''), { i: it.i })).join('')}</span>`).join('')}
         ${btn('endGame', '🏆 End game', 'sm ' + (s.phase === 'ended' ? 'on' : ''))}</div>`;
       h += `<div class="h-grid"><div class="h-main">${mainHTML(s)}</div><aside class="h-side">${teamsHTML(s)}</aside></div>`;
       render($('.h-live'), h);
@@ -170,8 +171,10 @@
       if (det) det.addEventListener('toggle', () => { roomOpen = det.open; });
       const hb = $('.h-board');
       if (hb) Views.boardGrid(hb, s.round, { host: true, onPick: (c, j) => emit('host:openClue', { c, j }) });
+      const hc = $('.h-main .pt-canvas');
+      if (hc && s.party) PartyUI.resetCanvas(hc, s.party);
       /* Phones: when a new clue opens or the board comes back, bring the controls into view. */
-      const qKey = s.q ? [s.q.kind, s.q.category, s.q.text].join('|') : 'board' + s.phase + s.roundIndex;
+      const qKey = s.q ? [s.q.kind, s.q.category, s.q.text].join('|') : s.party ? `party${s.roundIndex}:${s.party.idx}:${s.party.stage}` : 'board' + s.phase + s.roundIndex;
       if (qKey !== lastQKey) {
         const first = !lastQKey;
         lastQKey = qKey;
@@ -188,8 +191,9 @@
           ${(n => n > 1 ? `<p class="small muted">Each round has ${n} different boards (${AsaPacks.groups(s.rounds)[0].items.map(it => it.variant).join(', ')}). Pick one; save the others for another game.</p>` : '')(Math.max(...AsaPacks.groups(s.rounds).map(g => g.items.length)))}`)
           + card(`<h2 class="hand">Question pack</h2><p><b>${esc(s.edition || s.title)}</b> · ${AsaPacks.groups(s.rounds).length} rounds</p>
           ${pickingPack ? AsaPacks.pickerHTML(esc, { current: packId, mine: packId === '__mine' ? null : get('asa-mine', null) }) + `<div class="row" style="margin-top:10px">${btn('cancelPack', 'Cancel', 'sm')}</div>`
-            : btn('changePack', '🔁 Change pack', 'sm')}`);
+            : btn('changePack', '🔁 Change pack', 'sm')}`) + partyLauncher(s);
       }
+      if (s.party) return PartyUI.host(s, { btn, esc, Tm });
       if (s.phase === 'ended') return card(`<h2 class="hand">Game over</h2>${standings(s)}<div class="row">${btn('lobby', 'Back to lobby')}${btn('reset', 'New game (reset scores)')}</div>`);
       let h = '';
       if (q) h += cluePanel(s);
@@ -210,6 +214,15 @@
       return h;
     }
 
+    /* Party games: start any mode from any pack. Each mode has General / Asia / Church sets. */
+    function partyLauncher(s) {
+      const pk = AsaPacks.get('party');
+      if (!pk) return '';
+      const gs = AsaPacks.groups(pk.game.rounds);
+      return card(`<h2 class="hand">🎉 Party games</h2><p class="small muted">Play any of these between rounds. Scores carry over.</p>
+        <div class="h-party">${gs.map(g => `<div class="h-tr"><b>${esc(g.group)}</b><span class="row">${g.items.map(it => btn('partyStart', esc(pk.game.rounds[it.i].label || it.variant || 'Play'), 'sm hi', { g: g.group, v: it.variant })).join('')}</span></div>`).join('')}
+        <div class="h-tr"><b>🎵 Name That Tune</b><span class="small">Make it in the Game editor: add a round from the “Name That Tune” template and paste YouTube links.</span></div></div>`);
+    }
     function cluePanel(s) {
       const q = s.q;
       const lightningClock = s.round && s.round.type === 'lightning' && s.round.endsAt ? `<span class="h-clock block">⚡ <span data-end="${s.round.endsAt}"></span></span>` : '';
@@ -334,6 +347,10 @@
     }
 
     /* ---------- actions ---------- */
+    root.addEventListener('change', e => {
+      const m = e.target.closest('[data-merge]');
+      if (m && m.value !== '') emit('host:party', { action: 'merge', k: +m.dataset.merge, into: +m.value });
+    });
     root.addEventListener('input', e => { if (e.target.dataset.role === 'amount') amount = Math.abs(parseInt(e.target.value, 10) || 0); });
     /* Pick a question pack (lobby). Edited games are kept as "My saved game". */
     root.addEventListener('click', e => {
@@ -373,6 +390,24 @@
         }
         case 'dismissRestore': restoreDismissed = true; return drawLive();
         case 'cancelPack': pickingPack = false; return drawLive();
+        case 'partyStart': {
+          const pk = AsaPacks.get('party'), g = b.dataset.g, v = b.dataset.v;
+          const at = S.rounds.findIndex(r => r.group === g && (r.variant || '') === v);
+          if (at >= 0) return emit('host:startRound', { index: at });
+          const r = pk && pk.game.rounds.find(r => r.group === g && (r.variant || '') === v);
+          if (!r) return toast('That game is missing.');
+          return emit('host:addRound', { round: AsaPacks.clone(r) });
+        }
+        case 'party': {
+          const d = { action: b.dataset.a };
+          if (b.dataset.i != null) d.i = +b.dataset.i;
+          if (b.dataset.k != null) d.k = +b.dataset.k;
+          for (const k of ['pid', 'team', 'l']) if (b.dataset[k] != null) d[k === 'l' ? 'L' : k] = b.dataset[k];
+          if (b.dataset.ok != null) d.ok = b.dataset.ok === '1';
+          if (d.action === 'edit') { const inp = root.querySelector(`[data-keep="sv-${d.k}"]`); d.text = inp ? inp.value : ''; }
+          return emit('host:party', d);
+        }
+        case 'endRound': return emit('host:lobby');
         case 'round':
           if (S && S.q && !confirm('A clue is still open. Switch rounds anyway?')) return;
           return emit('host:startRound', { index: +b.dataset.i });

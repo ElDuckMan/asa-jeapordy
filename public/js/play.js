@@ -77,6 +77,8 @@
       if (s.q && s.q.stage === 'open' && s.q.openSeq !== lastSeq) { lastSeq = s.q.openSeq; openAt = performance.now(); }
       draw();
     });
+    let pme = null;
+    net.on('pme', d => { pme = d; if (S && S.party) draw(); });
     net.on('fx', e => {
       if (!me) return;
       const mine = e.team === me.teamId;
@@ -107,6 +109,7 @@
     function mainHTML() {
       const s = S, q = s.q, t = team();
       if (s.phase === 'lobby') return `<div class="card paper p-msg"><h2 class="hand">You're in!</h2><p>Waiting for the host to start. Keep this screen open — it's your buzzer.</p></div>`;
+      if (s.party) return PartyUI.play(s, { pid: me.playerId, teamId: me.teamId }, pme);
       if (s.phase === 'ended') {
         const rank = [...s.teams].sort((a, b) => b.score - a.score).findIndex(x => x.id === me.teamId) + 1;
         return `<div class="card paper p-msg"><h2 class="hand">Game over!</h2><div class="p-rank block stroke crayon">#${rank}</div><p>${esc(t.name)} finished with ${t.score} points.</p></div>`;
@@ -171,6 +174,9 @@
       else if (prevScore !== t.score) { FX.scoreChange($('.p-top'), sc, prevScore, t.score); prevScore = t.score; }
       root.classList.toggle('glow', !!(S.q && (S.q.buzzedTeam === me.teamId || (S.q.kind === 'dd' && S.q.ddTeam === me.teamId && S.q.stage === 'answering'))));
       root.style.setProperty('--team', t.color);
+      /* Keep the drawing pad alive while this phone is drawing (re-rendering would wipe the picture). */
+      const pad = $('.p-main .pt-mycanvas');
+      if (pad && S.party && S.party.type === 'draw' && S.party.stage === 'drawing' && pme && pme.word && pad.dataset.idx === String(S.party.idx)) return;
       render($('.p-main'), mainHTML());
     }
 
@@ -203,6 +209,7 @@
       }
     });
 
+    if (window.PartyUI) PartyUI.bindPlay(root, net);
     showJoin();
     return { get state() { return S; } };
   };

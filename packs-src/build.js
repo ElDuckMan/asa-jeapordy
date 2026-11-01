@@ -52,3 +52,37 @@ if (churchParts.length) {
   });
   console.log('church:', rounds.length, 'rounds, boards', variants(rounds));
 } else console.log('church: missing');
+
+/* Party pack: one round group per mode, with sets A = General, B = Asia, C = Church. */
+const partyFiles = ['party-a.json', 'party-b.json', 'party-c.json'].filter(has);
+if (partyFiles.length) {
+  const P = Object.assign({}, ...partyFiles.map(read));
+  const SETS = [['general', 'A', 'General'], ['asia', 'B', 'Asia'], ['church', 'C', 'Church']];
+  const MODES = [
+    ['speed', 'Speed Quiz', { type: 'speed', points: 500, timer: 15 }],
+    ['emoji', 'Emoji Decode', { type: 'lightning', duration: 90, points: 100, penalty: false }],
+    ['closest', 'Closest Guess', { type: 'closest', points: 300, timer: 30 }],
+    ['fakeout', 'Fake Out', { type: 'fakeout', truthPts: 200, foolPts: 100, timer: 60, voteTimer: 30 }],
+    ['survey', 'Survey Says', { type: 'survey', points: 10, timer: 45 }],
+    ['truths', 'Two Truths & a Lie', { type: 'truths', points: 200, timer: 30 }],
+    ['wheel', 'Wheel', { type: 'wheel' }],
+    ['draw', 'Draw & Guess', { type: 'draw', points: 200, timer: 75 }]
+  ];
+  const rounds = [];
+  for (const [mode, name, base] of MODES) {
+    if (mode === 'truths') { rounds.push(Object.assign({ name, group: name, variant: '', label: '' }, base)); continue; }
+    if (!P[mode]) { console.log('party: missing', mode); continue; }
+    for (const [set, variant, label] of SETS) {
+      const items = P[mode][set] || [];
+      const r = Object.assign({ name: `${name}: ${label}`, group: name, variant, label }, base);
+      if (mode === 'emoji') r.questions = items.map(x => ({ q: x.q, a: x.a, hint: x.hint || '' }));
+      else r.items = items;
+      rounds.push(r);
+    }
+  }
+  write('party', {
+    id: 'party', name: 'Party Games', blurb: 'Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess.',
+    game: { title: 'ASA Game Night', edition: 'Party Games', rounds }
+  });
+  console.log('party:', rounds.length, 'rounds');
+}

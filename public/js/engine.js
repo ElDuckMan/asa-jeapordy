@@ -23,10 +23,12 @@
     'host:kickTeam', 'host:kickPlayer', 'host:openClue', 'host:cancelClue', 'host:closeClue', 'host:open',
     'host:lock', 'host:judge', 'host:reveal', 'host:override', 'host:setDDTeam', 'host:setWager',
     'host:showClue', 'host:finalReveal', 'host:finalAnswer', 'host:lightningStart', 'host:lightningNext',
-    'host:lightningStop', 'host:bonusNext', 'host:hint', 'host:restore',
+    'host:lightningStop', 'host:bonusNext', 'host:hint', 'host:restore', 'host:party', 'host:addRound', 'player:party',
     'board:join', 'room:info', 'player:join', 'player:leave', 'player:buzz', 'player:wager', 'player:answer'
   ];
 
+  /* Party modes live in party-engine.js (Node: require; browser: window.JeopardyParty). */
+  const Party = (typeof module === 'object' && module.exports && typeof require === 'function') ? require('./party-engine.js') : self.JeopardyParty;
   const now = () => Date.now();
   const arr = (v, max) => (Array.isArray(v) ? v.slice(0, max) : []);
   const str = (v, max = 500) => (typeof v === 'string' ? v : v == null ? '' : String(v)).trim().slice(0, max);
@@ -37,8 +39,18 @@
   const isObj = v => v && typeof v === 'object';
 
   /* ---------------------------------------------------------- sanitizing */
+  /* YouTube links (for Name That Tune): keep the video id and an optional start time. */
+  function youtube(url) {
+    const u = str(url, 2000);
+    const m = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/))([A-Za-z0-9_-]{11})/);
+    if (!m) return null;
+    const t = u.match(/[?&#](?:t|start)=(?:(\d+)h)?(?:(\d+)m)?(\d+)s?/);
+    const start = t ? (+(t[1] || 0)) * 3600 + (+(t[2] || 0)) * 60 + (+t[3] || 0) : 0;
+    return { type: 'youtube', url: u, id: m[1], start };
+  }
   function sanitizeMedia(m) {
     if (!isObj(m)) return null;
+    if (m.type === 'youtube' || /youtu\.?be/.test(String(m.url || ''))) { const y = youtube(m.url); if (y) { if (m.start) y.start = int(m.start, y.start, 0, 36000); return y; } }
     const type = ['image', 'audio', 'video'].includes(m.type) ? m.type : null;
     const url = str(m.url, 2000);
     if (!type || !/^(https?:\/\/|\/)/i.test(url)) return null;
@@ -68,10 +80,13 @@
     const out = sanitizeRoundBody(r || {}, i);
     out.group = str(r && r.group, 60) || out.name;
     out.variant = str(r && r.variant, 8);
+    out.label = str(r && r.label, 30);
     return out;
   }
   function sanitizeRoundBody(r, i) {
     r = r || {};
+    const pr = Party.sanitize(r, i);
+    if (pr) return pr;
     const type = ['board', 'lightning', 'bonus', 'final'].includes(r.type) ? r.type : 'board';
     const name = str(r.name, 60) || `Round ${i + 1}`;
     if (type === 'board') {
@@ -102,7 +117,7 @@
   }
   function sanitizeGame(g) {
     g = g || {};
-    return { title: str(g.title, 60) || 'Jeopardy', edition: str(g.edition, 60), presenter: str(g.presenter, 80), rounds: arr(g.rounds, 40).map(sanitizeRound) };
+    return { title: str(g.title, 60) || 'Jeopardy', edition: str(g.edition, 60), presenter: str(g.presenter, 80), rounds: arr(g.rounds, 60).map(sanitizeRound) };
   }
   function sanitizeSettings(s) {
     s = s || {};
@@ -306,6 +321,7 @@
       clearQTimer(room);
       if (room.roundTimer) { clearTimeout(room.roundTimer); room.roundTimer = null; }
       room.q = null; room.light = null; room.bonus = null;
+      if (room.party) party.stop(room);
     }
     function startRound(room, index) {
       const r = room.game.rounds[index];
@@ -314,6 +330,7 @@
       room.roundIndex = index; room.phase = r.type;
       if (r.type === 'lightning') room.light = { index: -1, running: false, done: false, endsAt: null };
       if (r.type === 'bonus') room.bonus = { index: -1, done: false };
+      if (Party.TYPES.includes(r.type)) party.start(room, r);
       if (r.type === 'final') {
         room.q = newQ({ kind: 'final', category: r.category, text: r.q, answer: r.a, hint: r.hint, media: r.media, timerSec: r.timer, stage: 'wager' });
       }
@@ -396,8 +413,8 @@
       return {
         serverNow: now(), code: room.code, role, you: teamId || null,
         title: room.game.title, edition: room.game.edition, presenter: room.game.presenter, phase: room.phase, roundIndex: room.roundIndex,
-        rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type, group: r.group, variant: r.variant })),
-        round: roundView(room, role === 'host'), q: qView(room, role, teamId),
+        rounds: room.game.rounds.map(r => ({ name: r.name, type: r.type, group: r.group, variant: r.variant, label: r.label })),
+        round: roundView(room, role === 'host'), q: qView(room, role, teamId), party: room.party ? party.view(room, role, teamId) : null,
         teams: teamList(room), sections: room.settings.sections, control: room.control,
         settings: role === 'host' ? room.settings : undefined,
         used: role === 'host' ? Object.keys(room.used) : undefined
@@ -408,6 +425,10 @@
       sendTo(`${room.code}:host`, 'state', view(room, 'host'));
       sendTo(`${room.code}:board`, 'state', view(room, 'board'));
       for (const t of Object.values(room.teams)) sendTo(`${room.code}:team:${t.id}`, 'state', view(room, 'player', t.id));
+      if (room.party) for (const p of Object.values(room.players)) {
+        const c = conns.get(p.connId);
+        if (c && c.data.playerId === p.id) c.send('pme', party.mine(room, p.id));
+      }
     }
     function fx(room, type, data = {}) {
       const payload = Object.assign({ type }, data);
@@ -415,6 +436,7 @@
     }
     /* Score-change animation hint for every screen. */
     const scoreFx = (room, tid, delta) => { if (delta) fx(room, 'score', { team: tid, delta }); };
+    const party = Party.create({ fx, scoreFx, broadcast: room => broadcast(room), sendTo, now, random: opts.random });
 
     /* ---- buzzing ----
      * Each phone measures its reaction time rt_c from the moment it received the "open" state.
@@ -475,6 +497,20 @@
       const ctl = d.control && Object.values(room.teams).find(t => t.name.toLowerCase() === String(d.control).toLowerCase());
       if (ctl) room.control = ctl.id;
       return { ok: true, restored: n };
+    };
+    /* Party modes: one generic host event and one generic player event, handled by party-engine.js. */
+    H['host:party'] = (room, d) => party.host(room, d);
+    P['player:party'] = (room, p, d) => party.player(room, p, d);
+    /* Add a round to the live game (used by the lobby's party-mode launcher) and start it. */
+    H['host:addRound'] = (room, d) => {
+      if (room.q) return { error: 'Close the current clue first.' };
+      if (room.game.rounds.length >= 60) return { error: 'This game has too many rounds.' };
+      const r = sanitizeRound(d.round, room.game.rounds.length);
+      room.game.rounds.push(r);
+      const i = room.game.rounds.length - 1;
+      startRound(room, i);
+      fx(room, 'round', { name: r.name, kind: r.type });
+      return { ok: true, index: i };
     };
     H['host:resetGame'] = room => {
       resetRoundState(room); room.used = {}; room.control = null; room.roundIndex = -1; room.phase = 'lobby';

@@ -1,0 +1,693 @@
+{
+  "speed": {
+    "general": [
+      {
+        "q": "What is the largest ocean on Earth?",
+        "options": [
+          "Atlantic",
+          "Indian",
+          "Pacific",
+          "Arctic"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "How many sides does a hexagon have?",
+        "options": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Which gas do plants take in for photosynthesis?",
+        "options": [
+          "Oxygen",
+          "Nitrogen",
+          "Carbon dioxide",
+          "Helium"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is the largest planet in our solar system?",
+        "options": [
+          "Saturn",
+          "Neptune",
+          "Earth",
+          "Jupiter"
+        ],
+        "correct": 3
+      },
+      {
+        "q": "What is the chemical symbol for gold?",
+        "options": [
+          "Go",
+          "Gd",
+          "Au",
+          "Ag"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Who painted the Mona Lisa?",
+        "options": [
+          "Michelangelo",
+          "Leonardo da Vinci",
+          "Raphael",
+          "Van Gogh"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Kangaroos are native to which country?",
+        "options": [
+          "Australia",
+          "Brazil",
+          "South Africa",
+          "Canada"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Water freezes at what temperature in Fahrenheit?",
+        "options": [
+          "0°F",
+          "32°F",
+          "100°F",
+          "212°F"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "How many players per team are on the field in soccer?",
+        "options": [
+          "9",
+          "10",
+          "11",
+          "12"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "How many keys does a standard piano have?",
+        "options": [
+          "66",
+          "76",
+          "88",
+          "100"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is the longest bone in the human body?",
+        "options": [
+          "Femur",
+          "Tibia",
+          "Humerus",
+          "Fibula"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "How many hearts does an octopus have?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "8"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Mixing blue and yellow paint makes what color?",
+        "options": [
+          "Green",
+          "Purple",
+          "Orange",
+          "Brown"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "What is the smallest prime number?",
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Which planet is closest to the Sun?",
+        "options": [
+          "Venus",
+          "Mercury",
+          "Mars",
+          "Earth"
+        ],
+        "correct": 1
+      }
+    ],
+    "asia": [
+      {
+        "q": "What is the capital of Japan?",
+        "options": [
+          "Kyoto",
+          "Osaka",
+          "Tokyo",
+          "Sapporo"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "The Taj Mahal is in which country?",
+        "options": [
+          "Pakistan",
+          "India",
+          "Nepal",
+          "Bangladesh"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Kimchi is a staple of which cuisine?",
+        "options": [
+          "Japanese",
+          "Thai",
+          "Korean",
+          "Filipino"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is the currency of Japan?",
+        "options": [
+          "Won",
+          "Yuan",
+          "Yen",
+          "Baht"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is the capital of the Philippines?",
+        "options": [
+          "Manila",
+          "Jakarta",
+          "Hanoi",
+          "Bangkok"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Pho is a noodle soup from which country?",
+        "options": [
+          "Thailand",
+          "Vietnam",
+          "Laos",
+          "Malaysia"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Angkor Wat is in which country?",
+        "options": [
+          "Cambodia",
+          "Myanmar",
+          "Thailand",
+          "Vietnam"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "How many animals are in the Chinese zodiac?",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "14"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Which K-pop group released “Dynamite” in 2020?",
+        "options": [
+          "EXO",
+          "BTS",
+          "BLACKPINK",
+          "TWICE"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Diwali is known as the festival of what?",
+        "options": [
+          "Lights",
+          "Colors",
+          "Kites",
+          "Harvest"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Pikachu comes from which franchise?",
+        "options": [
+          "Digimon",
+          "Pokémon",
+          "Naruto",
+          "Sailor Moon"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "The Petronas Towers are in which city?",
+        "options": [
+          "Singapore",
+          "Bangkok",
+          "Kuala Lumpur",
+          "Jakarta"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Bubble tea (boba) originated in which place?",
+        "options": [
+          "Japan",
+          "Taiwan",
+          "Thailand",
+          "Korea"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Who directed the anime film “Spirited Away”?",
+        "options": [
+          "Hayao Miyazaki",
+          "Makoto Shinkai",
+          "Akira Toriyama",
+          "Hideo Kojima"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Mount Everest lies on the border of Nepal and which country?",
+        "options": [
+          "India",
+          "Bhutan",
+          "China",
+          "Pakistan"
+        ],
+        "correct": 2
+      }
+    ],
+    "church": [
+      {
+        "q": "Who built the ark?",
+        "options": [
+          "Abraham",
+          "Moses",
+          "Noah",
+          "Jacob"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "How many apostles did Jesus choose?",
+        "options": [
+          "7",
+          "10",
+          "12",
+          "40"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "In which town was Jesus born?",
+        "options": [
+          "Nazareth",
+          "Bethlehem",
+          "Jerusalem",
+          "Capernaum"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Who was swallowed by a great fish?",
+        "options": [
+          "Jonah",
+          "Elijah",
+          "Peter",
+          "Paul"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "At the wedding in Cana, Jesus turned water into what?",
+        "options": [
+          "Milk",
+          "Oil",
+          "Wine",
+          "Honey"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Who defeated Goliath?",
+        "options": [
+          "Saul",
+          "Samson",
+          "David",
+          "Joshua"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "What is the first book of the Bible?",
+        "options": [
+          "Exodus",
+          "Genesis",
+          "Matthew",
+          "Psalms"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Which disciple denied Jesus three times?",
+        "options": [
+          "John",
+          "Thomas",
+          "Peter",
+          "Andrew"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "God rested on the seventh day after creating for how many days?",
+        "options": [
+          "3",
+          "5",
+          "6",
+          "7"
+        ],
+        "correct": 2
+      },
+      {
+        "q": "Who led the Israelites out of Egypt?",
+        "options": [
+          "Moses",
+          "Aaron",
+          "Joseph",
+          "David"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "Which Gospel comes first in the New Testament?",
+        "options": [
+          "Mark",
+          "Luke",
+          "John",
+          "Matthew"
+        ],
+        "correct": 3
+      },
+      {
+        "q": "Who was thrown into the lions’ den?",
+        "options": [
+          "Daniel",
+          "Elisha",
+          "Jeremiah",
+          "Isaiah"
+        ],
+        "correct": 0
+      },
+      {
+        "q": "How many loaves fed the 5,000?",
+        "options": [
+          "2",
+          "5",
+          "7",
+          "12"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Adam and Eve lived in which garden?",
+        "options": [
+          "Gethsemane",
+          "Eden",
+          "Babylon",
+          "Canaan"
+        ],
+        "correct": 1
+      },
+      {
+        "q": "Who betrayed Jesus for thirty pieces of silver?",
+        "options": [
+          "Judas",
+          "Pilate",
+          "Herod",
+          "Barabbas"
+        ],
+        "correct": 0
+      }
+    ]
+  },
+  "emoji": {
+    "general": [
+      {
+        "q": "🕷️🕸️🦸",
+        "a": "Spider-Man",
+        "hint": "Superhero"
+      },
+      {
+        "q": "❄️👸⛄",
+        "a": "Frozen",
+        "hint": "Disney movie"
+      },
+      {
+        "q": "🚢🧊💔",
+        "a": "Titanic",
+        "hint": "Movie"
+      },
+      {
+        "q": "🧙‍♂️💍🌋",
+        "a": "The Lord of the Rings",
+        "hint": "Movie / book"
+      },
+      {
+        "q": "🔍🐠",
+        "a": "Finding Nemo",
+        "hint": "Pixar movie"
+      },
+      {
+        "q": "🦖🦕🏞️",
+        "a": "Jurassic Park",
+        "hint": "Movie"
+      },
+      {
+        "q": "🏠🎈👴",
+        "a": "Up",
+        "hint": "Pixar movie"
+      },
+      {
+        "q": "🧸🤠🚀",
+        "a": "Toy Story",
+        "hint": "Pixar movie"
+      },
+      {
+        "q": "🧽🍍🌊",
+        "a": "SpongeBob SquarePants",
+        "hint": "TV show"
+      },
+      {
+        "q": "👻🚫📞",
+        "a": "Ghostbusters",
+        "hint": "Movie"
+      },
+      {
+        "q": "👶🦈🎶",
+        "a": "Baby Shark",
+        "hint": "Song"
+      },
+      {
+        "q": "🌧️🐱🐶",
+        "a": "Raining cats and dogs",
+        "hint": "Saying"
+      },
+      {
+        "q": "🐦🌅🪱",
+        "a": "The early bird catches the worm",
+        "hint": "Saying"
+      },
+      {
+        "q": "⚡👓🧙‍♂️",
+        "a": "Harry Potter",
+        "hint": "Book / movie series"
+      },
+      {
+        "q": "🍫🏭🎫",
+        "a": "Charlie and the Chocolate Factory",
+        "hint": "Book / movie"
+      }
+    ],
+    "asia": [
+      {
+        "q": "🍥🦊🥷",
+        "a": "Naruto",
+        "hint": "Anime"
+      },
+      {
+        "q": "🏴‍☠️👒",
+        "a": "One Piece",
+        "hint": "Anime"
+      },
+      {
+        "q": "🌳🐱🚌",
+        "a": "My Neighbor Totoro",
+        "hint": "Studio Ghibli film"
+      },
+      {
+        "q": "⚡🐭",
+        "a": "Pikachu",
+        "hint": "Pokémon character"
+      },
+      {
+        "q": "⛵👧🌙",
+        "a": "Sailor Moon",
+        "hint": "Anime"
+      },
+      {
+        "q": "👋🐱🎀",
+        "a": "Hello Kitty",
+        "hint": "Character"
+      },
+      {
+        "q": "🇰🇷🐎🕺",
+        "a": "Gangnam Style",
+        "hint": "K-pop song"
+      },
+      {
+        "q": "🧈💜",
+        "a": "Butter",
+        "hint": "BTS song"
+      },
+      {
+        "q": "🟡👻🍒",
+        "a": "Pac-Man",
+        "hint": "Japanese arcade game"
+      },
+      {
+        "q": "3️⃣🤪🎓",
+        "a": "3 Idiots",
+        "hint": "Bollywood movie"
+      },
+      {
+        "q": "🌕🥮",
+        "a": "Mid-Autumn Festival",
+        "hint": "Festival"
+      },
+      {
+        "q": "🥭🍚",
+        "a": "Mango sticky rice",
+        "hint": "Food"
+      },
+      {
+        "q": "🪔✨🇮🇳",
+        "a": "Diwali",
+        "hint": "Festival"
+      },
+      {
+        "q": "🐉🚣",
+        "a": "Dragon Boat Festival",
+        "hint": "Festival"
+      },
+      {
+        "q": "🇨🇳🧱🐉",
+        "a": "Great Wall of China",
+        "hint": "Landmark"
+      }
+    ],
+    "church": [
+      {
+        "q": "🌧️🚢🦒🦒",
+        "a": "Noah’s Ark",
+        "hint": "Bible story"
+      },
+      {
+        "q": "🧒🪨🆚💪",
+        "a": "David and Goliath",
+        "hint": "Bible story"
+      },
+      {
+        "q": "🧔🐋",
+        "a": "Jonah and the whale",
+        "hint": "Bible story"
+      },
+      {
+        "q": "🌊✋🌊",
+        "a": "Parting of the Red Sea",
+        "hint": "Bible story"
+      },
+      {
+        "q": "💧➡️🍷",
+        "a": "Water into wine",
+        "hint": "Miracle"
+      },
+      {
+        "q": "🍞🐟👥👥👥",
+        "a": "Feeding of the 5,000",
+        "hint": "Miracle"
+      },
+      {
+        "q": "👦💸🐖🏠🤗",
+        "a": "The Prodigal Son",
+        "hint": "Parable"
+      },
+      {
+        "q": "🧥🌈",
+        "a": "Joseph’s coat of many colors",
+        "hint": "Bible story"
+      },
+      {
+        "q": "🔟📜",
+        "a": "The Ten Commandments",
+        "hint": "Bible"
+      },
+      {
+        "q": "🔢📖",
+        "a": "Numbers",
+        "hint": "Book of the Bible"
+      },
+      {
+        "q": "🤫🌃",
+        "a": "Silent Night",
+        "hint": "Christmas carol"
+      },
+      {
+        "q": "😊➡️🌍",
+        "a": "Joy to the World",
+        "hint": "Christmas carol"
+      },
+      {
+        "q": "🤴🇪🇬",
+        "a": "The Prince of Egypt",
+        "hint": "Animated film"
+      },
+      {
+        "q": "🦁🧙‍♀️🚪",
+        "a": "The Lion, the Witch and the Wardrobe",
+        "hint": "Book / movie"
+      },
+      {
+        "q": "☀️🏫⛪",
+        "a": "Sunday school",
+        "hint": "Church life"
+      }
+    ]
+  }
+}

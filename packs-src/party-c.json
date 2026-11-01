@@ -1,0 +1,128 @@
+{
+  "wheel": {
+    "general": [
+      { "category": "Proverb", "phrase": "ACTIONS SPEAK LOUDER THAN WORDS" },
+      { "category": "Proverb", "phrase": "THE EARLY BIRD CATCHES THE WORM" },
+      { "category": "Proverb", "phrase": "BETTER LATE THAN NEVER" },
+      { "category": "Movie Title", "phrase": "THE WIZARD OF OZ" },
+      { "category": "Movie Title", "phrase": "BACK TO THE FUTURE" },
+      { "category": "Song Title", "phrase": "HAPPY BIRTHDAY TO YOU" },
+      { "category": "Song Title", "phrase": "TWINKLE TWINKLE LITTLE STAR" },
+      { "category": "Book Title", "phrase": "TO KILL A MOCKINGBIRD" },
+      { "category": "Food & Drink", "phrase": "PEANUT BUTTER AND JELLY" },
+      { "category": "Place", "phrase": "THE GRAND CANYON" },
+      { "category": "Place", "phrase": "THE EIFFEL TOWER" },
+      { "category": "Famous Phrase", "phrase": "ONCE UPON A TIME" }
+    ],
+    "asia": [
+      { "category": "Song Title", "phrase": "GANGNAM STYLE" },
+      { "category": "Proverb", "phrase": "FALL SEVEN TIMES STAND UP EIGHT" },
+      { "category": "Food & Drink", "phrase": "BUBBLE TEA" },
+      { "category": "Food & Drink", "phrase": "PAD THAI" },
+      { "category": "Food & Drink", "phrase": "MANGO STICKY RICE" },
+      { "category": "Place", "phrase": "THE GREAT WALL OF CHINA" },
+      { "category": "Place", "phrase": "MOUNT FUJI" },
+      { "category": "Place", "phrase": "THE TAJ MAHAL" },
+      { "category": "Movie Title", "phrase": "SPIRITED AWAY" },
+      { "category": "Movie Title", "phrase": "CRAZY RICH ASIANS" },
+      { "category": "Festival", "phrase": "LUNAR NEW YEAR" },
+      { "category": "Festival", "phrase": "MID-AUTUMN FESTIVAL" }
+    ],
+    "church": [
+      { "category": "Bible Verse", "phrase": "IN THE BEGINNING WAS THE WORD" },
+      { "category": "Bible Verse", "phrase": "THE LORD IS MY SHEPHERD" },
+      { "category": "Bible Verse", "phrase": "JESUS WEPT" },
+      { "category": "Bible Verse", "phrase": "GOD IS LOVE" },
+      { "category": "Famous Phrase", "phrase": "LOVE YOUR NEIGHBOR AS YOURSELF" },
+      { "category": "Book of the Bible", "phrase": "THE BOOK OF PSALMS" },
+      { "category": "Bible Story", "phrase": "NOAH'S ARK" },
+      { "category": "Bible Story", "phrase": "DAVID AND GOLIATH" },
+      { "category": "Bible Story", "phrase": "DANIEL IN THE LIONS' DEN" },
+      { "category": "Bible Story", "phrase": "THE GOOD SAMARITAN" },
+      { "category": "Famous Phrase", "phrase": "THE TEN COMMANDMENTS" },
+      { "category": "Hymn", "phrase": "AMAZING GRACE" }
+    ]
+  },
+  "survey": {
+    "general": [
+      { "q": "Name something you bring to the beach." },
+      { "q": "Name a pizza topping." },
+      { "q": "Name something people do on a lazy Sunday afternoon." },
+      { "q": "Name an animal you’d see at the zoo." },
+      { "q": "Name something you’d find in a kitchen drawer." },
+      { "q": "Name a popular ice cream flavor." },
+      { "q": "Name something that’s always in a backpack." },
+      { "q": "Name an excuse for being late to class." },
+      { "q": "Name a board game or card game." },
+      { "q": "Name something you do while waiting in line." },
+      { "q": "Name a sport played with a ball." },
+      { "q": "Name something you’d pack for a camping trip." }
+    ],
+    "asia": [
+      { "q": "Name a dumpling or noodle dish." },
+      { "q": "Name a topping you’d add to bubble tea." },
+      { "q": "Name a food people eat during Lunar New Year." },
+      { "q": "Name a snack you’d find at an Asian grocery store." },
+      { "q": "Name a popular Asian street food." },
+      { "q": "Name something you’d see at a night market." },
+      { "q": "Name a country in Asia you’d love to visit." },
+      { "q": "Name a sauce or condiment found in an Asian kitchen." },
+      { "q": "Name something people do at karaoke." },
+      { "q": "Name a game you played at recess." },
+      { "q": "Name a school subject." },
+      { "q": "Name something you’d bring when visiting relatives." }
+    ],
+    "church": [
+      { "q": "Name a dish you’d bring to a church potluck." },
+      { "q": "Name something you’d find in a church building." },
+      { "q": "Name a Bible character." },
+      { "q": "Name a Bible story kids learn in Sunday school." },
+      { "q": "Name an animal that was on Noah’s ark." },
+      { "q": "Name a youth group game or activity." },
+      { "q": "Name something you’d pack for a church retreat." },
+      { "q": "Name a book of the Bible." },
+      { "q": "Name a worship song or hymn." },
+      { "q": "Name a snack served after a church service." },
+      { "q": "Name a church holiday or season." },
+      { "q": "Name a miracle of Jesus." }
+    ]
+  },
+  "draw": {
+    "general": [
+      "apple", "banana", "umbrella", "bicycle", "house",
+      "tree", "sun", "rainbow", "cat", "dog",
+      "fish", "snowman", "pizza", "ice cream cone", "airplane",
+      "car", "sailboat", "guitar", "clock", "light bulb",
+      "glasses", "key", "book", "cell phone", "cupcake",
+      "birthday cake", "balloon", "kite", "spider", "butterfly",
+      "snail", "octopus", "rocket", "robot", "castle",
+      "mountain", "volcano", "cactus", "flower", "toothbrush",
+      "scissors", "ladder", "hammer", "sandwich", "hot dog",
+      "basketball", "soccer ball", "top hat", "shoe", "campfire"
+    ],
+    "asia": [
+      "dumpling", "chopsticks", "bubble tea", "rice bowl", "sushi",
+      "ramen", "spring roll", "bao bun", "mooncake", "egg tart",
+      "mango", "durian", "lychee", "coconut", "rice cooker",
+      "wok", "teapot", "paper lantern", "red envelope", "folding fan",
+      "origami crane", "bonsai tree", "bamboo", "panda", "tiger",
+      "elephant", "koi fish", "dragon", "tuk-tuk", "Great Wall",
+      "Mount Fuji", "Taj Mahal", "pagoda", "torii gate", "rice field",
+      "cherry blossom", "lotus flower", "hot pot", "onigiri", "satay skewer",
+      "takoyaki", "mochi", "steamer basket", "dragon boat", "fireworks",
+      "monkey", "water buffalo", "lucky cat", "karaoke mic", "bento box"
+    ],
+    "church": [
+      "Noah's ark", "olive branch", "dove", "cross", "Bible",
+      "church", "candle", "crown", "manger", "star",
+      "shepherd", "sheep", "loaves and fish", "bread", "burning bush",
+      "stone tablets", "Jonah's whale", "lion", "slingshot", "Jacob's ladder",
+      "Tower of Babel", "Garden of Eden", "snake", "camel", "donkey",
+      "palm branch", "angel", "halo", "harp", "trumpet",
+      "Red Sea parting", "walls of Jericho", "empty tomb", "Joseph's coat", "well",
+      "fishing boat", "fishing net", "oil lamp", "mustard seed", "cup",
+      "piano", "choir", "pew", "offering plate", "church bell",
+      "stained glass", "praying hands", "baptism", "pulpit", "potluck"
+    ]
+  }
+}
