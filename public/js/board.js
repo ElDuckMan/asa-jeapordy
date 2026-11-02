@@ -179,6 +179,7 @@
         case 'end': setTimeout(() => FX.celebrate(), 400); break;
         case 'spin': Sound.play('open'); PartyUI.spin(e.wedge, (S && S.party && S.party.wedges || []).length || 16); break;
         case 'letter': Sound.play('correct'); setTimeout(() => document.querySelectorAll('.pt-tile.on').forEach((t, i) => { if (t.textContent === e.L) { FX.restart(t, 'pop', 500); const c = FX.centerOf(t); FX.sparkles(c.x, c.y, { count: 8, power: 0.5 }); } }), 120); break;
+        case 'replay': if (yt) { const f = yt.el.querySelector('iframe'); f.src = f.src.replace(/&r=\d+/, '') + '&r=' + e.seq; } break;
         case 'strike': Sound.play('wrong'); FX.slap('✗'.repeat(e.n || 1), { color: '--red', hold: 900 }); break;
       }
     }

@@ -2,7 +2,7 @@
 AsaPacks.add({
  "id": "party",
  "name": "Party Games",
- "blurb": "Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess.",
+ "blurb": "Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess, Name That Tune.",
  "game": {
   "title": "ASA Game Night",
   "edition": "Party Games",

@@ -66,8 +66,11 @@ if (partyFiles.length) {
     ['survey', 'Survey Says', { type: 'survey', points: 10, timer: 45 }],
     ['truths', 'Two Truths & a Lie', { type: 'truths', points: 200, timer: 30 }],
     ['wheel', 'Wheel', { type: 'wheel' }],
-    ['draw', 'Draw & Guess', { type: 'draw', points: 200, timer: 75 }]
+    ['draw', 'Draw & Guess', { type: 'draw', points: 200, timer: 75 }],
+    ['tune', 'Name That Tune', { type: 'bonus', points: 200, timer: 30 }]
   ];
+  /* Name That Tune songs: tune-<set>.json → P.tune[set] */
+  for (const [set] of SETS) if (has(`tune-${set}.json`)) (P.tune = P.tune || {})[set] = read(`tune-${set}.json`).items;
   const rounds = [];
   for (const [mode, name, base] of MODES) {
     if (mode === 'truths') { rounds.push(Object.assign({ name, group: name, variant: '', label: '' }, base)); continue; }
@@ -76,12 +79,14 @@ if (partyFiles.length) {
       const items = P[mode][set] || [];
       const r = Object.assign({ name: `${name}: ${label}`, group: name, variant, label }, base);
       if (mode === 'emoji') r.questions = items.map(x => ({ q: x.q, a: x.a, hint: x.hint || '' }));
+      else if (mode === 'tune') r.questions = items.map(x => ({ q: '🎵 Name this song!', a: `${x.title} (${x.artist})`, options: x.options, correct: x.correct,
+        media: { type: 'youtube', url: `https://www.youtube.com/watch?v=${x.id}${x.start ? `&t=${x.start}` : ''}` } }));
       else r.items = items;
       rounds.push(r);
     }
   }
   write('party', {
-    id: 'party', name: 'Party Games', blurb: 'Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess.',
+    id: 'party', name: 'Party Games', blurb: 'Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess, Name That Tune.',
     game: { title: 'ASA Game Night', edition: 'Party Games', rounds }
   });
   console.log('party:', rounds.length, 'rounds');
