@@ -61,7 +61,7 @@ The lobby has a **🎉 Party games** card in every pack, so you can play any of 
 | 🤥 Two Truths & a Lie | Players write their own statements and the other teams vote on the lie. |
 | 🎡 Wheel | Spin, call consonants, buy vowels and solve. The active team plays from its phones. |
 | ✏️ Draw & Guess | One phone draws live onto the big screen and the other teams type guesses. |
-| 🎵 Name That Tune | In the Game editor, add the “Name That Tune” template and paste YouTube links (add `?t=45` to start at 0:45). The song plays on the big screen behind a cover until you reveal it. |
+| 🎵 Name That Tune | 12 songs per set (official YouTube uploads). The song plays on the big screen behind a cover, teams pick the title on their phones, and the video shows on reveal. The host has 🔁 Replay. To use your own songs, go to the Game editor, add the “Name That Tune” template and paste YouTube links (add `?t=45` to start at 0:45). |
 
 The host can remove player-written entries, such as fakes and Two Truths, before they reach the screen. Party content lives in `packs-src/party-*.json` (format: `packs-src/PARTY.md`). Run `node packs-src/build.js` after editing it.
 
