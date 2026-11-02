@@ -2030,16 +2030,6 @@ AsaPacks.add({
     ]
    },
    {
-    "name": "Name That Tune: Asia",
-    "group": "Name That Tune",
-    "variant": "B",
-    "label": "Asia",
-    "type": "bonus",
-    "points": 200,
-    "timer": 30,
-    "questions": []
-   },
-   {
     "name": "Name That Tune: Church",
     "group": "Name That Tune",
     "variant": "C",
