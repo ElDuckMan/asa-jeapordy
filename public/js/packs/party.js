@@ -2030,6 +2030,197 @@ AsaPacks.add({
     ]
    },
    {
+    "name": "Name That Tune: Asia",
+    "group": "Name That Tune",
+    "variant": "B",
+    "label": "Asia",
+    "type": "bonus",
+    "points": 200,
+    "timer": 30,
+    "questions": [
+     {
+      "q": "🎵 Name this song!",
+      "a": "Gangnam Style (PSY)",
+      "options": [
+       "Gangnam Style",
+       "Gentleman",
+       "Dynamite",
+       "Fantastic Baby"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=9bZkp7q19f0"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "DDU-DU DDU-DU (BLACKPINK)",
+      "options": [
+       "Kill This Love",
+       "DDU-DU DDU-DU",
+       "Fancy",
+       "Bang Bang Bang"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=IHNzOHi8sJs"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "TT (TWICE)",
+      "options": [
+       "Cheer Up",
+       "Gee",
+       "TT",
+       "Red Flavor"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=ePpPVE-GGJw"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Boy With Luv (BTS feat. Halsey)",
+      "options": [
+       "Fake Love",
+       "Butter",
+       "DNA",
+       "Boy With Luv"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=XsX3ATc3FbA"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "How You Like That (BLACKPINK)",
+      "options": [
+       "How You Like That",
+       "Love Scenario",
+       "Lion Heart",
+       "Psycho"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=ioNng23DkIM"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Gee (Girls' Generation)",
+      "options": [
+       "Sorry Sorry",
+       "Gee",
+       "Nobody",
+       "Ring Ding Dong"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=U7mPqycQ0tQ"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Gurenge (LiSA)",
+      "options": [
+       "Unravel",
+       "Silhouette",
+       "Gurenge",
+       "Blue Bird"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=x1FV6IrjZCY"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Pretender (Official HIGE DANdism)",
+      "options": [
+       "Lemon",
+       "Yoru ni Kakeru",
+       "Marigold",
+       "Pretender"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=TQ8WlA2GXbk"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Love Confession (Jay Chou)",
+      "options": [
+       "Love Confession",
+       "Little Apple",
+       "Tian Mi Mi",
+       "Learn to Meow"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=bu7nU9Mhpyo"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Rice Field (Jay Chou)",
+      "options": [
+       "Blue and White Porcelain",
+       "Rice Field",
+       "Mojito",
+       "Nunchucks"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=sHD_z90ZKV0"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "London Thumakda (Labh Janjua, Sonu Kakkar & Neha Kakkar)",
+      "options": [
+       "Kala Chashma",
+       "Gallan Goodiyaan",
+       "London Thumakda",
+       "Badtameez Dil"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=udra3Mfw2oo"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Kathang Isip (Ben&Ben)",
+      "options": [
+       "Buwan",
+       "Tadhana",
+       "Mundo",
+       "Kathang Isip"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=Bcv2cH8rsKU"
+      }
+     }
+    ]
+   },
+   {
     "name": "Name That Tune: Church",
     "group": "Name That Tune",
     "variant": "C",
