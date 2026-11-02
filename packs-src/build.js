@@ -77,6 +77,7 @@ if (partyFiles.length) {
     if (!P[mode]) { console.log('party: missing', mode); continue; }
     for (const [set, variant, label] of SETS) {
       const items = P[mode][set] || [];
+      if (!items.length) continue;
       const r = Object.assign({ name: `${name}: ${label}`, group: name, variant, label }, base);
       if (mode === 'emoji') r.questions = items.map(x => ({ q: x.q, a: x.a, hint: x.hint || '' }));
       else if (mode === 'tune') r.questions = items.map(x => ({ q: '🎵 Name this song!', a: `${x.title} (${x.artist})`, options: x.options, correct: x.correct,
