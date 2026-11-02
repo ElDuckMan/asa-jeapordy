@@ -144,3 +144,5 @@
   .pt-rrow{grid-template-columns:1fr 1fr}
   .pt-feud{grid-template-columns:1fr}
 }
+
+.yt-box.yt-err .yt-cover{opacity:1!important;color:var(--red);font-size:22px;text-align:center;padding:8px}

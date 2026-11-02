@@ -138,13 +138,25 @@
         if (yt) yt.el.remove();
         const el = document.createElement('div');
         el.className = 'yt-box paper';
-        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(m.id)}?autoplay=1&start=${m.start | 0}&rel=0&playsinline=1&controls=0" allow="autoplay; encrypted-media" title="Name That Tune"></iframe>
+        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(m.id)}?autoplay=1&start=${m.start | 0}&rel=0&playsinline=1&controls=0&enablejsapi=1&origin=${encodeURIComponent(location.origin)}" allow="autoplay; encrypted-media" title="Name That Tune"></iframe>
           <div class="yt-cover"><span class="yt-note">🎵</span><span class="block stroke crayon">Listen…</span></div>`;
         document.body.appendChild(el);
         yt = { el, key };
+        /* Ask the player for events so a blocked video (embedding turned off) shows a clear notice instead of silence. */
+        const f = el.querySelector('iframe');
+        f.addEventListener('load', () => { try { f.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 1, channel: 'widget' }), '*'); } catch (_) { /* */ } });
       }
       yt.el.classList.toggle('revealed', !!s.q.revealed);
     }
+    window.addEventListener('message', ev => {
+      if (!yt || !/youtube/.test(ev.origin)) return;
+      let d; try { d = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data; } catch (_) { return; }
+      if (d && d.event === 'onError') {
+        yt.el.classList.add('yt-err');
+        const c = yt.el.querySelector('.yt-cover');
+        if (c) c.innerHTML = '<span class="yt-note">🔇</span><span class="block stroke">This song can’t play here</span><span class="small">Host: open it on YouTube or skip</span>';
+      }
+    });
     function teamColor(id) { const t = S && S.teams.find(x => x.id === id); return t ? t.color : '#ffd84d'; }
     function onFx(e) {
       switch (e.type) {
