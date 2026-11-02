@@ -1837,6 +1837,398 @@ AsaPacks.add({
      "pulpit",
      "potluck"
     ]
+   },
+   {
+    "name": "Name That Tune: General",
+    "group": "Name That Tune",
+    "variant": "A",
+    "label": "General",
+    "type": "bonus",
+    "points": 200,
+    "timer": 30,
+    "questions": [
+     {
+      "q": "🎵 Name this song!",
+      "a": "September (Earth, Wind & Fire)",
+      "options": [
+       "Boogie Wonderland",
+       "September",
+       "Le Freak",
+       "Celebration"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=Gs069dndIYk"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Dancing Queen (ABBA)",
+      "options": [
+       "Dancing Queen",
+       "Mamma Mia",
+       "Waterloo",
+       "I Will Survive"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=xFrGuyw1V8s"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Stayin' Alive (Bee Gees)",
+      "options": [
+       "Night Fever",
+       "Disco Inferno",
+       "Y.M.C.A.",
+       "Stayin' Alive"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=I_izvAbhExY"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Billie Jean (Michael Jackson)",
+      "options": [
+       "Beat It",
+       "Thriller",
+       "Billie Jean",
+       "Smooth Criminal"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Don't Stop Believin' (Journey)",
+      "options": [
+       "Livin' on a Prayer",
+       "Don't Stop Believin'",
+       "Separate Ways",
+       "Eye of the Tiger"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=1k8craCGpgs"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Africa (Toto)",
+      "options": [
+       "Take On Me",
+       "Hold the Line",
+       "Africa",
+       "Sweet Dreams"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=FTQbiNvZqaY"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "I Want It That Way (Backstreet Boys)",
+      "options": [
+       "I Want It That Way",
+       "Bye Bye Bye",
+       "Everybody",
+       "Tearin' Up My Heart"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=4fndeDfaWCg"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "...Baby One More Time (Britney Spears)",
+      "options": [
+       "Genie in a Bottle",
+       "Oops!... I Did It Again",
+       "Wannabe",
+       "...Baby One More Time"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=C-u5WLJ9Yk4"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Mr. Brightside (The Killers)",
+      "options": [
+       "Somebody Told Me",
+       "Mr. Brightside",
+       "Seven Nation Army",
+       "Take Me Out"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=gGdGFtwCNBE"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Uptown Funk (Mark Ronson ft. Bruno Mars)",
+      "options": [
+       "24K Magic",
+       "Happy",
+       "Uptown Funk",
+       "Can't Stop the Feeling!"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=OPf0YbXqDm0"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Shape of You (Ed Sheeran)",
+      "options": [
+       "Shape of You",
+       "Thinking Out Loud",
+       "Perfect",
+       "Cheap Thrills"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=JGwWNGJdvx8"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Blinding Lights (The Weeknd)",
+      "options": [
+       "Levitating",
+       "Save Your Tears",
+       "As It Was",
+       "Blinding Lights"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=fHI8X4OXluQ"
+      }
+     }
+    ]
+   },
+   {
+    "name": "Name That Tune: Asia",
+    "group": "Name That Tune",
+    "variant": "B",
+    "label": "Asia",
+    "type": "bonus",
+    "points": 200,
+    "timer": 30,
+    "questions": []
+   },
+   {
+    "name": "Name That Tune: Church",
+    "group": "Name That Tune",
+    "variant": "C",
+    "label": "Church",
+    "type": "bonus",
+    "points": 200,
+    "timer": 30,
+    "questions": [
+     {
+      "q": "🎵 Name this song!",
+      "a": "10,000 Reasons (Bless the Lord) (Matt Redman)",
+      "options": [
+       "10,000 Reasons",
+       "Oceans",
+       "Way Maker",
+       "Cornerstone"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=mRWAHY4q_LQ"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "How Great Is Our God (Chris Tomlin)",
+      "options": [
+       "Good Good Father",
+       "How Great Is Our God",
+       "Build My Life",
+       "Living Hope"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=Gu2chMZKzy8"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Oceans (Where Feet May Fail) (Hillsong UNITED)",
+      "options": [
+       "Reckless Love",
+       "Goodness of God",
+       "Oceans",
+       "Graves Into Gardens"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=dy9nwe9_xzw"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "What a Beautiful Name (Hillsong Worship)",
+      "options": [
+       "Cornerstone",
+       "Do It Again",
+       "Raise a Hallelujah",
+       "What a Beautiful Name"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=r5L6QlAH3L4"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Amazing Grace (My Chains Are Gone) (Chris Tomlin)",
+      "options": [
+       "How Great Thou Art",
+       "Amazing Grace",
+       "In Christ Alone",
+       "Blessed Assurance"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=JsQ0s05sqOQ"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Way Maker (Leeland)",
+      "options": [
+       "Way Maker",
+       "Graves Into Gardens",
+       "Do It Again",
+       "Build My Life"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=iJCV_2H9xD0"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Good Good Father (Chris Tomlin)",
+      "options": [
+       "Reckless Love",
+       "10,000 Reasons",
+       "Good Good Father",
+       "Living Hope"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=CqybaIesbuA"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Reckless Love (Cory Asbury)",
+      "options": [
+       "Goodness of God",
+       "Oceans",
+       "What a Beautiful Name",
+       "Reckless Love"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=Sc6SSHuZvQE"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Goodness of God (Bethel Music & Jenn Johnson)",
+      "options": [
+       "Goodness of God",
+       "Raise a Hallelujah",
+       "Way Maker",
+       "How Great Is Our God"
+      ],
+      "correct": 0,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=IvSuGyJQ6oM"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "How Great Thou Art (Carrie Underwood)",
+      "options": [
+       "Amazing Grace",
+       "How Great Thou Art",
+       "It Is Well",
+       "Great Is Thy Faithfulness"
+      ],
+      "correct": 1,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=9bnSX5W57yg"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Living Hope (Phil Wickham)",
+      "options": [
+       "Cornerstone",
+       "Build My Life",
+       "Living Hope",
+       "Good Good Father"
+      ],
+      "correct": 2,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=u-1fwZtKJSM"
+      }
+     },
+     {
+      "q": "🎵 Name this song!",
+      "a": "Raise a Hallelujah (Bethel Music, Jonathan & Melissa Helser)",
+      "options": [
+       "Do It Again",
+       "Way Maker",
+       "Reckless Love",
+       "Raise a Hallelujah"
+      ],
+      "correct": 3,
+      "media": {
+       "type": "youtube",
+       "url": "https://www.youtube.com/watch?v=G2XtRuPfaAU"
+      }
+     }
+    ]
    }
   ]
  }
