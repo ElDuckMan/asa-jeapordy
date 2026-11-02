@@ -23,7 +23,7 @@
     'host:kickTeam', 'host:kickPlayer', 'host:openClue', 'host:cancelClue', 'host:closeClue', 'host:open',
     'host:lock', 'host:judge', 'host:reveal', 'host:override', 'host:setDDTeam', 'host:setWager',
     'host:showClue', 'host:finalReveal', 'host:finalAnswer', 'host:lightningStart', 'host:lightningNext',
-    'host:lightningStop', 'host:bonusNext', 'host:hint', 'host:restore', 'host:party', 'host:addRound', 'player:party',
+    'host:lightningStop', 'host:bonusNext', 'host:hint', 'host:replay', 'host:restore', 'host:party', 'host:addRound', 'player:party',
     'board:join', 'room:info', 'player:join', 'player:leave', 'player:buzz', 'player:wager', 'player:answer'
   ];
 
@@ -685,6 +685,12 @@
       if (q && q.kind === 'final' && room.teams[d.teamId]) { q.revealedTeams[d.teamId] = true; fx(room, 'flip', { team: d.teamId }); }
     };
     /* Hint: the host reveals it to the big screen and the phones. */
+    /* Name That Tune: restart the song on the big screen. */
+    H['host:replay'] = room => {
+      if (!room.q || !room.q.media || room.q.media.type !== 'youtube') return { error: 'No song on screen.' };
+      fx(room, 'replay', { seq: Date.now() });
+      return { quiet: true };
+    };
     H['host:hint'] = room => {
       const q = room.q;
       if (!q || !q.hint) return { error: 'This clue has no hint.' };

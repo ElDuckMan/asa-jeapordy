@@ -221,7 +221,7 @@
       const gs = AsaPacks.groups(pk.game.rounds);
       return card(`<h2 class="hand">🎉 Party games</h2><p class="small muted">Play any of these between rounds. Scores carry over.</p>
         <div class="h-party">${gs.map(g => `<div class="h-tr"><b>${esc(g.group)}</b><span class="row">${g.items.map(it => btn('partyStart', esc(pk.game.rounds[it.i].label || it.variant || 'Play'), 'sm hi', { g: g.group, v: it.variant })).join('')}</span></div>`).join('')}
-        <div class="h-tr"><b>🎵 Name That Tune</b><span class="small">Make it in the Game editor: add a round from the “Name That Tune” template and paste YouTube links.</span></div></div>`);
+        <p class="small muted">🎵 Want your own songs? Game editor → “+ 🎵 Name That Tune” → paste YouTube links.</p></div>`);
     }
     function cluePanel(s) {
       const q = s.q;
@@ -230,7 +230,8 @@
         <b>${esc(q.category)}</b>${q.value && !['dd', 'final'].includes(q.kind) ? `<span>· ${q.value} pts</span>` : ''}
         <span class="h-stage">${STAGE[q.stage] || q.stage}</span>${q.timerEnd ? `<span class="h-clock block" data-end="${q.timerEnd}"></span>` : ''}${lightningClock}</div>
         <div class="h-qtext">${esc(q.text || '')}</div>`;
-      if (q.media) h += `<div class="small">Media: <a href="${esc(q.media.url)}" target="_blank" rel="noopener">${esc(q.media.type)}</a> (plays on the big screen)</div>`;
+      if (q.media && q.media.type === 'youtube') h += `<div class="row h-tune">🎵 Playing on the big screen ${btn('replay', '🔁 Replay song', 'sm hi')}<a class="small" href="${esc(q.media.url)}" target="_blank" rel="noopener">open on YouTube ↗</a></div>`;
+      else if (q.media) h += `<div class="small">Media: <a href="${esc(q.media.url)}" target="_blank" rel="noopener">${esc(q.media.type)}</a> (plays on the big screen)</div>`;
       if (q.options && q.options.length) h += `<ol class="h-opts" type="A">${q.options.map((op, i) => `<li class="${i === q.correct ? 'right' : ''}">${esc(op)}${i === q.correct ? ' ✓' : ''}</li>`).join('')}</ol>`;
       h += `<div class="h-answer"><span class="small muted">Answer${q.revealed ? '' : ' (only you can see it)'}:</span> <b>${esc(q.answer || '—')}</b></div>`;
       if (q.hint) h += `<div class="row h-hintrow"><span class="h-hint">💡 <span class="small muted">Hint:</span> ${esc(q.hint)}</span>${q.hintShown ? '<span class="small h-hintdone">✓ shown on screen</span>' : (q.stage === 'wager' ? '' : btn('hint', '💡 Show hint', 'sm hi'))}</div>`;
@@ -413,7 +414,7 @@
           return emit('host:startRound', { index: +b.dataset.i });
         case 'endGame': if (S && S.phase !== 'final' && !confirm('End the game and show final scores?')) return; return emit('host:endGame');
         case 'open': case 'reveal': case 'lock': case 'lightningStart': case 'lightningNext': case 'lightningStop':
-        case 'bonusNext': case 'showClue': case 'hint': case 'finalAnswer': case 'cancelClue': case 'closeClue':
+        case 'bonusNext': case 'showClue': case 'hint': case 'replay': case 'finalAnswer': case 'cancelClue': case 'closeClue':
           return emit('host:' + a);
         case 'judge': return emit('host:judge', { correct: b.dataset.correct === '1' });
         case 'rule': return emit('host:override', b.dataset.v === 'x' ? { teamId: team, clear: true } : { teamId: team, correct: b.dataset.v === '1' });
