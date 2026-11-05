@@ -207,3 +207,10 @@ button.chip{cursor:pointer;font:inherit}
 .h-rgname{font-size:16px;white-space:nowrap}
 .h-var{min-width:34px}
 .h-startvar{font-size:20px;align-self:center}
+
+/* Join-anytime corner on the big screen (every phase except the lobby) */
+.b-joincorner{position:fixed;left:14px;bottom:14px;z-index:55;display:flex;align-items:center;gap:10px;padding:8px 12px 8px 8px;transform:rotate(-1.5deg)}
+.b-joincorner[hidden]{display:none}
+.b-jc-qr img,.b-jc-qr canvas{display:block;width:92px;height:92px}
+.b-jc-txt{display:grid;line-height:1.1}
+.b-jc-txt b{font-size:34px;letter-spacing:3px;color:var(--red)}
