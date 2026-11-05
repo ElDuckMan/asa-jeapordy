@@ -119,6 +119,7 @@
 
       sb.update(s.teams, s.q, s.control);
       ytSync(s);
+      joinCorner(s);
 
       if (s.q) {
         let from = null;
@@ -157,6 +158,21 @@
         if (c) c.innerHTML = '<span class="yt-note">🔇</span><span class="block stroke">This song can’t play here</span><span class="small">Host: open it on YouTube or skip</span>';
       }
     });
+    /* Join anytime: a small QR + room code stays in the corner during every round (the lobby shows the big one). */
+    let jc = null;
+    function joinCorner(s) {
+      const url = joinUrl();
+      if (!jc) {
+        jc = document.createElement('div'); jc.className = 'b-joincorner paper';
+        (o.local ? root : document.body).appendChild(jc);
+      }
+      jc.hidden = s.phase === 'lobby' || !s.code;
+      if (jc.dataset.code === s.code) return;
+      jc.dataset.code = s.code;
+      jc.innerHTML = `<div class="b-jc-qr"></div><div class="b-jc-txt"><span class="small">Join anytime</span><b class="block stroke crayon">${esc(s.code)}</b>${url ? `<span class="small">${esc(url.replace(/^https?:\/\//, '').replace(/\/\?room=.*/, ''))}</span>` : ''}</div>`;
+      const qr = jc.querySelector('.b-jc-qr');
+      if (url && window.QRCode) { try { new QRCode(qr, { text: url, width: 92, height: 92, colorDark: '#1c1a17', colorLight: '#fffdf7' }); } catch (_) { qr.remove(); } } else qr.remove();
+    }
     function teamColor(id) { const t = S && S.teams.find(x => x.id === id); return t ? t.color : '#ffd84d'; }
     function onFx(e) {
       switch (e.type) {
