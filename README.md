@@ -65,6 +65,18 @@ The lobby has a **🎉 Party games** card in every pack, so you can play any of 
 
 The host can remove player-written entries, such as fakes and Two Truths, before they reach the screen. Party content lives in `packs-src/party-*.json` (format: `packs-src/PARTY.md`). Run `node packs-src/build.js` after editing it.
 
+## Blitz modes (Blooket-style)
+
+Find them in the 🎉 Party games card in the lobby, or in the Party Games pack. Each mode has General, Asia and Church question sets. Before you press Start, choose **Individuals** or **Teams**. In team mode, every point a player earns also goes to their team's score.
+
+| Mode | How it plays |
+|---|---|
+| 💰 Gold Quest | Players answer at their own pace. Each right answer opens a chest: gold, double, +%, steal, swap, or lose some. |
+| 🏁 Racing | Each right answer moves you forward. The round ends when the top three finish. |
+| 🏰 Tower Defense | Right answers earn coins, which buy Archer, Cannon and Wizard towers. A wave hits every 20 seconds. Fail three waves and your base falls. |
+| 🎯 Classic | Everyone answers the same question, which the host advances. Faster correct answers score more. |
+| ⚔️ Battle Royale | Each player has 3 hearts. A wrong answer costs a heart, and if everyone gets it right, the slowest player loses one. The last player standing wins. |
+
 ## Game features
 
 - **Rounds:** board (Jeopardy grid), lightning (shared clock, rapid buzz-ins), bonus (every team answers on phones), final (wagers).

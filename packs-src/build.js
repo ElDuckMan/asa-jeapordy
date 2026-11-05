@@ -86,6 +86,24 @@ if (partyFiles.length) {
       rounds.push(r);
     }
   }
+  /* Blitz (Blooket-style) modes: question pools = Speed Quiz questions + 4-option multiple-choice questions from the Jeopardy packs. */
+  const mcFrom = files => files.filter(has).flatMap(f => {
+    const j = read(f), rs = j.rounds || (j.game && j.game.rounds) || [];
+    return rs.flatMap(r => [...(r.questions || []), ...(r.categories || []).flatMap(c => c.clues || [])]);
+  }).filter(q => q && Array.isArray(q.options) && q.options.length === 4 && Number.isInteger(q.correct) && q.q && !q.media)
+    .map(q => ({ q: q.q, options: q.options, correct: q.correct }));
+  const POOLS = {
+    general: (P.speed && P.speed.general || []).concat(mcFrom(['standard.json', 'standard-c.json', 'africa.json', 'africa-c.json'])),
+    asia: (P.speed && P.speed.asia || []).concat(mcFrom(['classic-a.json', 'classic-b.json', 'classic-c.json', 'east-asia.json', 'east-asia-c.json', 'south-asia.json', 'south-asia-c.json'])),
+    church: (P.speed && P.speed.church || []).concat(mcFrom(['church-ab.json', 'church-cd.json']))
+  };
+  const seen = new Set();
+  for (const k of Object.keys(POOLS)) POOLS[k] = POOLS[k].filter(q => { const key = k + q.q; if (seen.has(key)) return false; seen.add(key); return true; });
+  console.log('blitz pools:', Object.entries(POOLS).map(([k, v]) => `${k} ${v.length}`).join(', '));
+  const BLITZ = [['gold', 'Gold Quest'], ['race', 'Racing'], ['tower', 'Tower Defense'], ['classic', 'Classic'], ['battle', 'Battle Royale']];
+  for (const [type, name] of BLITZ) for (const [set, variant, label] of SETS) {
+    if (POOLS[set].length) rounds.push({ type, name: `${name}: ${label}`, group: name, variant, label, items: POOLS[set] });
+  }
   write('party', {
     id: 'party', name: 'Party Games', blurb: 'Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess, Name That Tune.',
     game: { title: 'ASA Game Night', edition: 'Party Games', rounds }

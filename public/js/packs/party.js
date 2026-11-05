@@ -2410,6 +2410,7891 @@ AsaPacks.add({
       }
      }
     ]
+   },
+   {
+    "type": "gold",
+    "name": "Gold Quest: General",
+    "group": "Gold Quest",
+    "variant": "A",
+    "label": "General",
+    "items": [
+     {
+      "q": "What is the largest ocean on Earth?",
+      "options": [
+       "Atlantic",
+       "Indian",
+       "Pacific",
+       "Arctic"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many sides does a hexagon have?",
+      "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which gas do plants take in for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the largest planet in our solar system?",
+      "options": [
+       "Saturn",
+       "Neptune",
+       "Earth",
+       "Jupiter"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+       "Go",
+       "Gd",
+       "Au",
+       "Ag"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+       "Michelangelo",
+       "Leonardo da Vinci",
+       "Raphael",
+       "Van Gogh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kangaroos are native to which country?",
+      "options": [
+       "Australia",
+       "Brazil",
+       "South Africa",
+       "Canada"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Water freezes at what temperature in Fahrenheit?",
+      "options": [
+       "0°F",
+       "32°F",
+       "100°F",
+       "212°F"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many players per team are on the field in soccer?",
+      "options": [
+       "9",
+       "10",
+       "11",
+       "12"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many keys does a standard piano have?",
+      "options": [
+       "66",
+       "76",
+       "88",
+       "100"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the longest bone in the human body?",
+      "options": [
+       "Femur",
+       "Tibia",
+       "Humerus",
+       "Fibula"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many hearts does an octopus have?",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "8"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Mixing blue and yellow paint makes what color?",
+      "options": [
+       "Green",
+       "Purple",
+       "Orange",
+       "Brown"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What is the smallest prime number?",
+      "options": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+       "Venus",
+       "Mercury",
+       "Mars",
+       "Earth"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which composer wrote the “Moonlight Sonata”?",
+      "options": [
+       "Wolfgang Amadeus Mozart",
+       "Ludwig van Beethoven",
+       "Johann Sebastian Bach",
+       "Frédéric Chopin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?",
+      "options": [
+       "George Lucas",
+       "James Cameron",
+       "Steven Spielberg",
+       "Robert Zemeckis"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Russian composer wrote the ballet “Swan Lake”?",
+      "options": [
+       "Sergei Rachmaninoff",
+       "Igor Stravinsky",
+       "Pyotr Ilyich Tchaikovsky",
+       "Sergei Prokofiev"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The gentle, jazz-influenced style called bossa nova originated in which country?",
+      "options": [
+       "Argentina",
+       "Cuba",
+       "Brazil",
+       "Mexico"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which gas do plants absorb from the air for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many interlocking rings appear on the Olympic flag?",
+      "options": [
+       "Four",
+       "Five",
+       "Six",
+       "Seven"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country gave the Statue of Liberty to the United States?",
+      "options": [
+       "United Kingdom",
+       "Spain",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "By weight, what is the largest organ of the human body?",
+      "options": [
+       "Liver",
+       "Skin",
+       "Brain",
+       "Lungs"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many keys does a standard modern piano have?",
+      "options": [
+       "76",
+       "88",
+       "92",
+       "100"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which ocean lies between Africa and Australia?",
+      "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Indian Ocean",
+       "Southern Ocean"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which instrument is Yo-Yo Ma famous for playing?",
+      "options": [
+       "Violin",
+       "Cello",
+       "Piano",
+       "Flute"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+      "options": [
+       "Johann Strauss II",
+       "Franz Schubert",
+       "Joseph Haydn",
+       "Gustav Mahler"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which of these is the largest country in Africa by area?",
+      "options": [
+       "Nigeria",
+       "Egypt",
+       "Algeria",
+       "Ethiopia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Afrikaans, spoken in South Africa and Namibia, developed mainly from which European language?",
+      "options": [
+       "German",
+       "Dutch",
+       "French",
+       "Portuguese"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country became independent from Ethiopia in 1993 after a referendum?",
+      "options": [
+       "Djibouti",
+       "Somalia",
+       "Eritrea",
+       "South Sudan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Okavango Delta, a vast inland delta that floods each year, is in which country?",
+      "options": [
+       "Namibia",
+       "Zambia",
+       "Angola",
+       "Botswana"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which of these East African countries is landlocked?",
+      "options": [
+       "Kenya",
+       "Uganda",
+       "Tanzania",
+       "Somalia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Moroccan spice blend's name means roughly “head of the shop”?",
+      "options": [
+       "Berbere",
+       "Harissa",
+       "Ras el hanout",
+       "Za'atar"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of the Seven Wonders of the Ancient World stood at Alexandria?",
+      "options": [
+       "The Colossus",
+       "The Pharos lighthouse",
+       "The Hanging Gardens",
+       "The Mausoleum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is the currency of Ghana?",
+      "options": [
+       "Naira",
+       "Shilling",
+       "Cedi",
+       "Dalasi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which river flows through Bamako and Niamey?",
+      "options": [
+       "The Congo",
+       "The Niger",
+       "The Zambezi",
+       "The Limpopo"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country's national football team is nicknamed “Les Éléphants”?",
+      "options": [
+       "Côte d'Ivoire",
+       "Cameroon",
+       "Mali",
+       "Guinea"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+      "options": [
+       "Green",
+       "Yellow",
+       "Red",
+       "Purple"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+      "options": [
+       "Dahomey",
+       "Zaire",
+       "Upper Volta",
+       "Rhodesia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "gold",
+    "name": "Gold Quest: Asia",
+    "group": "Gold Quest",
+    "variant": "B",
+    "label": "Asia",
+    "items": [
+     {
+      "q": "What is the capital of Japan?",
+      "options": [
+       "Kyoto",
+       "Osaka",
+       "Tokyo",
+       "Sapporo"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Taj Mahal is in which country?",
+      "options": [
+       "Pakistan",
+       "India",
+       "Nepal",
+       "Bangladesh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kimchi is a staple of which cuisine?",
+      "options": [
+       "Japanese",
+       "Thai",
+       "Korean",
+       "Filipino"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Japan?",
+      "options": [
+       "Won",
+       "Yuan",
+       "Yen",
+       "Baht"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the capital of the Philippines?",
+      "options": [
+       "Manila",
+       "Jakarta",
+       "Hanoi",
+       "Bangkok"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pho is a noodle soup from which country?",
+      "options": [
+       "Thailand",
+       "Vietnam",
+       "Laos",
+       "Malaysia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Angkor Wat is in which country?",
+      "options": [
+       "Cambodia",
+       "Myanmar",
+       "Thailand",
+       "Vietnam"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many animals are in the Chinese zodiac?",
+      "options": [
+       "8",
+       "10",
+       "12",
+       "14"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which K-pop group released “Dynamite” in 2020?",
+      "options": [
+       "EXO",
+       "BTS",
+       "BLACKPINK",
+       "TWICE"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Diwali is known as the festival of what?",
+      "options": [
+       "Lights",
+       "Colors",
+       "Kites",
+       "Harvest"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pikachu comes from which franchise?",
+      "options": [
+       "Digimon",
+       "Pokémon",
+       "Naruto",
+       "Sailor Moon"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Petronas Towers are in which city?",
+      "options": [
+       "Singapore",
+       "Bangkok",
+       "Kuala Lumpur",
+       "Jakarta"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Bubble tea (boba) originated in which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the anime film “Spirited Away”?",
+      "options": [
+       "Hayao Miyazaki",
+       "Makoto Shinkai",
+       "Akira Toriyama",
+       "Hideo Kojima"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Mount Everest lies on the border of Nepal and which country?",
+      "options": [
+       "India",
+       "Bhutan",
+       "China",
+       "Pakistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many main tones does Standard Mandarin have, not counting the neutral tone?",
+      "options": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Sepak takraw is like volleyball, except players may not use their…",
+      "options": [
+       "Feet",
+       "Hands",
+       "Head",
+       "Knees"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Bubble (boba) tea comes from which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT a Chinese zodiac animal?",
+      "options": [
+       "Rooster",
+       "Cat",
+       "Goat",
+       "Pig"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Japanese dish?",
+      "options": [
+       "Bibimbap",
+       "Sushi",
+       "Phở",
+       "Pad Thai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is India's national animal?",
+      "options": [
+       "Lion",
+       "Tiger",
+       "Elephant",
+       "Peacock"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which language has the most native speakers in the world?",
+      "options": [
+       "English",
+       "Spanish",
+       "Mandarin Chinese",
+       "Hindi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Angkor Wat was originally built as a temple to which Hindu god?",
+      "options": [
+       "Shiva",
+       "Vishnu",
+       "Brahma",
+       "Ganesha"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT an official language of Singapore?",
+      "options": [
+       "English",
+       "Malay",
+       "Tamil",
+       "Hokkien"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who founded the Mughal Empire in 1526?",
+      "options": [
+       "Akbar",
+       "Babur",
+       "Humayun",
+       "Aurangzeb"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+      "options": [
+       "Ashoka",
+       "Chandragupta",
+       "Akbar",
+       "Shah Jahan"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The Silk Road's eastern end was the Chinese capital then called:",
+      "options": [
+       "Beijing",
+       "Chang'an",
+       "Nanjing",
+       "Shanghai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Japanese koto belongs to which family of instruments?",
+      "options": [
+       "Drum",
+       "Flute",
+       "Zither",
+       "Gong"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these Southeast Asian countries is landlocked?",
+      "options": [
+       "Vietnam",
+       "Laos",
+       "Cambodia",
+       "Myanmar"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+      "options": [
+       "Laksa",
+       "Japchae",
+       "Ramen",
+       "Satay"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these countries is NOT in Southeast Asia?",
+      "options": [
+       "Cambodia",
+       "Brunei",
+       "Nepal",
+       "Laos"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+      "options": [
+       "Cumin",
+       "Cardamom",
+       "Clove",
+       "Cinnamon"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "In which modern country are the ruins of Persepolis?",
+      "options": [
+       "Iraq",
+       "Turkey",
+       "Iran",
+       "Syria"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+      "options": [
+       "Han",
+       "Tang",
+       "Ming",
+       "Qin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "“The Tale of Genji” was written during which era of Japanese history?",
+      "options": [
+       "Edo period",
+       "Kamakura period",
+       "Heian period",
+       "Meiji period"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+      "options": [
+       "Bhaskara",
+       "Panini",
+       "Ramanujan",
+       "Aryabhata"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+      "options": [
+       "Bowed fiddle",
+       "Reed flute",
+       "Short-necked lute",
+       "Frame drum"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In what year did Dubai’s Burj Khalifa officially open?",
+      "options": [
+       "2004",
+       "2007",
+       "2010",
+       "2013"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these countries has a coastline?",
+      "options": [
+       "Mongolia",
+       "Bhutan",
+       "Laos",
+       "Cambodia"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Southeast Asia’s durian fruit is famous for its strong…",
+      "options": [
+       "Color",
+       "Smell",
+       "Sourness",
+       "Size"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Kathakali dance-drama comes from which Indian state?",
+      "options": [
+       "Punjab",
+       "Gujarat",
+       "Kerala",
+       "Assam"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which city hosted the 1998 Winter Olympics?",
+      "options": [
+       "Sapporo",
+       "Nagano",
+       "PyeongChang",
+       "Harbin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+      "options": [
+       "Safavid",
+       "Ottoman",
+       "Mughal",
+       "Seljuk"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+      "options": [
+       "Ayodhya",
+       "Mithila",
+       "Kishkindha",
+       "Lanka"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+      "options": [
+       "Bukhara",
+       "Khiva",
+       "Samarkand",
+       "Tashkent"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Xiaolongbao, the soup-filled steamed dumplings, are most closely associated with which city?",
+      "options": [
+       "Chengdu",
+       "Beijing",
+       "Shanghai",
+       "Harbin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which round pastry, often filled with lotus seed paste and salted egg yolk, is the signature food of the Mid-Autumn Festival?",
+      "options": [
+       "Tangyuan",
+       "Mooncakes",
+       "Zongzi",
+       "Nian gao"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Japanese company released the Walkman portable cassette player in 1979?",
+      "options": [
+       "Sony",
+       "Panasonic",
+       "Toshiba",
+       "Sharp"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which ukiyo-e artist created “The Great Wave off Kanagawa”?",
+      "options": [
+       "Utagawa Hiroshige",
+       "Kitagawa Utamaro",
+       "Katsushika Hokusai",
+       "Sesshū Tōyō"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which was the last imperial dynasty of China?",
+      "options": [
+       "Ming",
+       "Song",
+       "Qing",
+       "Yuan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which is the largest of Japan’s four main islands?",
+      "options": [
+       "Hokkaido",
+       "Honshu",
+       "Kyushu",
+       "Shikoku"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Korean dynasty did Yi Seong-gye found in 1392?",
+      "options": [
+       "Joseon",
+       "Goryeo",
+       "Baekje",
+       "Balhae"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Mongol ruler founded China’s Yuan dynasty?",
+      "options": [
+       "Ögedei Khan",
+       "Möngke Khan",
+       "Batu Khan",
+       "Kublai Khan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which European country administered Macau before 1999?",
+      "options": [
+       "Spain",
+       "Portugal",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Chinese river is often called the “Mother River” of Chinese civilization?",
+      "options": [
+       "Yellow River",
+       "Pearl River",
+       "Mekong River",
+       "Amur River"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?",
+      "options": [
+       "Rumiko Takahashi",
+       "Eiichiro Oda",
+       "Osamu Tezuka",
+       "Naoko Takeuchi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which year did Nagano, Japan, host the Winter Olympics?",
+      "options": [
+       "1992",
+       "1994",
+       "1998",
+       "2002"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Chinese dynasty built the Forbidden City in Beijing?",
+      "options": [
+       "Tang",
+       "Ming",
+       "Han",
+       "Jin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which South Korean city was the capital of the Silla kingdom?",
+      "options": [
+       "Busan",
+       "Gwangju",
+       "Daejeon",
+       "Gyeongju"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which Chinese city is famous for the karst peaks along the Li River?",
+      "options": [
+       "Guilin",
+       "Harbin",
+       "Qingdao",
+       "Lhasa"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which instrument is Ravi Shankar most famous for playing?",
+      "options": [
+       "Sarod",
+       "Tabla",
+       "Sitar",
+       "Santoor"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who directed the 1957 classic “Mother India”?",
+      "options": [
+       "Raj Kapoor",
+       "Mehboob Khan",
+       "Bimal Roy",
+       "Guru Dutt"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?",
+      "options": [
+       "Bhangra",
+       "Baila",
+       "Lavani",
+       "Garba"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?",
+      "options": [
+       "India",
+       "Bangladesh",
+       "Pakistan",
+       "Afghanistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which country has the world’s only non-rectangular national flag?",
+      "options": [
+       "Bhutan",
+       "Nepal",
+       "Sri Lanka",
+       "Maldives"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Most of the Hindu Kush mountain range lies in which country?",
+      "options": [
+       "Bangladesh",
+       "Maldives",
+       "Bhutan",
+       "Afghanistan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Ceylon’s coffee plantations were largely replaced in the late 1800s by which crop, now its most famous export?",
+      "options": [
+       "Rubber",
+       "Tea",
+       "Cocoa",
+       "Cotton"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian city is popularly nicknamed the “City of Joy”?",
+      "options": [
+       "Chennai",
+       "Hyderabad",
+       "Kolkata",
+       "Jaipur"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Jaipur is popularly known by which nickname?",
+      "options": [
+       "The Blue City",
+       "The Pink City",
+       "The Golden City",
+       "The White City"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Sri Lankan street food kottu is mainly made from what?",
+      "options": [
+       "Rice noodles",
+       "Lentil cakes",
+       "Chopped flatbread",
+       "Jackfruit"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?",
+      "options": [
+       "Vital Signs",
+       "Strings",
+       "Junoon",
+       "Noori"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?",
+      "options": [
+       "Purandara Dasa",
+       "Tyagaraja",
+       "Annamacharya",
+       "Kshetrayya"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?",
+      "options": [
+       "Salmon",
+       "Cod",
+       "Tuna",
+       "Sardine"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The classical dance-drama Kathakali comes from which Indian state?",
+      "options": [
+       "Kerala",
+       "Punjab",
+       "Assam",
+       "Gujarat"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?",
+      "options": [
+       "Elephant",
+       "Tiger",
+       "Peacock",
+       "Lion"
+      ],
+      "correct": 3
+     }
+    ]
+   },
+   {
+    "type": "gold",
+    "name": "Gold Quest: Church",
+    "group": "Gold Quest",
+    "variant": "C",
+    "label": "Church",
+    "items": [
+     {
+      "q": "Who built the ark?",
+      "options": [
+       "Abraham",
+       "Moses",
+       "Noah",
+       "Jacob"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many apostles did Jesus choose?",
+      "options": [
+       "7",
+       "10",
+       "12",
+       "40"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which town was Jesus born?",
+      "options": [
+       "Nazareth",
+       "Bethlehem",
+       "Jerusalem",
+       "Capernaum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who was swallowed by a great fish?",
+      "options": [
+       "Jonah",
+       "Elijah",
+       "Peter",
+       "Paul"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "At the wedding in Cana, Jesus turned water into what?",
+      "options": [
+       "Milk",
+       "Oil",
+       "Wine",
+       "Honey"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who defeated Goliath?",
+      "options": [
+       "Saul",
+       "Samson",
+       "David",
+       "Joshua"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the first book of the Bible?",
+      "options": [
+       "Exodus",
+       "Genesis",
+       "Matthew",
+       "Psalms"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which disciple denied Jesus three times?",
+      "options": [
+       "John",
+       "Thomas",
+       "Peter",
+       "Andrew"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "God rested on the seventh day after creating for how many days?",
+      "options": [
+       "3",
+       "5",
+       "6",
+       "7"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who led the Israelites out of Egypt?",
+      "options": [
+       "Moses",
+       "Aaron",
+       "Joseph",
+       "David"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Gospel comes first in the New Testament?",
+      "options": [
+       "Mark",
+       "Luke",
+       "John",
+       "Matthew"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who was thrown into the lions’ den?",
+      "options": [
+       "Daniel",
+       "Elisha",
+       "Jeremiah",
+       "Isaiah"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many loaves fed the 5,000?",
+      "options": [
+       "2",
+       "5",
+       "7",
+       "12"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Adam and Eve lived in which garden?",
+      "options": [
+       "Gethsemane",
+       "Eden",
+       "Babylon",
+       "Canaan"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who betrayed Jesus for thirty pieces of silver?",
+      "options": [
+       "Judas",
+       "Pilate",
+       "Herod",
+       "Barabbas"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?",
+      "options": [
+       "Camel",
+       "Donkey",
+       "Ox",
+       "Horse"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of the four Gospels is the shortest?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?",
+      "options": [
+       "Ten",
+       "Forty",
+       "Seventy",
+       "Ninety-nine"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which woman told Naomi, “Where you go I will go, and your people shall be my people”?",
+      "options": [
+       "Rahab",
+       "Hannah",
+       "Ruth",
+       "Leah"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which apostle was a tax collector before following Jesus?",
+      "options": [
+       "Andrew",
+       "Thomas",
+       "Matthew",
+       "James"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many books are in the New Testament?",
+      "options": [
+       "24",
+       "27",
+       "39",
+       "66"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In which city did the first ecumenical council meet in 325?",
+      "options": [
+       "Ephesus",
+       "Carthage",
+       "Nicaea",
+       "Chalcedon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Gospel begins, “In the beginning was the Word”?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Just outside which city was Jesus crucified?",
+      "options": [
+       "Nazareth",
+       "Jerusalem",
+       "Capernaum",
+       "Bethany"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Whose twelve sons gave their names to the tribes of Israel?",
+      "options": [
+       "Abraham",
+       "Isaac",
+       "Jacob",
+       "Joseph"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In Matthew 2, Joseph took Mary and the child Jesus to which country to escape King Herod?",
+      "options": [
+       "Syria",
+       "Egypt",
+       "Greece",
+       "Persia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Judges 7, how many men did God tell Gideon to keep after testing them at the water?",
+      "options": [
+       "30",
+       "300",
+       "3,000",
+       "30,000"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Elevation Worship is the music ministry of Elevation Church, based in which North Carolina city?",
+      "options": [
+       "Raleigh",
+       "Durham",
+       "Charlotte",
+       "Asheville"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Along with locusts, what did John the Baptist eat in the wilderness?",
+      "options": [
+       "Figs",
+       "Wild honey",
+       "Barley bread",
+       "Dates"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Genesis, how many sons did Noah have?",
+      "options": [
+       "2",
+       "3",
+       "4",
+       "7"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "options": [
+       "Isaiah",
+       "Jeremiah",
+       "Ezekiel",
+       "Daniel"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Christian band recorded the hit “I Can Only Imagine”?",
+      "options": [
+       "Casting Crowns",
+       "MercyMe",
+       "Newsboys",
+       "Third Day"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "According to Acts 1, from which mount did Jesus ascend into heaven?",
+      "options": [
+       "Mount Sinai",
+       "Mount Tabor",
+       "Mount of Olives",
+       "Mount Hermon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Singer Lauren Daigle grew up in which U.S. state?",
+      "options": [
+       "Texas",
+       "Tennessee",
+       "Louisiana",
+       "Georgia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What does the Greek name “Hagia Sophia” mean?",
+      "options": [
+       "Holy Light",
+       "Holy Wisdom",
+       "Great Church",
+       "Golden Dome"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "race",
+    "name": "Racing: General",
+    "group": "Racing",
+    "variant": "A",
+    "label": "General",
+    "items": [
+     {
+      "q": "What is the largest ocean on Earth?",
+      "options": [
+       "Atlantic",
+       "Indian",
+       "Pacific",
+       "Arctic"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many sides does a hexagon have?",
+      "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which gas do plants take in for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the largest planet in our solar system?",
+      "options": [
+       "Saturn",
+       "Neptune",
+       "Earth",
+       "Jupiter"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+       "Go",
+       "Gd",
+       "Au",
+       "Ag"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+       "Michelangelo",
+       "Leonardo da Vinci",
+       "Raphael",
+       "Van Gogh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kangaroos are native to which country?",
+      "options": [
+       "Australia",
+       "Brazil",
+       "South Africa",
+       "Canada"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Water freezes at what temperature in Fahrenheit?",
+      "options": [
+       "0°F",
+       "32°F",
+       "100°F",
+       "212°F"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many players per team are on the field in soccer?",
+      "options": [
+       "9",
+       "10",
+       "11",
+       "12"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many keys does a standard piano have?",
+      "options": [
+       "66",
+       "76",
+       "88",
+       "100"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the longest bone in the human body?",
+      "options": [
+       "Femur",
+       "Tibia",
+       "Humerus",
+       "Fibula"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many hearts does an octopus have?",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "8"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Mixing blue and yellow paint makes what color?",
+      "options": [
+       "Green",
+       "Purple",
+       "Orange",
+       "Brown"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What is the smallest prime number?",
+      "options": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+       "Venus",
+       "Mercury",
+       "Mars",
+       "Earth"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which composer wrote the “Moonlight Sonata”?",
+      "options": [
+       "Wolfgang Amadeus Mozart",
+       "Ludwig van Beethoven",
+       "Johann Sebastian Bach",
+       "Frédéric Chopin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?",
+      "options": [
+       "George Lucas",
+       "James Cameron",
+       "Steven Spielberg",
+       "Robert Zemeckis"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Russian composer wrote the ballet “Swan Lake”?",
+      "options": [
+       "Sergei Rachmaninoff",
+       "Igor Stravinsky",
+       "Pyotr Ilyich Tchaikovsky",
+       "Sergei Prokofiev"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The gentle, jazz-influenced style called bossa nova originated in which country?",
+      "options": [
+       "Argentina",
+       "Cuba",
+       "Brazil",
+       "Mexico"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which gas do plants absorb from the air for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many interlocking rings appear on the Olympic flag?",
+      "options": [
+       "Four",
+       "Five",
+       "Six",
+       "Seven"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country gave the Statue of Liberty to the United States?",
+      "options": [
+       "United Kingdom",
+       "Spain",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "By weight, what is the largest organ of the human body?",
+      "options": [
+       "Liver",
+       "Skin",
+       "Brain",
+       "Lungs"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many keys does a standard modern piano have?",
+      "options": [
+       "76",
+       "88",
+       "92",
+       "100"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which ocean lies between Africa and Australia?",
+      "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Indian Ocean",
+       "Southern Ocean"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which instrument is Yo-Yo Ma famous for playing?",
+      "options": [
+       "Violin",
+       "Cello",
+       "Piano",
+       "Flute"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+      "options": [
+       "Johann Strauss II",
+       "Franz Schubert",
+       "Joseph Haydn",
+       "Gustav Mahler"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which of these is the largest country in Africa by area?",
+      "options": [
+       "Nigeria",
+       "Egypt",
+       "Algeria",
+       "Ethiopia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Afrikaans, spoken in South Africa and Namibia, developed mainly from which European language?",
+      "options": [
+       "German",
+       "Dutch",
+       "French",
+       "Portuguese"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country became independent from Ethiopia in 1993 after a referendum?",
+      "options": [
+       "Djibouti",
+       "Somalia",
+       "Eritrea",
+       "South Sudan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Okavango Delta, a vast inland delta that floods each year, is in which country?",
+      "options": [
+       "Namibia",
+       "Zambia",
+       "Angola",
+       "Botswana"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which of these East African countries is landlocked?",
+      "options": [
+       "Kenya",
+       "Uganda",
+       "Tanzania",
+       "Somalia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Moroccan spice blend's name means roughly “head of the shop”?",
+      "options": [
+       "Berbere",
+       "Harissa",
+       "Ras el hanout",
+       "Za'atar"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of the Seven Wonders of the Ancient World stood at Alexandria?",
+      "options": [
+       "The Colossus",
+       "The Pharos lighthouse",
+       "The Hanging Gardens",
+       "The Mausoleum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is the currency of Ghana?",
+      "options": [
+       "Naira",
+       "Shilling",
+       "Cedi",
+       "Dalasi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which river flows through Bamako and Niamey?",
+      "options": [
+       "The Congo",
+       "The Niger",
+       "The Zambezi",
+       "The Limpopo"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country's national football team is nicknamed “Les Éléphants”?",
+      "options": [
+       "Côte d'Ivoire",
+       "Cameroon",
+       "Mali",
+       "Guinea"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+      "options": [
+       "Green",
+       "Yellow",
+       "Red",
+       "Purple"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+      "options": [
+       "Dahomey",
+       "Zaire",
+       "Upper Volta",
+       "Rhodesia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "race",
+    "name": "Racing: Asia",
+    "group": "Racing",
+    "variant": "B",
+    "label": "Asia",
+    "items": [
+     {
+      "q": "What is the capital of Japan?",
+      "options": [
+       "Kyoto",
+       "Osaka",
+       "Tokyo",
+       "Sapporo"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Taj Mahal is in which country?",
+      "options": [
+       "Pakistan",
+       "India",
+       "Nepal",
+       "Bangladesh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kimchi is a staple of which cuisine?",
+      "options": [
+       "Japanese",
+       "Thai",
+       "Korean",
+       "Filipino"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Japan?",
+      "options": [
+       "Won",
+       "Yuan",
+       "Yen",
+       "Baht"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the capital of the Philippines?",
+      "options": [
+       "Manila",
+       "Jakarta",
+       "Hanoi",
+       "Bangkok"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pho is a noodle soup from which country?",
+      "options": [
+       "Thailand",
+       "Vietnam",
+       "Laos",
+       "Malaysia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Angkor Wat is in which country?",
+      "options": [
+       "Cambodia",
+       "Myanmar",
+       "Thailand",
+       "Vietnam"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many animals are in the Chinese zodiac?",
+      "options": [
+       "8",
+       "10",
+       "12",
+       "14"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which K-pop group released “Dynamite” in 2020?",
+      "options": [
+       "EXO",
+       "BTS",
+       "BLACKPINK",
+       "TWICE"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Diwali is known as the festival of what?",
+      "options": [
+       "Lights",
+       "Colors",
+       "Kites",
+       "Harvest"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pikachu comes from which franchise?",
+      "options": [
+       "Digimon",
+       "Pokémon",
+       "Naruto",
+       "Sailor Moon"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Petronas Towers are in which city?",
+      "options": [
+       "Singapore",
+       "Bangkok",
+       "Kuala Lumpur",
+       "Jakarta"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Bubble tea (boba) originated in which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the anime film “Spirited Away”?",
+      "options": [
+       "Hayao Miyazaki",
+       "Makoto Shinkai",
+       "Akira Toriyama",
+       "Hideo Kojima"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Mount Everest lies on the border of Nepal and which country?",
+      "options": [
+       "India",
+       "Bhutan",
+       "China",
+       "Pakistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many main tones does Standard Mandarin have, not counting the neutral tone?",
+      "options": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Sepak takraw is like volleyball, except players may not use their…",
+      "options": [
+       "Feet",
+       "Hands",
+       "Head",
+       "Knees"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Bubble (boba) tea comes from which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT a Chinese zodiac animal?",
+      "options": [
+       "Rooster",
+       "Cat",
+       "Goat",
+       "Pig"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Japanese dish?",
+      "options": [
+       "Bibimbap",
+       "Sushi",
+       "Phở",
+       "Pad Thai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is India's national animal?",
+      "options": [
+       "Lion",
+       "Tiger",
+       "Elephant",
+       "Peacock"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which language has the most native speakers in the world?",
+      "options": [
+       "English",
+       "Spanish",
+       "Mandarin Chinese",
+       "Hindi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Angkor Wat was originally built as a temple to which Hindu god?",
+      "options": [
+       "Shiva",
+       "Vishnu",
+       "Brahma",
+       "Ganesha"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT an official language of Singapore?",
+      "options": [
+       "English",
+       "Malay",
+       "Tamil",
+       "Hokkien"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who founded the Mughal Empire in 1526?",
+      "options": [
+       "Akbar",
+       "Babur",
+       "Humayun",
+       "Aurangzeb"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+      "options": [
+       "Ashoka",
+       "Chandragupta",
+       "Akbar",
+       "Shah Jahan"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The Silk Road's eastern end was the Chinese capital then called:",
+      "options": [
+       "Beijing",
+       "Chang'an",
+       "Nanjing",
+       "Shanghai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Japanese koto belongs to which family of instruments?",
+      "options": [
+       "Drum",
+       "Flute",
+       "Zither",
+       "Gong"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these Southeast Asian countries is landlocked?",
+      "options": [
+       "Vietnam",
+       "Laos",
+       "Cambodia",
+       "Myanmar"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+      "options": [
+       "Laksa",
+       "Japchae",
+       "Ramen",
+       "Satay"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these countries is NOT in Southeast Asia?",
+      "options": [
+       "Cambodia",
+       "Brunei",
+       "Nepal",
+       "Laos"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+      "options": [
+       "Cumin",
+       "Cardamom",
+       "Clove",
+       "Cinnamon"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "In which modern country are the ruins of Persepolis?",
+      "options": [
+       "Iraq",
+       "Turkey",
+       "Iran",
+       "Syria"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+      "options": [
+       "Han",
+       "Tang",
+       "Ming",
+       "Qin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "“The Tale of Genji” was written during which era of Japanese history?",
+      "options": [
+       "Edo period",
+       "Kamakura period",
+       "Heian period",
+       "Meiji period"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+      "options": [
+       "Bhaskara",
+       "Panini",
+       "Ramanujan",
+       "Aryabhata"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+      "options": [
+       "Bowed fiddle",
+       "Reed flute",
+       "Short-necked lute",
+       "Frame drum"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In what year did Dubai’s Burj Khalifa officially open?",
+      "options": [
+       "2004",
+       "2007",
+       "2010",
+       "2013"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these countries has a coastline?",
+      "options": [
+       "Mongolia",
+       "Bhutan",
+       "Laos",
+       "Cambodia"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Southeast Asia’s durian fruit is famous for its strong…",
+      "options": [
+       "Color",
+       "Smell",
+       "Sourness",
+       "Size"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Kathakali dance-drama comes from which Indian state?",
+      "options": [
+       "Punjab",
+       "Gujarat",
+       "Kerala",
+       "Assam"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which city hosted the 1998 Winter Olympics?",
+      "options": [
+       "Sapporo",
+       "Nagano",
+       "PyeongChang",
+       "Harbin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+      "options": [
+       "Safavid",
+       "Ottoman",
+       "Mughal",
+       "Seljuk"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+      "options": [
+       "Ayodhya",
+       "Mithila",
+       "Kishkindha",
+       "Lanka"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+      "options": [
+       "Bukhara",
+       "Khiva",
+       "Samarkand",
+       "Tashkent"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Xiaolongbao, the soup-filled steamed dumplings, are most closely associated with which city?",
+      "options": [
+       "Chengdu",
+       "Beijing",
+       "Shanghai",
+       "Harbin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which round pastry, often filled with lotus seed paste and salted egg yolk, is the signature food of the Mid-Autumn Festival?",
+      "options": [
+       "Tangyuan",
+       "Mooncakes",
+       "Zongzi",
+       "Nian gao"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Japanese company released the Walkman portable cassette player in 1979?",
+      "options": [
+       "Sony",
+       "Panasonic",
+       "Toshiba",
+       "Sharp"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which ukiyo-e artist created “The Great Wave off Kanagawa”?",
+      "options": [
+       "Utagawa Hiroshige",
+       "Kitagawa Utamaro",
+       "Katsushika Hokusai",
+       "Sesshū Tōyō"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which was the last imperial dynasty of China?",
+      "options": [
+       "Ming",
+       "Song",
+       "Qing",
+       "Yuan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which is the largest of Japan’s four main islands?",
+      "options": [
+       "Hokkaido",
+       "Honshu",
+       "Kyushu",
+       "Shikoku"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Korean dynasty did Yi Seong-gye found in 1392?",
+      "options": [
+       "Joseon",
+       "Goryeo",
+       "Baekje",
+       "Balhae"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Mongol ruler founded China’s Yuan dynasty?",
+      "options": [
+       "Ögedei Khan",
+       "Möngke Khan",
+       "Batu Khan",
+       "Kublai Khan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which European country administered Macau before 1999?",
+      "options": [
+       "Spain",
+       "Portugal",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Chinese river is often called the “Mother River” of Chinese civilization?",
+      "options": [
+       "Yellow River",
+       "Pearl River",
+       "Mekong River",
+       "Amur River"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?",
+      "options": [
+       "Rumiko Takahashi",
+       "Eiichiro Oda",
+       "Osamu Tezuka",
+       "Naoko Takeuchi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which year did Nagano, Japan, host the Winter Olympics?",
+      "options": [
+       "1992",
+       "1994",
+       "1998",
+       "2002"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Chinese dynasty built the Forbidden City in Beijing?",
+      "options": [
+       "Tang",
+       "Ming",
+       "Han",
+       "Jin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which South Korean city was the capital of the Silla kingdom?",
+      "options": [
+       "Busan",
+       "Gwangju",
+       "Daejeon",
+       "Gyeongju"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which Chinese city is famous for the karst peaks along the Li River?",
+      "options": [
+       "Guilin",
+       "Harbin",
+       "Qingdao",
+       "Lhasa"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which instrument is Ravi Shankar most famous for playing?",
+      "options": [
+       "Sarod",
+       "Tabla",
+       "Sitar",
+       "Santoor"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who directed the 1957 classic “Mother India”?",
+      "options": [
+       "Raj Kapoor",
+       "Mehboob Khan",
+       "Bimal Roy",
+       "Guru Dutt"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?",
+      "options": [
+       "Bhangra",
+       "Baila",
+       "Lavani",
+       "Garba"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?",
+      "options": [
+       "India",
+       "Bangladesh",
+       "Pakistan",
+       "Afghanistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which country has the world’s only non-rectangular national flag?",
+      "options": [
+       "Bhutan",
+       "Nepal",
+       "Sri Lanka",
+       "Maldives"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Most of the Hindu Kush mountain range lies in which country?",
+      "options": [
+       "Bangladesh",
+       "Maldives",
+       "Bhutan",
+       "Afghanistan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Ceylon’s coffee plantations were largely replaced in the late 1800s by which crop, now its most famous export?",
+      "options": [
+       "Rubber",
+       "Tea",
+       "Cocoa",
+       "Cotton"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian city is popularly nicknamed the “City of Joy”?",
+      "options": [
+       "Chennai",
+       "Hyderabad",
+       "Kolkata",
+       "Jaipur"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Jaipur is popularly known by which nickname?",
+      "options": [
+       "The Blue City",
+       "The Pink City",
+       "The Golden City",
+       "The White City"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Sri Lankan street food kottu is mainly made from what?",
+      "options": [
+       "Rice noodles",
+       "Lentil cakes",
+       "Chopped flatbread",
+       "Jackfruit"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?",
+      "options": [
+       "Vital Signs",
+       "Strings",
+       "Junoon",
+       "Noori"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?",
+      "options": [
+       "Purandara Dasa",
+       "Tyagaraja",
+       "Annamacharya",
+       "Kshetrayya"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?",
+      "options": [
+       "Salmon",
+       "Cod",
+       "Tuna",
+       "Sardine"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The classical dance-drama Kathakali comes from which Indian state?",
+      "options": [
+       "Kerala",
+       "Punjab",
+       "Assam",
+       "Gujarat"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?",
+      "options": [
+       "Elephant",
+       "Tiger",
+       "Peacock",
+       "Lion"
+      ],
+      "correct": 3
+     }
+    ]
+   },
+   {
+    "type": "race",
+    "name": "Racing: Church",
+    "group": "Racing",
+    "variant": "C",
+    "label": "Church",
+    "items": [
+     {
+      "q": "Who built the ark?",
+      "options": [
+       "Abraham",
+       "Moses",
+       "Noah",
+       "Jacob"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many apostles did Jesus choose?",
+      "options": [
+       "7",
+       "10",
+       "12",
+       "40"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which town was Jesus born?",
+      "options": [
+       "Nazareth",
+       "Bethlehem",
+       "Jerusalem",
+       "Capernaum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who was swallowed by a great fish?",
+      "options": [
+       "Jonah",
+       "Elijah",
+       "Peter",
+       "Paul"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "At the wedding in Cana, Jesus turned water into what?",
+      "options": [
+       "Milk",
+       "Oil",
+       "Wine",
+       "Honey"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who defeated Goliath?",
+      "options": [
+       "Saul",
+       "Samson",
+       "David",
+       "Joshua"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the first book of the Bible?",
+      "options": [
+       "Exodus",
+       "Genesis",
+       "Matthew",
+       "Psalms"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which disciple denied Jesus three times?",
+      "options": [
+       "John",
+       "Thomas",
+       "Peter",
+       "Andrew"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "God rested on the seventh day after creating for how many days?",
+      "options": [
+       "3",
+       "5",
+       "6",
+       "7"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who led the Israelites out of Egypt?",
+      "options": [
+       "Moses",
+       "Aaron",
+       "Joseph",
+       "David"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Gospel comes first in the New Testament?",
+      "options": [
+       "Mark",
+       "Luke",
+       "John",
+       "Matthew"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who was thrown into the lions’ den?",
+      "options": [
+       "Daniel",
+       "Elisha",
+       "Jeremiah",
+       "Isaiah"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many loaves fed the 5,000?",
+      "options": [
+       "2",
+       "5",
+       "7",
+       "12"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Adam and Eve lived in which garden?",
+      "options": [
+       "Gethsemane",
+       "Eden",
+       "Babylon",
+       "Canaan"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who betrayed Jesus for thirty pieces of silver?",
+      "options": [
+       "Judas",
+       "Pilate",
+       "Herod",
+       "Barabbas"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?",
+      "options": [
+       "Camel",
+       "Donkey",
+       "Ox",
+       "Horse"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of the four Gospels is the shortest?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?",
+      "options": [
+       "Ten",
+       "Forty",
+       "Seventy",
+       "Ninety-nine"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which woman told Naomi, “Where you go I will go, and your people shall be my people”?",
+      "options": [
+       "Rahab",
+       "Hannah",
+       "Ruth",
+       "Leah"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which apostle was a tax collector before following Jesus?",
+      "options": [
+       "Andrew",
+       "Thomas",
+       "Matthew",
+       "James"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many books are in the New Testament?",
+      "options": [
+       "24",
+       "27",
+       "39",
+       "66"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In which city did the first ecumenical council meet in 325?",
+      "options": [
+       "Ephesus",
+       "Carthage",
+       "Nicaea",
+       "Chalcedon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Gospel begins, “In the beginning was the Word”?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Just outside which city was Jesus crucified?",
+      "options": [
+       "Nazareth",
+       "Jerusalem",
+       "Capernaum",
+       "Bethany"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Whose twelve sons gave their names to the tribes of Israel?",
+      "options": [
+       "Abraham",
+       "Isaac",
+       "Jacob",
+       "Joseph"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In Matthew 2, Joseph took Mary and the child Jesus to which country to escape King Herod?",
+      "options": [
+       "Syria",
+       "Egypt",
+       "Greece",
+       "Persia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Judges 7, how many men did God tell Gideon to keep after testing them at the water?",
+      "options": [
+       "30",
+       "300",
+       "3,000",
+       "30,000"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Elevation Worship is the music ministry of Elevation Church, based in which North Carolina city?",
+      "options": [
+       "Raleigh",
+       "Durham",
+       "Charlotte",
+       "Asheville"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Along with locusts, what did John the Baptist eat in the wilderness?",
+      "options": [
+       "Figs",
+       "Wild honey",
+       "Barley bread",
+       "Dates"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Genesis, how many sons did Noah have?",
+      "options": [
+       "2",
+       "3",
+       "4",
+       "7"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "options": [
+       "Isaiah",
+       "Jeremiah",
+       "Ezekiel",
+       "Daniel"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Christian band recorded the hit “I Can Only Imagine”?",
+      "options": [
+       "Casting Crowns",
+       "MercyMe",
+       "Newsboys",
+       "Third Day"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "According to Acts 1, from which mount did Jesus ascend into heaven?",
+      "options": [
+       "Mount Sinai",
+       "Mount Tabor",
+       "Mount of Olives",
+       "Mount Hermon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Singer Lauren Daigle grew up in which U.S. state?",
+      "options": [
+       "Texas",
+       "Tennessee",
+       "Louisiana",
+       "Georgia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What does the Greek name “Hagia Sophia” mean?",
+      "options": [
+       "Holy Light",
+       "Holy Wisdom",
+       "Great Church",
+       "Golden Dome"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "tower",
+    "name": "Tower Defense: General",
+    "group": "Tower Defense",
+    "variant": "A",
+    "label": "General",
+    "items": [
+     {
+      "q": "What is the largest ocean on Earth?",
+      "options": [
+       "Atlantic",
+       "Indian",
+       "Pacific",
+       "Arctic"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many sides does a hexagon have?",
+      "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which gas do plants take in for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the largest planet in our solar system?",
+      "options": [
+       "Saturn",
+       "Neptune",
+       "Earth",
+       "Jupiter"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+       "Go",
+       "Gd",
+       "Au",
+       "Ag"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+       "Michelangelo",
+       "Leonardo da Vinci",
+       "Raphael",
+       "Van Gogh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kangaroos are native to which country?",
+      "options": [
+       "Australia",
+       "Brazil",
+       "South Africa",
+       "Canada"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Water freezes at what temperature in Fahrenheit?",
+      "options": [
+       "0°F",
+       "32°F",
+       "100°F",
+       "212°F"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many players per team are on the field in soccer?",
+      "options": [
+       "9",
+       "10",
+       "11",
+       "12"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many keys does a standard piano have?",
+      "options": [
+       "66",
+       "76",
+       "88",
+       "100"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the longest bone in the human body?",
+      "options": [
+       "Femur",
+       "Tibia",
+       "Humerus",
+       "Fibula"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many hearts does an octopus have?",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "8"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Mixing blue and yellow paint makes what color?",
+      "options": [
+       "Green",
+       "Purple",
+       "Orange",
+       "Brown"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What is the smallest prime number?",
+      "options": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+       "Venus",
+       "Mercury",
+       "Mars",
+       "Earth"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which composer wrote the “Moonlight Sonata”?",
+      "options": [
+       "Wolfgang Amadeus Mozart",
+       "Ludwig van Beethoven",
+       "Johann Sebastian Bach",
+       "Frédéric Chopin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?",
+      "options": [
+       "George Lucas",
+       "James Cameron",
+       "Steven Spielberg",
+       "Robert Zemeckis"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Russian composer wrote the ballet “Swan Lake”?",
+      "options": [
+       "Sergei Rachmaninoff",
+       "Igor Stravinsky",
+       "Pyotr Ilyich Tchaikovsky",
+       "Sergei Prokofiev"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The gentle, jazz-influenced style called bossa nova originated in which country?",
+      "options": [
+       "Argentina",
+       "Cuba",
+       "Brazil",
+       "Mexico"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which gas do plants absorb from the air for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many interlocking rings appear on the Olympic flag?",
+      "options": [
+       "Four",
+       "Five",
+       "Six",
+       "Seven"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country gave the Statue of Liberty to the United States?",
+      "options": [
+       "United Kingdom",
+       "Spain",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "By weight, what is the largest organ of the human body?",
+      "options": [
+       "Liver",
+       "Skin",
+       "Brain",
+       "Lungs"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many keys does a standard modern piano have?",
+      "options": [
+       "76",
+       "88",
+       "92",
+       "100"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which ocean lies between Africa and Australia?",
+      "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Indian Ocean",
+       "Southern Ocean"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which instrument is Yo-Yo Ma famous for playing?",
+      "options": [
+       "Violin",
+       "Cello",
+       "Piano",
+       "Flute"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+      "options": [
+       "Johann Strauss II",
+       "Franz Schubert",
+       "Joseph Haydn",
+       "Gustav Mahler"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which of these is the largest country in Africa by area?",
+      "options": [
+       "Nigeria",
+       "Egypt",
+       "Algeria",
+       "Ethiopia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Afrikaans, spoken in South Africa and Namibia, developed mainly from which European language?",
+      "options": [
+       "German",
+       "Dutch",
+       "French",
+       "Portuguese"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country became independent from Ethiopia in 1993 after a referendum?",
+      "options": [
+       "Djibouti",
+       "Somalia",
+       "Eritrea",
+       "South Sudan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Okavango Delta, a vast inland delta that floods each year, is in which country?",
+      "options": [
+       "Namibia",
+       "Zambia",
+       "Angola",
+       "Botswana"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which of these East African countries is landlocked?",
+      "options": [
+       "Kenya",
+       "Uganda",
+       "Tanzania",
+       "Somalia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Moroccan spice blend's name means roughly “head of the shop”?",
+      "options": [
+       "Berbere",
+       "Harissa",
+       "Ras el hanout",
+       "Za'atar"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of the Seven Wonders of the Ancient World stood at Alexandria?",
+      "options": [
+       "The Colossus",
+       "The Pharos lighthouse",
+       "The Hanging Gardens",
+       "The Mausoleum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is the currency of Ghana?",
+      "options": [
+       "Naira",
+       "Shilling",
+       "Cedi",
+       "Dalasi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which river flows through Bamako and Niamey?",
+      "options": [
+       "The Congo",
+       "The Niger",
+       "The Zambezi",
+       "The Limpopo"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country's national football team is nicknamed “Les Éléphants”?",
+      "options": [
+       "Côte d'Ivoire",
+       "Cameroon",
+       "Mali",
+       "Guinea"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+      "options": [
+       "Green",
+       "Yellow",
+       "Red",
+       "Purple"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+      "options": [
+       "Dahomey",
+       "Zaire",
+       "Upper Volta",
+       "Rhodesia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "tower",
+    "name": "Tower Defense: Asia",
+    "group": "Tower Defense",
+    "variant": "B",
+    "label": "Asia",
+    "items": [
+     {
+      "q": "What is the capital of Japan?",
+      "options": [
+       "Kyoto",
+       "Osaka",
+       "Tokyo",
+       "Sapporo"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Taj Mahal is in which country?",
+      "options": [
+       "Pakistan",
+       "India",
+       "Nepal",
+       "Bangladesh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kimchi is a staple of which cuisine?",
+      "options": [
+       "Japanese",
+       "Thai",
+       "Korean",
+       "Filipino"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Japan?",
+      "options": [
+       "Won",
+       "Yuan",
+       "Yen",
+       "Baht"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the capital of the Philippines?",
+      "options": [
+       "Manila",
+       "Jakarta",
+       "Hanoi",
+       "Bangkok"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pho is a noodle soup from which country?",
+      "options": [
+       "Thailand",
+       "Vietnam",
+       "Laos",
+       "Malaysia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Angkor Wat is in which country?",
+      "options": [
+       "Cambodia",
+       "Myanmar",
+       "Thailand",
+       "Vietnam"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many animals are in the Chinese zodiac?",
+      "options": [
+       "8",
+       "10",
+       "12",
+       "14"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which K-pop group released “Dynamite” in 2020?",
+      "options": [
+       "EXO",
+       "BTS",
+       "BLACKPINK",
+       "TWICE"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Diwali is known as the festival of what?",
+      "options": [
+       "Lights",
+       "Colors",
+       "Kites",
+       "Harvest"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pikachu comes from which franchise?",
+      "options": [
+       "Digimon",
+       "Pokémon",
+       "Naruto",
+       "Sailor Moon"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Petronas Towers are in which city?",
+      "options": [
+       "Singapore",
+       "Bangkok",
+       "Kuala Lumpur",
+       "Jakarta"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Bubble tea (boba) originated in which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the anime film “Spirited Away”?",
+      "options": [
+       "Hayao Miyazaki",
+       "Makoto Shinkai",
+       "Akira Toriyama",
+       "Hideo Kojima"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Mount Everest lies on the border of Nepal and which country?",
+      "options": [
+       "India",
+       "Bhutan",
+       "China",
+       "Pakistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many main tones does Standard Mandarin have, not counting the neutral tone?",
+      "options": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Sepak takraw is like volleyball, except players may not use their…",
+      "options": [
+       "Feet",
+       "Hands",
+       "Head",
+       "Knees"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Bubble (boba) tea comes from which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT a Chinese zodiac animal?",
+      "options": [
+       "Rooster",
+       "Cat",
+       "Goat",
+       "Pig"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Japanese dish?",
+      "options": [
+       "Bibimbap",
+       "Sushi",
+       "Phở",
+       "Pad Thai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is India's national animal?",
+      "options": [
+       "Lion",
+       "Tiger",
+       "Elephant",
+       "Peacock"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which language has the most native speakers in the world?",
+      "options": [
+       "English",
+       "Spanish",
+       "Mandarin Chinese",
+       "Hindi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Angkor Wat was originally built as a temple to which Hindu god?",
+      "options": [
+       "Shiva",
+       "Vishnu",
+       "Brahma",
+       "Ganesha"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT an official language of Singapore?",
+      "options": [
+       "English",
+       "Malay",
+       "Tamil",
+       "Hokkien"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who founded the Mughal Empire in 1526?",
+      "options": [
+       "Akbar",
+       "Babur",
+       "Humayun",
+       "Aurangzeb"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+      "options": [
+       "Ashoka",
+       "Chandragupta",
+       "Akbar",
+       "Shah Jahan"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The Silk Road's eastern end was the Chinese capital then called:",
+      "options": [
+       "Beijing",
+       "Chang'an",
+       "Nanjing",
+       "Shanghai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Japanese koto belongs to which family of instruments?",
+      "options": [
+       "Drum",
+       "Flute",
+       "Zither",
+       "Gong"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these Southeast Asian countries is landlocked?",
+      "options": [
+       "Vietnam",
+       "Laos",
+       "Cambodia",
+       "Myanmar"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+      "options": [
+       "Laksa",
+       "Japchae",
+       "Ramen",
+       "Satay"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these countries is NOT in Southeast Asia?",
+      "options": [
+       "Cambodia",
+       "Brunei",
+       "Nepal",
+       "Laos"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+      "options": [
+       "Cumin",
+       "Cardamom",
+       "Clove",
+       "Cinnamon"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "In which modern country are the ruins of Persepolis?",
+      "options": [
+       "Iraq",
+       "Turkey",
+       "Iran",
+       "Syria"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+      "options": [
+       "Han",
+       "Tang",
+       "Ming",
+       "Qin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "“The Tale of Genji” was written during which era of Japanese history?",
+      "options": [
+       "Edo period",
+       "Kamakura period",
+       "Heian period",
+       "Meiji period"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+      "options": [
+       "Bhaskara",
+       "Panini",
+       "Ramanujan",
+       "Aryabhata"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+      "options": [
+       "Bowed fiddle",
+       "Reed flute",
+       "Short-necked lute",
+       "Frame drum"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In what year did Dubai’s Burj Khalifa officially open?",
+      "options": [
+       "2004",
+       "2007",
+       "2010",
+       "2013"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these countries has a coastline?",
+      "options": [
+       "Mongolia",
+       "Bhutan",
+       "Laos",
+       "Cambodia"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Southeast Asia’s durian fruit is famous for its strong…",
+      "options": [
+       "Color",
+       "Smell",
+       "Sourness",
+       "Size"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Kathakali dance-drama comes from which Indian state?",
+      "options": [
+       "Punjab",
+       "Gujarat",
+       "Kerala",
+       "Assam"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which city hosted the 1998 Winter Olympics?",
+      "options": [
+       "Sapporo",
+       "Nagano",
+       "PyeongChang",
+       "Harbin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+      "options": [
+       "Safavid",
+       "Ottoman",
+       "Mughal",
+       "Seljuk"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+      "options": [
+       "Ayodhya",
+       "Mithila",
+       "Kishkindha",
+       "Lanka"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+      "options": [
+       "Bukhara",
+       "Khiva",
+       "Samarkand",
+       "Tashkent"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Xiaolongbao, the soup-filled steamed dumplings, are most closely associated with which city?",
+      "options": [
+       "Chengdu",
+       "Beijing",
+       "Shanghai",
+       "Harbin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which round pastry, often filled with lotus seed paste and salted egg yolk, is the signature food of the Mid-Autumn Festival?",
+      "options": [
+       "Tangyuan",
+       "Mooncakes",
+       "Zongzi",
+       "Nian gao"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Japanese company released the Walkman portable cassette player in 1979?",
+      "options": [
+       "Sony",
+       "Panasonic",
+       "Toshiba",
+       "Sharp"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which ukiyo-e artist created “The Great Wave off Kanagawa”?",
+      "options": [
+       "Utagawa Hiroshige",
+       "Kitagawa Utamaro",
+       "Katsushika Hokusai",
+       "Sesshū Tōyō"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which was the last imperial dynasty of China?",
+      "options": [
+       "Ming",
+       "Song",
+       "Qing",
+       "Yuan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which is the largest of Japan’s four main islands?",
+      "options": [
+       "Hokkaido",
+       "Honshu",
+       "Kyushu",
+       "Shikoku"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Korean dynasty did Yi Seong-gye found in 1392?",
+      "options": [
+       "Joseon",
+       "Goryeo",
+       "Baekje",
+       "Balhae"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Mongol ruler founded China’s Yuan dynasty?",
+      "options": [
+       "Ögedei Khan",
+       "Möngke Khan",
+       "Batu Khan",
+       "Kublai Khan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which European country administered Macau before 1999?",
+      "options": [
+       "Spain",
+       "Portugal",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Chinese river is often called the “Mother River” of Chinese civilization?",
+      "options": [
+       "Yellow River",
+       "Pearl River",
+       "Mekong River",
+       "Amur River"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?",
+      "options": [
+       "Rumiko Takahashi",
+       "Eiichiro Oda",
+       "Osamu Tezuka",
+       "Naoko Takeuchi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which year did Nagano, Japan, host the Winter Olympics?",
+      "options": [
+       "1992",
+       "1994",
+       "1998",
+       "2002"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Chinese dynasty built the Forbidden City in Beijing?",
+      "options": [
+       "Tang",
+       "Ming",
+       "Han",
+       "Jin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which South Korean city was the capital of the Silla kingdom?",
+      "options": [
+       "Busan",
+       "Gwangju",
+       "Daejeon",
+       "Gyeongju"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which Chinese city is famous for the karst peaks along the Li River?",
+      "options": [
+       "Guilin",
+       "Harbin",
+       "Qingdao",
+       "Lhasa"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which instrument is Ravi Shankar most famous for playing?",
+      "options": [
+       "Sarod",
+       "Tabla",
+       "Sitar",
+       "Santoor"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who directed the 1957 classic “Mother India”?",
+      "options": [
+       "Raj Kapoor",
+       "Mehboob Khan",
+       "Bimal Roy",
+       "Guru Dutt"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?",
+      "options": [
+       "Bhangra",
+       "Baila",
+       "Lavani",
+       "Garba"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?",
+      "options": [
+       "India",
+       "Bangladesh",
+       "Pakistan",
+       "Afghanistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which country has the world’s only non-rectangular national flag?",
+      "options": [
+       "Bhutan",
+       "Nepal",
+       "Sri Lanka",
+       "Maldives"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Most of the Hindu Kush mountain range lies in which country?",
+      "options": [
+       "Bangladesh",
+       "Maldives",
+       "Bhutan",
+       "Afghanistan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Ceylon’s coffee plantations were largely replaced in the late 1800s by which crop, now its most famous export?",
+      "options": [
+       "Rubber",
+       "Tea",
+       "Cocoa",
+       "Cotton"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian city is popularly nicknamed the “City of Joy”?",
+      "options": [
+       "Chennai",
+       "Hyderabad",
+       "Kolkata",
+       "Jaipur"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Jaipur is popularly known by which nickname?",
+      "options": [
+       "The Blue City",
+       "The Pink City",
+       "The Golden City",
+       "The White City"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Sri Lankan street food kottu is mainly made from what?",
+      "options": [
+       "Rice noodles",
+       "Lentil cakes",
+       "Chopped flatbread",
+       "Jackfruit"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?",
+      "options": [
+       "Vital Signs",
+       "Strings",
+       "Junoon",
+       "Noori"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?",
+      "options": [
+       "Purandara Dasa",
+       "Tyagaraja",
+       "Annamacharya",
+       "Kshetrayya"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?",
+      "options": [
+       "Salmon",
+       "Cod",
+       "Tuna",
+       "Sardine"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The classical dance-drama Kathakali comes from which Indian state?",
+      "options": [
+       "Kerala",
+       "Punjab",
+       "Assam",
+       "Gujarat"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?",
+      "options": [
+       "Elephant",
+       "Tiger",
+       "Peacock",
+       "Lion"
+      ],
+      "correct": 3
+     }
+    ]
+   },
+   {
+    "type": "tower",
+    "name": "Tower Defense: Church",
+    "group": "Tower Defense",
+    "variant": "C",
+    "label": "Church",
+    "items": [
+     {
+      "q": "Who built the ark?",
+      "options": [
+       "Abraham",
+       "Moses",
+       "Noah",
+       "Jacob"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many apostles did Jesus choose?",
+      "options": [
+       "7",
+       "10",
+       "12",
+       "40"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which town was Jesus born?",
+      "options": [
+       "Nazareth",
+       "Bethlehem",
+       "Jerusalem",
+       "Capernaum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who was swallowed by a great fish?",
+      "options": [
+       "Jonah",
+       "Elijah",
+       "Peter",
+       "Paul"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "At the wedding in Cana, Jesus turned water into what?",
+      "options": [
+       "Milk",
+       "Oil",
+       "Wine",
+       "Honey"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who defeated Goliath?",
+      "options": [
+       "Saul",
+       "Samson",
+       "David",
+       "Joshua"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the first book of the Bible?",
+      "options": [
+       "Exodus",
+       "Genesis",
+       "Matthew",
+       "Psalms"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which disciple denied Jesus three times?",
+      "options": [
+       "John",
+       "Thomas",
+       "Peter",
+       "Andrew"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "God rested on the seventh day after creating for how many days?",
+      "options": [
+       "3",
+       "5",
+       "6",
+       "7"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who led the Israelites out of Egypt?",
+      "options": [
+       "Moses",
+       "Aaron",
+       "Joseph",
+       "David"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Gospel comes first in the New Testament?",
+      "options": [
+       "Mark",
+       "Luke",
+       "John",
+       "Matthew"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who was thrown into the lions’ den?",
+      "options": [
+       "Daniel",
+       "Elisha",
+       "Jeremiah",
+       "Isaiah"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many loaves fed the 5,000?",
+      "options": [
+       "2",
+       "5",
+       "7",
+       "12"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Adam and Eve lived in which garden?",
+      "options": [
+       "Gethsemane",
+       "Eden",
+       "Babylon",
+       "Canaan"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who betrayed Jesus for thirty pieces of silver?",
+      "options": [
+       "Judas",
+       "Pilate",
+       "Herod",
+       "Barabbas"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?",
+      "options": [
+       "Camel",
+       "Donkey",
+       "Ox",
+       "Horse"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of the four Gospels is the shortest?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?",
+      "options": [
+       "Ten",
+       "Forty",
+       "Seventy",
+       "Ninety-nine"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which woman told Naomi, “Where you go I will go, and your people shall be my people”?",
+      "options": [
+       "Rahab",
+       "Hannah",
+       "Ruth",
+       "Leah"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which apostle was a tax collector before following Jesus?",
+      "options": [
+       "Andrew",
+       "Thomas",
+       "Matthew",
+       "James"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many books are in the New Testament?",
+      "options": [
+       "24",
+       "27",
+       "39",
+       "66"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In which city did the first ecumenical council meet in 325?",
+      "options": [
+       "Ephesus",
+       "Carthage",
+       "Nicaea",
+       "Chalcedon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Gospel begins, “In the beginning was the Word”?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Just outside which city was Jesus crucified?",
+      "options": [
+       "Nazareth",
+       "Jerusalem",
+       "Capernaum",
+       "Bethany"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Whose twelve sons gave their names to the tribes of Israel?",
+      "options": [
+       "Abraham",
+       "Isaac",
+       "Jacob",
+       "Joseph"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In Matthew 2, Joseph took Mary and the child Jesus to which country to escape King Herod?",
+      "options": [
+       "Syria",
+       "Egypt",
+       "Greece",
+       "Persia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Judges 7, how many men did God tell Gideon to keep after testing them at the water?",
+      "options": [
+       "30",
+       "300",
+       "3,000",
+       "30,000"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Elevation Worship is the music ministry of Elevation Church, based in which North Carolina city?",
+      "options": [
+       "Raleigh",
+       "Durham",
+       "Charlotte",
+       "Asheville"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Along with locusts, what did John the Baptist eat in the wilderness?",
+      "options": [
+       "Figs",
+       "Wild honey",
+       "Barley bread",
+       "Dates"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Genesis, how many sons did Noah have?",
+      "options": [
+       "2",
+       "3",
+       "4",
+       "7"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "options": [
+       "Isaiah",
+       "Jeremiah",
+       "Ezekiel",
+       "Daniel"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Christian band recorded the hit “I Can Only Imagine”?",
+      "options": [
+       "Casting Crowns",
+       "MercyMe",
+       "Newsboys",
+       "Third Day"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "According to Acts 1, from which mount did Jesus ascend into heaven?",
+      "options": [
+       "Mount Sinai",
+       "Mount Tabor",
+       "Mount of Olives",
+       "Mount Hermon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Singer Lauren Daigle grew up in which U.S. state?",
+      "options": [
+       "Texas",
+       "Tennessee",
+       "Louisiana",
+       "Georgia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What does the Greek name “Hagia Sophia” mean?",
+      "options": [
+       "Holy Light",
+       "Holy Wisdom",
+       "Great Church",
+       "Golden Dome"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "classic",
+    "name": "Classic: General",
+    "group": "Classic",
+    "variant": "A",
+    "label": "General",
+    "items": [
+     {
+      "q": "What is the largest ocean on Earth?",
+      "options": [
+       "Atlantic",
+       "Indian",
+       "Pacific",
+       "Arctic"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many sides does a hexagon have?",
+      "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which gas do plants take in for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the largest planet in our solar system?",
+      "options": [
+       "Saturn",
+       "Neptune",
+       "Earth",
+       "Jupiter"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+       "Go",
+       "Gd",
+       "Au",
+       "Ag"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+       "Michelangelo",
+       "Leonardo da Vinci",
+       "Raphael",
+       "Van Gogh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kangaroos are native to which country?",
+      "options": [
+       "Australia",
+       "Brazil",
+       "South Africa",
+       "Canada"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Water freezes at what temperature in Fahrenheit?",
+      "options": [
+       "0°F",
+       "32°F",
+       "100°F",
+       "212°F"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many players per team are on the field in soccer?",
+      "options": [
+       "9",
+       "10",
+       "11",
+       "12"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many keys does a standard piano have?",
+      "options": [
+       "66",
+       "76",
+       "88",
+       "100"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the longest bone in the human body?",
+      "options": [
+       "Femur",
+       "Tibia",
+       "Humerus",
+       "Fibula"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many hearts does an octopus have?",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "8"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Mixing blue and yellow paint makes what color?",
+      "options": [
+       "Green",
+       "Purple",
+       "Orange",
+       "Brown"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What is the smallest prime number?",
+      "options": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+       "Venus",
+       "Mercury",
+       "Mars",
+       "Earth"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which composer wrote the “Moonlight Sonata”?",
+      "options": [
+       "Wolfgang Amadeus Mozart",
+       "Ludwig van Beethoven",
+       "Johann Sebastian Bach",
+       "Frédéric Chopin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?",
+      "options": [
+       "George Lucas",
+       "James Cameron",
+       "Steven Spielberg",
+       "Robert Zemeckis"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Russian composer wrote the ballet “Swan Lake”?",
+      "options": [
+       "Sergei Rachmaninoff",
+       "Igor Stravinsky",
+       "Pyotr Ilyich Tchaikovsky",
+       "Sergei Prokofiev"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The gentle, jazz-influenced style called bossa nova originated in which country?",
+      "options": [
+       "Argentina",
+       "Cuba",
+       "Brazil",
+       "Mexico"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which gas do plants absorb from the air for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many interlocking rings appear on the Olympic flag?",
+      "options": [
+       "Four",
+       "Five",
+       "Six",
+       "Seven"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country gave the Statue of Liberty to the United States?",
+      "options": [
+       "United Kingdom",
+       "Spain",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "By weight, what is the largest organ of the human body?",
+      "options": [
+       "Liver",
+       "Skin",
+       "Brain",
+       "Lungs"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many keys does a standard modern piano have?",
+      "options": [
+       "76",
+       "88",
+       "92",
+       "100"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which ocean lies between Africa and Australia?",
+      "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Indian Ocean",
+       "Southern Ocean"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which instrument is Yo-Yo Ma famous for playing?",
+      "options": [
+       "Violin",
+       "Cello",
+       "Piano",
+       "Flute"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+      "options": [
+       "Johann Strauss II",
+       "Franz Schubert",
+       "Joseph Haydn",
+       "Gustav Mahler"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which of these is the largest country in Africa by area?",
+      "options": [
+       "Nigeria",
+       "Egypt",
+       "Algeria",
+       "Ethiopia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Afrikaans, spoken in South Africa and Namibia, developed mainly from which European language?",
+      "options": [
+       "German",
+       "Dutch",
+       "French",
+       "Portuguese"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country became independent from Ethiopia in 1993 after a referendum?",
+      "options": [
+       "Djibouti",
+       "Somalia",
+       "Eritrea",
+       "South Sudan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Okavango Delta, a vast inland delta that floods each year, is in which country?",
+      "options": [
+       "Namibia",
+       "Zambia",
+       "Angola",
+       "Botswana"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which of these East African countries is landlocked?",
+      "options": [
+       "Kenya",
+       "Uganda",
+       "Tanzania",
+       "Somalia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Moroccan spice blend's name means roughly “head of the shop”?",
+      "options": [
+       "Berbere",
+       "Harissa",
+       "Ras el hanout",
+       "Za'atar"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of the Seven Wonders of the Ancient World stood at Alexandria?",
+      "options": [
+       "The Colossus",
+       "The Pharos lighthouse",
+       "The Hanging Gardens",
+       "The Mausoleum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is the currency of Ghana?",
+      "options": [
+       "Naira",
+       "Shilling",
+       "Cedi",
+       "Dalasi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which river flows through Bamako and Niamey?",
+      "options": [
+       "The Congo",
+       "The Niger",
+       "The Zambezi",
+       "The Limpopo"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country's national football team is nicknamed “Les Éléphants”?",
+      "options": [
+       "Côte d'Ivoire",
+       "Cameroon",
+       "Mali",
+       "Guinea"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+      "options": [
+       "Green",
+       "Yellow",
+       "Red",
+       "Purple"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+      "options": [
+       "Dahomey",
+       "Zaire",
+       "Upper Volta",
+       "Rhodesia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "classic",
+    "name": "Classic: Asia",
+    "group": "Classic",
+    "variant": "B",
+    "label": "Asia",
+    "items": [
+     {
+      "q": "What is the capital of Japan?",
+      "options": [
+       "Kyoto",
+       "Osaka",
+       "Tokyo",
+       "Sapporo"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Taj Mahal is in which country?",
+      "options": [
+       "Pakistan",
+       "India",
+       "Nepal",
+       "Bangladesh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kimchi is a staple of which cuisine?",
+      "options": [
+       "Japanese",
+       "Thai",
+       "Korean",
+       "Filipino"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Japan?",
+      "options": [
+       "Won",
+       "Yuan",
+       "Yen",
+       "Baht"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the capital of the Philippines?",
+      "options": [
+       "Manila",
+       "Jakarta",
+       "Hanoi",
+       "Bangkok"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pho is a noodle soup from which country?",
+      "options": [
+       "Thailand",
+       "Vietnam",
+       "Laos",
+       "Malaysia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Angkor Wat is in which country?",
+      "options": [
+       "Cambodia",
+       "Myanmar",
+       "Thailand",
+       "Vietnam"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many animals are in the Chinese zodiac?",
+      "options": [
+       "8",
+       "10",
+       "12",
+       "14"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which K-pop group released “Dynamite” in 2020?",
+      "options": [
+       "EXO",
+       "BTS",
+       "BLACKPINK",
+       "TWICE"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Diwali is known as the festival of what?",
+      "options": [
+       "Lights",
+       "Colors",
+       "Kites",
+       "Harvest"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pikachu comes from which franchise?",
+      "options": [
+       "Digimon",
+       "Pokémon",
+       "Naruto",
+       "Sailor Moon"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Petronas Towers are in which city?",
+      "options": [
+       "Singapore",
+       "Bangkok",
+       "Kuala Lumpur",
+       "Jakarta"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Bubble tea (boba) originated in which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the anime film “Spirited Away”?",
+      "options": [
+       "Hayao Miyazaki",
+       "Makoto Shinkai",
+       "Akira Toriyama",
+       "Hideo Kojima"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Mount Everest lies on the border of Nepal and which country?",
+      "options": [
+       "India",
+       "Bhutan",
+       "China",
+       "Pakistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many main tones does Standard Mandarin have, not counting the neutral tone?",
+      "options": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Sepak takraw is like volleyball, except players may not use their…",
+      "options": [
+       "Feet",
+       "Hands",
+       "Head",
+       "Knees"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Bubble (boba) tea comes from which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT a Chinese zodiac animal?",
+      "options": [
+       "Rooster",
+       "Cat",
+       "Goat",
+       "Pig"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Japanese dish?",
+      "options": [
+       "Bibimbap",
+       "Sushi",
+       "Phở",
+       "Pad Thai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is India's national animal?",
+      "options": [
+       "Lion",
+       "Tiger",
+       "Elephant",
+       "Peacock"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which language has the most native speakers in the world?",
+      "options": [
+       "English",
+       "Spanish",
+       "Mandarin Chinese",
+       "Hindi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Angkor Wat was originally built as a temple to which Hindu god?",
+      "options": [
+       "Shiva",
+       "Vishnu",
+       "Brahma",
+       "Ganesha"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT an official language of Singapore?",
+      "options": [
+       "English",
+       "Malay",
+       "Tamil",
+       "Hokkien"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who founded the Mughal Empire in 1526?",
+      "options": [
+       "Akbar",
+       "Babur",
+       "Humayun",
+       "Aurangzeb"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+      "options": [
+       "Ashoka",
+       "Chandragupta",
+       "Akbar",
+       "Shah Jahan"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The Silk Road's eastern end was the Chinese capital then called:",
+      "options": [
+       "Beijing",
+       "Chang'an",
+       "Nanjing",
+       "Shanghai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Japanese koto belongs to which family of instruments?",
+      "options": [
+       "Drum",
+       "Flute",
+       "Zither",
+       "Gong"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these Southeast Asian countries is landlocked?",
+      "options": [
+       "Vietnam",
+       "Laos",
+       "Cambodia",
+       "Myanmar"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+      "options": [
+       "Laksa",
+       "Japchae",
+       "Ramen",
+       "Satay"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these countries is NOT in Southeast Asia?",
+      "options": [
+       "Cambodia",
+       "Brunei",
+       "Nepal",
+       "Laos"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+      "options": [
+       "Cumin",
+       "Cardamom",
+       "Clove",
+       "Cinnamon"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "In which modern country are the ruins of Persepolis?",
+      "options": [
+       "Iraq",
+       "Turkey",
+       "Iran",
+       "Syria"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+      "options": [
+       "Han",
+       "Tang",
+       "Ming",
+       "Qin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "“The Tale of Genji” was written during which era of Japanese history?",
+      "options": [
+       "Edo period",
+       "Kamakura period",
+       "Heian period",
+       "Meiji period"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+      "options": [
+       "Bhaskara",
+       "Panini",
+       "Ramanujan",
+       "Aryabhata"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+      "options": [
+       "Bowed fiddle",
+       "Reed flute",
+       "Short-necked lute",
+       "Frame drum"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In what year did Dubai’s Burj Khalifa officially open?",
+      "options": [
+       "2004",
+       "2007",
+       "2010",
+       "2013"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these countries has a coastline?",
+      "options": [
+       "Mongolia",
+       "Bhutan",
+       "Laos",
+       "Cambodia"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Southeast Asia’s durian fruit is famous for its strong…",
+      "options": [
+       "Color",
+       "Smell",
+       "Sourness",
+       "Size"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Kathakali dance-drama comes from which Indian state?",
+      "options": [
+       "Punjab",
+       "Gujarat",
+       "Kerala",
+       "Assam"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which city hosted the 1998 Winter Olympics?",
+      "options": [
+       "Sapporo",
+       "Nagano",
+       "PyeongChang",
+       "Harbin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+      "options": [
+       "Safavid",
+       "Ottoman",
+       "Mughal",
+       "Seljuk"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+      "options": [
+       "Ayodhya",
+       "Mithila",
+       "Kishkindha",
+       "Lanka"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+      "options": [
+       "Bukhara",
+       "Khiva",
+       "Samarkand",
+       "Tashkent"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Xiaolongbao, the soup-filled steamed dumplings, are most closely associated with which city?",
+      "options": [
+       "Chengdu",
+       "Beijing",
+       "Shanghai",
+       "Harbin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which round pastry, often filled with lotus seed paste and salted egg yolk, is the signature food of the Mid-Autumn Festival?",
+      "options": [
+       "Tangyuan",
+       "Mooncakes",
+       "Zongzi",
+       "Nian gao"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Japanese company released the Walkman portable cassette player in 1979?",
+      "options": [
+       "Sony",
+       "Panasonic",
+       "Toshiba",
+       "Sharp"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which ukiyo-e artist created “The Great Wave off Kanagawa”?",
+      "options": [
+       "Utagawa Hiroshige",
+       "Kitagawa Utamaro",
+       "Katsushika Hokusai",
+       "Sesshū Tōyō"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which was the last imperial dynasty of China?",
+      "options": [
+       "Ming",
+       "Song",
+       "Qing",
+       "Yuan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which is the largest of Japan’s four main islands?",
+      "options": [
+       "Hokkaido",
+       "Honshu",
+       "Kyushu",
+       "Shikoku"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Korean dynasty did Yi Seong-gye found in 1392?",
+      "options": [
+       "Joseon",
+       "Goryeo",
+       "Baekje",
+       "Balhae"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Mongol ruler founded China’s Yuan dynasty?",
+      "options": [
+       "Ögedei Khan",
+       "Möngke Khan",
+       "Batu Khan",
+       "Kublai Khan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which European country administered Macau before 1999?",
+      "options": [
+       "Spain",
+       "Portugal",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Chinese river is often called the “Mother River” of Chinese civilization?",
+      "options": [
+       "Yellow River",
+       "Pearl River",
+       "Mekong River",
+       "Amur River"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?",
+      "options": [
+       "Rumiko Takahashi",
+       "Eiichiro Oda",
+       "Osamu Tezuka",
+       "Naoko Takeuchi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which year did Nagano, Japan, host the Winter Olympics?",
+      "options": [
+       "1992",
+       "1994",
+       "1998",
+       "2002"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Chinese dynasty built the Forbidden City in Beijing?",
+      "options": [
+       "Tang",
+       "Ming",
+       "Han",
+       "Jin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which South Korean city was the capital of the Silla kingdom?",
+      "options": [
+       "Busan",
+       "Gwangju",
+       "Daejeon",
+       "Gyeongju"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which Chinese city is famous for the karst peaks along the Li River?",
+      "options": [
+       "Guilin",
+       "Harbin",
+       "Qingdao",
+       "Lhasa"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which instrument is Ravi Shankar most famous for playing?",
+      "options": [
+       "Sarod",
+       "Tabla",
+       "Sitar",
+       "Santoor"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who directed the 1957 classic “Mother India”?",
+      "options": [
+       "Raj Kapoor",
+       "Mehboob Khan",
+       "Bimal Roy",
+       "Guru Dutt"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?",
+      "options": [
+       "Bhangra",
+       "Baila",
+       "Lavani",
+       "Garba"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?",
+      "options": [
+       "India",
+       "Bangladesh",
+       "Pakistan",
+       "Afghanistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which country has the world’s only non-rectangular national flag?",
+      "options": [
+       "Bhutan",
+       "Nepal",
+       "Sri Lanka",
+       "Maldives"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Most of the Hindu Kush mountain range lies in which country?",
+      "options": [
+       "Bangladesh",
+       "Maldives",
+       "Bhutan",
+       "Afghanistan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Ceylon’s coffee plantations were largely replaced in the late 1800s by which crop, now its most famous export?",
+      "options": [
+       "Rubber",
+       "Tea",
+       "Cocoa",
+       "Cotton"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian city is popularly nicknamed the “City of Joy”?",
+      "options": [
+       "Chennai",
+       "Hyderabad",
+       "Kolkata",
+       "Jaipur"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Jaipur is popularly known by which nickname?",
+      "options": [
+       "The Blue City",
+       "The Pink City",
+       "The Golden City",
+       "The White City"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Sri Lankan street food kottu is mainly made from what?",
+      "options": [
+       "Rice noodles",
+       "Lentil cakes",
+       "Chopped flatbread",
+       "Jackfruit"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?",
+      "options": [
+       "Vital Signs",
+       "Strings",
+       "Junoon",
+       "Noori"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?",
+      "options": [
+       "Purandara Dasa",
+       "Tyagaraja",
+       "Annamacharya",
+       "Kshetrayya"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?",
+      "options": [
+       "Salmon",
+       "Cod",
+       "Tuna",
+       "Sardine"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The classical dance-drama Kathakali comes from which Indian state?",
+      "options": [
+       "Kerala",
+       "Punjab",
+       "Assam",
+       "Gujarat"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?",
+      "options": [
+       "Elephant",
+       "Tiger",
+       "Peacock",
+       "Lion"
+      ],
+      "correct": 3
+     }
+    ]
+   },
+   {
+    "type": "classic",
+    "name": "Classic: Church",
+    "group": "Classic",
+    "variant": "C",
+    "label": "Church",
+    "items": [
+     {
+      "q": "Who built the ark?",
+      "options": [
+       "Abraham",
+       "Moses",
+       "Noah",
+       "Jacob"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many apostles did Jesus choose?",
+      "options": [
+       "7",
+       "10",
+       "12",
+       "40"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which town was Jesus born?",
+      "options": [
+       "Nazareth",
+       "Bethlehem",
+       "Jerusalem",
+       "Capernaum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who was swallowed by a great fish?",
+      "options": [
+       "Jonah",
+       "Elijah",
+       "Peter",
+       "Paul"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "At the wedding in Cana, Jesus turned water into what?",
+      "options": [
+       "Milk",
+       "Oil",
+       "Wine",
+       "Honey"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who defeated Goliath?",
+      "options": [
+       "Saul",
+       "Samson",
+       "David",
+       "Joshua"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the first book of the Bible?",
+      "options": [
+       "Exodus",
+       "Genesis",
+       "Matthew",
+       "Psalms"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which disciple denied Jesus three times?",
+      "options": [
+       "John",
+       "Thomas",
+       "Peter",
+       "Andrew"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "God rested on the seventh day after creating for how many days?",
+      "options": [
+       "3",
+       "5",
+       "6",
+       "7"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who led the Israelites out of Egypt?",
+      "options": [
+       "Moses",
+       "Aaron",
+       "Joseph",
+       "David"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Gospel comes first in the New Testament?",
+      "options": [
+       "Mark",
+       "Luke",
+       "John",
+       "Matthew"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who was thrown into the lions’ den?",
+      "options": [
+       "Daniel",
+       "Elisha",
+       "Jeremiah",
+       "Isaiah"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many loaves fed the 5,000?",
+      "options": [
+       "2",
+       "5",
+       "7",
+       "12"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Adam and Eve lived in which garden?",
+      "options": [
+       "Gethsemane",
+       "Eden",
+       "Babylon",
+       "Canaan"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who betrayed Jesus for thirty pieces of silver?",
+      "options": [
+       "Judas",
+       "Pilate",
+       "Herod",
+       "Barabbas"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?",
+      "options": [
+       "Camel",
+       "Donkey",
+       "Ox",
+       "Horse"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of the four Gospels is the shortest?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?",
+      "options": [
+       "Ten",
+       "Forty",
+       "Seventy",
+       "Ninety-nine"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which woman told Naomi, “Where you go I will go, and your people shall be my people”?",
+      "options": [
+       "Rahab",
+       "Hannah",
+       "Ruth",
+       "Leah"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which apostle was a tax collector before following Jesus?",
+      "options": [
+       "Andrew",
+       "Thomas",
+       "Matthew",
+       "James"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many books are in the New Testament?",
+      "options": [
+       "24",
+       "27",
+       "39",
+       "66"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In which city did the first ecumenical council meet in 325?",
+      "options": [
+       "Ephesus",
+       "Carthage",
+       "Nicaea",
+       "Chalcedon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Gospel begins, “In the beginning was the Word”?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Just outside which city was Jesus crucified?",
+      "options": [
+       "Nazareth",
+       "Jerusalem",
+       "Capernaum",
+       "Bethany"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Whose twelve sons gave their names to the tribes of Israel?",
+      "options": [
+       "Abraham",
+       "Isaac",
+       "Jacob",
+       "Joseph"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In Matthew 2, Joseph took Mary and the child Jesus to which country to escape King Herod?",
+      "options": [
+       "Syria",
+       "Egypt",
+       "Greece",
+       "Persia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Judges 7, how many men did God tell Gideon to keep after testing them at the water?",
+      "options": [
+       "30",
+       "300",
+       "3,000",
+       "30,000"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Elevation Worship is the music ministry of Elevation Church, based in which North Carolina city?",
+      "options": [
+       "Raleigh",
+       "Durham",
+       "Charlotte",
+       "Asheville"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Along with locusts, what did John the Baptist eat in the wilderness?",
+      "options": [
+       "Figs",
+       "Wild honey",
+       "Barley bread",
+       "Dates"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Genesis, how many sons did Noah have?",
+      "options": [
+       "2",
+       "3",
+       "4",
+       "7"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "options": [
+       "Isaiah",
+       "Jeremiah",
+       "Ezekiel",
+       "Daniel"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Christian band recorded the hit “I Can Only Imagine”?",
+      "options": [
+       "Casting Crowns",
+       "MercyMe",
+       "Newsboys",
+       "Third Day"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "According to Acts 1, from which mount did Jesus ascend into heaven?",
+      "options": [
+       "Mount Sinai",
+       "Mount Tabor",
+       "Mount of Olives",
+       "Mount Hermon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Singer Lauren Daigle grew up in which U.S. state?",
+      "options": [
+       "Texas",
+       "Tennessee",
+       "Louisiana",
+       "Georgia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What does the Greek name “Hagia Sophia” mean?",
+      "options": [
+       "Holy Light",
+       "Holy Wisdom",
+       "Great Church",
+       "Golden Dome"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "battle",
+    "name": "Battle Royale: General",
+    "group": "Battle Royale",
+    "variant": "A",
+    "label": "General",
+    "items": [
+     {
+      "q": "What is the largest ocean on Earth?",
+      "options": [
+       "Atlantic",
+       "Indian",
+       "Pacific",
+       "Arctic"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many sides does a hexagon have?",
+      "options": [
+       "5",
+       "6",
+       "7",
+       "8"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which gas do plants take in for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Nitrogen",
+       "Carbon dioxide",
+       "Helium"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the largest planet in our solar system?",
+      "options": [
+       "Saturn",
+       "Neptune",
+       "Earth",
+       "Jupiter"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+       "Go",
+       "Gd",
+       "Au",
+       "Ag"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+       "Michelangelo",
+       "Leonardo da Vinci",
+       "Raphael",
+       "Van Gogh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kangaroos are native to which country?",
+      "options": [
+       "Australia",
+       "Brazil",
+       "South Africa",
+       "Canada"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Water freezes at what temperature in Fahrenheit?",
+      "options": [
+       "0°F",
+       "32°F",
+       "100°F",
+       "212°F"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many players per team are on the field in soccer?",
+      "options": [
+       "9",
+       "10",
+       "11",
+       "12"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many keys does a standard piano have?",
+      "options": [
+       "66",
+       "76",
+       "88",
+       "100"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the longest bone in the human body?",
+      "options": [
+       "Femur",
+       "Tibia",
+       "Humerus",
+       "Fibula"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many hearts does an octopus have?",
+      "options": [
+       "1",
+       "2",
+       "3",
+       "8"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Mixing blue and yellow paint makes what color?",
+      "options": [
+       "Green",
+       "Purple",
+       "Orange",
+       "Brown"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "What is the smallest prime number?",
+      "options": [
+       "0",
+       "1",
+       "2",
+       "3"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+       "Venus",
+       "Mercury",
+       "Mars",
+       "Earth"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which composer wrote the “Moonlight Sonata”?",
+      "options": [
+       "Wolfgang Amadeus Mozart",
+       "Ludwig van Beethoven",
+       "Johann Sebastian Bach",
+       "Frédéric Chopin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the 1993 dinosaur blockbuster “Jurassic Park”?",
+      "options": [
+       "George Lucas",
+       "James Cameron",
+       "Steven Spielberg",
+       "Robert Zemeckis"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Russian composer wrote the ballet “Swan Lake”?",
+      "options": [
+       "Sergei Rachmaninoff",
+       "Igor Stravinsky",
+       "Pyotr Ilyich Tchaikovsky",
+       "Sergei Prokofiev"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The gentle, jazz-influenced style called bossa nova originated in which country?",
+      "options": [
+       "Argentina",
+       "Cuba",
+       "Brazil",
+       "Mexico"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which gas do plants absorb from the air for photosynthesis?",
+      "options": [
+       "Oxygen",
+       "Carbon dioxide",
+       "Nitrogen",
+       "Hydrogen"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many interlocking rings appear on the Olympic flag?",
+      "options": [
+       "Four",
+       "Five",
+       "Six",
+       "Seven"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country gave the Statue of Liberty to the United States?",
+      "options": [
+       "United Kingdom",
+       "Spain",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "By weight, what is the largest organ of the human body?",
+      "options": [
+       "Liver",
+       "Skin",
+       "Brain",
+       "Lungs"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "How many keys does a standard modern piano have?",
+      "options": [
+       "76",
+       "88",
+       "92",
+       "100"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which ocean lies between Africa and Australia?",
+      "options": [
+       "Atlantic Ocean",
+       "Arctic Ocean",
+       "Indian Ocean",
+       "Southern Ocean"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which instrument is Yo-Yo Ma famous for playing?",
+      "options": [
+       "Violin",
+       "Cello",
+       "Piano",
+       "Flute"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Known as the “Waltz King,” which composer wrote “The Blue Danube”?",
+      "options": [
+       "Johann Strauss II",
+       "Franz Schubert",
+       "Joseph Haydn",
+       "Gustav Mahler"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many bones are in a typical adult human body?",
+      "options": [
+       "186",
+       "206",
+       "226",
+       "256"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which planet spins tipped on its side, with an axis tilted about 98 degrees?",
+      "options": [
+       "Neptune",
+       "Venus",
+       "Uranus",
+       "Mars"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which country is the historic city of Timbuktu?",
+      "options": [
+       "Mali",
+       "Niger",
+       "Chad",
+       "Senegal"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which of these is the largest country in Africa by area?",
+      "options": [
+       "Nigeria",
+       "Egypt",
+       "Algeria",
+       "Ethiopia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Afrikaans, spoken in South Africa and Namibia, developed mainly from which European language?",
+      "options": [
+       "German",
+       "Dutch",
+       "French",
+       "Portuguese"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country became independent from Ethiopia in 1993 after a referendum?",
+      "options": [
+       "Djibouti",
+       "Somalia",
+       "Eritrea",
+       "South Sudan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Okavango Delta, a vast inland delta that floods each year, is in which country?",
+      "options": [
+       "Namibia",
+       "Zambia",
+       "Angola",
+       "Botswana"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which of these East African countries is landlocked?",
+      "options": [
+       "Kenya",
+       "Uganda",
+       "Tanzania",
+       "Somalia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Moroccan spice blend's name means roughly “head of the shop”?",
+      "options": [
+       "Berbere",
+       "Harissa",
+       "Ras el hanout",
+       "Za'atar"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of the Seven Wonders of the Ancient World stood at Alexandria?",
+      "options": [
+       "The Colossus",
+       "The Pharos lighthouse",
+       "The Hanging Gardens",
+       "The Mausoleum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is the currency of Ghana?",
+      "options": [
+       "Naira",
+       "Shilling",
+       "Cedi",
+       "Dalasi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which river flows through Bamako and Niamey?",
+      "options": [
+       "The Congo",
+       "The Niger",
+       "The Zambezi",
+       "The Limpopo"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which country's national football team is nicknamed “Les Éléphants”?",
+      "options": [
+       "Côte d'Ivoire",
+       "Cameroon",
+       "Mali",
+       "Guinea"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The shúkà cloth worn by the Maasai of Kenya and Tanzania is best known in which color?",
+      "options": [
+       "Green",
+       "Yellow",
+       "Red",
+       "Purple"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "From 1971 to 1997, the Democratic Republic of the Congo was officially known by which name?",
+      "options": [
+       "Dahomey",
+       "Zaire",
+       "Upper Volta",
+       "Rhodesia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which river forms much of the border between Zambia and Zimbabwe?",
+      "options": [
+       "The Limpopo",
+       "The Zambezi",
+       "The Orange",
+       "The Okavango"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Grande Comore, Mohéli and Anjouan are islands of which nation?",
+      "options": [
+       "Seychelles",
+       "Mauritius",
+       "Comoros",
+       "São Tomé and Príncipe"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Egypt called?",
+      "options": [
+       "Dinar",
+       "Pound",
+       "Riyal",
+       "Franc"
+      ],
+      "correct": 1
+     }
+    ]
+   },
+   {
+    "type": "battle",
+    "name": "Battle Royale: Asia",
+    "group": "Battle Royale",
+    "variant": "B",
+    "label": "Asia",
+    "items": [
+     {
+      "q": "What is the capital of Japan?",
+      "options": [
+       "Kyoto",
+       "Osaka",
+       "Tokyo",
+       "Sapporo"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The Taj Mahal is in which country?",
+      "options": [
+       "Pakistan",
+       "India",
+       "Nepal",
+       "Bangladesh"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Kimchi is a staple of which cuisine?",
+      "options": [
+       "Japanese",
+       "Thai",
+       "Korean",
+       "Filipino"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the currency of Japan?",
+      "options": [
+       "Won",
+       "Yuan",
+       "Yen",
+       "Baht"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the capital of the Philippines?",
+      "options": [
+       "Manila",
+       "Jakarta",
+       "Hanoi",
+       "Bangkok"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pho is a noodle soup from which country?",
+      "options": [
+       "Thailand",
+       "Vietnam",
+       "Laos",
+       "Malaysia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Angkor Wat is in which country?",
+      "options": [
+       "Cambodia",
+       "Myanmar",
+       "Thailand",
+       "Vietnam"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many animals are in the Chinese zodiac?",
+      "options": [
+       "8",
+       "10",
+       "12",
+       "14"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which K-pop group released “Dynamite” in 2020?",
+      "options": [
+       "EXO",
+       "BTS",
+       "BLACKPINK",
+       "TWICE"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Diwali is known as the festival of what?",
+      "options": [
+       "Lights",
+       "Colors",
+       "Kites",
+       "Harvest"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Pikachu comes from which franchise?",
+      "options": [
+       "Digimon",
+       "Pokémon",
+       "Naruto",
+       "Sailor Moon"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Petronas Towers are in which city?",
+      "options": [
+       "Singapore",
+       "Bangkok",
+       "Kuala Lumpur",
+       "Jakarta"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Bubble tea (boba) originated in which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who directed the anime film “Spirited Away”?",
+      "options": [
+       "Hayao Miyazaki",
+       "Makoto Shinkai",
+       "Akira Toriyama",
+       "Hideo Kojima"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Mount Everest lies on the border of Nepal and which country?",
+      "options": [
+       "India",
+       "Bhutan",
+       "China",
+       "Pakistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many main tones does Standard Mandarin have, not counting the neutral tone?",
+      "options": [
+       "Two",
+       "Three",
+       "Four",
+       "Five"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Sepak takraw is like volleyball, except players may not use their…",
+      "options": [
+       "Feet",
+       "Hands",
+       "Head",
+       "Knees"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Bubble (boba) tea comes from which place?",
+      "options": [
+       "Japan",
+       "Taiwan",
+       "Thailand",
+       "Korea"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT a Chinese zodiac animal?",
+      "options": [
+       "Rooster",
+       "Cat",
+       "Goat",
+       "Pig"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Japanese dish?",
+      "options": [
+       "Bibimbap",
+       "Sushi",
+       "Phở",
+       "Pad Thai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "What is India's national animal?",
+      "options": [
+       "Lion",
+       "Tiger",
+       "Elephant",
+       "Peacock"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which language has the most native speakers in the world?",
+      "options": [
+       "English",
+       "Spanish",
+       "Mandarin Chinese",
+       "Hindi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Angkor Wat was originally built as a temple to which Hindu god?",
+      "options": [
+       "Shiva",
+       "Vishnu",
+       "Brahma",
+       "Ganesha"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is NOT an official language of Singapore?",
+      "options": [
+       "English",
+       "Malay",
+       "Tamil",
+       "Hokkien"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who founded the Mughal Empire in 1526?",
+      "options": [
+       "Akbar",
+       "Babur",
+       "Humayun",
+       "Aurangzeb"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian emperor converted to Buddhism after the Kalinga War?",
+      "options": [
+       "Ashoka",
+       "Chandragupta",
+       "Akbar",
+       "Shah Jahan"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "The Silk Road's eastern end was the Chinese capital then called:",
+      "options": [
+       "Beijing",
+       "Chang'an",
+       "Nanjing",
+       "Shanghai"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Japanese koto belongs to which family of instruments?",
+      "options": [
+       "Drum",
+       "Flute",
+       "Zither",
+       "Gong"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these Southeast Asian countries is landlocked?",
+      "options": [
+       "Vietnam",
+       "Laos",
+       "Cambodia",
+       "Myanmar"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these is a Korean dish of stir-fried glass noodles?",
+      "options": [
+       "Laksa",
+       "Japchae",
+       "Ramen",
+       "Satay"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of these countries is NOT in Southeast Asia?",
+      "options": [
+       "Cambodia",
+       "Brunei",
+       "Nepal",
+       "Laos"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which spice comes from the inner bark of a tree long grown in Sri Lanka?",
+      "options": [
+       "Cumin",
+       "Cardamom",
+       "Clove",
+       "Cinnamon"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "In which modern country are the ruins of Persepolis?",
+      "options": [
+       "Iraq",
+       "Turkey",
+       "Iran",
+       "Syria"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The best-preserved sections of the Great Wall, such as Badaling near Beijing, were built under which dynasty?",
+      "options": [
+       "Han",
+       "Tang",
+       "Ming",
+       "Qin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "“The Tale of Genji” was written during which era of Japanese history?",
+      "options": [
+       "Edo period",
+       "Kamakura period",
+       "Heian period",
+       "Meiji period"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Indian mathematician-astronomer wrote the Aryabhatiya in 499 CE?",
+      "options": [
+       "Bhaskara",
+       "Panini",
+       "Ramanujan",
+       "Aryabhata"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The oud, central to Arab, Persian, and Turkish music, is what kind of instrument?",
+      "options": [
+       "Bowed fiddle",
+       "Reed flute",
+       "Short-necked lute",
+       "Frame drum"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In what year did Dubai’s Burj Khalifa officially open?",
+      "options": [
+       "2004",
+       "2007",
+       "2010",
+       "2013"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which of these countries has a coastline?",
+      "options": [
+       "Mongolia",
+       "Bhutan",
+       "Laos",
+       "Cambodia"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Southeast Asia’s durian fruit is famous for its strong…",
+      "options": [
+       "Color",
+       "Smell",
+       "Sourness",
+       "Size"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Kathakali dance-drama comes from which Indian state?",
+      "options": [
+       "Punjab",
+       "Gujarat",
+       "Kerala",
+       "Assam"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which city hosted the 1998 Winter Olympics?",
+      "options": [
+       "Sapporo",
+       "Nagano",
+       "PyeongChang",
+       "Harbin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Istanbul’s Blue Mosque (Sultan Ahmed Mosque) was built under which empire?",
+      "options": [
+       "Safavid",
+       "Ottoman",
+       "Mughal",
+       "Seljuk"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the Ramayana, Rama rescues Sita from which island kingdom?",
+      "options": [
+       "Ayodhya",
+       "Mithila",
+       "Kishkindha",
+       "Lanka"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "The Registan, a square framed by three grand madrasas, is in which city?",
+      "options": [
+       "Bukhara",
+       "Khiva",
+       "Samarkand",
+       "Tashkent"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Xiaolongbao, the soup-filled steamed dumplings, are most closely associated with which city?",
+      "options": [
+       "Chengdu",
+       "Beijing",
+       "Shanghai",
+       "Harbin"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which round pastry, often filled with lotus seed paste and salted egg yolk, is the signature food of the Mid-Autumn Festival?",
+      "options": [
+       "Tangyuan",
+       "Mooncakes",
+       "Zongzi",
+       "Nian gao"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Japanese company released the Walkman portable cassette player in 1979?",
+      "options": [
+       "Sony",
+       "Panasonic",
+       "Toshiba",
+       "Sharp"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which ukiyo-e artist created “The Great Wave off Kanagawa”?",
+      "options": [
+       "Utagawa Hiroshige",
+       "Kitagawa Utamaro",
+       "Katsushika Hokusai",
+       "Sesshū Tōyō"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which was the last imperial dynasty of China?",
+      "options": [
+       "Ming",
+       "Song",
+       "Qing",
+       "Yuan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which is the largest of Japan’s four main islands?",
+      "options": [
+       "Hokkaido",
+       "Honshu",
+       "Kyushu",
+       "Shikoku"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Korean dynasty did Yi Seong-gye found in 1392?",
+      "options": [
+       "Joseon",
+       "Goryeo",
+       "Baekje",
+       "Balhae"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Mongol ruler founded China’s Yuan dynasty?",
+      "options": [
+       "Ögedei Khan",
+       "Möngke Khan",
+       "Batu Khan",
+       "Kublai Khan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which European country administered Macau before 1999?",
+      "options": [
+       "Spain",
+       "Portugal",
+       "Netherlands",
+       "France"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Chinese river is often called the “Mother River” of Chinese civilization?",
+      "options": [
+       "Yellow River",
+       "Pearl River",
+       "Mekong River",
+       "Amur River"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which manga artist, nicknamed the “God of Manga,” created Astro Boy?",
+      "options": [
+       "Rumiko Takahashi",
+       "Eiichiro Oda",
+       "Osamu Tezuka",
+       "Naoko Takeuchi"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which year did Nagano, Japan, host the Winter Olympics?",
+      "options": [
+       "1992",
+       "1994",
+       "1998",
+       "2002"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Chinese dynasty built the Forbidden City in Beijing?",
+      "options": [
+       "Tang",
+       "Ming",
+       "Han",
+       "Jin"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which South Korean city was the capital of the Silla kingdom?",
+      "options": [
+       "Busan",
+       "Gwangju",
+       "Daejeon",
+       "Gyeongju"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which Chinese city is famous for the karst peaks along the Li River?",
+      "options": [
+       "Guilin",
+       "Harbin",
+       "Qingdao",
+       "Lhasa"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which instrument is Ravi Shankar most famous for playing?",
+      "options": [
+       "Sarod",
+       "Tabla",
+       "Sitar",
+       "Santoor"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who directed the 1957 classic “Mother India”?",
+      "options": [
+       "Raj Kapoor",
+       "Mehboob Khan",
+       "Bimal Roy",
+       "Guru Dutt"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which lively Sri Lankan song-and-dance style has roots in Portuguese colonial-era music?",
+      "options": [
+       "Bhangra",
+       "Baila",
+       "Lavani",
+       "Garba"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The shrine of Lal Shahbaz Qalandar, celebrated in the qawwali “Dama Dam Mast Qalandar,” is located in which country?",
+      "options": [
+       "India",
+       "Bangladesh",
+       "Pakistan",
+       "Afghanistan"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which country has the world’s only non-rectangular national flag?",
+      "options": [
+       "Bhutan",
+       "Nepal",
+       "Sri Lanka",
+       "Maldives"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Most of the Hindu Kush mountain range lies in which country?",
+      "options": [
+       "Bangladesh",
+       "Maldives",
+       "Bhutan",
+       "Afghanistan"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Ceylon’s coffee plantations were largely replaced in the late 1800s by which crop, now its most famous export?",
+      "options": [
+       "Rubber",
+       "Tea",
+       "Cocoa",
+       "Cotton"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which Indian city is popularly nicknamed the “City of Joy”?",
+      "options": [
+       "Chennai",
+       "Hyderabad",
+       "Kolkata",
+       "Jaipur"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Jaipur is popularly known by which nickname?",
+      "options": [
+       "The Blue City",
+       "The Pink City",
+       "The Golden City",
+       "The White City"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "The Sri Lankan street food kottu is mainly made from what?",
+      "options": [
+       "Rice noodles",
+       "Lentil cakes",
+       "Chopped flatbread",
+       "Jackfruit"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Pakistani “Sufi rock” band, founded by guitarist Salman Ahmad, released the hit “Sayonee” in 1997?",
+      "options": [
+       "Vital Signs",
+       "Strings",
+       "Junoon",
+       "Noori"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which composer belongs to the “Trinity” of Carnatic music along with Muthuswami Dikshitar and Syama Sastri?",
+      "options": [
+       "Purandara Dasa",
+       "Tyagaraja",
+       "Annamacharya",
+       "Kshetrayya"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Mas huni, a Maldivian breakfast dish, mixes grated coconut, onion and chili with which fish?",
+      "options": [
+       "Salmon",
+       "Cod",
+       "Tuna",
+       "Sardine"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "The classical dance-drama Kathakali comes from which Indian state?",
+      "options": [
+       "Kerala",
+       "Punjab",
+       "Assam",
+       "Gujarat"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which animal, holding a sword, appears on the flag of Sri Lanka?",
+      "options": [
+       "Elephant",
+       "Tiger",
+       "Peacock",
+       "Lion"
+      ],
+      "correct": 3
+     }
+    ]
+   },
+   {
+    "type": "battle",
+    "name": "Battle Royale: Church",
+    "group": "Battle Royale",
+    "variant": "C",
+    "label": "Church",
+    "items": [
+     {
+      "q": "Who built the ark?",
+      "options": [
+       "Abraham",
+       "Moses",
+       "Noah",
+       "Jacob"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many apostles did Jesus choose?",
+      "options": [
+       "7",
+       "10",
+       "12",
+       "40"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In which town was Jesus born?",
+      "options": [
+       "Nazareth",
+       "Bethlehem",
+       "Jerusalem",
+       "Capernaum"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who was swallowed by a great fish?",
+      "options": [
+       "Jonah",
+       "Elijah",
+       "Peter",
+       "Paul"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "At the wedding in Cana, Jesus turned water into what?",
+      "options": [
+       "Milk",
+       "Oil",
+       "Wine",
+       "Honey"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who defeated Goliath?",
+      "options": [
+       "Saul",
+       "Samson",
+       "David",
+       "Joshua"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What is the first book of the Bible?",
+      "options": [
+       "Exodus",
+       "Genesis",
+       "Matthew",
+       "Psalms"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which disciple denied Jesus three times?",
+      "options": [
+       "John",
+       "Thomas",
+       "Peter",
+       "Andrew"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "God rested on the seventh day after creating for how many days?",
+      "options": [
+       "3",
+       "5",
+       "6",
+       "7"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Who led the Israelites out of Egypt?",
+      "options": [
+       "Moses",
+       "Aaron",
+       "Joseph",
+       "David"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "Which Gospel comes first in the New Testament?",
+      "options": [
+       "Mark",
+       "Luke",
+       "John",
+       "Matthew"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Who was thrown into the lions’ den?",
+      "options": [
+       "Daniel",
+       "Elisha",
+       "Jeremiah",
+       "Isaiah"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "How many loaves fed the 5,000?",
+      "options": [
+       "2",
+       "5",
+       "7",
+       "12"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Adam and Eve lived in which garden?",
+      "options": [
+       "Gethsemane",
+       "Eden",
+       "Babylon",
+       "Canaan"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Who betrayed Jesus for thirty pieces of silver?",
+      "options": [
+       "Judas",
+       "Pilate",
+       "Herod",
+       "Barabbas"
+      ],
+      "correct": 0
+     },
+     {
+      "q": "In Numbers 22, which animal speaks to the prophet Balaam after he strikes it?",
+      "options": [
+       "Camel",
+       "Donkey",
+       "Ox",
+       "Horse"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which of the four Gospels is the shortest?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In the parable of the lost sheep, how many sheep does the shepherd leave to search for the one?",
+      "options": [
+       "Ten",
+       "Forty",
+       "Seventy",
+       "Ninety-nine"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Which woman told Naomi, “Where you go I will go, and your people shall be my people”?",
+      "options": [
+       "Rahab",
+       "Hannah",
+       "Ruth",
+       "Leah"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which apostle was a tax collector before following Jesus?",
+      "options": [
+       "Andrew",
+       "Thomas",
+       "Matthew",
+       "James"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "How many books are in the New Testament?",
+      "options": [
+       "24",
+       "27",
+       "39",
+       "66"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In which city did the first ecumenical council meet in 325?",
+      "options": [
+       "Ephesus",
+       "Carthage",
+       "Nicaea",
+       "Chalcedon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Gospel begins, “In the beginning was the Word”?",
+      "options": [
+       "Matthew",
+       "Mark",
+       "Luke",
+       "John"
+      ],
+      "correct": 3
+     },
+     {
+      "q": "Just outside which city was Jesus crucified?",
+      "options": [
+       "Nazareth",
+       "Jerusalem",
+       "Capernaum",
+       "Bethany"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Whose twelve sons gave their names to the tribes of Israel?",
+      "options": [
+       "Abraham",
+       "Isaac",
+       "Jacob",
+       "Joseph"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "In Matthew 2, Joseph took Mary and the child Jesus to which country to escape King Herod?",
+      "options": [
+       "Syria",
+       "Egypt",
+       "Greece",
+       "Persia"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Judges 7, how many men did God tell Gideon to keep after testing them at the water?",
+      "options": [
+       "30",
+       "300",
+       "3,000",
+       "30,000"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Elevation Worship is the music ministry of Elevation Church, based in which North Carolina city?",
+      "options": [
+       "Raleigh",
+       "Durham",
+       "Charlotte",
+       "Asheville"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Along with locusts, what did John the Baptist eat in the wilderness?",
+      "options": [
+       "Figs",
+       "Wild honey",
+       "Barley bread",
+       "Dates"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "In Genesis, how many sons did Noah have?",
+      "options": [
+       "2",
+       "3",
+       "4",
+       "7"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "Which prophet saw a valley of dry bones come to life?",
+      "options": [
+       "Isaiah",
+       "Jeremiah",
+       "Ezekiel",
+       "Daniel"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Which Christian band recorded the hit “I Can Only Imagine”?",
+      "options": [
+       "Casting Crowns",
+       "MercyMe",
+       "Newsboys",
+       "Third Day"
+      ],
+      "correct": 1
+     },
+     {
+      "q": "According to Acts 1, from which mount did Jesus ascend into heaven?",
+      "options": [
+       "Mount Sinai",
+       "Mount Tabor",
+       "Mount of Olives",
+       "Mount Hermon"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "Singer Lauren Daigle grew up in which U.S. state?",
+      "options": [
+       "Texas",
+       "Tennessee",
+       "Louisiana",
+       "Georgia"
+      ],
+      "correct": 2
+     },
+     {
+      "q": "What does the Greek name “Hagia Sophia” mean?",
+      "options": [
+       "Holy Light",
+       "Holy Wisdom",
+       "Great Church",
+       "Golden Dome"
+      ],
+      "correct": 1
+     }
+    ]
    }
   ]
  }
