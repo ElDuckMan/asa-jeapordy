@@ -146,3 +146,46 @@
 }
 
 .yt-box.yt-err .yt-cover{opacity:1!important;color:var(--red);font-size:22px;text-align:center;padding:8px}
+
+/* Blitz modes (Gold Quest, Racing, Tower Defense, Classic, Battle Royale) */
+.bz-two{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;align-items:start;margin-top:8px}
+.bz-ranks{display:grid;gap:7px}
+.bz-row{display:flex;align-items:center;gap:10px;padding:8px 14px;font-size:clamp(17px,2vw,24px);text-align:left}
+.bz-row.top{background-color:#fff1b8;transform:scale(1.02)}
+.bz-n{width:1.6em;height:1.6em;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:#fff;font-size:.8em;flex:none}
+.bz-v{margin-left:auto;font-family:'Luckiest Guy',cursive}
+.bz-v small{font-family:'Patrick Hand',cursive;opacity:.7}
+.bz-plus{color:var(--green)}
+.bz-dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--c);border:2px solid var(--ink);flex:none}
+.bz-feed{display:grid;gap:6px;text-align:left}
+.bz-fi{background:#fffdf7;border:2px solid var(--ink);border-radius:10px;padding:6px 12px;font-size:clamp(15px,1.7vw,20px);animation:pop .4s var(--bounce)}
+.bz-tracks{position:relative;display:grid;gap:6px;padding:14px 50px 14px 14px;border-radius:12px;margin:8px 0}
+.bz-lane{display:grid;grid-template-columns:130px 1fr 60px;align-items:center;gap:10px;color:#fff;font-size:18px}
+.bz-ln{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right}
+.bz-road{position:relative;height:34px;border-radius:8px;background:repeating-linear-gradient(90deg,#4a4640 0 30px,#55514a 30px 60px);border:2px solid #1c1a17}
+.bz-car{position:absolute;top:-2px;font-size:28px;transition:left .6s var(--bounce);filter:drop-shadow(0 0 0 var(--c)) drop-shadow(0 2px 0 var(--c))}
+.bz-flag{position:absolute;right:12px;top:8px;font-size:34px}
+.bz-pos{font-family:'Luckiest Guy',cursive}
+.bz-wave{display:flex;gap:24px;justify-content:center;align-items:center;font-size:clamp(18px,2.2vw,28px);padding:10px}
+.bz-wave .crayon{font-size:1.5em;color:var(--red)}
+.bz-hearts{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}
+.bz-out{opacity:.4}
+.bz-cnt{margin-left:auto;font-family:'Luckiest Guy',cursive}
+.bz-podium{display:flex;justify-content:center;align-items:flex-end;gap:16px;margin:16px 0}
+.bz-step{display:grid;gap:6px;justify-items:center;padding:14px 18px;min-width:150px;border-radius:12px 12px 0 0;background:var(--c);color:#fff;font-size:22px;border:3px solid var(--ink)}
+.bz-step .block{font-size:40px}
+.bz-step.s1{min-height:220px}.bz-step.s2{min-height:170px}.bz-step.s3{min-height:130px}
+.bz-stat{font-size:20px}
+.bz-mini{height:10px;border:2px solid var(--ink);border-radius:8px;margin-top:6px;overflow:hidden;background:#fffdf7}
+.bz-mini i{display:block;height:100%;background:var(--green)}
+.bz-last{text-align:center;font-weight:bold;margin:6px 0}
+.bz-last.ok{color:var(--green)}.bz-last.bad{color:var(--red)}
+.bz-chests{display:flex;justify-content:center;gap:12px;margin:12px 0}
+.bz-chest{all:unset;box-sizing:border-box;display:grid;justify-items:center;gap:4px;width:92px;padding:12px 6px;border:3px solid var(--ink);border-radius:14px;background:#fff1b8;cursor:pointer;box-shadow:0 5px 0 var(--ink)}
+.bz-chest span{font-size:44px}
+.bz-chest:active{transform:translateY(4px);box-shadow:0 1px 0 var(--ink)}
+.bz-chest.picked{background:#cdeebc}.bz-chest.other{opacity:.5}
+.bz-chest small{font-size:13px;text-align:center}
+.bz-targets{display:grid;gap:8px}
+.bz-shop{display:grid;gap:6px;margin:8px 0}
+@media (max-width:900px){.bz-two{grid-template-columns:1fr}.bz-lane{grid-template-columns:80px 1fr 44px}}

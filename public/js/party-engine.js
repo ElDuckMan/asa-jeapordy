@@ -8,7 +8,8 @@
   else root.JeopardyParty = factory();
 })(typeof self !== 'undefined' ? self : this, function () {
   'use strict';
-  const TYPES = ['speed', 'closest', 'truths', 'survey', 'fakeout', 'wheel', 'draw'];
+  const Blitz = (typeof module === 'object' && module.exports && typeof require === 'function') ? require('./blitz-engine.js') : self.JeopardyBlitz;
+  const TYPES = ['speed', 'closest', 'truths', 'survey', 'fakeout', 'wheel', 'draw'].concat(Blitz.TYPES);
   const arr = (v, max) => (Array.isArray(v) ? v.slice(0, max) : []);
   const str = (v, max = 500) => (typeof v === 'string' ? v : v == null ? '' : String(v)).replace(/\s+/g, ' ').trim().slice(0, max);
   const int = (v, d = 0, min = -1e9, max = 1e9) => { const n = Math.round(Number(v)); return Number.isFinite(n) ? Math.min(max, Math.max(min, n)) : d; };
@@ -27,6 +28,7 @@
 
   /* ----------------------------------------------------------- sanitize */
   function sanitize(r, i) {
+    if (Blitz.TYPES.includes(r.type)) return Blitz.sanitize(r, i);
     const type = TYPES.includes(r.type) ? r.type : null;
     if (!type) return null;
     const base = { type, name: str(r.name, 60) || `Round ${i + 1}`, label: str(r.label, 30) };
@@ -65,13 +67,16 @@
       P.timer = setTimeout(() => { if (room.party !== token) return; P.timer = null; P.timerEnd = null; fn(); broadcast(room); }, ms);
     }
 
+    const BZ = Blitz.create(ctx);
+    const isB = room => room.party && room.party.blitz;
     function start(room, r) {
+      if (Blitz.TYPES.includes(r.type)) return BZ.start(room, r);
       const P = { type: r.type, r, idx: -1, stage: 'intro', timer: null, timerEnd: null, timerSec: 0, used: [] };
       if (r.type === 'truths') Object.assign(P, { stage: 'collect', subs: {}, played: [], cur: null });
       if (r.type === 'wheel') Object.assign(P, { stage: 'intro', banks: {}, active: teamIds(room)[0] || null, spin: { seq: 0, at: 0, value: null }, revealed: [], usedLetters: [] });
       room.party = P;
     }
-    function stop(room) { if (room.party) clear(room.party); room.party = null; }
+    function stop(room) { if (isB(room)) return BZ.stop(room); if (room.party) clear(room.party); room.party = null; }
     const item = P => P.r.items[P.idx];
     /* next unplayed item index: sequential from current */
     function nextIndex(P, i) {
@@ -285,6 +290,7 @@
     /* ============================ VIEWS =============================== */
     function view(room, role, teamId) {
       const P = room.party; if (!P) return null;
+      if (P.blitz) return BZ.view(room, role, teamId);
       const host = role === 'host', it = P.idx >= 0 && P.r.items ? P.r.items[P.idx] : null;
       const v = { type: P.type, name: P.r.name, label: P.r.label, stage: P.stage, idx: P.idx, total: P.r.items ? P.r.items.length : 0, timerEnd: P.timerEnd, timerSec: P.timerSec };
       if (host && P.r.items) v.list = P.r.items.map(x => typeof x === 'string' ? x : (x.phrase || x.q || '')).map(x => x.length > 70 ? x.slice(0, 68) + '…' : x);
@@ -351,6 +357,7 @@
     /* ============================ HOST =============================== */
     function host(room, d) {
       const P = room.party; if (!P) return { error: 'No party round is running.' };
+      if (P.blitz) return BZ.host(room, d);
       const a = d.action;
       switch (P.type) {
         case 'speed':
@@ -407,6 +414,7 @@
     /* ============================ PLAYERS ============================ */
     function player(room, p, d) {
       const P = room.party; if (!P) return { error: 'No party round is running.', quiet: true };
+      if (P.blitz) return BZ.player(room, p, d);
       const a = d.action, tid = p.teamId;
       switch (P.type) {
         case 'speed': {
@@ -520,6 +528,7 @@
     /* Private bits only one player may see (their own Two Truths entry, the drawer's word). */
     function mine(room, pid) {
       const P = room.party; if (!P) return null;
+      if (P.blitz) return BZ.mine(room, pid);
       if (P.type === 'truths') return { mySub: P.subs[pid] || null };
       if (P.type === 'draw') return { word: P.drawer === pid && P.stage === 'drawing' && P.r.items[P.idx] || null };
       return null;
