@@ -33,6 +33,7 @@
   function board(el, S) {
     const p = S.party;
     if (p.blitz && window.BlitzUI) { el.dataset.ptype = p.type; return BlitzUI.board(el, S); }
+    if (p.bingo && window.BingoUI) { el.dataset.ptype = p.type; return BingoUI.board(el, S); }
     const key = JSON.stringify([p, S.teams.map(t => [t.id, t.name, t.color])]);
     if (key === lastKey && el.querySelector('.pt-wrap')) return;
     const prevType = el.dataset.ptype;
@@ -198,6 +199,7 @@
   /* ================================ HOST PHONE ================================ */
   function host(S, x) {
     if (S.party.blitz && window.BlitzUI) return BlitzUI.host(S, x);
+    if (S.party.bingo && window.BingoUI) return BingoUI.host(S, x);
     const { btn } = x, p = S.party, n = p.total || 0;
     const card = h => `<div class="card paper">${h}</div>`;
     const pick = () => n ? `<details class="pt-pick"><summary>Choose a specific one (${n})</summary><div class="pt-picklist">${(p.list || []).map((it, i) => btn('party', `${i + 1}. ${esc(it)}`, 'sm ' + (i === p.idx ? 'on' : ''), { a: 'next', i })).join('')}</div></details>` : '';
@@ -282,6 +284,7 @@
   /* ================================ PLAYER PHONE ================================ */
   function play(S, me, pme) {
     if (S.party.blitz && window.BlitzUI) return BlitzUI.play(S, me, pme);
+    if (S.party.bingo && window.BingoUI) return BingoUI.play(S, me, pme);
     const p = S.party, tid = me.teamId, t = T(S, tid), mine = pme || {};
     const wait = msg => `<div class="card paper p-msg"><h2 class="hand">${NAMES[p.type]}</h2><p>${msg}</p></div>`;
     if (p.stage === 'intro') return wait(HOWTO[p.type] + '<br><b>Waiting for the host…</b>');
@@ -374,6 +377,8 @@
       const b = e.target.closest('[data-pa]');
       if (!b || b.disabled) return;
       const a = b.dataset.pa, q = s => root.querySelector(s);
+      if (a === 'bgdbl') { BingoUI.UI.dbl = !BingoUI.UI.dbl; b.classList.toggle('on', BingoUI.UI.dbl); b.textContent = `🔥 Double down ${BingoUI.UI.dbl ? 'ON: right = 2 squares, wrong = lose 1' : '(off)'}`; return; }
+      if (a === 'bganswer') { FX.squash(b); return send({ action: 'answer', choice: +b.dataset.choice, dbl: BingoUI.UI.dbl }); }
       if (a === 'bx') { try { FX.squash(b); } catch (_) { /* */ } return send(JSON.parse(b.dataset.x), r => { if (r.result) Craft.toast(r.result, 1200); }); }
       if (a === 'answer') { FX.squash(b); return send({ action: 'answer', choice: +b.dataset.choice }); }
       if (a === 'num') { const v = q('.pt-num').value; if (!v.trim()) return Craft.toast('Type a number.'); return send({ action: 'answer', n: v }, () => Craft.toast('Guess locked in!', 1200)); }

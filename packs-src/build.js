@@ -104,6 +104,18 @@ if (partyFiles.length) {
   for (const [type, name] of BLITZ) for (const [set, variant, label] of SETS) {
     if (POOLS[set].length) rounds.push({ type, name: `${name}: ${label}`, group: name, variant, label, items: POOLS[set] });
   }
+  /* Category Bingo (Asia): 12 categories from bingo-1/2/3.json, each with normal + hard questions. */
+  const BINGO_META = {
+    'Lunar New Year': ['🧧', 'New Year'], 'Street Food': ['🍢', 'Street Food'], 'Festivals': ['🏮', 'Festivals'], 'Languages': ['🈶', 'Languages'],
+    'Anime & Manga': ['🍥', 'Anime'], 'K-Pop & K-Drama': ['🎤', 'K-Pop'], 'Bollywood & Desi Pop': ['🎬', 'Bollywood'], 'Sports & Games': ['🏸', 'Sports'],
+    'Geography': ['🗺️', 'Geography'], 'History': ['📜', 'History'], 'Landmarks': ['🏯', 'Landmarks'], 'Arts & Crafts': ['🎨', 'Arts']
+  };
+  const bingoCats = ['bingo-1.json', 'bingo-2.json', 'bingo-3.json'].filter(has).flatMap(f => Object.entries(read(f)).map(([name, v]) =>
+    ({ name, icon: (BINGO_META[name] || [])[0] || '⭐', short: (BINGO_META[name] || [])[1] || name, normal: v.normal || [], hard: v.hard || [] })));
+  if (bingoCats.length) {
+    rounds.unshift({ type: 'bingo', name: 'Category Bingo: Asia', group: 'Category Bingo', variant: 'B', label: 'Asia', timer: 15, points: 500, patterns: ['line', 'corners', 'x'], cats: bingoCats });
+    console.log('bingo:', bingoCats.length, 'categories,', bingoCats.reduce((n, c) => n + c.normal.length + c.hard.length, 0), 'questions');
+  }
   write('party', {
     id: 'party', name: 'Party Games', blurb: 'Speed Quiz, Emoji Decode, Closest Guess, Fake Out, Survey Says, Two Truths & a Lie, Wheel, Draw & Guess, Name That Tune.',
     game: { title: 'ASA Game Night', edition: 'Party Games', rounds }

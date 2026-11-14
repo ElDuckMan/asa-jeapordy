@@ -23,7 +23,7 @@
   }
   /* Pack cards for a picker. `mine` = optional saved custom game. */
   function pickerHTML(esc, opts = {}) {
-    const cards = list.map(p => {
+    const cards = list.filter(p => p.id !== 'party').map(p => {
       const g = groups(p.game.rounds);
       return `<button class="pk-card yarn" type="button" data-pack="${esc(p.id)}" style="--c:var(${COLOR[p.id] || '--purple'})">
         <span class="pk-icon" aria-hidden="true">${ICON[p.id] || '🎲'}</span>

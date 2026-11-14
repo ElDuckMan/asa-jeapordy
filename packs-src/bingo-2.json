@@ -1,0 +1,98 @@
+{
+  "Anime & Manga": {
+    "normal": [
+      { "q": "Which studio made “My Neighbor Totoro”?", "options": ["Studio Ghibli", "Toei Animation", "Kyoto Animation", "Madhouse"], "correct": 0 },
+      { "q": "In “Naruto,” which ninja village is Naruto from?", "options": ["Hidden Sand", "Hidden Mist", "Hidden Leaf", "Hidden Cloud"], "correct": 2 },
+      { "q": "In “One Piece,” what does Luffy get from eating the Gum-Gum Fruit?", "options": ["Fire powers", "A rubber body", "Invisibility", "Super speed"], "correct": 1 },
+      { "q": "What is Sailor Moon’s everyday name?", "options": ["Ami Mizuno", "Rei Hino", "Makoto Kino", "Usagi Tsukino"], "correct": 3 },
+      { "q": "In “Death Note,” which student finds the notebook?", "options": ["Light Yagami", "Ryuk", "Misa Amane", "Near"], "correct": 0 },
+      { "q": "Which Pokémon is number 001 in the National Pokédex?", "options": ["Pikachu", "Mew", "Bulbasaur", "Charmander"], "correct": 2 },
+      { "q": "What color does Goku’s hair turn when he first goes Super Saiyan?", "options": ["Blue", "Gold", "Red", "Silver"], "correct": 1 },
+      { "q": "In “Spirited Away,” what happens to Chihiro’s parents?", "options": ["They turn to stone", "They fall asleep", "They become frogs", "They turn into pigs"], "correct": 3 },
+      { "q": "In “My Hero Academia,” what are people’s superpowers called?", "options": ["Quirks", "Stands", "Nen", "Jutsu"], "correct": 0 },
+      { "q": "In “Fullmetal Alchemist,” Alphonse Elric’s soul is bound to what?", "options": ["A sword", "A suit of armor", "A doll", "A pocket watch"], "correct": 1 },
+      { "q": "What is Doraemon’s favorite snack?", "options": ["Mochi", "Takoyaki", "Dorayaki", "Onigiri"], "correct": 2 },
+      { "q": "In Japan, manga pages are traditionally read in which direction?", "options": ["Left to right", "Clockwise", "Bottom to top", "Right to left"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "Who created the “Sailor Moon” manga?", "options": ["Rumiko Takahashi", "Naoko Takeuchi", "CLAMP", "Ai Yazawa"], "correct": 1 },
+      { "q": "Which studio animated the “Demon Slayer” TV anime?", "options": ["MAPPA", "Bones", "Wit Studio", "ufotable"], "correct": 3 },
+      { "q": "Which studio produced the original “Neon Genesis Evangelion” TV series?", "options": ["Gainax", "Sunrise", "Production I.G", "Madhouse"], "correct": 0 },
+      { "q": "Who directed the anime series “Cowboy Bebop”?", "options": ["Mamoru Oshii", "Satoshi Kon", "Shinichirō Watanabe", "Hideaki Anno"], "correct": 2 },
+      { "q": "In “Dragon Ball,” what is Goku’s Saiyan birth name?", "options": ["Raditz", "Kakarot", "Bardock", "Vegeta"], "correct": 1 },
+      { "q": "Which Rumiko Takahashi manga stars a boy who turns into a girl when splashed with cold water?", "options": ["Inuyasha", "Urusei Yatsura", "Maison Ikkoku", "Ranma ½"], "correct": 3 }
+    ]
+  },
+  "K-Pop & K-Drama": {
+    "normal": [
+      { "q": "PSY’s “Gangnam Style” is named after a district in which city?", "options": ["Busan", "Seoul", "Incheon", "Daegu"], "correct": 1 },
+      { "q": "Which K-pop group’s fans are called “ARMY”?", "options": ["BTS", "EXO", "SEVENTEEN", "Stray Kids"], "correct": 0 },
+      { "q": "What is the name of BLACKPINK’s fandom?", "options": ["ONCE", "ARMY", "BLINK", "MY"], "correct": 2 },
+      { "q": "Which entertainment company formed TWICE?", "options": ["SM Entertainment", "YG Entertainment", "HYBE", "JYP Entertainment"], "correct": 3 },
+      { "q": "In “Squid Game,” what color are the masked guards’ jumpsuits?", "options": ["Pink", "Green", "Red", "Black"], "correct": 0 },
+      { "q": "G-Dragon rose to fame as the leader of which boy group?", "options": ["2NE1", "Super Junior", "SHINee", "BIGBANG"], "correct": 3 },
+      { "q": "In K-pop, what does “maknae” mean?", "options": ["Leader", "Youngest member", "Main vocalist", "Lead dancer"], "correct": 1 },
+      { "q": "Each K-pop group has its own official one of these for fans to wave at concerts.", "options": ["Flag", "Hand fan", "Lightstick", "Scarf"], "correct": 2 },
+      { "q": "In “Extraordinary Attorney Woo,” Woo Young-woo is obsessed with which animals?", "options": ["Whales", "Penguins", "Otters", "Dolphins"], "correct": 0 },
+      { "q": "In “Descendants of the Sun,” Song Hye-kyo’s character works as a what?", "options": ["Lawyer", "Teacher", "Chef", "Doctor"], "correct": 3 },
+      { "q": "The K-drama “Boys Over Flowers” (2009) is based on a manga from which country?", "options": ["China", "Taiwan", "Japan", "Thailand"], "correct": 2 },
+      { "q": "Which girl group released “Ddu-Du Ddu-Du” in 2018?", "options": ["TWICE", "BLACKPINK", "Red Velvet", "ITZY"], "correct": 1 }
+    ],
+    "hard": [
+      { "q": "Founded by Lee Soo-man, which agency debuted the boy band H.O.T. in 1996?", "options": ["YG Entertainment", "JYP Entertainment", "SM Entertainment", "Cube Entertainment"], "correct": 2 },
+      { "q": "Seo Taiji and Boys, often credited with launching modern K-pop, debuted in what year?", "options": ["1988", "1992", "1997", "2001"], "correct": 1 },
+      { "q": "Which girl group released “I Am the Best” in 2011?", "options": ["2NE1", "Wonder Girls", "KARA", "f(x)"], "correct": 0 },
+      { "q": "Which Wonder Girls song made them the first K-pop group on the Billboard Hot 100?", "options": ["Tell Me", "So Hot", "Be My Baby", "Nobody"], "correct": 3 },
+      { "q": "In 2003’s “Dae Jang Geum,” a palace cook rises to become the king’s first female what?", "options": ["General", "Court painter", "Minister", "Royal physician"], "correct": 3 },
+      { "q": "Which 2018 BTS album was the first K-pop album to top the Billboard 200?", "options": ["Wings", "Love Yourself: Tear", "Map of the Soul: 7", "BE"], "correct": 1 }
+    ]
+  },
+  "Bollywood & Desi Pop": {
+    "normal": [
+      { "q": "Which Bollywood legend is nicknamed “Big B”?", "options": ["Amitabh Bachchan", "Shah Rukh Khan", "Salman Khan", "Aamir Khan"], "correct": 0 },
+      { "q": "Which 1975 classic features the villain Gabbar Singh?", "options": ["Deewaar", "Sholay", "Don", "Zanjeer"], "correct": 1 },
+      { "q": "Before her film career took off, Priyanka Chopra won which pageant in 2000?", "options": ["Miss Universe", "Miss Earth", "Miss World", "Miss International"], "correct": 2 },
+      { "q": "The song “Balam Pichkari” is set during which festival?", "options": ["Diwali", "Eid", "Navratri", "Holi"], "correct": 3 },
+      { "q": "In “Kuch Kuch Hota Hai” (1998), what is Shah Rukh Khan’s character’s name?", "options": ["Rahul", "Raj", "Rohan", "Aman"], "correct": 0 },
+      { "q": "“Kollywood” refers to films made in which language?", "options": ["Telugu", "Malayalam", "Tamil", "Kannada"], "correct": 2 },
+      { "q": "Deepika Padukone starred opposite Vin Diesel in which 2017 film?", "options": ["Fast & Furious 8", "xXx: Return of Xander Cage", "Bloodshot", "Riddick"], "correct": 1 },
+      { "q": "In the song “Chaiyya Chaiyya,” Shah Rukh Khan dances on top of a moving what?", "options": ["Bus", "Boat", "Truck", "Train"], "correct": 3 },
+      { "q": "Which Pakistani singer sang “Tu Jaane Na” and “Pehli Nazar Mein”?", "options": ["Ali Zafar", "Atif Aslam", "Arijit Singh", "Rahat Fateh Ali Khan"], "correct": 1 },
+      { "q": "Shah Rukh Khan’s 2007 film “Om Shanti Om” centers on which idea?", "options": ["Reincarnation", "Time travel", "Body swapping", "Secret twins"], "correct": 0 },
+      { "q": "Hrithik Roshan plays a superhero in which film series?", "options": ["Dhoom", "Ra.One", "Krrish", "War"], "correct": 2 },
+      { "q": "Singer-actor Diljit Dosanjh is best known for songs in which language?", "options": ["Gujarati", "Hindi", "Urdu", "Punjabi"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "“Dilwale Dulhania Le Jayenge” famously ran for over 20 years at which Mumbai cinema?", "options": ["Maratha Mandir", "Regal Cinema", "Eros Cinema", "Liberty Cinema"], "correct": 0 },
+      { "q": "In “Mughal-e-Azam” (1960), Prince Salim falls in love with which court dancer?", "options": ["Mumtaz", "Anarkali", "Noor Jahan", "Jodha"], "correct": 1 },
+      { "q": "The Filmfare Award trophy is nicknamed what?", "options": ["The Golden Peacock", "The Silver Lotus", "The Black Lady", "The Star of India"], "correct": 2 },
+      { "q": "Rock legend Ayub Bachchu fronted which Bangladeshi band?", "options": ["Warfaze", "Miles", "Feedback", "LRB"], "correct": 3 },
+      { "q": "Panjabi MC’s “Mundian To Bach Ke” samples the theme from which American TV show?", "options": ["Knight Rider", "Miami Vice", "The A-Team", "MacGyver"], "correct": 0 },
+      { "q": "Pakistani pop star Nazia Hassan sang “Aap Jaisa Koi” for which 1980 film?", "options": ["Sholay", "Don", "Qurbani", "Disco Dancer"], "correct": 2 }
+    ]
+  },
+  "Sports & Games": {
+    "normal": [
+      { "q": "How many players does a cricket team have on the field?", "options": ["9", "10", "11", "12"], "correct": 2 },
+      { "q": "In cricket, an over consists of how many legal deliveries?", "options": ["6", "4", "8", "10"], "correct": 0 },
+      { "q": "Which Japanese company created Super Mario?", "options": ["Sega", "Nintendo", "Sony", "Capcom"], "correct": 1 },
+      { "q": "Sonic the Hedgehog is the mascot of which company?", "options": ["Nintendo", "Namco", "Konami", "Sega"], "correct": 3 },
+      { "q": "Which company created the “Street Fighter” series?", "options": ["Capcom", "Namco", "Konami", "SNK"], "correct": 0 },
+      { "q": "Which Japanese company created Pac-Man?", "options": ["Atari", "Taito", "Namco", "Nintendo"], "correct": 2 },
+      { "q": "Standard mahjong is played by how many players?", "options": ["2", "4", "3", "6"], "correct": 1 },
+      { "q": "In the board game Go (baduk), which color stone moves first?", "options": ["White", "Red", "Either one", "Black"], "correct": 3 },
+      { "q": "In 2022, which city became the first to host both Summer and Winter Olympics?", "options": ["Beijing", "Tokyo", "Seoul", "Sapporo"], "correct": 0 },
+      { "q": "Arnis, a stick-fighting martial art, is the national sport of which country?", "options": ["Vietnam", "Philippines", "Thailand", "Indonesia"], "correct": 1 },
+      { "q": "A traditional sepak takraw ball is woven from what material?", "options": ["Leather", "Rubber", "Rattan", "Silk"], "correct": 2 },
+      { "q": "The martial art pencak silat is most closely associated with which country?", "options": ["Japan", "India", "Korea", "Indonesia"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "In 2016, Google DeepMind’s AlphaGo beat which South Korean Go champion?", "options": ["Lee Sedol", "Lee Chang-ho", "Cho Hun-hyun", "Park Jung-hwan"], "correct": 0 },
+      { "q": "Sapporo hosted Asia’s first Winter Olympics in what year?", "options": ["1964", "1968", "1972", "1976"], "correct": 2 },
+      { "q": "Which Chinese player won Olympic men’s singles badminton gold in 2008 and 2012?", "options": ["Chen Long", "Lin Dan", "Lee Chong Wei", "Taufik Hidayat"], "correct": 1 },
+      { "q": "India won its first Cricket World Cup in 1983 under which captain?", "options": ["Sunil Gavaskar", "MS Dhoni", "Sourav Ganguly", "Kapil Dev"], "correct": 3 },
+      { "q": "Bangladesh played its first Test cricket match in what year?", "options": ["1992", "1996", "2000", "2004"], "correct": 2 },
+      { "q": "Which company published the first “Final Fantasy” game in 1987?", "options": ["Square", "Enix", "Capcom", "Konami"], "correct": 0 }
+    ]
+  }
+}

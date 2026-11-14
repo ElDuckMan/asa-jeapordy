@@ -1,0 +1,98 @@
+{
+  "Geography": {
+    "normal": [
+      { "q": "What is the capital of Vietnam?", "options": ["Ho Chi Minh City", "Hanoi", "Da Nang", "Hue"], "correct": 1 },
+      { "q": "Mount Everest is part of which mountain range?", "options": ["Andes", "Alps", "Himalayas", "Urals"], "correct": 2 },
+      { "q": "Which river flows through Bangkok?", "options": ["Chao Phraya", "Mekong", "Irrawaddy", "Salween"], "correct": 0 },
+      { "q": "Which is the largest of Japan’s four main islands?", "options": ["Hokkaido", "Kyushu", "Shikoku", "Honshu"], "correct": 3 },
+      { "q": "What is the capital of South Korea?", "options": ["Busan", "Seoul", "Incheon", "Daegu"], "correct": 1 },
+      { "q": "The island of Bali belongs to which country?", "options": ["Malaysia", "Philippines", "Indonesia", "Thailand"], "correct": 2 },
+      { "q": "The Ganges River empties into which body of water?", "options": ["Bay of Bengal", "Arabian Sea", "Andaman Sea", "Persian Gulf"], "correct": 0 },
+      { "q": "Which Southeast Asian country is landlocked?", "options": ["Cambodia", "Vietnam", "Myanmar", "Laos"], "correct": 3 },
+      { "q": "Which desert stretches across Mongolia and northern China?", "options": ["Thar", "Gobi", "Sahara", "Kalahari"], "correct": 1 },
+      { "q": "The island nation of Sri Lanka lies in which ocean?", "options": ["Pacific", "Atlantic", "Indian", "Arctic"], "correct": 2 },
+      { "q": "What is the longest river in China?", "options": ["Yangtze", "Yellow River", "Pearl River", "Mekong"], "correct": 0 },
+      { "q": "What is the capital of Malaysia?", "options": ["Penang", "Johor Bahru", "Malacca", "Kuala Lumpur"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "What is the capital of Mongolia?", "options": ["Ulaanbaatar", "Bishkek", "Astana", "Thimphu"], "correct": 0 },
+      { "q": "The Mekong River reaches the sea through a delta in which country?", "options": ["Cambodia", "Thailand", "Vietnam", "Laos"], "correct": 2 },
+      { "q": "What is the capital of Bhutan?", "options": ["Paro", "Thimphu", "Punakha", "Kathmandu"], "correct": 1 },
+      { "q": "Which river flows through the city of Seoul?", "options": ["Nakdong", "Geum", "Taedong", "Han"], "correct": 3 },
+      { "q": "What is the capital of Laos?", "options": ["Luang Prabang", "Phnom Penh", "Vientiane", "Pakse"], "correct": 2 },
+      { "q": "Borneo is shared by Indonesia, Malaysia and which other country?", "options": ["Singapore", "Brunei", "Philippines", "Timor-Leste"], "correct": 1 }
+    ]
+  },
+  "History": {
+    "normal": [
+      { "q": "Qin Shi Huang was the first emperor of which Chinese dynasty?", "options": ["Han", "Tang", "Qin", "Zhou"], "correct": 2 },
+      { "q": "Cai Lun of Han China is traditionally credited with inventing what?", "options": ["Paper", "Gunpowder", "The compass", "Printing press"], "correct": 0 },
+      { "q": "Genghis Khan founded which empire?", "options": ["Ottoman", "Mughal", "Persian", "Mongol"], "correct": 3 },
+      { "q": "Babur founded which empire in India in 1526?", "options": ["Maurya", "Mughal", "Gupta", "Chola"], "correct": 1 },
+      { "q": "Samurai were the warrior class of which country?", "options": ["China", "Korea", "Japan", "Vietnam"], "correct": 2 },
+      { "q": "Which ancient trade network linked China with the Mediterranean?", "options": ["Silk Road", "Spice Bridge", "Amber Road", "Tea Canal"], "correct": 0 },
+      { "q": "Which Korean king created the Hangul alphabet?", "options": ["Gwanggaeto", "Taejo", "Jeongjo", "Sejong the Great"], "correct": 3 },
+      { "q": "Mahatma Gandhi led the famous 1930 Salt March in which country?", "options": ["Sri Lanka", "India", "Nepal", "Myanmar"], "correct": 1 },
+      { "q": "What was the last imperial dynasty of China?", "options": ["Ming", "Song", "Qing", "Yuan"], "correct": 2 },
+      { "q": "Japan’s long policy of national isolation (sakoku) was part of which period?", "options": ["Edo", "Heian", "Meiji", "Nara"], "correct": 0 },
+      { "q": "Gunpowder was first invented in which country?", "options": ["India", "Persia", "Japan", "China"], "correct": 3 },
+      { "q": "Mohenjo-daro was a city of which ancient civilization?", "options": ["Mesopotamian", "Indus Valley", "Khmer", "Shang"], "correct": 1 }
+    ],
+    "hard": [
+      { "q": "Which Mauryan emperor embraced Buddhism after the Kalinga War?", "options": ["Chandragupta", "Akbar", "Ashoka", "Harsha"], "correct": 2 },
+      { "q": "Admiral Zheng He led great sea voyages for which Chinese dynasty?", "options": ["Ming", "Tang", "Han", "Qing"], "correct": 0 },
+      { "q": "The maritime Srivijaya empire was centered on which island?", "options": ["Java", "Luzon", "Borneo", "Sumatra"], "correct": 3 },
+      { "q": "Which clan took power in Japan after the Battle of Sekigahara (1600)?", "options": ["Minamoto", "Tokugawa", "Ashikaga", "Toyotomi"], "correct": 1 },
+      { "q": "Which Korean dynasty ruled from 1392 to 1897?", "options": ["Goryeo", "Silla", "Joseon", "Baekje"], "correct": 2 },
+      { "q": "Who wrote “The Tale of Genji” in Heian-era Japan?", "options": ["Murasaki Shikibu", "Sei Shōnagon", "Matsuo Bashō", "Ono no Komachi"], "correct": 0 }
+    ]
+  },
+  "Landmarks": {
+    "normal": [
+      { "q": "Angkor Wat is in which country?", "options": ["Thailand", "Cambodia", "Laos", "Vietnam"], "correct": 1 },
+      { "q": "Which Mughal emperor built the Taj Mahal?", "options": ["Akbar", "Babur", "Aurangzeb", "Shah Jahan"], "correct": 3 },
+      { "q": "The Forbidden City palace complex is in which city?", "options": ["Beijing", "Shanghai", "Xi’an", "Nanjing"], "correct": 0 },
+      { "q": "The Buddhist temple Borobudur is in which country?", "options": ["Myanmar", "Sri Lanka", "Indonesia", "Thailand"], "correct": 2 },
+      { "q": "The Petronas Twin Towers stand in which city?", "options": ["Singapore", "Jakarta", "Manila", "Kuala Lumpur"], "correct": 3 },
+      { "q": "Kinkaku-ji, the “Golden Pavilion,” is in which Japanese city?", "options": ["Tokyo", "Kyoto", "Osaka", "Nara"], "correct": 1 },
+      { "q": "Gyeongbokgung Palace was built by which Korean dynasty?", "options": ["Joseon", "Goryeo", "Silla", "Baekje"], "correct": 0 },
+      { "q": "Most of the Great Wall seen by visitors today was built under which dynasty?", "options": ["Qin", "Han", "Ming", "Tang"], "correct": 2 },
+      { "q": "Marina Bay Sands, with its rooftop SkyPark, is in which country?", "options": ["Malaysia", "Singapore", "Philippines", "Thailand"], "correct": 1 },
+      { "q": "Tokyo Tower’s design was inspired by which famous tower?", "options": ["Big Ben", "CN Tower", "Space Needle", "Eiffel Tower"], "correct": 3 },
+      { "q": "The Grand Palace, former royal residence of Thai kings, is in which city?", "options": ["Bangkok", "Chiang Mai", "Ayutthaya", "Phuket"], "correct": 0 },
+      { "q": "The Golden Temple in Amritsar is the holiest shrine of which religion?", "options": ["Jainism", "Buddhism", "Sikhism", "Hinduism"], "correct": 2 }
+    ],
+    "hard": [
+      { "q": "The Shwedagon Pagoda is in which city?", "options": ["Mandalay", "Yangon", "Bagan", "Naypyidaw"], "correct": 1 },
+      { "q": "Japan’s famous “floating” torii gate belongs to which shrine?", "options": ["Fushimi Inari", "Meiji Jingu", "Ise Grand Shrine", "Itsukushima"], "correct": 3 },
+      { "q": "Angkor Wat was originally dedicated to which Hindu god?", "options": ["Vishnu", "Shiva", "Brahma", "Ganesha"], "correct": 0 },
+      { "q": "Which king built Sri Lanka’s rock fortress of Sigiriya?", "options": ["Dutugemunu", "Parakramabahu I", "Kashyapa I", "Devanampiya Tissa"], "correct": 2 },
+      { "q": "Japan’s Himeji Castle is nicknamed after which bird?", "options": ["Golden Eagle", "White Heron", "Black Crow", "Red Phoenix"], "correct": 1 },
+      { "q": "Prambanan, a temple complex on Java, was built for which religion?", "options": ["Buddhism", "Islam", "Jainism", "Hinduism"], "correct": 3 }
+    ]
+  },
+  "Arts & Crafts": {
+    "normal": [
+      { "q": "Origami is the Japanese art of folding what?", "options": ["Cloth", "Paper", "Leaves", "Metal"], "correct": 1 },
+      { "q": "In batik, which material is applied to cloth to resist the dye?", "options": ["Wax", "Clay", "Salt", "Oil"], "correct": 0 },
+      { "q": "Rangoli designs are traditionally created on the…", "options": ["Ceiling", "Walls", "Floor", "Windows"], "correct": 2 },
+      { "q": "Which Japanese theatre form is known for bold makeup and dramatic poses?", "options": ["Noh", "Bunraku", "Rakugo", "Kabuki"], "correct": 3 },
+      { "q": "The sitar is a stringed instrument from which country?", "options": ["Indonesia", "India", "Japan", "China"], "correct": 1 },
+      { "q": "Ikebana is the Japanese art of arranging what?", "options": ["Flowers", "Stones", "Tea leaves", "Sand"], "correct": 0 },
+      { "q": "Traditional Chinese calligraphy is written with a…", "options": ["Quill", "Pencil", "Brush", "Chisel"], "correct": 2 },
+      { "q": "Gamelan music ensembles come from which country?", "options": ["Indonesia", "Vietnam", "Korea", "Nepal"], "correct": 0 },
+      { "q": "Peking opera is a traditional theatre form from which country?", "options": ["Japan", "Korea", "Thailand", "China"], "correct": 3 },
+      { "q": "The Chinese erhu is a two-stringed instrument played with a…", "options": ["Pick", "Bow", "Mallet", "Reed"], "correct": 1 },
+      { "q": "Kintsugi is the Japanese art of repairing what?", "options": ["Kites", "Paper fans", "Broken pottery", "Silk robes"], "correct": 2 },
+      { "q": "Dancers of the Philippine tinikling hop between which moving objects?", "options": ["Ropes", "Swords", "Drums", "Bamboo poles"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "In ikat weaving, what is dyed before the cloth is woven?", "options": ["The threads", "The loom", "The pattern card", "The finished cloth"], "correct": 0 },
+      { "q": "Japanese Bunraku theatre is performed using what?", "options": ["Masks", "Shadows", "Puppets", "Mime"], "correct": 2 },
+      { "q": "Wayang kulit from Java is a form of what?", "options": ["Mask dance", "Shadow puppetry", "Martial art", "Woodcarving"], "correct": 1 },
+      { "q": "Which classical dance-drama from Kerala features elaborate painted faces?", "options": ["Kathak", "Odissi", "Manipuri", "Kathakali"], "correct": 3 },
+      { "q": "Korean celadon from the Goryeo dynasty is famous for which glaze color?", "options": ["Cobalt blue", "Jade green", "Ox-blood red", "Pure white"], "correct": 1 },
+      { "q": "How many strings does a Japanese shamisen have?", "options": ["Three", "Two", "Four", "Six"], "correct": 0 }
+    ]
+  }
+}

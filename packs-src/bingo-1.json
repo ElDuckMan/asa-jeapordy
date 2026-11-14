@@ -1,0 +1,98 @@
+{
+  "Lunar New Year": {
+    "normal": [
+      { "q": "What is Lunar New Year called in Vietnam?", "options": ["Tết", "Seollal", "Losar", "Songkran"], "correct": 0 },
+      { "q": "What is Lunar New Year called in Korea?", "options": ["Chuseok", "Seollal", "Dano", "Hanbok"], "correct": 1 },
+      { "q": "In Mandarin, the red envelopes of money given at New Year are called?", "options": ["Jiaozi", "Nian gao", "Hongbao", "Mahjong"], "correct": 2 },
+      { "q": "How many animals are in the Chinese zodiac?", "options": ["8", "10", "24", "12"], "correct": 3 },
+      { "q": "Which animal comes first in the Chinese zodiac?", "options": ["Rat", "Ox", "Tiger", "Dragon"], "correct": 0 },
+      { "q": "Which animal comes last in the Chinese zodiac?", "options": ["Dog", "Pig", "Rooster", "Monkey"], "correct": 1 },
+      { "q": "Which beast of legend is scared off by firecrackers and the color red?", "options": ["Garuda", "Qilin", "Nian", "Baku"], "correct": 2 },
+      { "q": "“Gong hei fat choy” is a New Year greeting in which language?", "options": ["Mandarin", "Vietnamese", "Korean", "Cantonese"], "correct": 3 },
+      { "q": "The Lantern Festival ends the New Year season on which day of the first lunar month?", "options": ["15th", "7th", "10th", "30th"], "correct": 0 },
+      { "q": "Which rice cake soup is traditionally eaten on Seollal?", "options": ["Miyeokguk", "Tteokguk", "Samgyetang", "Kimchi jjigae"], "correct": 1 },
+      { "q": "Which is the only mythical creature in the Chinese zodiac?", "options": ["Snake", "Horse", "Dragon", "Goat"], "correct": 2 },
+      { "q": "Chinese New Year always falls in which months of the Gregorian calendar?", "options": ["Dec or Jan", "Feb or Mar", "Mar or Apr", "Jan or Feb"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "On Seollal, what is the deep bow that younger people give to their elders called?", "options": ["Sebae", "Jesa", "Yutnori", "Hanbok"], "correct": 0 },
+      { "q": "Which square sticky rice cake wrapped in leaves is a classic Vietnamese Tết food?", "options": ["Bánh xèo", "Bánh chưng", "Bánh cuốn", "Bánh bò"], "correct": 1 },
+      { "q": "In the Vietnamese zodiac, which animal takes the place of the Rabbit?", "options": ["Fox", "Deer", "Cat", "Owl"], "correct": 2 },
+      { "q": "What is the Mongolian Lunar New Year called?", "options": ["Losar", "Naadam", "Nowruz", "Tsagaan Sar"], "correct": 3 },
+      { "q": "The 12 zodiac animals combined with the five elements make a cycle of how many years?", "options": ["60", "12", "24", "48"], "correct": 0 },
+      { "q": "福 is hung upside down because “upside down” (dào) sounds like which word?", "options": ["Rich", "Arrived", "Spring", "Double"], "correct": 1 }
+    ]
+  },
+  "Street Food": {
+    "normal": [
+      { "q": "Which Taiwanese night market snack is famous for its strong smell?", "options": ["Stinky tofu", "Gua bao", "Scallion pancake", "Bubble tea"], "correct": 0 },
+      { "q": "What are Japan’s battered balls with octopus inside called?", "options": ["Okonomiyaki", "Takoyaki", "Taiyaki", "Yakitori"], "correct": 1 },
+      { "q": "Which Korean street food is chewy rice cakes in a spicy red sauce?", "options": ["Bibimbap", "Japchae", "Tteokbokki", "Hotteok"], "correct": 2 },
+      { "q": "Which Korean winter snack is a pancake filled with melted brown sugar syrup?", "options": ["Kimbap", "Mandu", "Sundubu", "Hotteok"], "correct": 3 },
+      { "q": "Which Hong Kong snack is a waffle made of little egg-shaped bubbles?", "options": ["Egg waffle", "Egg tart", "Pineapple bun", "Mooncake"], "correct": 0 },
+      { "q": "Which Chinese snack is fruit on a skewer coated in hard, shiny sugar?", "options": ["Jianbing", "Tanghulu", "Youtiao", "Baozi"], "correct": 1 },
+      { "q": "Which Vietnamese sandwich is served on a crusty baguette?", "options": ["Phở", "Gỏi cuốn", "Bánh mì", "Bún chả"], "correct": 2 },
+      { "q": "Which skewered grilled meat with peanut sauce is popular in Indonesia and Malaysia?", "options": ["Rendang", "Laksa", "Nasi lemak", "Satay"], "correct": 3 },
+      { "q": "Which Thai stir-fried rice noodle dish is flavored with tamarind?", "options": ["Pad thai", "Tom yum", "Green curry", "Massaman"], "correct": 0 },
+      { "q": "Which Filipino snack is banana wrapped in a spring roll wrapper and fried?", "options": ["Puto", "Turon", "Bibingka", "Ensaymada"], "correct": 1 },
+      { "q": "Which Indian snack is hollow crispy balls filled with spiced flavored water?", "options": ["Samosa", "Pakora", "Pani puri", "Jalebi"], "correct": 2 },
+      { "q": "Which Mumbai street food is a spiced potato fritter in a bread bun?", "options": ["Dosa", "Biryani", "Paratha", "Vada pav"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "In Kolkata, pani puri is known by what name?", "options": ["Phuchka", "Pav bhaji", "Bhelpuri", "Dabeli"], "correct": 0 },
+      { "q": "Char kway teow, loved in Malaysia and Singapore, is stir-fried what?", "options": ["Soba", "Flat rice noodles", "Glass noodles", "Udon"], "correct": 1 },
+      { "q": "Which Sri Lankan street food is chopped flatbread stir-fried on a griddle?", "options": ["Hoppers", "Lamprais", "Kottu", "Pol sambol"], "correct": 2 },
+      { "q": "The “okonomi” in okonomiyaki roughly means what?", "options": ["Very hot", "Round", "From Osaka", "As you like"], "correct": 3 },
+      { "q": "Korea’s fish-shaped bungeoppang is named after which fish?", "options": ["Carp", "Tuna", "Mackerel", "Salmon"], "correct": 0 },
+      { "q": "What is the Thai green papaya salad sold at street stalls called?", "options": ["Larb", "Som tam", "Khao soi", "Tom kha"], "correct": 1 }
+    ]
+  },
+  "Festivals": {
+    "normal": [
+      { "q": "Diwali is widely known as the festival of what?", "options": ["Lights", "Colors", "Kites", "Harvest"], "correct": 0 },
+      { "q": "Holi is widely known as the festival of what?", "options": ["Lights", "Colors", "Lanterns", "Boats"], "correct": 1 },
+      { "q": "Songkran, the Thai New Year, is famous for what?", "options": ["Kite flying", "Bonfires", "Water fights", "Snow sculptures"], "correct": 2 },
+      { "q": "Mooncakes are eaten during which festival?", "options": ["Dragon Boat", "Qingming", "Double Ninth", "Mid-Autumn"], "correct": 3 },
+      { "q": "Chuseok is a major harvest festival in which country?", "options": ["Korea", "Japan", "Vietnam", "Thailand"], "correct": 0 },
+      { "q": "Japan’s Obon festival honors whom?", "options": ["The emperor", "Ancestors’ spirits", "Children", "Farmers"], "correct": 1 },
+      { "q": "Vesak marks the birth, enlightenment and passing of whom?", "options": ["Confucius", "Gandhi", "The Buddha", "Laozi"], "correct": 2 },
+      { "q": "Eid al-Fitr marks the end of what?", "options": ["Hajj", "Muharram", "Winter", "Ramadan"], "correct": 3 },
+      { "q": "Which leaf-wrapped sticky rice is eaten at the Dragon Boat Festival?", "options": ["Zongzi", "Tangyuan", "Jiaozi", "Mooncakes"], "correct": 0 },
+      { "q": "The small clay oil lamps lit for Diwali are called what?", "options": ["Rangoli", "Diyas", "Rakhis", "Mehndi"], "correct": 1 },
+      { "q": "What is the Japanese custom of picnicking under cherry blossoms called?", "options": ["Tanabata", "Setsubun", "Hanami", "Obon"], "correct": 2 },
+      { "q": "At Japan’s Tanabata, people hang written wishes on what?", "options": ["Pine trees", "Paper lanterns", "Temple bells", "Bamboo"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "Which half-moon rice cakes are made for Chuseok?", "options": ["Songpyeon", "Tteokguk", "Hotteok", "Injeolmi"], "correct": 0 },
+      { "q": "In Indonesia, Eid al-Fitr is popularly called what?", "options": ["Nyepi", "Lebaran", "Galungan", "Waisak"], "correct": 1 },
+      { "q": "Onam is the harvest festival of which Indian state?", "options": ["Punjab", "Gujarat", "Kerala", "Assam"], "correct": 2 },
+      { "q": "What is the folk dance performed during Japan’s Obon called?", "options": ["Kabuki", "Noh", "Butoh", "Bon Odori"], "correct": 3 },
+      { "q": "In Mid-Autumn legend, which goddess lives on the moon?", "options": ["Chang’e", "Guanyin", "Mazu", "Nüwa"], "correct": 0 },
+      { "q": "Mid-Autumn Festival falls on the 15th day of which lunar month?", "options": ["5th", "8th", "9th", "12th"], "correct": 1 }
+    ]
+  },
+  "Languages": {
+    "normal": [
+      { "q": "What is the Korean alphabet called?", "options": ["Hangul", "Hiragana", "Hanja", "Kanji"], "correct": 0 },
+      { "q": "Which Japanese script is mainly used for foreign loanwords?", "options": ["Hiragana", "Katakana", "Kanji", "Romaji"], "correct": 1 },
+      { "q": "What does the Japanese word “arigatou” mean?", "options": ["Hello", "Goodbye", "Thank you", "Excuse me"], "correct": 2 },
+      { "q": "Modern Vietnamese is written with which kind of script?", "options": ["Chinese characters", "Khmer script", "Cyrillic", "Latin alphabet"], "correct": 3 },
+      { "q": "“Annyeonghaseyo” is a greeting in which language?", "options": ["Korean", "Japanese", "Mongolian", "Thai"], "correct": 0 },
+      { "q": "Hindi is mainly written in which script?", "options": ["Arabic", "Devanagari", "Tamil", "Gurmukhi"], "correct": 1 },
+      { "q": "Besides English, what is an official language of the Philippines?", "options": ["Spanish", "Malay", "Filipino", "Cebuano"], "correct": 2 },
+      { "q": "How many main tones does Mandarin Chinese have?", "options": ["2", "6", "9", "4"], "correct": 3 },
+      { "q": "The greeting “namaste” comes from which language?", "options": ["Sanskrit", "Persian", "Arabic", "Tamil"], "correct": 0 },
+      { "q": "In which direction is Urdu written?", "options": ["Left to right", "Right to left", "Top to bottom", "Bottom to top"], "correct": 1 },
+      { "q": "“Xin chào” means hello in which language?", "options": ["Thai", "Khmer", "Vietnamese", "Lao"], "correct": 2 },
+      { "q": "Tamil is spoken in India’s Tamil Nadu and is also an official language of which country?", "options": ["Nepal", "Bhutan", "Myanmar", "Sri Lanka"], "correct": 3 }
+    ],
+    "hard": [
+      { "q": "Which Korean king created Hangul in the 1400s?", "options": ["Sejong", "Taejo", "Jeongjo", "Gwanggaeto"], "correct": 0 },
+      { "q": "How many basic characters are in the Japanese hiragana chart?", "options": ["26", "46", "52", "72"], "correct": 1 },
+      { "q": "How many consonant letters does the Thai alphabet have?", "options": ["26", "33", "44", "52"], "correct": 2 },
+      { "q": "What is the best-known pre-colonial script of the Philippines called?", "options": ["Hiragana", "Devanagari", "Thaana", "Baybayin"], "correct": 3 },
+      { "q": "What is the Arabic-based script used to write Malay called?", "options": ["Jawi", "Baybayin", "Kana", "Brahmi"], "correct": 0 },
+      { "q": "The English word “shampoo” comes from which language?", "options": ["Japanese", "Hindi", "Malay", "Thai"], "correct": 1 }
+    ]
+  }
+}

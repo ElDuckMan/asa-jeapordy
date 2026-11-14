@@ -8,6 +8,2290 @@ AsaPacks.add({
   "edition": "Party Games",
   "rounds": [
    {
+    "type": "bingo",
+    "name": "Category Bingo: Asia",
+    "group": "Category Bingo",
+    "variant": "B",
+    "label": "Asia",
+    "timer": 15,
+    "points": 500,
+    "patterns": [
+     "line",
+     "corners",
+     "x"
+    ],
+    "cats": [
+     {
+      "name": "Lunar New Year",
+      "icon": "🧧",
+      "short": "New Year",
+      "normal": [
+       {
+        "q": "What is Lunar New Year called in Vietnam?",
+        "options": [
+         "Tết",
+         "Seollal",
+         "Losar",
+         "Songkran"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "What is Lunar New Year called in Korea?",
+        "options": [
+         "Chuseok",
+         "Seollal",
+         "Dano",
+         "Hanbok"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In Mandarin, the red envelopes of money given at New Year are called?",
+        "options": [
+         "Jiaozi",
+         "Nian gao",
+         "Hongbao",
+         "Mahjong"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "How many animals are in the Chinese zodiac?",
+        "options": [
+         "8",
+         "10",
+         "24",
+         "12"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which animal comes first in the Chinese zodiac?",
+        "options": [
+         "Rat",
+         "Ox",
+         "Tiger",
+         "Dragon"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which animal comes last in the Chinese zodiac?",
+        "options": [
+         "Dog",
+         "Pig",
+         "Rooster",
+         "Monkey"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which beast of legend is scared off by firecrackers and the color red?",
+        "options": [
+         "Garuda",
+         "Qilin",
+         "Nian",
+         "Baku"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "“Gong hei fat choy” is a New Year greeting in which language?",
+        "options": [
+         "Mandarin",
+         "Vietnamese",
+         "Korean",
+         "Cantonese"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The Lantern Festival ends the New Year season on which day of the first lunar month?",
+        "options": [
+         "15th",
+         "7th",
+         "10th",
+         "30th"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which rice cake soup is traditionally eaten on Seollal?",
+        "options": [
+         "Miyeokguk",
+         "Tteokguk",
+         "Samgyetang",
+         "Kimchi jjigae"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which is the only mythical creature in the Chinese zodiac?",
+        "options": [
+         "Snake",
+         "Horse",
+         "Dragon",
+         "Goat"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Chinese New Year always falls in which months of the Gregorian calendar?",
+        "options": [
+         "Dec or Jan",
+         "Feb or Mar",
+         "Mar or Apr",
+         "Jan or Feb"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "On Seollal, what is the deep bow that younger people give to their elders called?",
+        "options": [
+         "Sebae",
+         "Jesa",
+         "Yutnori",
+         "Hanbok"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which square sticky rice cake wrapped in leaves is a classic Vietnamese Tết food?",
+        "options": [
+         "Bánh xèo",
+         "Bánh chưng",
+         "Bánh cuốn",
+         "Bánh bò"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In the Vietnamese zodiac, which animal takes the place of the Rabbit?",
+        "options": [
+         "Fox",
+         "Deer",
+         "Cat",
+         "Owl"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What is the Mongolian Lunar New Year called?",
+        "options": [
+         "Losar",
+         "Naadam",
+         "Nowruz",
+         "Tsagaan Sar"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The 12 zodiac animals combined with the five elements make a cycle of how many years?",
+        "options": [
+         "60",
+         "12",
+         "24",
+         "48"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "福 is hung upside down because “upside down” (dào) sounds like which word?",
+        "options": [
+         "Rich",
+         "Arrived",
+         "Spring",
+         "Double"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "Street Food",
+      "icon": "🍢",
+      "short": "Street Food",
+      "normal": [
+       {
+        "q": "Which Taiwanese night market snack is famous for its strong smell?",
+        "options": [
+         "Stinky tofu",
+         "Gua bao",
+         "Scallion pancake",
+         "Bubble tea"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "What are Japan’s battered balls with octopus inside called?",
+        "options": [
+         "Okonomiyaki",
+         "Takoyaki",
+         "Taiyaki",
+         "Yakitori"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Korean street food is chewy rice cakes in a spicy red sauce?",
+        "options": [
+         "Bibimbap",
+         "Japchae",
+         "Tteokbokki",
+         "Hotteok"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which Korean winter snack is a pancake filled with melted brown sugar syrup?",
+        "options": [
+         "Kimbap",
+         "Mandu",
+         "Sundubu",
+         "Hotteok"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which Hong Kong snack is a waffle made of little egg-shaped bubbles?",
+        "options": [
+         "Egg waffle",
+         "Egg tart",
+         "Pineapple bun",
+         "Mooncake"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Chinese snack is fruit on a skewer coated in hard, shiny sugar?",
+        "options": [
+         "Jianbing",
+         "Tanghulu",
+         "Youtiao",
+         "Baozi"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Vietnamese sandwich is served on a crusty baguette?",
+        "options": [
+         "Phở",
+         "Gỏi cuốn",
+         "Bánh mì",
+         "Bún chả"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which skewered grilled meat with peanut sauce is popular in Indonesia and Malaysia?",
+        "options": [
+         "Rendang",
+         "Laksa",
+         "Nasi lemak",
+         "Satay"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which Thai stir-fried rice noodle dish is flavored with tamarind?",
+        "options": [
+         "Pad thai",
+         "Tom yum",
+         "Green curry",
+         "Massaman"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Filipino snack is banana wrapped in a spring roll wrapper and fried?",
+        "options": [
+         "Puto",
+         "Turon",
+         "Bibingka",
+         "Ensaymada"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Indian snack is hollow crispy balls filled with spiced flavored water?",
+        "options": [
+         "Samosa",
+         "Pakora",
+         "Pani puri",
+         "Jalebi"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which Mumbai street food is a spiced potato fritter in a bread bun?",
+        "options": [
+         "Dosa",
+         "Biryani",
+         "Paratha",
+         "Vada pav"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "In Kolkata, pani puri is known by what name?",
+        "options": [
+         "Phuchka",
+         "Pav bhaji",
+         "Bhelpuri",
+         "Dabeli"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Char kway teow, loved in Malaysia and Singapore, is stir-fried what?",
+        "options": [
+         "Soba",
+         "Flat rice noodles",
+         "Glass noodles",
+         "Udon"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Sri Lankan street food is chopped flatbread stir-fried on a griddle?",
+        "options": [
+         "Hoppers",
+         "Lamprais",
+         "Kottu",
+         "Pol sambol"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "The “okonomi” in okonomiyaki roughly means what?",
+        "options": [
+         "Very hot",
+         "Round",
+         "From Osaka",
+         "As you like"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Korea’s fish-shaped bungeoppang is named after which fish?",
+        "options": [
+         "Carp",
+         "Tuna",
+         "Mackerel",
+         "Salmon"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "What is the Thai green papaya salad sold at street stalls called?",
+        "options": [
+         "Larb",
+         "Som tam",
+         "Khao soi",
+         "Tom kha"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "Festivals",
+      "icon": "🏮",
+      "short": "Festivals",
+      "normal": [
+       {
+        "q": "Diwali is widely known as the festival of what?",
+        "options": [
+         "Lights",
+         "Colors",
+         "Kites",
+         "Harvest"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Holi is widely known as the festival of what?",
+        "options": [
+         "Lights",
+         "Colors",
+         "Lanterns",
+         "Boats"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Songkran, the Thai New Year, is famous for what?",
+        "options": [
+         "Kite flying",
+         "Bonfires",
+         "Water fights",
+         "Snow sculptures"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Mooncakes are eaten during which festival?",
+        "options": [
+         "Dragon Boat",
+         "Qingming",
+         "Double Ninth",
+         "Mid-Autumn"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Chuseok is a major harvest festival in which country?",
+        "options": [
+         "Korea",
+         "Japan",
+         "Vietnam",
+         "Thailand"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Japan’s Obon festival honors whom?",
+        "options": [
+         "The emperor",
+         "Ancestors’ spirits",
+         "Children",
+         "Farmers"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Vesak marks the birth, enlightenment and passing of whom?",
+        "options": [
+         "Confucius",
+         "Gandhi",
+         "The Buddha",
+         "Laozi"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Eid al-Fitr marks the end of what?",
+        "options": [
+         "Hajj",
+         "Muharram",
+         "Winter",
+         "Ramadan"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which leaf-wrapped sticky rice is eaten at the Dragon Boat Festival?",
+        "options": [
+         "Zongzi",
+         "Tangyuan",
+         "Jiaozi",
+         "Mooncakes"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The small clay oil lamps lit for Diwali are called what?",
+        "options": [
+         "Rangoli",
+         "Diyas",
+         "Rakhis",
+         "Mehndi"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "What is the Japanese custom of picnicking under cherry blossoms called?",
+        "options": [
+         "Tanabata",
+         "Setsubun",
+         "Hanami",
+         "Obon"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "At Japan’s Tanabata, people hang written wishes on what?",
+        "options": [
+         "Pine trees",
+         "Paper lanterns",
+         "Temple bells",
+         "Bamboo"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "Which half-moon rice cakes are made for Chuseok?",
+        "options": [
+         "Songpyeon",
+         "Tteokguk",
+         "Hotteok",
+         "Injeolmi"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In Indonesia, Eid al-Fitr is popularly called what?",
+        "options": [
+         "Nyepi",
+         "Lebaran",
+         "Galungan",
+         "Waisak"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Onam is the harvest festival of which Indian state?",
+        "options": [
+         "Punjab",
+         "Gujarat",
+         "Kerala",
+         "Assam"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What is the folk dance performed during Japan’s Obon called?",
+        "options": [
+         "Kabuki",
+         "Noh",
+         "Butoh",
+         "Bon Odori"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In Mid-Autumn legend, which goddess lives on the moon?",
+        "options": [
+         "Chang’e",
+         "Guanyin",
+         "Mazu",
+         "Nüwa"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Mid-Autumn Festival falls on the 15th day of which lunar month?",
+        "options": [
+         "5th",
+         "8th",
+         "9th",
+         "12th"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "Languages",
+      "icon": "🈶",
+      "short": "Languages",
+      "normal": [
+       {
+        "q": "What is the Korean alphabet called?",
+        "options": [
+         "Hangul",
+         "Hiragana",
+         "Hanja",
+         "Kanji"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Japanese script is mainly used for foreign loanwords?",
+        "options": [
+         "Hiragana",
+         "Katakana",
+         "Kanji",
+         "Romaji"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "What does the Japanese word “arigatou” mean?",
+        "options": [
+         "Hello",
+         "Goodbye",
+         "Thank you",
+         "Excuse me"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Modern Vietnamese is written with which kind of script?",
+        "options": [
+         "Chinese characters",
+         "Khmer script",
+         "Cyrillic",
+         "Latin alphabet"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "“Annyeonghaseyo” is a greeting in which language?",
+        "options": [
+         "Korean",
+         "Japanese",
+         "Mongolian",
+         "Thai"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Hindi is mainly written in which script?",
+        "options": [
+         "Arabic",
+         "Devanagari",
+         "Tamil",
+         "Gurmukhi"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Besides English, what is an official language of the Philippines?",
+        "options": [
+         "Spanish",
+         "Malay",
+         "Filipino",
+         "Cebuano"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "How many main tones does Mandarin Chinese have?",
+        "options": [
+         "2",
+         "6",
+         "9",
+         "4"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The greeting “namaste” comes from which language?",
+        "options": [
+         "Sanskrit",
+         "Persian",
+         "Arabic",
+         "Tamil"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In which direction is Urdu written?",
+        "options": [
+         "Left to right",
+         "Right to left",
+         "Top to bottom",
+         "Bottom to top"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "“Xin chào” means hello in which language?",
+        "options": [
+         "Thai",
+         "Khmer",
+         "Vietnamese",
+         "Lao"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Tamil is spoken in India’s Tamil Nadu and is also an official language of which country?",
+        "options": [
+         "Nepal",
+         "Bhutan",
+         "Myanmar",
+         "Sri Lanka"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "Which Korean king created Hangul in the 1400s?",
+        "options": [
+         "Sejong",
+         "Taejo",
+         "Jeongjo",
+         "Gwanggaeto"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "How many basic characters are in the Japanese hiragana chart?",
+        "options": [
+         "26",
+         "46",
+         "52",
+         "72"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "How many consonant letters does the Thai alphabet have?",
+        "options": [
+         "26",
+         "33",
+         "44",
+         "52"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What is the best-known pre-colonial script of the Philippines called?",
+        "options": [
+         "Hiragana",
+         "Devanagari",
+         "Thaana",
+         "Baybayin"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "What is the Arabic-based script used to write Malay called?",
+        "options": [
+         "Jawi",
+         "Baybayin",
+         "Kana",
+         "Brahmi"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The English word “shampoo” comes from which language?",
+        "options": [
+         "Japanese",
+         "Hindi",
+         "Malay",
+         "Thai"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "Anime & Manga",
+      "icon": "🍥",
+      "short": "Anime",
+      "normal": [
+       {
+        "q": "Which studio made “My Neighbor Totoro”?",
+        "options": [
+         "Studio Ghibli",
+         "Toei Animation",
+         "Kyoto Animation",
+         "Madhouse"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In “Naruto,” which ninja village is Naruto from?",
+        "options": [
+         "Hidden Sand",
+         "Hidden Mist",
+         "Hidden Leaf",
+         "Hidden Cloud"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "In “One Piece,” what does Luffy get from eating the Gum-Gum Fruit?",
+        "options": [
+         "Fire powers",
+         "A rubber body",
+         "Invisibility",
+         "Super speed"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "What is Sailor Moon’s everyday name?",
+        "options": [
+         "Ami Mizuno",
+         "Rei Hino",
+         "Makoto Kino",
+         "Usagi Tsukino"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In “Death Note,” which student finds the notebook?",
+        "options": [
+         "Light Yagami",
+         "Ryuk",
+         "Misa Amane",
+         "Near"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Pokémon is number 001 in the National Pokédex?",
+        "options": [
+         "Pikachu",
+         "Mew",
+         "Bulbasaur",
+         "Charmander"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What color does Goku’s hair turn when he first goes Super Saiyan?",
+        "options": [
+         "Blue",
+         "Gold",
+         "Red",
+         "Silver"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In “Spirited Away,” what happens to Chihiro’s parents?",
+        "options": [
+         "They turn to stone",
+         "They fall asleep",
+         "They become frogs",
+         "They turn into pigs"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In “My Hero Academia,” what are people’s superpowers called?",
+        "options": [
+         "Quirks",
+         "Stands",
+         "Nen",
+         "Jutsu"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In “Fullmetal Alchemist,” Alphonse Elric’s soul is bound to what?",
+        "options": [
+         "A sword",
+         "A suit of armor",
+         "A doll",
+         "A pocket watch"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "What is Doraemon’s favorite snack?",
+        "options": [
+         "Mochi",
+         "Takoyaki",
+         "Dorayaki",
+         "Onigiri"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "In Japan, manga pages are traditionally read in which direction?",
+        "options": [
+         "Left to right",
+         "Clockwise",
+         "Bottom to top",
+         "Right to left"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "Who created the “Sailor Moon” manga?",
+        "options": [
+         "Rumiko Takahashi",
+         "Naoko Takeuchi",
+         "CLAMP",
+         "Ai Yazawa"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which studio animated the “Demon Slayer” TV anime?",
+        "options": [
+         "MAPPA",
+         "Bones",
+         "Wit Studio",
+         "ufotable"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which studio produced the original “Neon Genesis Evangelion” TV series?",
+        "options": [
+         "Gainax",
+         "Sunrise",
+         "Production I.G",
+         "Madhouse"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Who directed the anime series “Cowboy Bebop”?",
+        "options": [
+         "Mamoru Oshii",
+         "Satoshi Kon",
+         "Shinichirō Watanabe",
+         "Hideaki Anno"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "In “Dragon Ball,” what is Goku’s Saiyan birth name?",
+        "options": [
+         "Raditz",
+         "Kakarot",
+         "Bardock",
+         "Vegeta"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Rumiko Takahashi manga stars a boy who turns into a girl when splashed with cold water?",
+        "options": [
+         "Inuyasha",
+         "Urusei Yatsura",
+         "Maison Ikkoku",
+         "Ranma ½"
+        ],
+        "correct": 3
+       }
+      ]
+     },
+     {
+      "name": "K-Pop & K-Drama",
+      "icon": "🎤",
+      "short": "K-Pop",
+      "normal": [
+       {
+        "q": "PSY’s “Gangnam Style” is named after a district in which city?",
+        "options": [
+         "Busan",
+         "Seoul",
+         "Incheon",
+         "Daegu"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which K-pop group’s fans are called “ARMY”?",
+        "options": [
+         "BTS",
+         "EXO",
+         "SEVENTEEN",
+         "Stray Kids"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "What is the name of BLACKPINK’s fandom?",
+        "options": [
+         "ONCE",
+         "ARMY",
+         "BLINK",
+         "MY"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which entertainment company formed TWICE?",
+        "options": [
+         "SM Entertainment",
+         "YG Entertainment",
+         "HYBE",
+         "JYP Entertainment"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In “Squid Game,” what color are the masked guards’ jumpsuits?",
+        "options": [
+         "Pink",
+         "Green",
+         "Red",
+         "Black"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "G-Dragon rose to fame as the leader of which boy group?",
+        "options": [
+         "2NE1",
+         "Super Junior",
+         "SHINee",
+         "BIGBANG"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In K-pop, what does “maknae” mean?",
+        "options": [
+         "Leader",
+         "Youngest member",
+         "Main vocalist",
+         "Lead dancer"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Each K-pop group has its own official one of these for fans to wave at concerts.",
+        "options": [
+         "Flag",
+         "Hand fan",
+         "Lightstick",
+         "Scarf"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "In “Extraordinary Attorney Woo,” Woo Young-woo is obsessed with which animals?",
+        "options": [
+         "Whales",
+         "Penguins",
+         "Otters",
+         "Dolphins"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In “Descendants of the Sun,” Song Hye-kyo’s character works as a what?",
+        "options": [
+         "Lawyer",
+         "Teacher",
+         "Chef",
+         "Doctor"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The K-drama “Boys Over Flowers” (2009) is based on a manga from which country?",
+        "options": [
+         "China",
+         "Taiwan",
+         "Japan",
+         "Thailand"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which girl group released “Ddu-Du Ddu-Du” in 2018?",
+        "options": [
+         "TWICE",
+         "BLACKPINK",
+         "Red Velvet",
+         "ITZY"
+        ],
+        "correct": 1
+       }
+      ],
+      "hard": [
+       {
+        "q": "Founded by Lee Soo-man, which agency debuted the boy band H.O.T. in 1996?",
+        "options": [
+         "YG Entertainment",
+         "JYP Entertainment",
+         "SM Entertainment",
+         "Cube Entertainment"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Seo Taiji and Boys, often credited with launching modern K-pop, debuted in what year?",
+        "options": [
+         "1988",
+         "1992",
+         "1997",
+         "2001"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which girl group released “I Am the Best” in 2011?",
+        "options": [
+         "2NE1",
+         "Wonder Girls",
+         "KARA",
+         "f(x)"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Wonder Girls song made them the first K-pop group on the Billboard Hot 100?",
+        "options": [
+         "Tell Me",
+         "So Hot",
+         "Be My Baby",
+         "Nobody"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In 2003’s “Dae Jang Geum,” a palace cook rises to become the king’s first female what?",
+        "options": [
+         "General",
+         "Court painter",
+         "Minister",
+         "Royal physician"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which 2018 BTS album was the first K-pop album to top the Billboard 200?",
+        "options": [
+         "Wings",
+         "Love Yourself: Tear",
+         "Map of the Soul: 7",
+         "BE"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "Bollywood & Desi Pop",
+      "icon": "🎬",
+      "short": "Bollywood",
+      "normal": [
+       {
+        "q": "Which Bollywood legend is nicknamed “Big B”?",
+        "options": [
+         "Amitabh Bachchan",
+         "Shah Rukh Khan",
+         "Salman Khan",
+         "Aamir Khan"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which 1975 classic features the villain Gabbar Singh?",
+        "options": [
+         "Deewaar",
+         "Sholay",
+         "Don",
+         "Zanjeer"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Before her film career took off, Priyanka Chopra won which pageant in 2000?",
+        "options": [
+         "Miss Universe",
+         "Miss Earth",
+         "Miss World",
+         "Miss International"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "The song “Balam Pichkari” is set during which festival?",
+        "options": [
+         "Diwali",
+         "Eid",
+         "Navratri",
+         "Holi"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In “Kuch Kuch Hota Hai” (1998), what is Shah Rukh Khan’s character’s name?",
+        "options": [
+         "Rahul",
+         "Raj",
+         "Rohan",
+         "Aman"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "“Kollywood” refers to films made in which language?",
+        "options": [
+         "Telugu",
+         "Malayalam",
+         "Tamil",
+         "Kannada"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Deepika Padukone starred opposite Vin Diesel in which 2017 film?",
+        "options": [
+         "Fast & Furious 8",
+         "xXx: Return of Xander Cage",
+         "Bloodshot",
+         "Riddick"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In the song “Chaiyya Chaiyya,” Shah Rukh Khan dances on top of a moving what?",
+        "options": [
+         "Bus",
+         "Boat",
+         "Truck",
+         "Train"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which Pakistani singer sang “Tu Jaane Na” and “Pehli Nazar Mein”?",
+        "options": [
+         "Ali Zafar",
+         "Atif Aslam",
+         "Arijit Singh",
+         "Rahat Fateh Ali Khan"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Shah Rukh Khan’s 2007 film “Om Shanti Om” centers on which idea?",
+        "options": [
+         "Reincarnation",
+         "Time travel",
+         "Body swapping",
+         "Secret twins"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Hrithik Roshan plays a superhero in which film series?",
+        "options": [
+         "Dhoom",
+         "Ra.One",
+         "Krrish",
+         "War"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Singer-actor Diljit Dosanjh is best known for songs in which language?",
+        "options": [
+         "Gujarati",
+         "Hindi",
+         "Urdu",
+         "Punjabi"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "“Dilwale Dulhania Le Jayenge” famously ran for over 20 years at which Mumbai cinema?",
+        "options": [
+         "Maratha Mandir",
+         "Regal Cinema",
+         "Eros Cinema",
+         "Liberty Cinema"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "In “Mughal-e-Azam” (1960), Prince Salim falls in love with which court dancer?",
+        "options": [
+         "Mumtaz",
+         "Anarkali",
+         "Noor Jahan",
+         "Jodha"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "The Filmfare Award trophy is nicknamed what?",
+        "options": [
+         "The Golden Peacock",
+         "The Silver Lotus",
+         "The Black Lady",
+         "The Star of India"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Rock legend Ayub Bachchu fronted which Bangladeshi band?",
+        "options": [
+         "Warfaze",
+         "Miles",
+         "Feedback",
+         "LRB"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Panjabi MC’s “Mundian To Bach Ke” samples the theme from which American TV show?",
+        "options": [
+         "Knight Rider",
+         "Miami Vice",
+         "The A-Team",
+         "MacGyver"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Pakistani pop star Nazia Hassan sang “Aap Jaisa Koi” for which 1980 film?",
+        "options": [
+         "Sholay",
+         "Don",
+         "Qurbani",
+         "Disco Dancer"
+        ],
+        "correct": 2
+       }
+      ]
+     },
+     {
+      "name": "Sports & Games",
+      "icon": "🏸",
+      "short": "Sports",
+      "normal": [
+       {
+        "q": "How many players does a cricket team have on the field?",
+        "options": [
+         "9",
+         "10",
+         "11",
+         "12"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "In cricket, an over consists of how many legal deliveries?",
+        "options": [
+         "6",
+         "4",
+         "8",
+         "10"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Japanese company created Super Mario?",
+        "options": [
+         "Sega",
+         "Nintendo",
+         "Sony",
+         "Capcom"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Sonic the Hedgehog is the mascot of which company?",
+        "options": [
+         "Nintendo",
+         "Namco",
+         "Konami",
+         "Sega"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which company created the “Street Fighter” series?",
+        "options": [
+         "Capcom",
+         "Namco",
+         "Konami",
+         "SNK"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Japanese company created Pac-Man?",
+        "options": [
+         "Atari",
+         "Taito",
+         "Namco",
+         "Nintendo"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Standard mahjong is played by how many players?",
+        "options": [
+         "2",
+         "4",
+         "3",
+         "6"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In the board game Go (baduk), which color stone moves first?",
+        "options": [
+         "White",
+         "Red",
+         "Either one",
+         "Black"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "In 2022, which city became the first to host both Summer and Winter Olympics?",
+        "options": [
+         "Beijing",
+         "Tokyo",
+         "Seoul",
+         "Sapporo"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Arnis, a stick-fighting martial art, is the national sport of which country?",
+        "options": [
+         "Vietnam",
+         "Philippines",
+         "Thailand",
+         "Indonesia"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "A traditional sepak takraw ball is woven from what material?",
+        "options": [
+         "Leather",
+         "Rubber",
+         "Rattan",
+         "Silk"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "The martial art pencak silat is most closely associated with which country?",
+        "options": [
+         "Japan",
+         "India",
+         "Korea",
+         "Indonesia"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "In 2016, Google DeepMind’s AlphaGo beat which South Korean Go champion?",
+        "options": [
+         "Lee Sedol",
+         "Lee Chang-ho",
+         "Cho Hun-hyun",
+         "Park Jung-hwan"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Sapporo hosted Asia’s first Winter Olympics in what year?",
+        "options": [
+         "1964",
+         "1968",
+         "1972",
+         "1976"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which Chinese player won Olympic men’s singles badminton gold in 2008 and 2012?",
+        "options": [
+         "Chen Long",
+         "Lin Dan",
+         "Lee Chong Wei",
+         "Taufik Hidayat"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "India won its first Cricket World Cup in 1983 under which captain?",
+        "options": [
+         "Sunil Gavaskar",
+         "MS Dhoni",
+         "Sourav Ganguly",
+         "Kapil Dev"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Bangladesh played its first Test cricket match in what year?",
+        "options": [
+         "1992",
+         "1996",
+         "2000",
+         "2004"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which company published the first “Final Fantasy” game in 1987?",
+        "options": [
+         "Square",
+         "Enix",
+         "Capcom",
+         "Konami"
+        ],
+        "correct": 0
+       }
+      ]
+     },
+     {
+      "name": "Geography",
+      "icon": "🗺️",
+      "short": "Geography",
+      "normal": [
+       {
+        "q": "What is the capital of Vietnam?",
+        "options": [
+         "Ho Chi Minh City",
+         "Hanoi",
+         "Da Nang",
+         "Hue"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Mount Everest is part of which mountain range?",
+        "options": [
+         "Andes",
+         "Alps",
+         "Himalayas",
+         "Urals"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which river flows through Bangkok?",
+        "options": [
+         "Chao Phraya",
+         "Mekong",
+         "Irrawaddy",
+         "Salween"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which is the largest of Japan’s four main islands?",
+        "options": [
+         "Hokkaido",
+         "Kyushu",
+         "Shikoku",
+         "Honshu"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "What is the capital of South Korea?",
+        "options": [
+         "Busan",
+         "Seoul",
+         "Incheon",
+         "Daegu"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "The island of Bali belongs to which country?",
+        "options": [
+         "Malaysia",
+         "Philippines",
+         "Indonesia",
+         "Thailand"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "The Ganges River empties into which body of water?",
+        "options": [
+         "Bay of Bengal",
+         "Arabian Sea",
+         "Andaman Sea",
+         "Persian Gulf"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Southeast Asian country is landlocked?",
+        "options": [
+         "Cambodia",
+         "Vietnam",
+         "Myanmar",
+         "Laos"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which desert stretches across Mongolia and northern China?",
+        "options": [
+         "Thar",
+         "Gobi",
+         "Sahara",
+         "Kalahari"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "The island nation of Sri Lanka lies in which ocean?",
+        "options": [
+         "Pacific",
+         "Atlantic",
+         "Indian",
+         "Arctic"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What is the longest river in China?",
+        "options": [
+         "Yangtze",
+         "Yellow River",
+         "Pearl River",
+         "Mekong"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "What is the capital of Malaysia?",
+        "options": [
+         "Penang",
+         "Johor Bahru",
+         "Malacca",
+         "Kuala Lumpur"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "What is the capital of Mongolia?",
+        "options": [
+         "Ulaanbaatar",
+         "Bishkek",
+         "Astana",
+         "Thimphu"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The Mekong River reaches the sea through a delta in which country?",
+        "options": [
+         "Cambodia",
+         "Thailand",
+         "Vietnam",
+         "Laos"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "What is the capital of Bhutan?",
+        "options": [
+         "Paro",
+         "Thimphu",
+         "Punakha",
+         "Kathmandu"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which river flows through the city of Seoul?",
+        "options": [
+         "Nakdong",
+         "Geum",
+         "Taedong",
+         "Han"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "What is the capital of Laos?",
+        "options": [
+         "Luang Prabang",
+         "Phnom Penh",
+         "Vientiane",
+         "Pakse"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Borneo is shared by Indonesia, Malaysia and which other country?",
+        "options": [
+         "Singapore",
+         "Brunei",
+         "Philippines",
+         "Timor-Leste"
+        ],
+        "correct": 1
+       }
+      ]
+     },
+     {
+      "name": "History",
+      "icon": "📜",
+      "short": "History",
+      "normal": [
+       {
+        "q": "Qin Shi Huang was the first emperor of which Chinese dynasty?",
+        "options": [
+         "Han",
+         "Tang",
+         "Qin",
+         "Zhou"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Cai Lun of Han China is traditionally credited with inventing what?",
+        "options": [
+         "Paper",
+         "Gunpowder",
+         "The compass",
+         "Printing press"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Genghis Khan founded which empire?",
+        "options": [
+         "Ottoman",
+         "Mughal",
+         "Persian",
+         "Mongol"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Babur founded which empire in India in 1526?",
+        "options": [
+         "Maurya",
+         "Mughal",
+         "Gupta",
+         "Chola"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Samurai were the warrior class of which country?",
+        "options": [
+         "China",
+         "Korea",
+         "Japan",
+         "Vietnam"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which ancient trade network linked China with the Mediterranean?",
+        "options": [
+         "Silk Road",
+         "Spice Bridge",
+         "Amber Road",
+         "Tea Canal"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which Korean king created the Hangul alphabet?",
+        "options": [
+         "Gwanggaeto",
+         "Taejo",
+         "Jeongjo",
+         "Sejong the Great"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Mahatma Gandhi led the famous 1930 Salt March in which country?",
+        "options": [
+         "Sri Lanka",
+         "India",
+         "Nepal",
+         "Myanmar"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "What was the last imperial dynasty of China?",
+        "options": [
+         "Ming",
+         "Song",
+         "Qing",
+         "Yuan"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Japan’s long policy of national isolation (sakoku) was part of which period?",
+        "options": [
+         "Edo",
+         "Heian",
+         "Meiji",
+         "Nara"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Gunpowder was first invented in which country?",
+        "options": [
+         "India",
+         "Persia",
+         "Japan",
+         "China"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Mohenjo-daro was a city of which ancient civilization?",
+        "options": [
+         "Mesopotamian",
+         "Indus Valley",
+         "Khmer",
+         "Shang"
+        ],
+        "correct": 1
+       }
+      ],
+      "hard": [
+       {
+        "q": "Which Mauryan emperor embraced Buddhism after the Kalinga War?",
+        "options": [
+         "Chandragupta",
+         "Akbar",
+         "Ashoka",
+         "Harsha"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Admiral Zheng He led great sea voyages for which Chinese dynasty?",
+        "options": [
+         "Ming",
+         "Tang",
+         "Han",
+         "Qing"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The maritime Srivijaya empire was centered on which island?",
+        "options": [
+         "Java",
+         "Luzon",
+         "Borneo",
+         "Sumatra"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Which clan took power in Japan after the Battle of Sekigahara (1600)?",
+        "options": [
+         "Minamoto",
+         "Tokugawa",
+         "Ashikaga",
+         "Toyotomi"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Korean dynasty ruled from 1392 to 1897?",
+        "options": [
+         "Goryeo",
+         "Silla",
+         "Joseon",
+         "Baekje"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Who wrote “The Tale of Genji” in Heian-era Japan?",
+        "options": [
+         "Murasaki Shikibu",
+         "Sei Shōnagon",
+         "Matsuo Bashō",
+         "Ono no Komachi"
+        ],
+        "correct": 0
+       }
+      ]
+     },
+     {
+      "name": "Landmarks",
+      "icon": "🏯",
+      "short": "Landmarks",
+      "normal": [
+       {
+        "q": "Angkor Wat is in which country?",
+        "options": [
+         "Thailand",
+         "Cambodia",
+         "Laos",
+         "Vietnam"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which Mughal emperor built the Taj Mahal?",
+        "options": [
+         "Akbar",
+         "Babur",
+         "Aurangzeb",
+         "Shah Jahan"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The Forbidden City palace complex is in which city?",
+        "options": [
+         "Beijing",
+         "Shanghai",
+         "Xi’an",
+         "Nanjing"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The Buddhist temple Borobudur is in which country?",
+        "options": [
+         "Myanmar",
+         "Sri Lanka",
+         "Indonesia",
+         "Thailand"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "The Petronas Twin Towers stand in which city?",
+        "options": [
+         "Singapore",
+         "Jakarta",
+         "Manila",
+         "Kuala Lumpur"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Kinkaku-ji, the “Golden Pavilion,” is in which Japanese city?",
+        "options": [
+         "Tokyo",
+         "Kyoto",
+         "Osaka",
+         "Nara"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Gyeongbokgung Palace was built by which Korean dynasty?",
+        "options": [
+         "Joseon",
+         "Goryeo",
+         "Silla",
+         "Baekje"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Most of the Great Wall seen by visitors today was built under which dynasty?",
+        "options": [
+         "Qin",
+         "Han",
+         "Ming",
+         "Tang"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Marina Bay Sands, with its rooftop SkyPark, is in which country?",
+        "options": [
+         "Malaysia",
+         "Singapore",
+         "Philippines",
+         "Thailand"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Tokyo Tower’s design was inspired by which famous tower?",
+        "options": [
+         "Big Ben",
+         "CN Tower",
+         "Space Needle",
+         "Eiffel Tower"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The Grand Palace, former royal residence of Thai kings, is in which city?",
+        "options": [
+         "Bangkok",
+         "Chiang Mai",
+         "Ayutthaya",
+         "Phuket"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "The Golden Temple in Amritsar is the holiest shrine of which religion?",
+        "options": [
+         "Jainism",
+         "Buddhism",
+         "Sikhism",
+         "Hinduism"
+        ],
+        "correct": 2
+       }
+      ],
+      "hard": [
+       {
+        "q": "The Shwedagon Pagoda is in which city?",
+        "options": [
+         "Mandalay",
+         "Yangon",
+         "Bagan",
+         "Naypyidaw"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Japan’s famous “floating” torii gate belongs to which shrine?",
+        "options": [
+         "Fushimi Inari",
+         "Meiji Jingu",
+         "Ise Grand Shrine",
+         "Itsukushima"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Angkor Wat was originally dedicated to which Hindu god?",
+        "options": [
+         "Vishnu",
+         "Shiva",
+         "Brahma",
+         "Ganesha"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Which king built Sri Lanka’s rock fortress of Sigiriya?",
+        "options": [
+         "Dutugemunu",
+         "Parakramabahu I",
+         "Kashyapa I",
+         "Devanampiya Tissa"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Japan’s Himeji Castle is nicknamed after which bird?",
+        "options": [
+         "Golden Eagle",
+         "White Heron",
+         "Black Crow",
+         "Red Phoenix"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Prambanan, a temple complex on Java, was built for which religion?",
+        "options": [
+         "Buddhism",
+         "Islam",
+         "Jainism",
+         "Hinduism"
+        ],
+        "correct": 3
+       }
+      ]
+     },
+     {
+      "name": "Arts & Crafts",
+      "icon": "🎨",
+      "short": "Arts",
+      "normal": [
+       {
+        "q": "Origami is the Japanese art of folding what?",
+        "options": [
+         "Cloth",
+         "Paper",
+         "Leaves",
+         "Metal"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "In batik, which material is applied to cloth to resist the dye?",
+        "options": [
+         "Wax",
+         "Clay",
+         "Salt",
+         "Oil"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Rangoli designs are traditionally created on the…",
+        "options": [
+         "Ceiling",
+         "Walls",
+         "Floor",
+         "Windows"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Which Japanese theatre form is known for bold makeup and dramatic poses?",
+        "options": [
+         "Noh",
+         "Bunraku",
+         "Rakugo",
+         "Kabuki"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The sitar is a stringed instrument from which country?",
+        "options": [
+         "Indonesia",
+         "India",
+         "Japan",
+         "China"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Ikebana is the Japanese art of arranging what?",
+        "options": [
+         "Flowers",
+         "Stones",
+         "Tea leaves",
+         "Sand"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Traditional Chinese calligraphy is written with a…",
+        "options": [
+         "Quill",
+         "Pencil",
+         "Brush",
+         "Chisel"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Gamelan music ensembles come from which country?",
+        "options": [
+         "Indonesia",
+         "Vietnam",
+         "Korea",
+         "Nepal"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Peking opera is a traditional theatre form from which country?",
+        "options": [
+         "Japan",
+         "Korea",
+         "Thailand",
+         "China"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "The Chinese erhu is a two-stringed instrument played with a…",
+        "options": [
+         "Pick",
+         "Bow",
+         "Mallet",
+         "Reed"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Kintsugi is the Japanese art of repairing what?",
+        "options": [
+         "Kites",
+         "Paper fans",
+         "Broken pottery",
+         "Silk robes"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Dancers of the Philippine tinikling hop between which moving objects?",
+        "options": [
+         "Ropes",
+         "Swords",
+         "Drums",
+         "Bamboo poles"
+        ],
+        "correct": 3
+       }
+      ],
+      "hard": [
+       {
+        "q": "In ikat weaving, what is dyed before the cloth is woven?",
+        "options": [
+         "The threads",
+         "The loom",
+         "The pattern card",
+         "The finished cloth"
+        ],
+        "correct": 0
+       },
+       {
+        "q": "Japanese Bunraku theatre is performed using what?",
+        "options": [
+         "Masks",
+         "Shadows",
+         "Puppets",
+         "Mime"
+        ],
+        "correct": 2
+       },
+       {
+        "q": "Wayang kulit from Java is a form of what?",
+        "options": [
+         "Mask dance",
+         "Shadow puppetry",
+         "Martial art",
+         "Woodcarving"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "Which classical dance-drama from Kerala features elaborate painted faces?",
+        "options": [
+         "Kathak",
+         "Odissi",
+         "Manipuri",
+         "Kathakali"
+        ],
+        "correct": 3
+       },
+       {
+        "q": "Korean celadon from the Goryeo dynasty is famous for which glaze color?",
+        "options": [
+         "Cobalt blue",
+         "Jade green",
+         "Ox-blood red",
+         "Pure white"
+        ],
+        "correct": 1
+       },
+       {
+        "q": "How many strings does a Japanese shamisen have?",
+        "options": [
+         "Three",
+         "Two",
+         "Four",
+         "Six"
+        ],
+        "correct": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
     "name": "Speed Quiz: General",
     "group": "Speed Quiz",
     "variant": "A",

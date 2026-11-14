@@ -87,6 +87,7 @@
       if (e.type === 'correct' && mine && !e.quiet) { const c = FX.centerOf($('.p-top')); FX.confetti(c.x, c.y, { count: 40, power: 0.8 }); }
       if (e.type === 'wrong' && mine) { FX.restart($('.p-main'), 'shake', 550); if (navigator.vibrate) navigator.vibrate(300); }
       if (e.type === 'end') setTimeout(() => FX.celebrate(), 300);
+      if (e.type === 'bingo' && mine) { if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200]); setTimeout(() => FX.celebrate(), 200); }
     });
 
     /* ---------- game screen ---------- */

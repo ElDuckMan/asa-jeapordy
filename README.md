@@ -65,9 +65,27 @@ The lobby has a **🎉 Party games** card in every pack, so you can play any of 
 
 The host can remove player-written entries, such as fakes and Two Truths, before they reach the screen. Party content lives in `packs-src/party-*.json` (format: `packs-src/PARTY.md`). Run `node packs-src/build.js` after editing it.
 
+## Category Bingo (Asia)
+
+Players get a bingo card on their phone. The big screen calls the categories.
+
+**How a turn works**
+1. The host taps **🎲 Draw**. A category is picked and its 4-option question goes to every phone at once.
+2. Players have 15 seconds to answer.
+3. A right answer marks one square of that category. Each card has every category twice, so the player picks which square.
+4. **🔥 Double down:** if right, mark 2 squares; if wrong, lose your last marked square.
+
+**Close finishes:** once anyone is one square away, the next question is a hard one. The big screen shows how many players need just one more.
+
+**Rounds:** any line, then four corners, then the X. Each bingo is worth +500 to the winner's team (a solo player is a team of one). The cards stay the same; only the marks reset.
+
+**Questions:** 12 categories, 216 questions (12 normal + 6 hard each), all fact-checked. They're in `packs-src/bingo-*.json`; the format is in `packs-src/BINGO.md`.
+
+**Simulated length:** with 25 players getting 60% right, the first bingo comes after about 10 questions (8–15).
+
 ## Blitz modes (Blooket-style)
 
-Find them in the 🎉 Party games card in the lobby, or in the Party Games pack. Each mode has General, Asia and Church question sets. Before you press Start, choose **Individuals** or **Teams**. In team mode, every point a player earns also goes to their team's score.
+Find them in the 🎉 Games menu in the lobby: pick General / Asia / Church once, then tap a game. Each mode has General, Asia and Church question sets. Before you press Start, choose **Individuals** or **Teams**. In team mode, every point a player earns also goes to their team's score.
 
 | Mode | How it plays |
 |---|---|

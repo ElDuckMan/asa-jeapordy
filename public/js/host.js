@@ -215,13 +215,33 @@
     }
 
     /* Party games: start any mode from any pack. Each mode has General / Asia / Church sets. */
+    /* Games menu: pick a question set once, then tap a game. Works in any pack; scores carry over. */
+    const GAME_SECTIONS = [
+      ['Everyone answers at once', [['Category Bingo', '🎱', 'Bingo cards on phones; right answers mark squares'], ['Speed Quiz', '⚡', 'Team multiple choice; faster scores more'],
+        ['Classic', '🎯', 'Everyone for themselves; faster scores more'], ['Battle Royale', '⚔️', '3 hearts each; last one standing'],
+        ['Closest Guess', '📏', 'Guess the number; closest wins'], ['Name That Tune', '🎵', 'Songs on the big screen; pick the title']]],
+      ['Blooket-style (own pace)', [['Gold Quest', '💰', 'Open chests: gold, steal, swap'], ['Racing', '🏁', 'Right answers move you forward'], ['Tower Defense', '🏰', 'Buy towers, survive the waves']]],
+      ['Buzz-in', [['Emoji Decode', '😀', 'Lightning round of emoji puzzles']]],
+      ['Creative & social', [['Fake Out', '🎭', 'Write fakes, find the truth'], ['Survey Says', '📋', 'The room answers, then play the board'],
+        ['Two Truths & a Lie', '🤥', 'Players write their own'], ['Wheel', '🎡', 'Spin, call letters, solve'], ['Draw & Guess', '✏️', 'One phone draws live, others guess']]]
+    ];
+    const SETS = [['A', 'General'], ['B', 'Asia'], ['C', 'Church']];
+    let gameSet = get('asa-set', 'B');
     function partyLauncher(s) {
       const pk = AsaPacks.get('party');
       if (!pk) return '';
-      const gs = AsaPacks.groups(pk.game.rounds);
-      return card(`<h2 class="hand">🎉 Party games</h2><p class="small muted">Play any of these between rounds. Scores carry over.</p>
-        <div class="h-party">${gs.map(g => `<div class="h-tr"><b>${esc(g.group)}</b><span class="row">${g.items.map(it => btn('partyStart', esc(pk.game.rounds[it.i].label || it.variant || 'Play'), 'sm hi', { g: g.group, v: it.variant })).join('')}</span></div>`).join('')}
-        <p class="small muted">🎵 Want your own songs? Game editor → “+ 🎵 Name That Tune” → paste YouTube links.</p></div>`);
+      const gs = AsaPacks.groups(pk.game.rounds), byName = Object.fromEntries(gs.map(g => [g.group, g]));
+      const tile = ([name, icon, blurb]) => {
+        const g = byName[name]; if (!g) return '';
+        const it = g.items.find(x => x.variant === gameSet) || (g.items.length === 1 && !g.items[0].variant ? g.items[0] : null);
+        const only = !it ? g.items.map(x => x.label).filter(Boolean).join(', ') : '';
+        return `<button type="button" class="gm-tile paper" data-act="partyStart" data-g="${esc(name)}" data-v="${esc(it ? it.variant : '')}" ${it ? '' : 'disabled'}>
+          <span class="gm-ic" aria-hidden="true">${icon}</span><span class="gm-nm">${esc(name)}</span><span class="gm-bl">${it ? esc(blurb) : `${esc(only)} only`}</span></button>`;
+      };
+      return card(`<h2 class="hand">🎉 Games</h2>
+        <div class="gm-sets" role="group" aria-label="Question set"><span class="small muted">Questions:</span>${SETS.map(([v, n]) => btn('gameSet', n, 'sm ' + (gameSet === v ? 'on' : ''), { v })).join('')}</div>
+        ${GAME_SECTIONS.map(([sec, list]) => `<div class="gm-sec"><div class="gm-h">${esc(sec)}</div><div class="gm-grid">${list.map(tile).join('')}</div></div>`).join('')}
+        <p class="small muted">Scores carry over between games. 🎵 Your own songs: Game editor → “+ 🎵 Name That Tune”.</p>`);
     }
     function cluePanel(s) {
       const q = s.q;
@@ -391,6 +411,7 @@
         }
         case 'dismissRestore': restoreDismissed = true; return drawLive();
         case 'cancelPack': pickingPack = false; return drawLive();
+        case 'gameSet': gameSet = b.dataset.v; put('asa-set', gameSet); return drawLive();
         case 'partyStart': {
           const pk = AsaPacks.get('party'), g = b.dataset.g, v = b.dataset.v;
           const at = S.rounds.findIndex(r => r.group === g && (r.variant || '') === v);
