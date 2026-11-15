@@ -210,7 +210,7 @@
       }
     });
 
-    if (window.PartyUI) PartyUI.bindPlay(root, net);
+    if (window.PartyUI) PartyUI.bindPlay(root, net, () => S);
     showJoin();
     return { get state() { return S; } };
   };

@@ -237,3 +237,35 @@
 .gm-ic{grid-row:1/3;font-size:28px}
 .gm-nm{font-weight:bold;font-size:16px;line-height:1.1}
 .gm-bl{font-size:12.5px;line-height:1.2;opacity:.8}
+
+/* Category Bingo: team board mode */
+.tb-layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:18px;align-items:start}
+.tb-boardbox{padding:12px;border-radius:14px}
+.tb-grid{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:6px}
+.tb-sq{all:unset;box-sizing:border-box;aspect-ratio:1;display:grid;place-items:center;align-content:center;gap:2px;position:relative;border-radius:10px;background:#fffdf7;border:3px solid var(--ink);text-align:center;overflow:hidden}
+.tb-sq .i{font-size:clamp(20px,2.6vw,36px);line-height:1}
+.tb-sq small{font-size:clamp(10px,1vw,14px);font-weight:bold;line-height:1.05;padding:0 2px}
+.tb-sq em{position:absolute;top:2px;right:4px;font-style:normal;font-size:.8em}
+.tb-sq.own{background:var(--c);color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.6);animation:stamp .45s var(--bounce)}
+.tb-sq.sel{box-shadow:0 0 0 4px #ffd84d,0 0 20px 6px rgba(255,216,77,.8);transform:scale(1.06);z-index:1}
+.tb-sq.win{box-shadow:0 0 0 5px #fff,0 0 24px 8px rgba(255,216,77,1);animation:tick .8s steps(2) infinite}
+.tb-grid.small{gap:4px}
+.tb-grid.small .tb-sq{border-width:2px;border-radius:7px}
+.tb-grid.small .tb-sq .i{font-size:20px}
+.tb-grid.small .tb-sq small{font-size:9px}
+.tb-sq.pickable{cursor:pointer;box-shadow:0 3px 0 var(--ink)}
+.tb-sq.pickable:active{transform:translateY(2px);box-shadow:none}
+.tb-side{padding:18px;text-align:center;display:grid;gap:10px}
+.tb-q{font-size:clamp(22px,2.8vw,36px);line-height:1.2}
+.tb-ch{display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:left}
+.tb-ch span{padding:8px 12px;font-size:clamp(16px,1.8vw,22px)}
+.tb-call{font-size:clamp(34px,4.4vw,60px);color:var(--red);animation:tick .6s steps(2) infinite}
+.tb-turn{display:grid;gap:6px;justify-items:center;font-size:clamp(22px,2.6vw,34px)}
+.tb-turn .chip{font-size:1em}
+.tb-res{font-size:clamp(26px,3vw,40px);color:var(--red)}
+.tb-res.ok{color:var(--green)}
+@media (max-width:900px){.tb-layout{grid-template-columns:1fr}}
+/* keep the whole board on screen at projector heights */
+.tb-boardbox{width:min(100%,calc(100vh - 290px));justify-self:center}
+.tb-wrap .tb-sq small{font-size:clamp(9px,1.4vh,14px)}
+.tb-wrap .tb-sq .i{font-size:clamp(18px,4vh,36px)}

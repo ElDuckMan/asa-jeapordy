@@ -35,7 +35,7 @@
       normal: arr(c && c.normal, 200).map(mcq).filter(x => x.q && x.options.length >= 2), hard: arr(c && c.hard, 200).map(mcq).filter(x => x.q && x.options.length >= 2) }))
       .filter(c => c.name && c.normal.length);
     const pats = arr(r.patterns, 6).filter(p => PATTERNS[p]);
-    return { type: 'bingo', name: str(r.name, 60) || `Round ${i + 1}`, label: str(r.label, 30), timer: int(r.timer, 15, 5, 120),
+    return { type: 'bingo', name: str(r.name, 60) || `Round ${i + 1}`, label: str(r.label, 30), timer: int(r.timer, 15, 5, 120), mode: r.mode === 'cards' ? 'cards' : 'board',
       points: int(r.points, 500, 0, 100000), patterns: pats.length ? pats : ['line', 'corners', 'x'], cats };
   }
 
@@ -46,7 +46,7 @@
     const clearT = P => { if (P.timer) { clearTimeout(P.timer); P.timer = null; } };
 
     function start(room, r) {
-      room.party = { type: 'bingo', bingo: true, r, stage: 'intro', round: 0, cards: {}, cat: null, q: null, hard: false, used: {}, ans: {}, results: null,
+      room.party = { type: 'bingo', bingo: true, mode: r.mode || 'board', size: 5, random: false, r, stage: 'intro', round: 0, cards: {}, cat: null, q: null, hard: false, used: {}, ans: {}, results: null,
         pending: {}, winners: [], lastCat: null, history: [], turn: 0, timer: null, timerEnd: null, timerSec: 0 };
     }
     function stop(room) { if (room.party) clearT(room.party); room.party = null; }
@@ -162,7 +162,7 @@
       fx(room, 'round', { name: `Round ${P.round + 1}: ${pattern(P).name}`, kind: 'bingo' });
     }
 
-    function host(room, d) {
+    function cardHost(room, d) {
       const P = room.party, a = d.action;
       if (a === 'begin' || a === 'draw') { if (P.stage === 'intro') P.stage = 'ready'; return draw(room); }
       if (a === 'reveal') return reveal(room);
@@ -170,7 +170,7 @@
       if (a === 'end') { clearT(P); P.timerEnd = null; P.stage = 'done'; fx(room, 'end'); return; }
       return { error: 'Unknown action.' };
     }
-    function player(room, p, d) {
+    function cardPlayer(room, p, d) {
       const P = room.party, a = d.action;
       card(room, p.id);
       if (a === 'answer') {
@@ -193,7 +193,7 @@
       return { error: 'Not now.', quiet: true };
     }
 
-    function view(room, role) {
+    function cardView(room, role) {
       const P = room.party, host = role === 'host', pat = pattern(P);
       const v = { type: 'bingo', bingo: true, name: P.r.name, label: P.r.label, stage: P.stage, round: P.round, rounds: P.r.patterns.length,
         pattern: P.r.patterns[Math.min(P.round, P.r.patterns.length - 1)], patternName: pat.name, patternCells: [...new Set(pat.sets.length === 1 ? pat.sets[0] : [])],
@@ -207,13 +207,157 @@
       if (host) v.nearNames = Object.keys(P.cards).filter(pid => room.players[pid] && !isWinner(P, pid) && missing(P, P.cards[pid]) === 1).map(pid => room.players[pid].name);
       return v;
     }
-    function mine(room, pid) {
+    function cardMine(room, pid) {
       const P = room.party; if (!room.players[pid]) return null;
       const cd = card(room, pid), pend = P.pending[pid], a = P.ans[pid], r = P.results && P.results.per[pid];
       return { bingo: { layout: cd.layout, marked: cd.marked, missing: missing(P, cd), won: isWinner(P, pid),
         pending: pend ? { cat: pend.cat, n: pend.n, cells: cd.layout.map((c, i) => c === pend.cat && !cd.marked[i] ? i : -1).filter(i => i >= 0) } : null,
         ans: a ? { choice: a.choice, dbl: a.dbl } : null, result: r || null } };
     }
+    /* ======================= TEAM BOARD MODE (buzz-in, connect five) =======================
+     * One shared N×N board of category squares on the big screen. The team in control picks a square, the host reads
+     * the question, buzzers open for everyone. First right answer claims the square in that team's colour and takes
+     * control; a wrong answer locks that team out so others can steal. First team with N in a row wins. */
+    const LOCK_MS = 250, WINDOW_MS = 300;
+    function newBoard(room) {
+      const P = room.party, N = P.size, n = P.r.cats.length, cells = N * N;
+      const cats = shuffle(Array.from({ length: cells }, (_, i) => i % n), rnd);
+      const centre = N % 2 ? Math.floor(cells / 2) : -1;
+      P.board = { N, cells: cats.map((c, i) => ({ cat: c, hard: i === centre, owner: null })), line: null };
+      Object.assign(P, { stage: 'pick', sel: null, q: null, cat: null, buzz: null, locked: [], early: {}, winners: [], showChoices: false, timerEnd: null });
+      const ids = Object.keys(room.teams);
+      if (!P.control || !room.teams[P.control]) P.control = ids[Math.floor(rnd() * ids.length)] || null;
+    }
+    function lines(N) {
+      const L = [];
+      for (let r = 0; r < N; r++) L.push(Array.from({ length: N }, (_, c) => r * N + c));
+      for (let c = 0; c < N; c++) L.push(Array.from({ length: N }, (_, r) => r * N + c));
+      L.push(Array.from({ length: N }, (_, i) => i * N + i), Array.from({ length: N }, (_, i) => i * N + (N - 1 - i)));
+      return L;
+    }
+    function boardWin(room) {
+      const P = room.party, B = P.board;
+      for (const ln of lines(B.N)) { const o = B.cells[ln[0]].owner; if (o && ln.every(i => B.cells[i].owner === o)) return { team: o, line: ln }; }
+      return null;
+    }
+    function nextTeam(room, from) {
+      const ids = Object.keys(room.teams); if (!ids.length) return null;
+      const k = ids.indexOf(from); return ids[(k + 1) % ids.length];
+    }
+    function pickSquare(room, i, byTeam) {
+      const P = room.party, B = P.board;
+      if (!['pick', 'claimed', 'missed'].includes(P.stage)) return { error: 'Not time to pick a square.' };
+      if (byTeam && byTeam !== P.control) return { error: 'It\'s not your team\'s pick.' };
+      const c = B.cells[int(i, -1, -1, B.cells.length - 1)];
+      if (!c) return { error: 'Pick a square.' };
+      if (c.owner) return { error: 'That square is taken.' };
+      P.sel = B.cells.indexOf(c);
+      const { item } = pickQuestion(P, c.cat, c.hard);
+      Object.assign(P, { q: item, cat: c.cat, hard: c.hard, stage: 'reading', buzz: null, locked: [], early: {}, showChoices: false, openSeq: (P.openSeq || 0) + 1, turn: P.turn + 1 });
+      P.history.push(c.cat); if (P.history.length > 10) P.history.shift();
+      fx(room, 'draw', { cat: c.cat, name: P.r.cats[c.cat].name, icon: P.r.cats[c.cat].icon, hard: c.hard });
+    }
+    function openBuzz(room) {
+      const P = room.party;
+      if (!['reading', 'open', 'buzzed'].includes(P.stage)) return;
+      P.stage = 'open'; P.openAt = now(); P.openSeq++; P.pend = [];
+      clearT(P); P.timerEnd = now() + 12000; P.timerSec = 12;
+      P.timer = setTimeout(() => { if (room.party !== P || P.stage !== 'open') return; miss(room); broadcast(room); }, 12000);
+      fx(room, 'open');
+    }
+    function buzz(room, p, d) {
+      const P = room.party, tid = p.teamId;
+      if (P.stage === 'reading') { P.early[p.id] = now() + LOCK_MS; return { early: true, ms: LOCK_MS, quiet: true }; }
+      if (P.stage !== 'open' || int(d.seq, -1) !== P.openSeq) return { quiet: true };
+      if (P.locked.includes(tid)) return { lockedOut: true, quiet: true };
+      if (P.early[p.id] && P.early[p.id] > now()) return { early: true, ms: P.early[p.id] - now(), quiet: true };
+      const server = now() - P.openAt, client = Number(d.reaction);
+      const t = Number.isFinite(client) && client >= 0 && client < server + 50 ? Math.min(client, server) : server;
+      P.pend.push({ pid: p.id, tid, t });
+      if (P.pend.length === 1) setTimeout(() => {
+        if (room.party !== P || P.stage !== 'open' || !P.pend.length) return;
+        const w = P.pend.sort((a, b) => a.t - b.t)[0];
+        clearT(P); P.timerEnd = null;
+        P.buzz = { team: w.tid, pid: w.pid, name: (room.players[w.pid] || {}).name || '' };
+        P.stage = 'buzzed'; P.pend = [];
+        fx(room, 'buzz', { team: w.tid });
+        broadcast(room);
+      }, WINDOW_MS);
+      return { ok: true, quiet: true };
+    }
+    function judge(room, ok) {
+      const P = room.party, B = P.board;
+      if (P.stage !== 'buzzed' || !P.buzz) return { error: 'Nobody has buzzed.' };
+      const tid = P.buzz.team;
+      if (ok) {
+        B.cells[P.sel].owner = tid; P.control = tid;
+        award(room, tid, P.hard ? 200 : 100);
+        fx(room, 'correct', { team: tid });
+        const w = boardWin(room);
+        if (w) {
+          B.line = w.line; P.stage = 'won';
+          P.winners = [{ team: tid, name: (room.teams[tid] || {}).name || '' }];
+          award(room, tid, P.r.points);
+          fx(room, 'bingo', { team: tid, name: (room.teams[tid] || {}).name || '' });
+        } else if (B.cells.every(c => c.owner)) { P.stage = 'full'; fx(room, 'end'); }
+        else P.stage = 'claimed';
+        return;
+      }
+      fx(room, 'wrong', { team: tid });
+      P.locked.push(tid); P.buzz = null;
+      if (Object.keys(room.teams).every(t => P.locked.includes(t))) return miss(room);
+      openBuzz(room);
+    }
+    function miss(room) {
+      const P = room.party; clearT(P); P.timerEnd = null;
+      P.stage = 'missed'; P.control = nextTeam(room, P.control);
+      fx(room, 'timeup');
+    }
+    function boardHost(room, d) {
+      const P = room.party, a = d.action;
+      if (a === 'size' && P.stage === 'intro') { P.size = int(d.k, 5, 4, 5); return; }
+      if (a === 'random' && ['intro', 'won', 'full'].includes(P.stage)) { P.random = !!d.ok; return; }
+      if (a === 'begin' || a === 'newBoard') { newBoard(room); return; }
+      if (a === 'control' && room.teams[d.team]) { P.control = d.team; return; }
+      if (a === 'pick') return pickSquare(room, d.k);
+      if (a === 'choices') { P.showChoices = true; return; }
+      if (a === 'open') return openBuzz(room);
+      if (a === 'judge') return judge(room, !!d.ok);
+      if (a === 'skip') { if (['reading', 'open', 'buzzed'].includes(P.stage)) miss(room); return; }
+      if (a === 'next') { if (['claimed', 'missed'].includes(P.stage)) { P.stage = 'pick'; P.sel = null; P.q = null; P.buzz = null; } return; }
+      if (a === 'end') { clearT(P); P.timerEnd = null; P.stage = 'done'; fx(room, 'end'); return; }
+      return { error: 'Unknown action.' };
+    }
+    function boardPlayer(room, p, d) {
+      const P = room.party;
+      if (d.action === 'buzz') return buzz(room, p, d);
+      if (d.action === 'pick') return pickSquare(room, d.k, p.teamId);
+      return { error: 'Not now.', quiet: true };
+    }
+    function boardView(room, role) {
+      const P = room.party, host = role === 'host', B = P.board;
+      const tm = id => { const t = room.teams[id] || {}; return id ? { id, name: t.name || '?', color: t.color || '#888' } : null; };
+      const v = { type: 'bingo', bingo: true, mode: 'board', name: P.r.name, label: P.r.label, stage: P.stage, size: P.size, random: P.random,
+        cats: P.r.cats.map(c => ({ name: c.name, short: c.short, icon: c.icon })), control: tm(P.control), sel: P.sel, turn: P.turn, openSeq: P.openSeq,
+        timerEnd: P.timerEnd, timerSec: P.timerSec, locked: P.locked || [], buzz: P.buzz ? { ...tm(P.buzz.team), player: P.buzz.name } : null,
+        winners: (P.winners || []).map(w => tm(w.team)), points: P.r.points, history: P.history.slice(-8), teams: Object.keys(room.teams).map(tm) };
+      if (B) v.board = { N: B.N, line: B.line, cells: B.cells.map((c, i) => ({ cat: P.random && !c.owner && i !== P.sel ? null : c.cat, hard: c.hard, owner: c.owner })) };
+      if (P.q && P.stage !== 'pick') {
+        Object.assign(v, { q: P.q.q, cat: P.cat, hard: P.hard, choices: P.showChoices || host ? P.q.options : null });
+        if (host || ['claimed', 'missed', 'won', 'full'].includes(P.stage)) v.answer = P.q.options[P.q.correct];
+      }
+      return v;
+    }
+
+    const isBoard = room => room.party && room.party.mode === 'board';
+    function host(room, d) {
+      const P = room.party;
+      if (d.action === 'mode' && P.stage === 'intro') { P.mode = d.L === 'cards' ? 'cards' : 'board'; return; }
+      return isBoard(room) ? boardHost(room, d) : cardHost(room, d);
+    }
+    const player = (room, p, d) => isBoard(room) ? boardPlayer(room, p, d) : cardPlayer(room, p, d);
+    const view = (room, role) => isBoard(room) ? boardView(room, role) : Object.assign(cardView(room, role), { mode: 'cards' });
+    const mine = (room, pid) => isBoard(room) ? null : cardMine(room, pid);
     return { start, stop, view, host, player, mine };
   }
   return { TYPES, sanitize, create, PATTERNS };

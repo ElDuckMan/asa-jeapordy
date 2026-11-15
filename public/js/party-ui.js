@@ -369,6 +369,7 @@
 
   /* Phone inputs: answers, votes, wheel, drawing pad. */
   function bindPlay(root, net, getS) {
+    if (window.BingoUI && getS) root.addEventListener('pointerdown', BingoUI.onBuzzDown(net, getS));
     const send = (d, then) => net.emit('player:party', d).then(r => { if (r.error) Craft.toast(r.error); else if (then) then(r); });
     let pen = '#1c1a17';
     root.addEventListener('click', e => {
@@ -377,6 +378,7 @@
       const b = e.target.closest('[data-pa]');
       if (!b || b.disabled) return;
       const a = b.dataset.pa, q = s => root.querySelector(s);
+      if (a === 'tbpick') return send({ action: 'pick', k: +b.dataset.k });
       if (a === 'bgdbl') { BingoUI.UI.dbl = !BingoUI.UI.dbl; b.classList.toggle('on', BingoUI.UI.dbl); b.textContent = `🔥 Double down ${BingoUI.UI.dbl ? 'ON: right = 2 squares, wrong = lose 1' : '(off)'}`; return; }
       if (a === 'bganswer') { FX.squash(b); return send({ action: 'answer', choice: +b.dataset.choice, dbl: BingoUI.UI.dbl }); }
       if (a === 'bx') { try { FX.squash(b); } catch (_) { /* */ } return send(JSON.parse(b.dataset.x), r => { if (r.result) Craft.toast(r.result, 1200); }); }

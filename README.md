@@ -67,6 +67,19 @@ The host can remove player-written entries, such as fakes and Two Truths, before
 
 ## Category Bingo (Asia)
 
+Before you start, choose one of two modes.
+
+### 🔔 Team board (default): buzz in, connect five
+- **The board:** one shared board on the big screen, 5×5 (five in a row) or 4×4 (four in a row). The centre square of the 5×5 is a hard question.
+- **Picking a square:** the team in control picks one, either on their phones or by shouting it to the host. The host reads the question and opens the buzzers. Early buzzes are locked out briefly.
+- **Right answer:** the team claims the square in its colour (+100, or +200 for a hard square) and gets the next pick.
+- **Wrong answer:** that team is locked out and the others can buzz in to steal. If nobody gets it, control passes to the next team.
+- **Winning:** the first team with a full row, column or diagonal gets bingo (+500).
+- **🎲 Random categories:** squares stay face-down until they're picked.
+- **Phones:** just buzzers, plus the square picker for the team in control, so everyone keeps their eyes on the big screen.
+
+### 📱 Everyone's own card
+
 Players get a bingo card on their phone. The big screen calls the categories.
 
 **How a turn works**
