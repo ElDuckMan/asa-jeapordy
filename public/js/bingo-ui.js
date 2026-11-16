@@ -122,12 +122,18 @@
       <div class="row">${btn('party', '🔔 Team board (buzz in)', 'sm ' + (tb ? 'on' : ''), { a: 'mode', l: 'board' })}${btn('party', '📱 Everyone\'s own card', 'sm ' + (!tb ? 'on' : ''), { a: 'mode', l: 'cards' })}</div>
       <p class="small muted">${tb ? 'One shared board on the big screen. The team in control picks a square, you read the question, everyone buzzes. Right answer claims the square. First team to connect a full row, column or diagonal wins.'
         : 'Everyone gets their own card on their phone and answers every question at once. Right answers mark squares.'}</p>
-      ${tb ? `<div class="lbl">Board</div><div class="row">${btn('party', '5×5 · five in a row', 'sm ' + (p.size === 5 ? 'on' : ''), { a: 'size', k: 5 })}${btn('party', '4×4 · four in a row (quicker)', 'sm ' + (p.size === 4 ? 'on' : ''), { a: 'size', k: 4 })}</div>
+      ${tb ? `<div class="lbl">Board for ${S.teams.length} team${S.teams.length === 1 ? '' : 's'}</div>${presetBtns(p, btn)}
         <div class="row">${btn('party', p.random ? '🎲 Random categories: ON' : '🎲 Random categories: off', 'sm ' + (p.random ? 'on' : ''), { a: 'random', ok: p.random ? 0 : 1 })}</div>
         <p class="small muted">${p.random ? 'Squares are face-down: nobody knows the category until it\'s picked.' : 'Every square shows its category.'}</p>` : ''}
       <div class="row center">${btn('party', '▶ Start', 'big hi', { a: tb ? 'begin' : 'draw' })}</div></div>`;
   }
 
+  function presetBtns(p, btn) {
+    const cur = p.preset || p.autoPreset;
+    return `<div class="tb-presets">${Object.entries(p.presets).map(([id, pr]) => btn('party', `<b>${esc(pr.name)}</b> <span class="small">${esc(pr.teams)}</span><br><span class="small">${pr.size}×${pr.size} · ${pr.k} in a row${pr.steal ? ' · ⚔️ steals' : ''}${id === p.autoPreset ? ' · ★ recommended' : ''}</span>`, 'sm ' + (cur === id ? 'on' : ''), { a: 'preset', l: id })).join('')}</div>
+      ${(p.presets[cur] || {}).steal ? '<p class="small muted">⚔️ Steals: a team can pick another team\'s square. It\'s a hard question; the right answer takes it. If the owner answers it, the square locks 🔒.</p>' : ''}`;
+  }
+  const rule = p => `Connect ${p.k} in a row${p.steal ? ' · ⚔️ steals on' : ''}`;
   /* ============================== TEAM BOARD MODE ============================== */
   const sqCat = (p, c) => c.cat == null ? { icon: '❓', short: 'Mystery' } : (p.cats[c.cat] || {});
   function tbGrid(p, o = {}) {
@@ -135,9 +141,11 @@
     const B = p.board, line = new Set(B.line || []), tc = id => (p.teams.find(t => t && t.id === id) || {}).color || '#888';
     return `<div class="tb-grid ${o.small ? 'small' : ''}" style="--n:${B.N}">${B.cells.map((c, i) => {
       const k = sqCat(p, c), own = c.owner ? `style="--c:${tc(c.owner)}"` : '';
-      const cls = `tb-sq ${c.owner ? 'own' : ''} ${i === p.sel ? 'sel' : ''} ${line.has(i) ? 'win' : ''} ${c.hard ? 'hard' : ''}`;
-      const inner = `<span class="i">${esc(k.icon || '')}</span><small>${esc(k.short || '')}</small>${c.hard ? '<em>🌶</em>' : ''}`;
-      return o.pick && !c.owner ? `<button type="button" class="${cls} pickable" ${own} ${o.pick}="${i}" data-pa="${o.pa || ''}" data-act="${o.act || ''}" data-a="${o.a || ''}" data-k="${i}">${inner}</button>`
+      const tag = c.owner ? `<b class="tb-tag">${esc(((p.teams.find(t => t && t.id === c.owner) || {}).name || '').replace(/[^\p{L}\p{N} ]/gu, '').split(/\s+/).filter(Boolean).map(w => w[0]).join('').slice(0, 2).toUpperCase() || '•')}</b>` : '';
+      const canPick = !c.owner || (p.steal && !c.lock && (!o.team || c.owner !== o.team));
+      const cls = `tb-sq ${c.owner ? 'own' : ''} ${i === p.sel ? 'sel' : ''} ${line.has(i) ? 'win' : ''} ${c.hard ? 'hard' : ''} ${c.lock ? 'lock' : ''}`;
+      const inner = `<span class="i">${esc(k.icon || '')}</span><small>${esc(k.short || '')}</small>${c.hard ? '<em>🌶</em>' : ''}${tag}${c.lock ? '<em class="lk">🔒</em>' : ''}`;
+      return o.pick && canPick ? `<button type="button" class="${cls} pickable" ${own} ${o.pick}="${i}" data-pa="${o.pa || ''}" data-act="${o.act || ''}" data-a="${o.a || ''}" data-k="${i}">${inner}</button>`
         : `<div class="${cls}" ${own}>${inner}</div>`;
     }).join('')}</div>`;
   }
@@ -150,19 +158,20 @@
     if (p.stage === 'intro') {
       el.innerHTML = `<div class="pt-wrap tb-wrap"><div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Category Bingo</div>
         <ol class="bg-how"><li>The team in control picks a square.</li><li>The host reads the question. Everyone buzzes in!</li><li>Right answer claims the square for your team. Wrong? Others can steal.</li></ol>
-        <p><b>First team to connect ${p.size} in a row wins!</b>${p.random ? ' 🎲 Squares are face-down until picked.' : ''}</p></div></div>`;
+        <p><b>First team to connect ${p.k} in a row wins!</b>${p.steal ? ' ⚔️ You can steal other teams\' squares with a hard question.' : ''}${p.random ? ' 🎲 Squares are face-down until picked.' : ''}</p></div></div>`;
       return;
     }
     if (p.stage === 'done') { el.innerHTML = '<div class="pt-wrap tb-wrap"><div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">That\'s bingo!</div></div></div>'; return; }
     if (['pick', 'claimed', 'missed'].includes(p.stage)) {
-      side = `<div class="card paper tb-side">${p.stage === 'claimed' && p.control ? `<div class="tb-res ok block stroke pop">✓ ${esc(p.control.name)} claims it!</div>` : ''}
+      const claimMsg = !p.control ? '' : p.defended ? `🔒 ${esc(p.control.name)} defended it!` : p.stolenFrom ? `⚔️ ${esc(p.control.name)} stole it from ${esc(p.stolenFrom.name)}!` : `✓ ${esc(p.control.name)} claims it!`;
+      side = `<div class="card paper tb-side"><div class="small muted">${rule(p)}</div>${p.stage === 'claimed' ? `<div class="tb-res ok block stroke pop">${claimMsg}</div>` : ''}
         ${p.stage === 'missed' ? `<div class="tb-res block stroke pop">Nobody got it!</div>${p.answer ? `<p>Answer: <b>${esc(p.answer)}</b></p>` : ''}` : ''}
         ${p.stage === 'claimed' && p.answer ? `<p>Answer: <b>${esc(p.answer)}</b></p>` : ''}
         <div class="tb-turn">${tChip(p.control)}<div class="block stroke">pick a square!</div></div></div>`;
     } else if (['reading', 'open', 'buzzed'].includes(p.stage)) {
       const c = p.cats[p.cat] || {};
       side = `<div class="card paper tb-side"><div class="bg-drawn"><span class="bg-cat big yarn block stroke" style="--c:var(--blue)">${esc(c.icon || '')} ${esc(c.name || '')}</span>${p.hard ? '<span class="bg-hard tape">🌶 Hard</span>' : ''}</div>
-        <div class="tb-q">${esc(p.q)}</div>
+        ${p.challenge ? '<div class="tb-steal block stroke">⚔️ Steal attempt!</div>' : ''}<div class="tb-q">${esc(p.q)}</div>
         ${p.choices ? `<div class="tb-ch">${p.choices.map((o, i) => `<span class="paper">${'ABCD'[i]}. ${esc(o)}</span>`).join('')}</div>` : ''}
         ${p.stage === 'open' ? `${timer(p)}<div class="tb-call block stroke">BUZZ IN!</div>` : ''}
         ${p.stage === 'reading' ? '<div class="status">Listen… buzzers open soon</div>' : ''}
@@ -177,12 +186,12 @@
   }
   function tbHost(S, x) {
     const { btn } = x, p = S.party;
-    let h = `<h2 class="hand">🎱 Bingo board <span class="small muted">${p.size}×${p.size}${p.random ? ' · 🎲 random' : ''}</span></h2>`;
+    let h = `<h2 class="hand">🎱 Bingo board <span class="small muted">${p.size}×${p.size} · ${rule(p)}${p.random ? ' · 🎲 random' : ''}</span></h2>`;
     const ctl = `<div class="row small">In control: ${p.teams.map(t => btn('party', esc(t.name), 'sm ' + (p.control && p.control.id === t.id ? 'on' : ''), { a: 'control', team: t.id })).join('')}</div>`;
     if (['pick', 'claimed', 'missed'].includes(p.stage)) {
-      if (p.stage === 'claimed') h += `<p>✓ <b>${esc(p.control ? p.control.name : '')}</b> claimed it. Answer: ${esc(p.answer || '')}</p>`;
+      if (p.stage === 'claimed') h += `<p>${p.defended ? '🔒' : p.stolenFrom ? '⚔️' : '✓'} <b>${esc(p.control ? p.control.name : '')}</b> ${p.defended ? 'defended (locked)' : p.stolenFrom ? `stole it from ${esc(p.stolenFrom.name)}` : 'claimed it'}. Answer: ${esc(p.answer || '')}</p>`;
       if (p.stage === 'missed') h += `<p>Nobody got it. Answer: <b>${esc(p.answer || '')}</b></p>`;
-      h += `<p><b>${esc(p.control ? p.control.name : '?')}</b> picks. Tap the square they call out:</p>${tbGrid(p, { pick: 'data-sq', act: 'party', a: 'pick', small: true })}${ctl}`;
+      h += `<p><b>${esc(p.control ? p.control.name : '?')}</b> picks. Tap the square they call out:</p>${tbGrid(p, { pick: 'data-sq', act: 'party', a: 'pick', small: true, team: p.control && p.control.id })}${ctl}`;
     }
     if (['reading', 'open', 'buzzed'].includes(p.stage)) {
       const c = p.cats[p.cat] || {};
@@ -196,6 +205,7 @@
       h += `<div class="row center">${btn('party', '⏭ Nobody: skip', 'sm', { a: 'skip' })}</div>`;
     }
     if (p.stage === 'won' || p.stage === 'full') h += `<p>${p.stage === 'won' ? `🏆 <b>${esc(p.winners.map(t => t.name).join(', '))}</b> got bingo! +${p.points}` : 'Board full, no line.'}</p>
+      <div class="lbl">Next board</div>${presetBtns(p, btn)}
       <div class="row">${btn('party', p.random ? '🎲 Random: ON' : '🎲 Random: off', 'sm ' + (p.random ? 'on' : ''), { a: 'random', ok: p.random ? 0 : 1 })}</div>
       <div class="row center">${btn('party', '🔄 New board', 'big hi', { a: 'newBoard' })}${btn('party', '🏁 Finish', 'big', { a: 'end' })}</div>`;
     if (p.stage === 'done') h += `<div class="row center">${btn('endRound', 'Back to lobby', 'big')}</div>`;
@@ -212,7 +222,7 @@
     if (p.stage === 'done') return '<div class="card paper p-msg">Game over! Eyes on the big screen.</div>';
     if (['pick', 'claimed', 'missed'].includes(p.stage)) {
       const lead = p.stage === 'claimed' ? `<div class="p-verdict ${mine ? 'ok' : ''} block stroke pop">${esc(p.control.name)} claims it!</div>` : p.stage === 'missed' ? `<div class="p-answer">Answer: <b>${esc(p.answer || '')}</b></div>` : '';
-      return lead + (mine ? `<div class="card paper"><h2 class="hand">Your team picks!</h2><p class="small">Agree on a square, then tap it (or shout it to the host).</p>${tbGrid(p, { pick: 'data-sq', pa: 'tbpick', small: true })}</div>`
+      return lead + (mine ? `<div class="card paper"><h2 class="hand">Your team picks!</h2><p class="small">Agree on a square, then tap it (or shout it to the host).</p>${tbGrid(p, { pick: 'data-sq', pa: 'tbpick', small: true, team: me.teamId })}</div>`
         : `<div class="card paper p-msg"><b>${esc(p.control ? p.control.name : '')}</b> is picking a square…</div>`);
     }
     if (p.stage === 'won' || p.stage === 'full') return `<div class="p-verdict ${p.winners.some(t => t.id === me.teamId) ? 'ok' : ''} block stroke pop">${p.stage === 'won' ? `BINGO! ${esc(p.winners.map(t => t.name).join(', '))}` : 'Board full!'}</div>`;
@@ -221,7 +231,7 @@
     else if (p.stage === 'open') { if (p.locked.includes(me.teamId)) { cls = 'out'; label = 'Locked out'; } else { cls = 'go'; label = 'BUZZ!'; } }
     else if (p.stage === 'buzzed' && p.buzz) { cls = p.buzz.id === me.teamId ? 'mine' : 'other'; label = p.buzz.id === me.teamId ? `${p.buzz.player || 'You'}, answer out loud!` : `${p.buzz.name} buzzed`; }
     const c = p.cats[p.cat] || {};
-    return `<div class="card paper center"><span class="bg-cat yarn block stroke" style="--c:var(--blue)">${esc(c.icon || '')} ${esc(c.short || '')}</span> <span class="small muted">Question on the big screen</span></div>
+    return `<div class="card paper center"><span class="bg-cat yarn block stroke" style="--c:var(--blue)">${esc(c.icon || '')} ${esc(c.short || '')}</span> <span class="small muted">${p.challenge ? '⚔️ Steal attempt · ' : ''}Question on the big screen</span></div>
       <button type="button" class="p-buzz ${cls}" style="--c:${myTeam.color}" data-pa="tbbuzz" aria-label="Buzzer"><span class="block stroke">${esc(label)}</span></button>`;
   }
   function onBuzzDown(net, getS) {

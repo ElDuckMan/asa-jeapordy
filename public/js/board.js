@@ -91,6 +91,7 @@
       if (s.title !== lastTitle) { title(titleEl, s.title); lastTitle = s.title; }
       tape.textContent = s.phase === 'lobby' ? (s.presenter || 'Asian Student Association presents') + (s.edition ? ` · ${s.edition}` : '') : s.phase === 'ended' ? 'Final scores' : (s.round ? s.round.name : '');
       root.classList.toggle('is-lobby', s.phase === 'lobby');
+      root.classList.toggle('many-teams', s.teams.length > 5);
 
       if (s.phase === 'lobby') {
         const key = 'lobby' + JSON.stringify(s.teams.map(t => [t.id, t.name, t.section, t.members.length]));
@@ -207,7 +208,7 @@
         case 'end': setTimeout(() => FX.celebrate(), 400); break;
         case 'spin': Sound.play('open'); PartyUI.spin(e.wedge, (S && S.party && S.party.wedges || []).length || 16); break;
         case 'letter': Sound.play('correct'); setTimeout(() => document.querySelectorAll('.pt-tile.on').forEach((t, i) => { if (t.textContent === e.L) { FX.restart(t, 'pop', 500); const c = FX.centerOf(t); FX.sparkles(c.x, c.y, { count: 8, power: 0.5 }); } }), 120); break;
-        case 'draw': if (e.name) { Sound.play('open'); FX.slap(`${e.icon || ''} ${e.name}`, { color: e.hard ? '--red' : '--blue', sub: e.hard ? '🌶 Hard question' : 'Everyone answers!', hold: 900 }); } break;
+        case 'draw': if (e.name) { Sound.play('open'); FX.slap(`${e.icon || ''} ${e.name}`, { color: e.hard ? '--red' : '--blue', sub: e.sub || (e.hard ? '🌶 Hard question' : 'Everyone answers!'), hold: 900 }); } break;
         case 'bingo': Sound.play('correct'); FX.slap('BINGO!', { color: '--red', sub: e.name || '', hold: 1400 }); setTimeout(() => FX.celebrate(), 300); break;
         case 'replay': if (yt) { const f = yt.el.querySelector('iframe'); f.src = f.src.replace(/&r=\d+/, '') + '&r=' + e.seq; } break;
         case 'strike': Sound.play('wrong'); FX.slap('✗'.repeat(e.n || 1), { color: '--red', hold: 900 }); break;

@@ -219,25 +219,42 @@
      * the question, buzzers open for everyone. First right answer claims the square in that team's colour and takes
      * control; a wrong answer locks that team out so others can steal. First team with N in a row wins. */
     const LOCK_MS = 250, WINDOW_MS = 300;
+    /* Board presets by team count (simulated so a game lasts about 12–25 questions; without steals, 3+ teams just block each other). */
+    const PRESETS = {
+      duel: { name: 'Head-to-head', size: 5, k: 5, steal: false, teams: '2 teams' },
+      small: { name: 'Small group', size: 5, k: 4, steal: true, teams: '3–4 teams' },
+      mid: { name: 'Big group', size: 6, k: 4, steal: true, teams: '5–6 teams' },
+      big: { name: 'Crowd', size: 6, k: 3, steal: true, teams: '7+ teams' },
+      quick: { name: 'Quick', size: 4, k: 4, steal: false, teams: 'short game' }
+    };
+    const autoPreset = room => { const n = Object.keys(room.teams).length; return n <= 2 ? 'duel' : n <= 4 ? 'small' : n <= 6 ? 'mid' : 'big'; };
+    function applyPreset(room) {
+      const P = room.party, id = P.preset || autoPreset(room), pr = PRESETS[id];
+      Object.assign(P, { size: pr.size, k: pr.k, steal: pr.steal, presetUsed: id });
+    }
     function newBoard(room) {
+      applyPreset(room);
       const P = room.party, N = P.size, n = P.r.cats.length, cells = N * N;
       const cats = shuffle(Array.from({ length: cells }, (_, i) => i % n), rnd);
       const centre = N % 2 ? Math.floor(cells / 2) : -1;
-      P.board = { N, cells: cats.map((c, i) => ({ cat: c, hard: i === centre, owner: null })), line: null };
+      P.board = { N, k: P.k, cells: cats.map((c, i) => ({ cat: c, hard: i === centre, owner: null, lock: false })), line: null };
       Object.assign(P, { stage: 'pick', sel: null, q: null, cat: null, buzz: null, locked: [], early: {}, winners: [], showChoices: false, timerEnd: null });
       const ids = Object.keys(room.teams);
       if (!P.control || !room.teams[P.control]) P.control = ids[Math.floor(rnd() * ids.length)] || null;
     }
-    function lines(N) {
+    /* Every run of K squares in a row, column or diagonal. */
+    function lines(N, K = N) {
       const L = [];
-      for (let r = 0; r < N; r++) L.push(Array.from({ length: N }, (_, c) => r * N + c));
-      for (let c = 0; c < N; c++) L.push(Array.from({ length: N }, (_, r) => r * N + c));
-      L.push(Array.from({ length: N }, (_, i) => i * N + i), Array.from({ length: N }, (_, i) => i * N + (N - 1 - i)));
+      for (let r = 0; r < N; r++) for (let c = 0; c < N; c++) for (const [dr, dc] of [[0, 1], [1, 0], [1, 1], [1, -1]]) {
+        const ln = [];
+        for (let k = 0; k < K; k++) { const rr = r + dr * k, cc = c + dc * k; if (rr < 0 || cc < 0 || rr >= N || cc >= N) break; ln.push(rr * N + cc); }
+        if (ln.length === K) L.push(ln);
+      }
       return L;
     }
     function boardWin(room) {
       const P = room.party, B = P.board;
-      for (const ln of lines(B.N)) { const o = B.cells[ln[0]].owner; if (o && ln.every(i => B.cells[i].owner === o)) return { team: o, line: ln }; }
+      for (const ln of lines(B.N, B.k || B.N)) { const o = B.cells[ln[0]].owner; if (o && ln.every(i => B.cells[i].owner === o)) return { team: o, line: ln }; }
       return null;
     }
     function nextTeam(room, from) {
@@ -250,12 +267,15 @@
       if (byTeam && byTeam !== P.control) return { error: 'It\'s not your team\'s pick.' };
       const c = B.cells[int(i, -1, -1, B.cells.length - 1)];
       if (!c) return { error: 'Pick a square.' };
-      if (c.owner) return { error: 'That square is taken.' };
+      const pickTeam = byTeam || P.control;
+      if (c.owner && (!P.steal || c.owner === pickTeam)) return { error: 'That square is taken.' };
+      if (c.lock) return { error: 'That square is locked 🔒.' };
       P.sel = B.cells.indexOf(c);
-      const { item } = pickQuestion(P, c.cat, c.hard);
-      Object.assign(P, { q: item, cat: c.cat, hard: c.hard, stage: 'reading', buzz: null, locked: [], early: {}, showChoices: false, openSeq: (P.openSeq || 0) + 1, turn: P.turn + 1 });
+      const challenge = !!c.owner, hard = c.hard || challenge;
+      const { item } = pickQuestion(P, c.cat, hard);
+      Object.assign(P, { q: item, cat: c.cat, hard, challenge, stage: 'reading', buzz: null, locked: [], early: {}, showChoices: false, openSeq: (P.openSeq || 0) + 1, turn: P.turn + 1 });
       P.history.push(c.cat); if (P.history.length > 10) P.history.shift();
-      fx(room, 'draw', { cat: c.cat, name: P.r.cats[c.cat].name, icon: P.r.cats[c.cat].icon, hard: c.hard });
+      fx(room, 'draw', { cat: c.cat, name: P.r.cats[c.cat].name, icon: P.r.cats[c.cat].icon, hard, sub: challenge ? '⚔️ Steal attempt!' : hard ? '🌶 Hard question · buzz in!' : 'Buzz in!' });
     }
     function openBuzz(room) {
       const P = room.party;
@@ -290,7 +310,10 @@
       if (P.stage !== 'buzzed' || !P.buzz) return { error: 'Nobody has buzzed.' };
       const tid = P.buzz.team;
       if (ok) {
-        B.cells[P.sel].owner = tid; P.control = tid;
+        const sq = B.cells[P.sel], prev = sq.owner;
+        if (prev && prev === tid) { sq.lock = true; P.defended = true; } else { sq.owner = tid; P.defended = false; }
+        P.stolenFrom = prev && prev !== tid ? prev : null;
+        P.control = tid;
         award(room, tid, P.hard ? 200 : 100);
         fx(room, 'correct', { team: tid });
         const w = boardWin(room);
@@ -299,7 +322,7 @@
           P.winners = [{ team: tid, name: (room.teams[tid] || {}).name || '' }];
           award(room, tid, P.r.points);
           fx(room, 'bingo', { team: tid, name: (room.teams[tid] || {}).name || '' });
-        } else if (B.cells.every(c => c.owner)) { P.stage = 'full'; fx(room, 'end'); }
+        } else if (B.cells.every(c => c.owner) && (!P.steal || B.cells.every(c => c.lock))) { P.stage = 'full'; fx(room, 'end'); }
         else P.stage = 'claimed';
         return;
       }
@@ -315,7 +338,7 @@
     }
     function boardHost(room, d) {
       const P = room.party, a = d.action;
-      if (a === 'size' && P.stage === 'intro') { P.size = int(d.k, 5, 4, 5); return; }
+      if (a === 'preset' && ['intro', 'won', 'full'].includes(P.stage)) { P.preset = PRESETS[d.L] ? d.L : null; return; }
       if (a === 'random' && ['intro', 'won', 'full'].includes(P.stage)) { P.random = !!d.ok; return; }
       if (a === 'begin' || a === 'newBoard') { newBoard(room); return; }
       if (a === 'control' && room.teams[d.team]) { P.control = d.team; return; }
@@ -337,11 +360,14 @@
     function boardView(room, role) {
       const P = room.party, host = role === 'host', B = P.board;
       const tm = id => { const t = room.teams[id] || {}; return id ? { id, name: t.name || '?', color: t.color || '#888' } : null; };
-      const v = { type: 'bingo', bingo: true, mode: 'board', name: P.r.name, label: P.r.label, stage: P.stage, size: P.size, random: P.random,
+      const pid = P.preset || autoPreset(room), pr = P.board ? { size: P.size, k: P.k, steal: P.steal } : PRESETS[pid];
+      const v = { type: 'bingo', bingo: true, mode: 'board', name: P.r.name, label: P.r.label, stage: P.stage, size: pr.size, k: pr.k, steal: pr.steal, random: P.random,
+        preset: P.preset, autoPreset: autoPreset(room), presets: PRESETS, challenge: !!P.challenge, defended: !!P.defended,
+        stolenFrom: P.stolenFrom ? tm(P.stolenFrom) : null,
         cats: P.r.cats.map(c => ({ name: c.name, short: c.short, icon: c.icon })), control: tm(P.control), sel: P.sel, turn: P.turn, openSeq: P.openSeq,
         timerEnd: P.timerEnd, timerSec: P.timerSec, locked: P.locked || [], buzz: P.buzz ? { ...tm(P.buzz.team), player: P.buzz.name } : null,
         winners: (P.winners || []).map(w => tm(w.team)), points: P.r.points, history: P.history.slice(-8), teams: Object.keys(room.teams).map(tm) };
-      if (B) v.board = { N: B.N, line: B.line, cells: B.cells.map((c, i) => ({ cat: P.random && !c.owner && i !== P.sel ? null : c.cat, hard: c.hard, owner: c.owner })) };
+      if (B) v.board = { N: B.N, k: B.k, line: B.line, cells: B.cells.map((c, i) => ({ cat: P.random && !c.owner && i !== P.sel ? null : c.cat, hard: c.hard, owner: c.owner, lock: c.lock })) };
       if (P.q && P.stage !== 'pick') {
         Object.assign(v, { q: P.q.q, cat: P.cat, hard: P.hard, choices: P.showChoices || host ? P.q.options : null });
         if (host || ['claimed', 'missed', 'won', 'full'].includes(P.stage)) v.answer = P.q.options[P.q.correct];

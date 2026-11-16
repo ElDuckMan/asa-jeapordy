@@ -269,3 +269,17 @@
 .tb-boardbox{width:min(100%,calc(100vh - 290px));justify-self:center}
 .tb-wrap .tb-sq small{font-size:clamp(9px,1.4vh,14px)}
 .tb-wrap .tb-sq .i{font-size:clamp(18px,4vh,36px)}
+/* team board: many teams */
+.tb-tag{position:absolute;left:3px;bottom:2px;font-size:clamp(9px,1.3vh,13px);background:rgba(0,0,0,.45);color:#fff;border-radius:4px;padding:0 3px;line-height:1.3;text-shadow:none}
+.tb-sq em.lk{top:auto;bottom:2px;right:3px}
+.tb-sq.lock{outline:3px dashed #fff;outline-offset:-6px}
+.tb-steal{font-size:clamp(22px,2.6vw,34px);color:var(--red)}
+.tb-presets{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px;margin:6px 0}
+.tb-presets .btn{text-align:left;line-height:1.25}
+.tb-presets .btn{display:block;text-align:left;white-space:normal;width:100%}
+/* big screen with 6+ teams: one compact row of score cards */
+.many-teams .scores{flex-wrap:nowrap;gap:8px;margin-top:12px;padding-right:120px;padding-left:120px}
+.many-teams .team{flex:1 1 0;min-width:0;max-width:160px;padding:12px 6px 8px}
+.many-teams .team .tname{font-size:clamp(13px,1.3vw,18px)}
+.many-teams .team .tscore{font-size:clamp(16px,1.8vw,24px);padding:1px 8px}
+.many-teams .team .tmembers,.many-teams .team .tsec{display:none}
