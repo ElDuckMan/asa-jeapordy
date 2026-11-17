@@ -22,9 +22,9 @@
       {"value":500,"q":"The Great Enclosure is the largest structure at this medieval stone city in southern Africa, which gave a modern nation its name.","a":"What is Great Zimbabwe?"}
     ]},
     {"name":"Recent History","clues":[
-      {"value":100,"q":"In 1955, she refused to give up her seat on a Montgomery, Alabama, bus.","a":"Who is Rosa Parks?"},
+      {"value":100,"q":"Her arrest on December 1, 1955, for refusing to give up her Montgomery bus seat sparked the Montgomery Bus Boycott.","a":"Who is Rosa Parks?"},
       {"value":200,"q":"Martin Luther King Jr. delivered his “I Have a Dream” speech at this 1963 event.","a":"What is the March on Washington?"},
-      {"value":300,"q":"In 1947, he broke Major League Baseball’s color barrier with the Brooklyn Dodgers.","a":"Who is Jackie Robinson?"},
+      {"value":300,"q":"In 1947, he broke Major League Baseball’s modern color barrier with the Brooklyn Dodgers.","a":"Who is Jackie Robinson?"},
       {"value":400,"q":"This 1954 Supreme Court decision ruled that state-sanctioned segregation of public schools was unconstitutional.","a":"What is Brown v. Board of Education?"},
       {"value":500,"q":"In 1967, this lawyer who had argued Brown v. Board became the first Black justice of the US Supreme Court.","a":"Who is Thurgood Marshall?"}
     ]},
@@ -33,7 +33,7 @@
       {"value":200,"q":"Founded in 1867 in Washington, D.C., this university counts Toni Morrison and Chadwick Boseman among its alumni.","a":"What is Howard University?"},
       {"value":300,"q":"Martin Luther King Jr. and Spike Lee both graduated from this all-male college in Atlanta.","a":"What is Morehouse College?"},
       {"value":400,"q":"The marching band of this Baton Rouge HBCU is nicknamed the “Human Jukebox.”","a":"What is Southern University?"},
-      {"value":500,"q":"Booker T. Washington was the first leader of this Alabama school, founded in 1881.","a":"What is Tuskegee Institute?"}
+      {"value":500,"q":"Booker T. Washington was the first leader of this Alabama school, founded in 1881.","a":"What is Tuskegee Institute (now Tuskegee University)?"}
     ]},
     {"name":"Inventors & Innovators","clues":[
       {"value":100,"q":"This Tuskegee scientist developed hundreds of uses for the peanut.","a":"Who is George Washington Carver?"},
@@ -77,7 +77,7 @@
       {"value":200,"q":"At the 1936 Berlin Olympics, he won four gold medals in track and field.","a":"Who is Jesse Owens?"},
       {"value":300,"type":"mc","q":"Which tennis star won 23 Grand Slam singles titles in her career?","a":"Serena Williams","options":["Venus Williams","Coco Gauff","Serena Williams","Naomi Osaka"],"correct":2},
       {"value":400,"q":"In 1957, she became the first Black player to win a Wimbledon singles title.","a":"Who is Althea Gibson?"},
-      {"value":500,"q":"This legendary Negro Leagues pitcher reached the major leagues with Cleveland in 1948 and entered the Hall of Fame in 1971.","a":"Who is Satchel Paige?"}
+      {"value":500,"q":"This legendary Negro Leagues pitcher joined Cleveland in the American League in 1948 and entered the Hall of Fame in 1971.","a":"Who is Satchel Paige?"}
     ]},
     {"name":"Literature & Poetry","clues":[
       {"value":100,"q":"This poet wrote “I Know Why the Caged Bird Sings” and read “On the Pulse of Morning” at a 1993 inauguration.","a":"Who is Maya Angelou?"},

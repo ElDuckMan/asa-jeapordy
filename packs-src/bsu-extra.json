@@ -178,7 +178,7 @@
    "timer": 20,
    "questions": [
     {
-     "q": "Which Atlanta HBCU is a historically women’s college?",
+     "q": "Which Atlanta HBCU is a women’s college?",
      "a": "Spelman College",
      "options": [
       "Clark Atlanta University",
@@ -211,7 +211,7 @@
      "correct": 0
     },
     {
-     "q": "Who became South Africa’s president in 1994 after 27 years in prison?",
+     "q": "Who became South Africa’s president in 1994, having earlier spent 27 years in prison?",
      "a": "Nelson Mandela"
     },
     {
