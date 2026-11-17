@@ -1,0 +1,90 @@
+{"rounds":[
+  {"type":"board","group":"Round 1","variant":"A","name":"Round 1","timer":0,"categories":[
+    {"name":"Music","clues":[
+      {"value":100,"q":"Berry Gordy founded this Detroit record label in 1959, nicknamed “Hitsville U.S.A.”","a":"What is Motown?"},
+      {"value":200,"q":"Known as the “Queen of Soul,” this singer had a 1967 hit with “Respect.”","a":"Who is Aretha Franklin?"},
+      {"value":300,"type":"mc","q":"Which jazz trumpeter recorded the 1959 album “Kind of Blue”?","a":"Miles Davis","options":["Louis Armstrong","Miles Davis","Dizzy Gillespie","Chet Baker"],"correct":1},
+      {"value":400,"q":"This Nigerian bandleader pioneered Afrobeat in the 1970s with his band Africa 70.","a":"Who is Fela Kuti?"},
+      {"value":500,"q":"Called the “Queen of Gospel,” this singer performed “Take My Hand, Precious Lord” at Martin Luther King Jr.’s funeral in 1968.","a":"Who is Mahalia Jackson?"}
+    ]},
+    {"name":"Movies & TV","clues":[
+      {"value":100,"q":"Chadwick Boseman played King T’Challa of Wakanda in this 2018 Marvel film.","a":"What is Black Panther?"},
+      {"value":200,"q":"Jordan Peele won the Oscar for Best Original Screenplay for this 2017 horror film.","a":"What is Get Out?"},
+      {"value":300,"q":"Set in Miami, this film won Best Picture at the 2017 Oscars after a famous envelope mix-up.","a":"What is Moonlight?"},
+      {"value":400,"q":"Sidney Poitier won Best Actor for this 1963 film, playing a handyman who helps nuns build a chapel.","a":"What is Lilies of the Field?"},
+      {"value":500,"q":"In this 1970s spin-off of “All in the Family,” George and Louise were “movin’ on up” to the East Side.","a":"What is The Jeffersons?"}
+    ]},
+    {"name":"Ancient History","clues":[
+      {"value":100,"q":"Hieroglyphs and the pyramids of Giza come from this ancient civilization along the Nile.","a":"What is ancient Egypt?"},
+      {"value":200,"q":"This emperor of Mali became world-famous for his wealth after his lavish pilgrimage to Mecca in 1324.","a":"Who is Mansa Musa?"},
+      {"value":300,"q":"Rulers of this Nubian kingdom south of Egypt conquered Egypt and ruled it as its 25th Dynasty.","a":"What is Kush?"},
+      {"value":400,"q":"Famous for its towering carved stone stelae, this Ethiopian kingdom adopted Christianity under King Ezana in the 4th century.","a":"What is Axum?"},
+      {"value":500,"q":"The Great Enclosure is the largest structure at this medieval stone city in southern Africa, which gave a modern nation its name.","a":"What is Great Zimbabwe?"}
+    ]},
+    {"name":"Recent History","clues":[
+      {"value":100,"q":"In 1955, she refused to give up her seat on a Montgomery, Alabama, bus.","a":"Who is Rosa Parks?"},
+      {"value":200,"q":"Martin Luther King Jr. delivered his “I Have a Dream” speech at this 1963 event.","a":"What is the March on Washington?"},
+      {"value":300,"q":"In 1947, he broke Major League Baseball’s color barrier with the Brooklyn Dodgers.","a":"Who is Jackie Robinson?"},
+      {"value":400,"q":"This 1954 Supreme Court decision ruled that state-sanctioned segregation of public schools was unconstitutional.","a":"What is Brown v. Board of Education?"},
+      {"value":500,"q":"In 1967, this lawyer who had argued Brown v. Board became the first Black justice of the US Supreme Court.","a":"Who is Thurgood Marshall?"}
+    ]},
+    {"name":"HBCU Life","clues":[
+      {"value":100,"q":"In “HBCU,” the H stands for this word, meaning rooted in the past.","a":"What is historically?"},
+      {"value":200,"q":"Founded in 1867 in Washington, D.C., this university counts Toni Morrison and Chadwick Boseman among its alumni.","a":"What is Howard University?"},
+      {"value":300,"q":"Martin Luther King Jr. and Spike Lee both graduated from this all-male college in Atlanta.","a":"What is Morehouse College?"},
+      {"value":400,"q":"The marching band of this Baton Rouge HBCU is nicknamed the “Human Jukebox.”","a":"What is Southern University?"},
+      {"value":500,"q":"Booker T. Washington was the first leader of this Alabama school, founded in 1881.","a":"What is Tuskegee Institute?"}
+    ]},
+    {"name":"Inventors & Innovators","clues":[
+      {"value":100,"q":"This Tuskegee scientist developed hundreds of uses for the peanut.","a":"Who is George Washington Carver?"},
+      {"value":200,"q":"In 1992, aboard the space shuttle Endeavour, she became the first Black woman in space.","a":"Who is Mae Jemison?"},
+      {"value":300,"q":"Portrayed in “Hidden Figures,” this NASA mathematician checked the orbital calculations for John Glenn’s 1962 flight.","a":"Who is Katherine Johnson?"},
+      {"value":400,"type":"dd","q":"This entrepreneur built a fortune in the early 1900s selling hair care products through her own company and sales agents.","a":"Who is Madam C. J. Walker?"},
+      {"value":500,"q":"In 1923, this Cleveland inventor patented a three-position traffic signal.","a":"Who is Garrett Morgan?"}
+    ]}
+  ]},
+  {"type":"board","group":"Round 1","variant":"B","name":"Round 1","timer":0,"categories":[
+    {"name":"Music","clues":[
+      {"value":100,"q":"Former Jackson 5 lead singer who released the 1982 album “Thriller.”","a":"Who is Michael Jackson?"},
+      {"value":200,"q":"Nicknamed “Satchmo,” this trumpeter sang “What a Wonderful World.”","a":"Who is Louis Armstrong?"},
+      {"value":300,"q":"Kendrick Lamar won the 2018 Pulitzer Prize for Music for this album.","a":"What is DAMN.?"},
+      {"value":400,"q":"This Nigerian “African Giant” won the 2021 Grammy for Best Global Music Album for “Twice as Tall.”","a":"Who is Burna Boy?"},
+      {"value":500,"q":"Known as the “King of the Blues,” this guitarist named his guitar Lucille.","a":"Who is B.B. King?"}
+    ]},
+    {"name":"Movies & TV","clues":[
+      {"value":100,"q":"Will Smith played a teen sent from West Philadelphia to live with relatives in this 1990s sitcom.","a":"What is The Fresh Prince of Bel-Air?"},
+      {"value":200,"q":"Spike Lee’s 1989 film set on the hottest day of the summer in Brooklyn.","a":"What is Do the Right Thing?"},
+      {"value":300,"q":"Issa Rae created and starred in this HBO comedy set in Los Angeles that premiered in 2016.","a":"What is Insecure?"},
+      {"value":400,"q":"Halle Berry won the Best Actress Oscar in 2002 for this film.","a":"What is Monster’s Ball?"},
+      {"value":500,"q":"This 1977 TV miniseries, based on Alex Haley’s book, traced his family history back to Kunta Kinte.","a":"What is Roots?"}
+    ]},
+    {"name":"Ancient History","clues":[
+      {"value":100,"q":"Howard Carter found this boy pharaoh’s tomb nearly intact in 1922.","a":"Who is Tutankhamun?"},
+      {"value":200,"q":"Home to the Sankore Mosque, this city in Mali was a famous center of Islamic learning.","a":"What is Timbuktu?"},
+      {"value":300,"q":"Capital of Kush from about 300 BC, this city is famous for its many small, steep-sided pyramids.","a":"What is Meroë?"},
+      {"value":400,"q":"This female pharaoh of the 15th century BC sent a famous trading expedition to the Land of Punt.","a":"Who is Hatshepsut?"},
+      {"value":500,"q":"Called Wagadou by its own people, this gold-rich West African empire came before Mali.","a":"What is the Ghana Empire?"}
+    ]},
+    {"name":"Recent History","clues":[
+      {"value":100,"q":"In 2008, he was elected the 44th President of the United States.","a":"Who is Barack Obama?"},
+      {"value":200,"q":"In 1960, four North Carolina A&T students began a sit-in at a Woolworth’s lunch counter in this city.","a":"What is Greensboro?"},
+      {"value":300,"q":"In 1957, nine Black students integrated Central High School in this Arkansas city.","a":"What is Little Rock?"},
+      {"value":400,"q":"Signed by Lyndon B. Johnson, this landmark law outlawed discrimination based on race, color, religion, sex, or national origin.","a":"What is the Civil Rights Act of 1964?"},
+      {"value":500,"type":"dd","q":"In 1968, she became the first Black woman elected to the US Congress, representing New York.","a":"Who is Shirley Chisholm?"}
+    ]},
+    {"name":"Sports Legends","clues":[
+      {"value":100,"q":"Known as “The Greatest,” this boxer promised to “float like a butterfly, sting like a bee.”","a":"Who is Muhammad Ali?"},
+      {"value":200,"q":"At the 1936 Berlin Olympics, he won four gold medals in track and field.","a":"Who is Jesse Owens?"},
+      {"value":300,"type":"mc","q":"Which tennis star won 23 Grand Slam singles titles in her career?","a":"Serena Williams","options":["Venus Williams","Coco Gauff","Serena Williams","Naomi Osaka"],"correct":2},
+      {"value":400,"q":"In 1957, she became the first Black player to win a Wimbledon singles title.","a":"Who is Althea Gibson?"},
+      {"value":500,"q":"This legendary Negro Leagues pitcher reached the major leagues with Cleveland in 1948 and entered the Hall of Fame in 1971.","a":"Who is Satchel Paige?"}
+    ]},
+    {"name":"Literature & Poetry","clues":[
+      {"value":100,"q":"This poet wrote “I Know Why the Caged Bird Sings” and read “On the Pulse of Morning” at a 1993 inauguration.","a":"Who is Maya Angelou?"},
+      {"value":200,"q":"This Harlem Renaissance poet wrote “The Negro Speaks of Rivers” and asked, “What happens to a dream deferred?”","a":"Who is Langston Hughes?"},
+      {"value":300,"q":"Toni Morrison won the 1988 Pulitzer Prize for Fiction for this novel about Sethe.","a":"What is Beloved?"},
+      {"value":400,"q":"This 1937 Zora Neale Hurston novel follows Janie Crawford.","a":"What is Their Eyes Were Watching God?"},
+      {"value":500,"q":"In 1950, this Chicago poet became the first Black author to win a Pulitzer Prize, for “Annie Allen.”","a":"Who is Gwendolyn Brooks?"}
+    ]}
+  ]}
+]}
