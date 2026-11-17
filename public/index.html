@@ -21,7 +21,7 @@
 </style></head>
 <body class="vignette">
 <header class="si-head" id="head">
-  <div class="tape">Asian Student Association presents</div>
+  <div class="tape" id="presents">Asian Student Association presents</div>
   <h1 class="title" id="t"></h1>
   <div class="si-switch" id="switch" role="tablist" aria-label="Sign in as">
     <button class="btn on" data-as="player" role="tab">🙋 Player</button>
@@ -43,13 +43,14 @@
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/common.js"></script><script src="/js/fx.js"></script><script src="/js/views.js"></script><script src="/js/party-ui.js"></script><script src="/js/blitz-ui.js"></script><script src="/js/bingo-ui.js"></script>
 <script src="/js/sample-game.js"></script><script src="/js/packs.js"></script>
-<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script><script src="/js/packs/church.js"></script><script src="/js/packs/party.js"></script>
+<script src="/js/packs/classic.js"></script><script src="/js/packs/standard.js"></script><script src="/js/packs/east-asia.js"></script><script src="/js/packs/south-asia.js"></script><script src="/js/packs/africa.js"></script><script src="/js/packs/church.js"></script><script src="/js/packs/bsu.js"></script><script src="/js/packs/party.js"></script>
 <script src="/js/play.js"></script>
 <script>
 (function () {
   const { esc } = Craft;
   Craft.title(document.getElementById('t'), 'Jeopardy!');
   const net = Craft.socketNet();
+  net.on('state', st => { const t = document.getElementById('presents'); if (t && st.presenter) t.textContent = st.presenter; });
   const head = document.getElementById('head'), sw = document.getElementById('switch');
   const hostEl = document.getElementById('host'), playerEl = document.getElementById('player');
   const read = k => { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch (_) { return null; } };

@@ -42,6 +42,18 @@ for (const id of ['standard', 'east-asia', 'south-asia', 'africa']) {
   console.log(id + ':', p.game.rounds.length, 'rounds, boards', variants(p.game.rounds));
 }
 
+/* BSU (Black Student Union) pack: Round 1, Lightning, Double Round, Bonus, Final. */
+const bsuParts = ['bsu-r1.json', 'bsu-extra.json', 'bsu-r2.json'].filter(has).map(f => read(f).rounds);
+if (bsuParts.length) {
+  const order = ['Round 1', 'Lightning Round', 'Double Round', 'Bonus Round', 'Final Round'];
+  const rounds = merge(...bsuParts).sort((a, b) => order.indexOf(a.group) - order.indexOf(b.group) || (a.variant || '').localeCompare(b.variant || ''));
+  write('bsu', {
+    id: 'bsu', name: 'Black Student Union', blurb: 'Black history and culture: HBCUs, inventors, music from Motown to Afrobeats, film, sports, the diaspora and African kingdoms.',
+    game: { title: 'BSU Jeopardy', edition: 'Black Student Union Edition', presenter: 'Black Student Union presents', rounds }
+  });
+  console.log('bsu:', rounds.length, 'rounds');
+}
+
 /* Church pack: boards A–B and C–D come from two files. */
 const churchParts = ['church-ab.json', 'church-cd.json'].filter(has).map(f => read(f).rounds);
 if (churchParts.length) {

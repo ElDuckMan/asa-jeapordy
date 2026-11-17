@@ -4,8 +4,8 @@
 (function () {
   'use strict';
   const list = window.ASA_PACKS = window.ASA_PACKS || [];
-  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍', church: '⛪', party: '🎉' };
-  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green', church: '--purple', party: '--rust' };
+  const ICON = { classic: '🏮', standard: '🌐', 'east-asia': '🏯', 'south-asia': '🪷', africa: '🌍', church: '⛪', party: '🎉', bsu: '✊🏾' };
+  const COLOR = { classic: '--red', standard: '--blue', 'east-asia': '--teal', 'south-asia': '--mustard', africa: '--green', church: '--purple', party: '--rust', bsu: '--green' };
   const clone = o => JSON.parse(JSON.stringify(o));
 
   /* Group consecutive-or-not rounds by `group` (falling back to name), keeping first-appearance order. */
