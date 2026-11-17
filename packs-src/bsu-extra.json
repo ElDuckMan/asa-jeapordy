@@ -1,0 +1,246 @@
+{
+ "rounds": [
+  {
+   "type": "lightning",
+   "group": "Lightning Round",
+   "variant": "A",
+   "name": "Lightning Round",
+   "duration": 60,
+   "points": 100,
+   "penalty": false,
+   "questions": [
+    {
+     "q": "Capital of Ghana?",
+     "a": "Accra"
+    },
+    {
+     "q": "Capital of Kenya?",
+     "a": "Nairobi"
+    },
+    {
+     "q": "Caribbean nation whose capital is Kingston?",
+     "a": "Jamaica"
+    },
+    {
+     "q": "“Queen of Soul” who sang “Respect”?",
+     "a": "Aretha Franklin"
+    },
+    {
+     "q": "Washington, D.C. HBCU nicknamed “The Mecca”?",
+     "a": "Howard University"
+    },
+    {
+     "q": "Tennis champion sister of Venus Williams?",
+     "a": "Serena Williams"
+    },
+    {
+     "q": "Woman whose 1955 bus protest sparked the Montgomery boycott?",
+     "a": "Rosa Parks"
+    },
+    {
+     "q": "Sprinter who won four golds at the 1936 Berlin Olympics?",
+     "a": "Jesse Owens"
+    },
+    {
+     "q": "Author of “I Know Why the Caged Bird Sings”?",
+     "a": "Maya Angelou"
+    },
+    {
+     "q": "Caribbean nation that declared independence in 1804?",
+     "a": "Haiti"
+    },
+    {
+     "q": "Capital of Senegal?",
+     "a": "Dakar"
+    },
+    {
+     "q": "“King of Pop” who released “Thriller”?",
+     "a": "Michael Jackson"
+    }
+   ]
+  },
+  {
+   "type": "lightning",
+   "group": "Lightning Round",
+   "variant": "B",
+   "name": "Lightning Round",
+   "duration": 60,
+   "points": 100,
+   "penalty": false,
+   "questions": [
+    {
+     "q": "Capital of Nigeria?",
+     "a": "Abuja"
+    },
+    {
+     "q": "Capital of Ethiopia?",
+     "a": "Addis Ababa"
+    },
+    {
+     "q": "Two-island Caribbean nation whose capital is Port of Spain?",
+     "a": "Trinidad and Tobago"
+    },
+    {
+     "q": "Reggae legend who sang “One Love”?",
+     "a": "Bob Marley"
+    },
+    {
+     "q": "Atlanta men’s HBCU where Martin Luther King Jr. studied?",
+     "a": "Morehouse College"
+    },
+    {
+     "q": "Boxer who called himself “The Greatest”?",
+     "a": "Muhammad Ali"
+    },
+    {
+     "q": "Underground Railroad conductor nicknamed “Moses”?",
+     "a": "Harriet Tubman"
+    },
+    {
+     "q": "Player who broke MLB’s color line with the 1947 Dodgers?",
+     "a": "Jackie Robinson"
+    },
+    {
+     "q": "Jazz trumpeter nicknamed “Satchmo”?",
+     "a": "Louis Armstrong"
+    },
+    {
+     "q": "Caribbean island nation where Rihanna was born?",
+     "a": "Barbados"
+    },
+    {
+     "q": "Capital of Rwanda?",
+     "a": "Kigali"
+    },
+    {
+     "q": "Harlem Renaissance poet of “The Negro Speaks of Rivers”?",
+     "a": "Langston Hughes"
+    }
+   ]
+  },
+  {
+   "type": "bonus",
+   "group": "Bonus Round",
+   "variant": "A",
+   "name": "Bonus Round",
+   "points": 200,
+   "timer": 20,
+   "questions": [
+    {
+     "q": "Which Nashville HBCU is famous for its Jubilee Singers?",
+     "a": "Fisk University",
+     "options": [
+      "Hampton University",
+      "Fisk University",
+      "Tuskegee University",
+      "Spelman College"
+     ],
+     "correct": 1
+    },
+    {
+     "q": "Who was the first Black justice of the U.S. Supreme Court?",
+     "a": "Thurgood Marshall",
+     "options": [
+      "Thurgood Marshall",
+      "Clarence Thomas",
+      "W. E. B. Du Bois",
+      "Frederick Douglass"
+     ],
+     "correct": 0
+    },
+    {
+     "q": "Which Tuskegee Institute scientist promoted crop rotation and hundreds of uses for the peanut?",
+     "a": "George Washington Carver",
+     "options": [
+      "Charles Drew",
+      "Benjamin Banneker",
+      "George Washington Carver",
+      "Percy Julian"
+     ],
+     "correct": 2
+    },
+    {
+     "q": "In what year did Martin Luther King Jr. deliver his “I Have a Dream” speech?",
+     "a": "1963"
+    },
+    {
+     "q": "Mount Kilimanjaro stands in which African country?",
+     "a": "Tanzania"
+    }
+   ]
+  },
+  {
+   "type": "bonus",
+   "group": "Bonus Round",
+   "variant": "B",
+   "name": "Bonus Round",
+   "points": 200,
+   "timer": 20,
+   "questions": [
+    {
+     "q": "Which Atlanta HBCU is a historically women’s college?",
+     "a": "Spelman College",
+     "options": [
+      "Clark Atlanta University",
+      "Morris Brown College",
+      "Xavier University",
+      "Spelman College"
+     ],
+     "correct": 3
+    },
+    {
+     "q": "Who wrote the Pulitzer Prize–winning novel “Beloved”?",
+     "a": "Toni Morrison",
+     "options": [
+      "Zora Neale Hurston",
+      "Alice Walker",
+      "Toni Morrison",
+      "Lorraine Hansberry"
+     ],
+     "correct": 2
+    },
+    {
+     "q": "In 1992, who became the first African American woman in space?",
+     "a": "Mae Jemison",
+     "options": [
+      "Mae Jemison",
+      "Katherine Johnson",
+      "Bessie Coleman",
+      "Shirley Chisholm"
+     ],
+     "correct": 0
+    },
+    {
+     "q": "Who became South Africa’s president in 1994 after 27 years in prison?",
+     "a": "Nelson Mandela"
+    },
+    {
+     "q": "Which Nigerian musician is called the “Father of Afrobeat”?",
+     "a": "Fela Kuti"
+    }
+   ]
+  },
+  {
+   "type": "final",
+   "group": "Final Round",
+   "variant": "A",
+   "name": "Final Round",
+   "category": "Harlem Renaissance",
+   "q": "This writer of the 1937 novel “Their Eyes Were Watching God” was also an anthropologist who collected folklore in Florida and Haiti",
+   "a": "Who is Zora Neale Hurston?",
+   "hint": "She studied anthropology at Barnard under Franz Boas.",
+   "timer": 30
+  },
+  {
+   "type": "final",
+   "group": "Final Round",
+   "variant": "B",
+   "name": "Final Round",
+   "category": "Civil Rights Movement",
+   "q": "On February 1, 1960, four freshmen from this Greensboro HBCU sat down at a Woolworth’s lunch counter, launching the sit-in movement",
+   "a": "What is North Carolina A&T?",
+   "hint": "Its sports teams are the Aggies.",
+   "timer": 30
+  }
+ ]
+}
