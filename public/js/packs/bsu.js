@@ -534,21 +534,21 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "Known as the “Queen of Soul,” this singer had a 1967 hit with “Respect.”",
-        "a": "Who is Aretha Franklin?",
-        "hint": "Raised in Detroit, the daughter of a famous preacher."
+        "q": "Born Eunice Waymon, this singer-pianist recorded “Feeling Good” and “To Be Young, Gifted and Black.”",
+        "a": "Who is Nina Simone?",
+        "hint": "Nicknamed the “High Priestess of Soul.”"
        },
        {
         "value": 400,
-        "q": "With his band Africa 70, this Nigerian bandleader pioneered Afrobeat in the 1970s.",
-        "a": "Who is Fela Kuti?",
-        "hint": "Lagos saxophonist whose sons Femi and Seun also perform."
+        "q": "This singer from Benin won Grammys for the albums “Celia” and “Mother Nature.”",
+        "a": "Who is Angélique Kidjo?",
+        "hint": "Her early hits include “Agolo.”"
        },
        {
         "value": 600,
-        "q": "This trumpeter’s 1959 album “Kind of Blue” is one of the most celebrated jazz records ever made.",
-        "a": "Who is Miles Davis?",
-        "hint": "He also made the 1970 fusion album “Bitches Brew.”"
+        "q": "This pianist composed the jazz standard “’Round Midnight.”",
+        "a": "Who is Thelonious Monk?",
+        "hint": "A bebop pioneer known for his hats and angular melodies."
        },
        {
         "value": 800,
@@ -569,9 +569,9 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "Chadwick Boseman starred as King T’Challa of Wakanda in this 2018 Marvel film.",
-        "a": "What is Black Panther?",
-        "hint": "Ryan Coogler directed it."
+        "q": "She created and starred in HBO’s “Insecure,” which premiered in 2016.",
+        "a": "Who is Issa Rae?",
+        "hint": "She first won fans with the web series “Awkward Black Girl.”"
        },
        {
         "value": 400,
@@ -582,16 +582,16 @@ AsaPacks.add({
        {
         "value": 600,
         "type": "mc",
-        "q": "Which film won Best Picture at the Academy Awards ceremony held in February 2017?",
-        "a": "Moonlight",
+        "q": "Which actress won the Oscar for Best Supporting Actress for “12 Years a Slave”?",
+        "a": "Lupita Nyong’o",
         "options": [
-         "La La Land",
-         "Moonlight",
-         "Hidden Figures",
-         "Fences"
+         "Viola Davis",
+         "Octavia Spencer",
+         "Lupita Nyong’o",
+         "Jennifer Hudson"
         ],
-        "correct": 1,
-        "hint": "Barry Jenkins directed this Miami coming-of-age story."
+        "correct": 2,
+        "hint": "Kenyan-Mexican actress who later starred in “Us.”"
        },
        {
         "value": 800,
@@ -612,27 +612,27 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "This emperor of Mali made a famously lavish pilgrimage to Mecca in 1324.",
-        "a": "Who is Mansa Musa?",
-        "hint": "Often named among the wealthiest people in history."
+        "q": "This 4th-century king of Aksum made Christianity his kingdom’s official faith.",
+        "a": "Who is Ezana?",
+        "hint": "His coins were among the first to show a cross."
        },
        {
         "value": 400,
-        "q": "This kingdom in what is now northern Ethiopia is famous for its towering carved stone stelae.",
-        "a": "What is Aksum?",
-        "hint": "King Ezana adopted Christianity there in the 300s."
+        "q": "Visited by Ibn Battuta in 1331, this island city off Tanzania’s coast was a wealthy Swahili trading hub.",
+        "a": "What is Kilwa?",
+        "hint": "Its ruins include a Great Mosque and a palace called Husuni Kubwa."
        },
        {
         "value": 600,
-        "q": "The later capital of the Kingdom of Kush, this Nile city is known for its many steep pyramids.",
-        "a": "What is Meroë?",
-        "hint": "It lies in modern Sudan, north of Khartoum."
+        "q": "This Ethiopian king commissioned famous churches carved from solid rock, and a town now bears his name.",
+        "a": "Who is Lalibela?",
+        "hint": "The churches date to around the 12th–13th centuries."
        },
        {
         "value": 800,
-        "q": "A modern southern African nation took its name from this medieval stone city, whose walls were built without mortar.",
-        "a": "What is Great Zimbabwe?",
-        "hint": "Its builders were ancestors of the Shona people."
+        "q": "A small golden rhinoceros was found in a royal grave of this Limpopo valley kingdom.",
+        "a": "What is Mapungubwe?",
+        "hint": "It flourished before Great Zimbabwe; now a South African national park."
        },
        {
         "value": 1000,
@@ -648,34 +648,34 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "In 1947, he broke Major League Baseball’s color line with the Brooklyn Dodgers.",
-        "a": "Who is Jackie Robinson?",
-        "hint": "Every MLB team retired his number 42."
+        "q": "In 1975, he became the first Black man to win the Wimbledon men’s singles title.",
+        "a": "Who is Arthur Ashe?",
+        "hint": "The main stadium at the US Open is named for him."
        },
        {
         "value": 400,
-        "q": "This 1954 Supreme Court decision ruled segregated public schools unconstitutional.",
-        "a": "What is Brown v. Board of Education?",
-        "hint": "The case began in Topeka, Kansas."
+        "q": "This 1967 Supreme Court case struck down state bans on interracial marriage.",
+        "a": "What is Loving v. Virginia?",
+        "hint": "The plaintiffs were Richard and Mildred."
        },
        {
         "value": 600,
-        "q": "In 1968, this Brooklyn educator became the first Black woman elected to the US Congress.",
-        "a": "Who is Shirley Chisholm?",
-        "hint": "She ran for president in 1972 with the slogan “Unbought and Unbossed.”"
+        "q": "In 1966, this civil rights lawyer became the first African American woman appointed a federal judge.",
+        "a": "Who is Constance Baker Motley?",
+        "hint": "She worked at the NAACP Legal Defense Fund."
        },
        {
         "value": 800,
         "type": "dd",
-        "q": "In 1967, he became the first African American justice of the US Supreme Court.",
-        "a": "Who is Thurgood Marshall?",
-        "hint": "He had earlier served as US Solicitor General."
+        "q": "In 2001, he became the first African American US Secretary of State.",
+        "a": "Who is Colin Powell?",
+        "hint": "He had been Chairman of the Joint Chiefs of Staff."
        },
        {
         "value": 1000,
-        "q": "In 1992, aboard the shuttle Endeavour, she became the first African American woman in space.",
-        "a": "Who is Mae Jemison?",
-        "hint": "A physician who had served in the Peace Corps."
+        "q": "In 1983, aboard the shuttle Challenger, he became the first African American in space.",
+        "a": "Who is Guion Bluford?",
+        "hint": "An Air Force fighter pilot from Philadelphia."
        }
       ]
      },
@@ -684,15 +684,15 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "This Jamaican reggae legend sang “One Love” and “Redemption Song.”",
-        "a": "Who is Bob Marley?",
-        "hint": "He fronted a group called the Wailers."
+        "q": "In 2021, this singer was named a National Hero of Barbados.",
+        "a": "Who is Rihanna?",
+        "hint": "She founded the brand Fenty Beauty."
        },
        {
         "value": 400,
-        "q": "In 1804, this Caribbean nation declared independence after a revolution led by formerly enslaved people.",
-        "a": "What is Haiti?",
-        "hint": "Toussaint Louverture was a key leader of its revolution."
+        "q": "Born into slavery, this general became the leading figure of the Haitian Revolution in the 1790s.",
+        "a": "Who is Toussaint Louverture?",
+        "hint": "He died in a French prison in 1803."
        },
        {
         "value": 600,
@@ -719,9 +719,9 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "This Tuskegee Institute scientist became famous for promoting peanuts and sweet potatoes to Southern farmers.",
-        "a": "Who is George Washington Carver?",
-        "hint": "He was born enslaved in Missouri."
+        "q": "This 18th-century self-taught astronomer published almanacs and helped survey the boundaries of Washington, D.C.",
+        "a": "Who is Benjamin Banneker?",
+        "hint": "He famously built a wooden clock in Maryland."
        },
        {
         "value": 400,
@@ -737,9 +737,9 @@ AsaPacks.add({
        },
        {
         "value": 800,
-        "q": "This NASA mathematician checked the orbital calculations for John Glenn’s 1962 flight.",
-        "a": "Who is Katherine Johnson?",
-        "hint": "Taraji P. Henson played her in “Hidden Figures.”"
+        "q": "In 1988, this ophthalmologist received a patent for the Laserphaco Probe for cataract surgery.",
+        "a": "Who is Patricia Bath?",
+        "hint": "She co-founded an institute to prevent blindness."
        },
        {
         "value": 1000,
@@ -769,15 +769,15 @@ AsaPacks.add({
        },
        {
         "value": 400,
-        "q": "Berry Gordy founded this Detroit record label in 1959.",
-        "a": "What is Motown?",
-        "hint": "Its headquarters was nicknamed “Hitsville U.S.A.”"
+        "q": "Known as the “Queen of Salsa,” this Cuban singer’s famous cry was “¡Azúcar!”",
+        "a": "Who is Celia Cruz?",
+        "hint": "She sang with La Sonora Matancera."
        },
        {
         "value": 600,
-        "q": "This Nigerian Afrobeats star won the 2021 Grammy for Best Global Music Album for “Twice as Tall.”",
-        "a": "Who is Burna Boy?",
-        "hint": "He calls himself the “African Giant.”"
+        "q": "This Nigerian singer featured on Drake’s 2016 chart-topper “One Dance.”",
+        "a": "Who is Wizkid?",
+        "hint": "His 2020 album was titled “Made in Lagos.”"
        },
        {
         "value": 800,
@@ -798,15 +798,15 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "Based on Alex Haley’s book, this 1977 TV miniseries followed Kunta Kinte and his descendants.",
-        "a": "What is Roots?",
-        "hint": "A young LeVar Burton starred."
+        "q": "Queen Latifah played magazine editor Khadijah James in this 1990s Fox sitcom.",
+        "a": "What is Living Single?",
+        "hint": "Four friends shared a Brooklyn brownstone."
        },
        {
         "value": 400,
-        "q": "In this 1990–1996 sitcom, Will Smith moved in with his wealthy aunt and uncle in Los Angeles.",
-        "a": "What is The Fresh Prince of Bel-Air?",
-        "hint": "Uncle Phil, Carlton and Hilary lived there."
+        "q": "Anthony Anderson and Tracee Ellis Ross starred in this ABC family sitcom that premiered in 2014.",
+        "a": "What is Black-ish?",
+        "hint": "The family’s last name was Johnson."
        },
        {
         "value": 600,
@@ -833,15 +833,15 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "With its Sankore mosque and many manuscripts, this city in Mali was a famed center of learning.",
-        "a": "What is Timbuktu?",
-        "hint": "Its name is often used to mean “the far end of the earth.”"
+        "q": "This Malian city’s Great Mosque, rebuilt in 1907, is re-plastered with mud in a yearly festival.",
+        "a": "What is Djenné?",
+        "hint": "It sits on a floodplain near the Niger River."
        },
        {
         "value": 400,
-        "q": "Known to its people as Wagadu, this West African empire lent its name to a modern country far to its south.",
-        "a": "What is the Ghana Empire?",
-        "hint": "That modern country was formerly the Gold Coast."
+        "q": "Ruled by the Alaafin, this Yoruba state was famed for its cavalry in the 1600s and 1700s.",
+        "a": "What is the Oyo Empire?",
+        "hint": "Its namesake town is in southwestern Nigeria."
        },
        {
         "value": 600,
@@ -852,9 +852,9 @@ AsaPacks.add({
        {
         "value": 800,
         "type": "dd",
-        "q": "Pharaohs from this Nubian kingdom, including Piye and Taharqa, ruled Egypt as its 25th Dynasty.",
-        "a": "What is Kush?",
-        "hint": "Its capitals included Napata and Meroë."
+        "q": "Tradition says a Golden Stool descended from the sky to unite this West African kingdom.",
+        "a": "What is the Asante Empire?",
+        "hint": "Its capital was Kumasi, in today’s Ghana."
        },
        {
         "value": 1000,
@@ -869,21 +869,21 @@ AsaPacks.add({
       "clues": [
        {
         "value": 200,
-        "q": "In 1955, she refused to give up her bus seat in Montgomery, Alabama.",
-        "a": "Who is Rosa Parks?",
-        "hint": "Called the “mother of the civil rights movement.”"
+        "q": "In 1960, at age six, she integrated William Frantz Elementary School in New Orleans.",
+        "a": "Who is Ruby Bridges?",
+        "hint": "Norman Rockwell painted her walk to school."
        },
        {
         "value": 400,
-        "q": "Martin Luther King Jr. delivered his “I Have a Dream” speech at this 1963 event.",
-        "a": "What is the March on Washington?",
-        "hint": "Held at the Lincoln Memorial in August."
+        "q": "Signed by Lyndon Johnson in 1965, this law outlawed discriminatory voting practices such as literacy tests.",
+        "a": "What is the Voting Rights Act?",
+        "hint": "It came one year after the Civil Rights Act."
        },
        {
         "value": 600,
-        "q": "In 1960, four college students began lunch-counter sit-ins at a Woolworth’s in this North Carolina city.",
-        "a": "What is Greensboro?",
-        "hint": "The students attended North Carolina A&T."
+        "q": "In 1972, this Houston lawyer became the first Black woman from the South elected to the US House.",
+        "a": "Who is Barbara Jordan?",
+        "hint": "Famous for her powerful voice and 1976 convention keynote."
        },
        {
         "value": 800,
