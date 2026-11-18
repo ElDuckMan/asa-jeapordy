@@ -14,7 +14,7 @@
     const del = k => { try { if (store) store.removeItem(k); } catch (_) { /* */ } };
 
     let game = get('asa-game', null) || JSON.parse(JSON.stringify(window.SAMPLE_GAME));
-    let packId = get('asa-pack', null), pickingPack = false;
+    let packId = get('asa-pack', null), pickingPack = false, hostTab = get('asa-tab', 'jeopardy'), lastMode = '';
     let settings = Object.assign({}, DEFAULT_SETTINGS, get('asa-settings', {}));
     let S = null, tab = 'live', amount = 100, editor = null, inRoom = false;
 
@@ -159,8 +159,14 @@
           : '<div class="small muted">Practice: the big screen and your phone are on this page.</div>'}</div>
         <div class="row">${btn('push', '⟳ Apply editor changes', 'sm')}${btn('reset', 'New game', 'sm')}${btn('closeRoom', 'Close room', 'sm no')}</div></details>`;
       const live = i => s.roundIndex === i && !['lobby', 'ended'].includes(s.phase);
-      h += `<div class="row h-rounds">${btn('lobby', 'Lobby', 'sm ' + (s.phase === 'lobby' ? 'on' : ''))}
-        ${AsaPacks.groups(s.rounds).map((g, gi) => g.items.length === 1
+      /* Follow whatever is running: a party game opens the Party tab, a Jeopardy round the Jeopardy tab. */
+      const mode = s.party ? 'party' : JEO.includes(s.phase) ? 'jeopardy' : '';
+      if (mode && mode !== lastMode) { hostTab = mode; put('asa-tab', hostTab); }
+      lastMode = mode;
+      h += `<div class="h-modes" role="tablist">${btn('tab', '🎯 Jeopardy', 'h-mode ' + (hostTab === 'jeopardy' ? 'on' : ''), { t: 'jeopardy' })}${btn('tab', '🎉 Party games', 'h-mode ' + (hostTab === 'party' ? 'on' : ''), { t: 'party' })}</div>`;
+      const jg = AsaPacks.groups(s.rounds).filter(g => JEO.includes(g.type));
+      if (hostTab === 'jeopardy' && s.phase !== 'lobby' && !s.party) h += `<div class="row h-rounds">${btn('lobby', 'Lobby', 'sm ' + (s.phase === 'lobby' ? 'on' : ''))}
+        ${jg.map((g, gi) => g.items.length === 1
           ? btn('round', `${gi + 1}. ${esc(g.group)} <span class="small muted">${TYPE[g.type]}</span>`, 'sm ' + (live(g.items[0].i) ? 'on' : ''), { i: g.items[0].i })
           : `<span class="h-rgroup ${g.items.some(it => live(it.i)) ? 'on' : ''}"><span class="h-rgname">${gi + 1}. ${esc(g.group)}</span>${g.items.map(it =>
               btn('round', esc(it.label || it.variant || '?'), 'sm h-var ' + (live(it.i) ? 'on' : ''), { i: it.i })).join('')}</span>`).join('')}
@@ -183,17 +189,31 @@
       }
     }
 
+    const JEO = ['board', 'lightning', 'bonus', 'final'];
     function mainHTML(s) {
-      const q = s.q, r = s.round;
-      if (s.phase === 'lobby') {
-        return restoreCard(s) + card(`<h2 class="hand">Lobby</h2><p>${s.teams.length} team(s) have joined with code <b>${s.code}</b>. You can start whenever you're ready; late teams can still join.</p>
-          ${s.rounds.length ? `<div class="row">${startBtns(AsaPacks.groups(s.rounds)[0], 'big hi')}</div>` : '<p>Add rounds in the Game editor first.</p>'}
-          ${(n => n > 1 ? `<p class="small muted">Each round has ${n} different boards (${AsaPacks.groups(s.rounds)[0].items.map(it => it.variant).join(', ')}). Pick one; save the others for another game.</p>` : '')(Math.max(...AsaPacks.groups(s.rounds).map(g => g.items.length)))}`)
-          + card(`<h2 class="hand">Question pack</h2><p><b>${esc(s.edition || s.title)}</b> · ${AsaPacks.groups(s.rounds).length} rounds</p>
-          ${pickingPack ? AsaPacks.pickerHTML(esc, { current: packId, mine: packId === '__mine' ? null : get('asa-mine', null) }) + `<div class="row" style="margin-top:10px">${btn('cancelPack', 'Cancel', 'sm')}</div>`
-            : btn('changePack', '🔁 Change pack', 'sm')}`) + partyLauncher(s);
+      if (hostTab === 'party') {
+        if (s.party) return card(`<div class="row h-now"><span>Now playing: <b>${esc(s.round ? s.round.name : '')}</b></span>${btn('lobby', '⏹ Stop · back to games', 'sm no')}</div>`) + PartyUI.host(s, { btn, esc, Tm });
+        return (s.phase === 'lobby' ? restoreCard(s) : '') + (s.phase === 'ended' ? card(`<h2 class="hand">Scores</h2>${standings(s)}`) : '') + partyLauncher(s);
       }
-      if (s.party) return PartyUI.host(s, { btn, esc, Tm });
+      if (s.party) return card(`<h2 class="hand">🎉 A party game is running</h2><p><b>${esc(s.round ? s.round.name : '')}</b> is on the big screen. Starting a Jeopardy round will stop it.</p>
+        <div class="row">${btn('lobby', '⏹ Stop it', 'no')}${btn('tab', 'Go to the party game', 'hi', { t: 'party' })}</div>`) + jeopardyHome(s);
+      return jeopardyMain(s);
+    }
+    /* Jeopardy home: the pack and its rounds, each with a start button. */
+    function jeopardyHome(s) {
+      const jg = AsaPacks.groups(s.rounds).filter(g => JEO.includes(g.type));
+      const pk = AsaPacks.get(packId);
+      return card(`<h2 class="hand">${pk ? `${AsaPacks.icon(packId)} ` : ''}${esc(s.edition || s.title)}</h2>
+          <p class="small muted">${s.teams.length} team(s) joined · code <b>${s.code}</b>. Late teams can still join.</p>
+          ${jg.length ? `<div class="h-jrounds">${jg.map((g, gi) => `<div class="h-jr"><b>${gi + 1}. ${esc(g.group)}</b><span class="row">${g.items.map(it =>
+            btn('round', g.items.length > 1 ? `▶ ${esc(it.label || (g.type === 'board' ? 'Board ' : 'Set ') + it.variant)}` : '▶ Start', 'sm hi', { i: it.i })).join('')}</span></div>`).join('')}</div>
+            ${Math.max(...jg.map(g => g.items.length)) > 1 ? '<p class="small muted">Rounds with A / B / C have different boards. Pick one; save the others for another night.</p>' : ''}` : '<p>Add rounds in the Game editor first.</p>'}`)
+        + card(`<h2 class="hand">Question pack</h2>${AsaPacks.pickerHTML(esc, { current: packId, mine: packId === '__mine' ? null : get('asa-mine', null), compact: !pickingPack })}
+          ${pickingPack ? btn('cancelPack', 'Show less', 'sm') : btn('changePack', 'Show all packs', 'sm')}`);
+    }
+    function jeopardyMain(s) {
+      const q = s.q, r = s.round;
+      if (s.phase === 'lobby') return restoreCard(s) + jeopardyHome(s);
       if (s.phase === 'ended') return card(`<h2 class="hand">Game over</h2>${standings(s)}<div class="row">${btn('lobby', 'Back to lobby')}${btn('reset', 'New game (reset scores)')}</div>`);
       let h = '';
       if (q) h += cluePanel(s);
@@ -217,13 +237,12 @@
     /* Party games: start any mode from any pack. Each mode has General / Asia / Church sets. */
     /* Games menu: pick a question set once, then tap a game. Works in any pack; scores carry over. */
     const GAME_SECTIONS = [
-      ['Everyone answers at once', [['Category Bingo', '🎱', 'Bingo cards on phones; right answers mark squares'], ['Speed Quiz', '⚡', 'Team multiple choice; faster scores more'],
-        ['Classic', '🎯', 'Everyone for themselves; faster scores more'], ['Battle Royale', '⚔️', '3 hearts each; last one standing'],
-        ['Closest Guess', '📏', 'Guess the number; closest wins'], ['Name That Tune', '🎵', 'Songs on the big screen; pick the title']]],
-      ['Blooket-style (own pace)', [['Gold Quest', '💰', 'Open chests: gold, steal, swap'], ['Racing', '🏁', 'Right answers move you forward'], ['Tower Defense', '🏰', 'Buy towers, survive the waves']]],
-      ['Buzz-in', [['Emoji Decode', '😀', 'Lightning round of emoji puzzles']]],
-      ['Creative & social', [['Fake Out', '🎭', 'Write fakes, find the truth'], ['Survey Says', '📋', 'The room answers, then play the board'],
-        ['Two Truths & a Lie', '🤥', 'Players write their own'], ['Wheel', '🎡', 'Spin, call letters, solve'], ['Draw & Guess', '✏️', 'One phone draws live, others guess']]]
+      ['Quiz: everyone answers', [['Speed Quiz', '⚡', 'Teams answer A–D; faster scores more'], ['Classic', '🎯', 'Every player for themselves; faster scores more'],
+        ['Closest Guess', '📏', 'Guess the number; closest wins'], ['Battle Royale', '⚔️', '3 hearts each; last one standing'], ['Name That Tune', '🎵', 'Song plays on the big screen; pick the title']]],
+      ['Buzz in', [['Category Bingo', '🎱', 'Shared board; buzz in, claim squares, connect a line'], ['Emoji Decode', '😀', 'Lightning round of emoji puzzles']]],
+      ['Blooket-style: own pace', [['Gold Quest', '💰', 'Open chests: gold, steal, swap'], ['Racing', '🏁', 'Right answers move you forward'], ['Tower Defense', '🏰', 'Buy towers, survive the waves']]],
+      ['Talk, draw & bluff', [['Fake Out', '🎭', 'Write fakes, find the truth'], ['Survey Says', '📋', 'The room answers, then play the board'],
+        ['Two Truths & a Lie', '🤥', 'Players write their own'], ['Draw & Guess', '✏️', 'One phone draws live, others guess'], ['Wheel', '🎡', 'Spin, call letters, solve']]]
     ];
     const SETS = [['A', 'General'], ['B', 'Asia'], ['C', 'Church']];
     let gameSet = get('asa-set', 'B');
@@ -238,10 +257,10 @@
         return `<button type="button" class="gm-tile paper" data-act="partyStart" data-g="${esc(name)}" data-v="${esc(it ? it.variant : '')}" ${it ? '' : 'disabled'}>
           <span class="gm-ic" aria-hidden="true">${icon}</span><span class="gm-nm">${esc(name)}</span><span class="gm-bl">${it ? esc(blurb) : `${esc(only)} only`}</span></button>`;
       };
-      return card(`<h2 class="hand">🎉 Games</h2>
+      return card(`<h2 class="hand">🎉 Party games</h2>
         <div class="gm-sets" role="group" aria-label="Question set"><span class="small muted">Questions:</span>${SETS.map(([v, n]) => btn('gameSet', n, 'sm ' + (gameSet === v ? 'on' : ''), { v })).join('')}</div>
         ${GAME_SECTIONS.map(([sec, list]) => `<div class="gm-sec"><div class="gm-h">${esc(sec)}</div><div class="gm-grid">${list.map(tile).join('')}</div></div>`).join('')}
-        <p class="small muted">Scores carry over between games. 🎵 Your own songs: Game editor → “+ 🎵 Name That Tune”.</p>`);
+        <p class="small muted">Scores carry over between games and Jeopardy. 🎵 Your own songs: Game editor → “+ 🎵 Name That Tune”.</p>`);
     }
     function cluePanel(s) {
       const q = s.q;
@@ -402,6 +421,7 @@
           if (!confirm('Close this room? Everyone will be disconnected.')) return;
           return emit('host:closeRoom').then(() => { del('asa-host'); S = null; showSignin(); });
         case 'lobby': return emit('host:lobby');
+        case 'tab': hostTab = b.dataset.t; put('asa-tab', hostTab); return drawLive();
         case 'changePack': pickingPack = true; return drawLive();
         case 'restore': {
           const snap = get('asa-snapshot', null);
@@ -432,6 +452,7 @@
         case 'endRound': return emit('host:lobby');
         case 'round':
           if (S && S.q && !confirm('A clue is still open. Switch rounds anyway?')) return;
+          if (S && S.party && !confirm('Stop the party game and start this Jeopardy round?')) return;
           return emit('host:startRound', { index: +b.dataset.i });
         case 'endGame': if (S && S.phase !== 'final' && !confirm('End the game and show final scores?')) return; return emit('host:endGame');
         case 'open': case 'reveal': case 'lock': case 'lightningStart': case 'lightningNext': case 'lightningStop':

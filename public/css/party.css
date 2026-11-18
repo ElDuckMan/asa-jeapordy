@@ -283,3 +283,18 @@
 .many-teams .team .tname{font-size:clamp(13px,1.3vw,18px)}
 .many-teams .team .tscore{font-size:clamp(16px,1.8vw,24px);padding:1px 8px}
 .many-teams .team .tmembers,.many-teams .team .tsec{display:none}
+
+/* Host: Jeopardy / Party games switch, pack sections */
+.h-modes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
+.h-mode{font-size:clamp(18px,4.6vw,24px);padding:14px 8px}
+.h-mode.on{transform:scale(1.02)}
+.h-now{justify-content:space-between;align-items:center}
+.h-jrounds{display:grid;gap:8px;margin:8px 0}
+.h-jr{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;padding:6px 0;border-bottom:2px dashed #d8d0c2}
+.pk-sec{margin:8px 0}
+.pk-h{font-family:'Luckiest Guy',cursive;font-size:15px;color:var(--rust);margin-bottom:4px}
+.pk-sec .pk-grid{margin:4px 0}
+.pk-on{box-shadow:0 0 0 4px #ffd84d,0 4px 0 var(--ink)}
+.pk-compact .pk-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.pk-compact .pk-card{min-height:0;padding:10px}
+.pk-compact .pk-icon{font-size:22px}
