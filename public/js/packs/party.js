@@ -9,8 +9,8 @@ AsaPacks.add({
   "rounds": [
    {
     "type": "bingo",
-    "name": "Category Bingo: Asia",
-    "group": "Category Bingo",
+    "name": "Trivia Bingo: Asia",
+    "group": "Trivia Bingo",
     "variant": "B",
     "label": "Asia",
     "timer": 15,

@@ -1,4 +1,4 @@
-/* ASA Jeopardy — Category Bingo screens (big screen caller, host phone, player card). Used by party-ui.js. */
+/* ASA Jeopardy — Trivia Bingo screens (big screen caller, host phone, player card). Used by party-ui.js. */
 (function () {
   'use strict';
   const { esc } = Craft;
@@ -25,12 +25,12 @@
     lastKey = key;
     let main = '';
     if (p.stage === 'intro') {
-      main = `<div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Category Bingo</div>
+      main = `<div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Trivia Bingo</div>
         <ol class="bg-how"><li>Everyone has their own card on their phone.</li><li>We draw a category and EVERYONE answers the question.</li><li>Right answer? Mark a square of that category. Get the pattern to win!</li></ol>
         <p class="small">🔥 <b>Double down</b> before the reveal: right = 2 squares, wrong = lose one.</p>
         <p><b>${p.players}</b> cards dealt · Rounds: ${p.rounds === 3 ? 'any line → four corners → the X' : p.rounds}</p></div>`;
     } else if (p.stage === 'done') {
-      main = `<div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">That's bingo!</div><p>Thanks for playing Category Bingo.</p></div>`;
+      main = `<div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">That's bingo!</div><p>Thanks for playing Trivia Bingo.</p></div>`;
     } else if (p.stage === 'ready') {
       main = `<div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Round ${p.round + 1}</div><p class="bg-patname">${esc(p.patternName)}</p>${patternMini(p)}<p class="small muted">Cards are cleared. Same cards, new pattern.</p></div>`;
     } else if (p.stage === 'won') {
@@ -57,7 +57,7 @@
     if (S.party.stage === 'intro') return introHost(S, x);
     if (S.party.mode === 'board') return tbHost(S, x);
     const { btn } = x, p = S.party;
-    let h = `<h2 class="hand">🎱 Category Bingo${p.label ? ` <span class="small muted">${esc(p.label)}</span>` : ''}</h2>
+    let h = `<h2 class="hand">🎱 Trivia Bingo${p.label ? ` <span class="small muted">${esc(p.label)}</span>` : ''}</h2>
       <div class="small muted">Round ${p.round + 1}/${p.rounds}: <b>${esc(p.patternName)}</b> · ${p.players} cards${p.timerEnd ? ` · <span class="h-clock block" data-end="${p.timerEnd}"></span>` : ''}</div>`;
     if (p.stage === 'intro') h += `<p>Everyone gets a card on their phone. Each draw, the whole room answers; right answers mark squares.</p><div class="row center">${btn('party', '🎲 Start: draw the first category', 'big hi', { a: 'draw' })}</div>`;
     if (p.stage === 'ready') h += `<div class="row center">${btn('party', '🎲 Draw a category', 'big hi', { a: 'draw' })}</div>`;
@@ -117,7 +117,7 @@
   /* ============================== MODE PICKER (host, before starting) ============================== */
   function introHost(S, x) {
     const { btn } = x, p = S.party, tb = p.mode === 'board';
-    return `<div class="card paper"><h2 class="hand">🎱 Category Bingo${p.label ? ` <span class="small muted">${esc(p.label)}</span>` : ''}</h2>
+    return `<div class="card paper"><h2 class="hand">🎱 Trivia Bingo${p.label ? ` <span class="small muted">${esc(p.label)}</span>` : ''}</h2>
       <div class="lbl">How do you want to play?</div>
       <div class="row">${btn('party', '🔔 Team board (buzz in)', 'sm ' + (tb ? 'on' : ''), { a: 'mode', l: 'board' })}${btn('party', '📱 Everyone\'s own card', 'sm ' + (!tb ? 'on' : ''), { a: 'mode', l: 'cards' })}</div>
       <p class="small muted">${tb ? 'One shared board on the big screen. The team in control picks a square, you read the question, everyone buzzes. Right answer claims the square. First team to connect a full row, column or diagonal wins.'
@@ -156,7 +156,7 @@
     lastKey = key;
     let side = '';
     if (p.stage === 'intro') {
-      el.innerHTML = `<div class="pt-wrap tb-wrap"><div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Category Bingo</div>
+      el.innerHTML = `<div class="pt-wrap tb-wrap"><div class="card paper pt-intro pop"><div class="pt-big block stroke crayon">Trivia Bingo</div>
         <ol class="bg-how"><li>The team in control picks a square.</li><li>The host reads the question. Everyone buzzes in!</li><li>Right answer claims the square for your team. Wrong? Others can steal.</li></ol>
         <p><b>First team to connect ${p.k} in a row wins!</b>${p.steal ? ' ⚔️ You can steal other teams\' squares with a hard question.' : ''}${p.random ? ' 🎲 Squares are face-down until picked.' : ''}</p></div></div>`;
       return;
@@ -218,7 +218,7 @@
     const p = S.party, myTeam = S.teams.find(t => t.id === me.teamId) || { color: '#888' };
     if (p.openSeq !== BZ.seq && p.stage === 'open') { BZ.seq = p.openSeq; BZ.openAt = performance.now(); }
     const mine = p.control && p.control.id === me.teamId;
-    if (p.stage === 'intro') return '<div class="card paper p-msg"><h2 class="hand">🎱 Category Bingo</h2><p>Your phone is your buzzer. Eyes on the big screen!</p></div>';
+    if (p.stage === 'intro') return '<div class="card paper p-msg"><h2 class="hand">🎱 Trivia Bingo</h2><p>Your phone is your buzzer. Eyes on the big screen!</p></div>';
     if (p.stage === 'done') return '<div class="card paper p-msg">Game over! Eyes on the big screen.</div>';
     if (['pick', 'claimed', 'missed'].includes(p.stage)) {
       const lead = p.stage === 'claimed' ? `<div class="p-verdict ${mine ? 'ok' : ''} block stroke pop">${esc(p.control.name)} claims it!</div>` : p.stage === 'missed' ? `<div class="p-answer">Answer: <b>${esc(p.answer || '')}</b></div>` : '';

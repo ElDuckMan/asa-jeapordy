@@ -285,8 +285,10 @@
 .many-teams .team .tmembers,.many-teams .team .tsec{display:none}
 
 /* Host: Jeopardy / Party games switch, pack sections */
-.h-modes{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}
-.h-mode{font-size:clamp(18px,4.6vw,24px);padding:14px 8px}
+.h-modes{display:grid;grid-template-columns:1fr 1.15fr 1fr;gap:8px;margin:10px 0}
+.h-bingo{background-color:#ffe39a}
+.h-mode{line-height:1.1}
+.h-mode{font-size:clamp(15px,4vw,22px);padding:12px 6px}
 .h-mode.on{transform:scale(1.02)}
 .h-now{justify-content:space-between;align-items:center}
 .h-jrounds{display:grid;gap:8px;margin:8px 0}

@@ -56,7 +56,22 @@
       if (saved) net.emit('host:rejoin', saved).then(r => { if (r.ok) { inRoom = true; setTab('live'); } else { del('asa-host'); showSignin(); } });
       else showSignin();
     });
-    net.on('state', s => { Craft.sync(s.serverNow); S = s; inRoom = true; snapshot(); if (tab === 'live') drawLive(); });
+    net.on('state', s => { Craft.sync(s.serverNow); S = s; inRoom = true; snapshot(); if (tab === 'live') drawLive();
+      if (get('asa-quick', null) === 'bingo') { del('asa-quick'); launchBingo(); } });
+    /* One tap to Trivia Bingo (Trivia Bingo, Asia questions): opens it if it's running, otherwise starts it. */
+    function launchBingo() {
+      if (!S) return;
+      hostTab = 'party'; put('asa-tab', hostTab);
+      if (S.party && S.party.bingo) return drawLive();
+      if (S.q && !confirm('A Jeopardy clue is open. Close it and start Trivia Bingo?')) return;
+      if (S.party && !confirm(`Stop ${S.round ? S.round.name : 'the current game'} and start Trivia Bingo?`)) return;
+      const at = S.rounds.findIndex(r => r.type === 'bingo');
+      if (at >= 0) return emit('host:startRound', { index: at });
+      const pk = AsaPacks.get('party'), r = pk && pk.game.rounds.find(r => r.type === 'bingo');
+      if (!r) return toast('Trivia Bingo is missing.');
+      const go = () => emit('host:addRound', { round: AsaPacks.clone(r) });
+      return S.q ? emit('host:closeClue').then(go) : go();
+    }
     /* Keep teams, scores and played tiles on this phone so a new room (after a restart) can pick up where this one left off. */
     let restoreDismissed = false;
     function snapshot() {
@@ -163,7 +178,8 @@
       const mode = s.party ? 'party' : JEO.includes(s.phase) ? 'jeopardy' : '';
       if (mode && mode !== lastMode) { hostTab = mode; put('asa-tab', hostTab); }
       lastMode = mode;
-      h += `<div class="h-modes" role="tablist">${btn('tab', '🎯 Jeopardy', 'h-mode ' + (hostTab === 'jeopardy' ? 'on' : ''), { t: 'jeopardy' })}${btn('tab', '🎉 Party games', 'h-mode ' + (hostTab === 'party' ? 'on' : ''), { t: 'party' })}</div>`;
+      const bingoOn = !!(s.party && s.party.bingo);
+      h += `<div class="h-modes" role="tablist">${btn('tab', '🎯 Jeopardy', 'h-mode ' + (hostTab === 'jeopardy' ? 'on' : ''), { t: 'jeopardy' })}${btn('bingo', '🎱 Trivia Bingo', 'h-mode h-bingo ' + (bingoOn && hostTab === 'party' ? 'on' : ''))}${btn('tab', '🎉 Party games', 'h-mode ' + (hostTab === 'party' && !bingoOn ? 'on' : ''), { t: 'party' })}</div>`;
       const jg = AsaPacks.groups(s.rounds).filter(g => JEO.includes(g.type));
       if (hostTab === 'jeopardy' && s.phase !== 'lobby' && !s.party) h += `<div class="row h-rounds">${btn('lobby', 'Lobby', 'sm ' + (s.phase === 'lobby' ? 'on' : ''))}
         ${jg.map((g, gi) => g.items.length === 1
@@ -239,7 +255,7 @@
     const GAME_SECTIONS = [
       ['Quiz: everyone answers', [['Speed Quiz', '⚡', 'Teams answer A–D; faster scores more'], ['Classic', '🎯', 'Every player for themselves; faster scores more'],
         ['Closest Guess', '📏', 'Guess the number; closest wins'], ['Battle Royale', '⚔️', '3 hearts each; last one standing'], ['Name That Tune', '🎵', 'Song plays on the big screen; pick the title']]],
-      ['Buzz in', [['Category Bingo', '🎱', 'Shared board; buzz in, claim squares, connect a line'], ['Emoji Decode', '😀', 'Lightning round of emoji puzzles']]],
+      ['Buzz in', [['Trivia Bingo', '🎱', 'Shared board; buzz in, claim squares, connect a line'], ['Emoji Decode', '😀', 'Lightning round of emoji puzzles']]],
       ['Blooket-style: own pace', [['Gold Quest', '💰', 'Open chests: gold, steal, swap'], ['Racing', '🏁', 'Right answers move you forward'], ['Tower Defense', '🏰', 'Buy towers, survive the waves']]],
       ['Talk, draw & bluff', [['Fake Out', '🎭', 'Write fakes, find the truth'], ['Survey Says', '📋', 'The room answers, then play the board'],
         ['Two Truths & a Lie', '🤥', 'Players write their own'], ['Draw & Guess', '✏️', 'One phone draws live, others guess'], ['Wheel', '🎡', 'Spin, call letters, solve']]]
@@ -422,6 +438,7 @@
           return emit('host:closeRoom').then(() => { del('asa-host'); S = null; showSignin(); });
         case 'lobby': return emit('host:lobby');
         case 'tab': hostTab = b.dataset.t; put('asa-tab', hostTab); return drawLive();
+        case 'bingo': return launchBingo();
         case 'changePack': pickingPack = true; return drawLive();
         case 'restore': {
           const snap = get('asa-snapshot', null);

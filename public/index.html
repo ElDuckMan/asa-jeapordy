@@ -18,6 +18,7 @@
   #host:has(.pk-wrap){max-width:920px}
   .si-host .card{text-align:left}
   .si-player .p-joincard{margin-top:12px}
+  .qb-btn{display:block;width:100%;font-size:22px;margin:6px 0 10px}
 </style></head>
 <body class="vignette">
 <header class="si-head" id="head">
@@ -73,7 +74,7 @@
       <div class="err">${esc(err || '')}</div>
       <button class="btn big hi" id="go">Next: pick questions</button></div>`;
     const pinEl = document.getElementById('pin');
-    const go = () => { pin = pinEl.value; if (!pin) return drawHost('Enter the host PIN.'); drawPicker(); };
+    const go = () => { pin = pinEl.value; if (!pin) return drawHost('Enter the host PIN.'); if (Craft.qs('quick') === 'bingo') createRoom('east-asia', true); else drawPicker(); };
     document.getElementById('go').onclick = go;
     pinEl.onkeydown = e => { if (e.key === 'Enter') go(); };
     setTimeout(() => pinEl.focus(), 30);
@@ -82,22 +83,29 @@
     const mine = read('asa-mine');
     hostEl.innerHTML = `<div class="card paper pop pk-wrap"><h2 class="hand">Pick the questions</h2>
       <p class="small muted">Every round comes with several different boards to pick from, each with music, movies &amp; TV, and ancient and recent history.</p>
+      <button class="btn big hi qb-btn" id="quickBingo">🎱 Trivia Bingo: start right away</button>
+      <p class="small muted">Or pick a Jeopardy pack (you can switch to Bingo or any party game later):</p>
       ${AsaPacks.pickerHTML(esc, { mine, current: read('asa-pack') })}
       <div class="err" id="perr"></div><button class="btn sm" id="back">← Back</button></div>`;
     document.getElementById('back').onclick = () => drawHost();
-    hostEl.querySelectorAll('[data-pack]').forEach(b => b.onclick = () => {
-      const id = b.dataset.pack;
+    document.getElementById('quickBingo').onclick = () => createRoom('east-asia', true);
+    hostEl.querySelectorAll('[data-pack]').forEach(b => b.onclick = () => createRoom(b.dataset.pack, false, b));
+  }
+  function createRoom(id, bingo, b) {
+    {
+      const mine = read('asa-mine');
       const game = id === '__mine' ? mine : AsaPacks.gameFor(id);
-      hostEl.querySelectorAll('[data-pack]').forEach(x => { x.disabled = true; });
-      b.classList.add('chosen');
+      hostEl.querySelectorAll('[data-pack], #quickBingo').forEach(x => { x.disabled = true; });
+      if (b) b.classList.add('chosen');
       net.emit('host:create', { pin, game, settings: read('asa-settings') || undefined }).then(r => {
         if (r.error) return drawHost(r.error);
         localStorage.setItem('asa-host', JSON.stringify({ code: r.code, token: r.token }));
         localStorage.setItem('asa-game', JSON.stringify(game));
         localStorage.setItem('asa-pack', JSON.stringify(id));
+        if (bingo) localStorage.setItem('asa-quick', JSON.stringify('bingo'));
         location.href = '/host';
       });
-    });
+    }
   }
   const screenEl = document.getElementById('screen'), scode = document.getElementById('scode');
   const showScreen = () => {

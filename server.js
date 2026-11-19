@@ -18,6 +18,7 @@ if (!process.env.HOST_PIN) console.warn('[warn] HOST_PIN is not set; using defau
 const app = express();
 app.disable('x-powered-by');
 app.use(express.static(path.join(__dirname, 'public'), { extensions: ['html'] }));
+app.get(['/bingo', '/Bingo'], (_req, res) => res.redirect('/?as=host&quick=bingo'));
 app.get('/healthz', (_req, res) => res.type('text').send('ok'));
 
 const server = http.createServer(app);

@@ -65,7 +65,10 @@ The lobby has a **🎉 Party games** card in every pack, so you can play any of 
 
 The host can remove player-written entries, such as fakes and Two Truths, before they reach the screen. Party content lives in `packs-src/party-*.json` (format: `packs-src/PARTY.md`). Run `node packs-src/build.js` after editing it.
 
-## Category Bingo (Asia)
+## Trivia Bingo (Asia)
+
+**Fastest way in:** go to **/bingo** (for example `asa-jeopardy.onrender.com/bingo`) and type the PIN. Trivia Bingo opens straight away. You can also use the **🎱 Trivia Bingo** button on the pack screen after the PIN, or the 🎱 tab at the top of the host phone at any time.
+
 
 Before you start, choose one of two modes.
 
