@@ -169,10 +169,11 @@
           <span class="h-pc small">📺 On the PC: open <b>${esc(site || 'this site')}</b> → <b>Big screen</b> → <b>${s.code}</b></span>
           <span class="h-more small">▾ more</span></summary>
         <div class="h-links">${o.joinBase ? `<div>Players: scan the QR on the big screen, or open <b>${esc(site)}</b> and enter <b>${s.code}</b>.</div>
-          <div><a href="${o.joinBase}/board?room=${s.code}" target="_blank" rel="noopener">Open the big screen on this device ↗</a></div>
+          
           <div class="small"><a href="${o.joinBase}/preview" target="_blank" rel="noopener">Practice mode ↗</a> <span class="muted">(try the game with CPU teams)</span></div>`
           : '<div class="small muted">Practice: the big screen and your phone are on this page.</div>'}</div>
         <div class="row">${btn('push', '⟳ Apply editor changes', 'sm')}${btn('reset', 'New game', 'sm')}${btn('closeRoom', 'Close room', 'sm no')}</div></details>`;
+      if (o.joinBase) h += `<a class="btn hi h-tv" href="${o.joinBase}/board?room=${s.code}&fs=1" target="_blank" rel="noopener">📺 Put it on the big screen</a>`;
       const live = i => s.roundIndex === i && !['lobby', 'ended'].includes(s.phase);
       /* Follow whatever is running: a party game opens the Party tab, a Jeopardy round the Jeopardy tab. */
       const mode = s.party ? 'party' : JEO.includes(s.phase) ? 'jeopardy' : '';

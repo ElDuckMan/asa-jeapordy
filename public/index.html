@@ -113,7 +113,7 @@
     if (c.length < 4) { document.getElementById('serr').textContent = 'Enter the 4-letter room code.'; return; }
     net.emit('room:info', { code: c }).then(r => {
       if (r.error) document.getElementById('serr').textContent = r.error;
-      else location.href = '/board?room=' + c;
+      else location.href = '/board?room=' + c + '&fs=1';
     });
   };
   document.getElementById('sgo').onclick = showScreen;
